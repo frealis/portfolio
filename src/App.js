@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 
-import './App.css';
+class App extends Component {
+  state = {
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-    </div>
-  );
+  }
+
+  toggleHamburger = () => {
+    console.log('toggleHamburger');
+    
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Navbar toggleHamburger={ this.toggleHamburger } />
+      </div>
+    );
+  }
 }
 
 export default App;

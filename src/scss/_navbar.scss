@@ -1,0 +1,52 @@
+
+button:focus {
+  outline: none;  
+}
+
+.navbar {
+  color: $primary-color;
+  .navbar-nav {
+    background-color: $secondary-color;
+    color: $primary-color;
+    margin-left: auto;
+    a {
+      color: $quinary-color;
+    }
+  }
+}
+
+@include mediaMd{
+  .navbar {
+    .navbar-nav {
+      text-align: center;
+    }
+  }
+}
+
+.navbar-toggler { 
+  // background-color: $secondary-color;
+  cursor: pointer;
+  // position: absolute;
+  // right: 35px;
+  // top: 35px;
+  // z-index: 3;
+  @include easeInOut;
+  .nav-line-hamburger {
+    background-color: $primary-color;
+    display: block;
+    height: 2px;
+    margin: 0 0 6px 0;
+    width: 28px;
+    @include easeInOut;
+  }
+
+  // Rotate menu lines (hamburger link) into an 'X'
+  &.close {
+    transform: rotate(180deg);
+    .nav-line-hamburger {
+      &:nth-child(1) { transform: rotate(45deg) translate(5px, 5px) } // rotate
+      &:nth-child(2) { opacity: 0; } // hide
+      &:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px) } // rotate
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// Colors
+$primary-color: #0A2425;
+$secondary-color: #FCFAED;
+$tertiary-color: #043546;
+$quarternary-color: #ECD4B0;
+$quinary-color: #1B969E;
+
+// .color-themes {
+//   color: #0A2425;
+//   color: #043546;
+//   color: #1B969E;
+//   color: #ECD4B0;
+//   color: #FCFAED;
+// }
+
+// Transition
+@mixin easeInOut {
+  transition: all 0.5s ease-in-out;
+}
+
+// Media Queries
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

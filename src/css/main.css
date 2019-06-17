@@ -1,0 +1,42 @@
+button:focus {
+  outline: none; }
+
+.navbar {
+  color: #0A2425; }
+  .navbar .navbar-nav {
+    background-color: #FCFAED;
+    color: #0A2425;
+    margin-left: auto; }
+    .navbar .navbar-nav a {
+      color: #1B969E; }
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .navbar .navbar-nav {
+    text-align: center; } }
+
+.navbar-toggler {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out; }
+  .navbar-toggler .nav-line-hamburger {
+    background-color: #0A2425;
+    display: block;
+    height: 2px;
+    margin: 0 0 6px 0;
+    width: 28px;
+    transition: all 0.5s ease-in-out; }
+  .navbar-toggler.close {
+    transform: rotate(180deg); }
+    .navbar-toggler.close .nav-line-hamburger:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .navbar-toggler.close .nav-line-hamburger:nth-child(2) {
+      opacity: 0; }
+    .navbar-toggler.close .nav-line-hamburger:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
