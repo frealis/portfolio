@@ -10,9 +10,7 @@ class App extends Component {
     let navbar_toggler = document.querySelector('.navbar-toggler');
     if (navbar_toggler.classList.contains('close-navbar-toggler')) {
       navbar_toggler.classList.remove('close-navbar-toggler');
-      navbar_toggler.classList.add('open-navbar-toggler');
     } else {
-      navbar_toggler.classList.remove('open-navbar-toggler');
       navbar_toggler.classList.add('close-navbar-toggler');
     }
   }

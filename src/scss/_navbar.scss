@@ -1,47 +1,67 @@
-
 button:focus {
   outline: none;  
+}
+
+.link-projects {
+}
+
+.link-about {
+}
+
+.link-contact {
 }
 
 .navbar {
   color: $primary-color;
   .navbar-nav {
-    background-color: $secondary-color;
     color: $primary-color;
     margin-left: auto;
     a {
-      color: $quinary-color;
+      color: $primary-color;
     }
   }
 }
 
-@include mediaMd{
+@include mediaMd {
   .navbar {
     .navbar-nav {
       text-align: center;
+      .link-projects {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+      .link-about {
+        background-color: $tertiary-color;
+        color: $quarternary-color;
+      }
+      .link-contact {
+        background-color: $quarternary-color;
+        color: $tertiary-color;
+      }
     }
   }
-}
 
-.navbar-toggler { 
-  cursor: pointer;
-  @include easeInOut;
-  .nav-line-hamburger {
-    background-color: $primary-color;
-    display: block;
-    height: 0.1rem;
-    margin: 0 0 6px 0;
-    width: 2rem;
+  // Hamburger icon
+  .navbar-toggler { 
+    cursor: pointer;
     @include easeInOut;
-  }
-
-  // Rotate menu lines (hamburger link) into an 'X'
-  &.close-navbar-toggler {
-    // transform: rotate(180deg);
     .nav-line-hamburger {
-      &:nth-child(1) { transform: rotate(45deg) scale(0.7) translate(0.3rem, 0.6rem); } // rotate
-      &:nth-child(2) { transform: scale(0); opacity: 0; } // hide
-      &:nth-child(3) { transform: rotate(-45deg) scale(0.7) translate(0.3rem, -0.6rem); } // rotate
+      background-color: $primary-color;
+      display: block;
+      height: 0.1rem;
+      margin: 0 0 6px 0;
+      width: 2rem;
+      @include easeInOut;
+    }
+  
+    // Rotate menu lines (hamburger icon) into an 'X'
+    &.close-navbar-toggler {
+      .nav-line-hamburger {
+        &:nth-child(1) { transform: rotate(45deg) scale(0.7) translate(0.3rem, 0.6rem); } // rotate
+        &:nth-child(2) { transform: scale(0); opacity: 0; } // hide
+        &:nth-child(3) { transform: rotate(-45deg) scale(0.7) translate(0.3rem, -0.6rem); } // rotate
+      }
     }
   }
 }
+
