@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 class App extends Component {
   state = {
@@ -19,6 +21,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar toggleHamburger={ this.toggleHamburger } />
+        <Main />
+        <Footer />
       </div>
     );
   }

@@ -4,7 +4,7 @@ class Navbar extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar navbar-expand-md">
+        <nav className="container navbar navbar-expand-md fixed-top">
           <span className="navbar-brand" href="#">MH</span>
           <button 
             className="navbar-toggler" 
