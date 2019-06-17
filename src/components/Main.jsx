@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Main extends Component {
   render() {
     return (
-      <main className="container main">
+      <main className="container-fluid main">
         Main
       </main>
     )

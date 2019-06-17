@@ -1,36 +1,52 @@
-/* This is a stock *.css file that is created via create-react-app, just keeping
-this here for reference. */
+button:focus {
+  outline: none; }
 
-.App {
-  text-align: center;
-}
+.navbar {
+  color: #0A2425; }
+  .navbar .navbar-nav {
+    color: #0A2425;
+    margin-left: auto; }
+    .navbar .navbar-nav a {
+      color: #0A2425; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+@media screen and (max-width: 768px) {
+  .navbar .navbar-nav {
+    text-align: center; }
+    .navbar .navbar-nav .link-projects {
+      background-color: #FCFAED;
+      color: #0A2425; }
+    .navbar .navbar-nav .link-about {
+      background-color: #043546;
+      color: #ECD4B0; }
+    .navbar .navbar-nav .link-contact {
+      background-color: #ECD4B0;
+      color: #043546; }
+  .navbar-toggler {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; }
+    .navbar-toggler .nav-line-hamburger {
+      background-color: #0A2425;
+      display: block;
+      height: 0.1rem;
+      margin: 0 0 6px 0;
+      width: 2rem;
+      transition: all 0.3s ease-in-out; }
+    .navbar-toggler.close-navbar-toggler .nav-line-hamburger:nth-child(1) {
+      transform: rotate(45deg) scale(0.7) translate(0.3rem, 0.6rem); }
+    .navbar-toggler.close-navbar-toggler .nav-line-hamburger:nth-child(2) {
+      transform: scale(0);
+      opacity: 0; }
+    .navbar-toggler.close-navbar-toggler .nav-line-hamburger:nth-child(3) {
+      transform: rotate(-45deg) scale(0.7) translate(0.3rem, -0.6rem); } }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.main {
+  min-height: calc(100vh - 90px); }
 
-.App-link {
-  color: #61dafb;
-}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 60px 0 30px 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
