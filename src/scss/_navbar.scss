@@ -24,29 +24,24 @@ button:focus {
 }
 
 .navbar-toggler { 
-  // background-color: $secondary-color;
   cursor: pointer;
-  // position: absolute;
-  // right: 35px;
-  // top: 35px;
-  // z-index: 3;
   @include easeInOut;
   .nav-line-hamburger {
     background-color: $primary-color;
     display: block;
-    height: 2px;
+    height: 0.1rem;
     margin: 0 0 6px 0;
-    width: 28px;
+    width: 2rem;
     @include easeInOut;
   }
 
   // Rotate menu lines (hamburger link) into an 'X'
-  &.close {
-    transform: rotate(180deg);
+  &.close-navbar-toggler {
+    // transform: rotate(180deg);
     .nav-line-hamburger {
-      &:nth-child(1) { transform: rotate(45deg) translate(5px, 5px) } // rotate
-      &:nth-child(2) { opacity: 0; } // hide
-      &:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px) } // rotate
+      &:nth-child(1) { transform: rotate(45deg) scale(0.7) translate(0.3rem, 0.6rem); } // rotate
+      &:nth-child(2) { transform: scale(0); opacity: 0; } // hide
+      &:nth-child(3) { transform: rotate(-45deg) scale(0.7) translate(0.3rem, -0.6rem); } // rotate
     }
   }
 }

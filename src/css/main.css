@@ -16,22 +16,21 @@ button:focus {
 
 .navbar-toggler {
   cursor: pointer;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
   .navbar-toggler .nav-line-hamburger {
     background-color: #0A2425;
     display: block;
-    height: 2px;
+    height: 0.1rem;
     margin: 0 0 6px 0;
-    width: 28px;
-    transition: all 0.5s ease-in-out; }
-  .navbar-toggler.close {
-    transform: rotate(180deg); }
-    .navbar-toggler.close .nav-line-hamburger:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .navbar-toggler.close .nav-line-hamburger:nth-child(2) {
-      opacity: 0; }
-    .navbar-toggler.close .nav-line-hamburger:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
+    width: 2rem;
+    transition: all 0.3s ease-in-out; }
+  .navbar-toggler.close-navbar-toggler .nav-line-hamburger:nth-child(1) {
+    transform: rotate(45deg) scale(0.7) translate(0.3rem, 0.6rem); }
+  .navbar-toggler.close-navbar-toggler .nav-line-hamburger:nth-child(2) {
+    transform: scale(0);
+    opacity: 0; }
+  .navbar-toggler.close-navbar-toggler .nav-line-hamburger:nth-child(3) {
+    transform: rotate(-45deg) scale(0.7) translate(0.3rem, -0.6rem); }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
