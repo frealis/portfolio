@@ -1,3 +1,12 @@
+.red {
+  background-color: red; }
+
+.green {
+  background-color: green; }
+
+.blue {
+  background-color: blue; }
+
 .navbar {
   color: #0A2425; }
   .navbar .navbar-nav {
@@ -54,15 +63,6 @@
       opacity: 0; }
     .navbar-toggler.close-navbar-toggler .nav-line-hamburger:nth-child(3) {
       transform: rotate(-45deg) scale(0.7) translate(0.3rem, -0.6rem); } }
-
-.red {
-  background-color: red; }
-
-.green {
-  background-color: green; }
-
-.blue {
-  background-color: blue; }
 
 .main {
   min-height: calc(100vh - 90px); }
