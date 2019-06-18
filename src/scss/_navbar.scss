@@ -1,27 +1,45 @@
-button:focus {
-  outline: none;  
-}
-
-.link-projects {
-}
-
-.link-about {
-}
-
-.link-contact {
-}
-
+// Navbar
 .navbar {
   color: $primary-color;
   .navbar-nav {
-    color: $primary-color;
     margin-left: auto;
+  }
+
+  // Navbar links & animated underscore (drawn using ::before & ::after)
+  .nav-item {
     a {
       color: $primary-color;
+      position: relative;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 0.1rem;
+        width: 0;
+        transition-duration: 0.25s;
+      }
+      &::before {
+        left: 0;
+        background-color: $quinary-color;
+      }
+      &::after {
+        right: 0;
+        background-color: $quinary-color;
+      }
+      &:hover {
+        color: $quinary-color;
+        cursor: pointer;
+        &::before,
+        &::after {
+          width: 50%;
+        }
+      }
     }
   }
 }
 
+// Navbar - MOBILE
 @include mediaMd {
   .navbar {
     .navbar-nav {
@@ -43,7 +61,6 @@ button:focus {
 
   // Hamburger icon
   .navbar-toggler { 
-    cursor: pointer;
     @include easeInOut;
     .nav-line-hamburger {
       background-color: $primary-color;
@@ -52,6 +69,9 @@ button:focus {
       margin: 0 0 6px 0;
       width: 2rem;
       @include easeInOut;
+    }
+    &:focus {
+      outline: none;
     }
   
     // Rotate menu lines (hamburger icon) into an 'X'
@@ -65,3 +85,27 @@ button:focus {
   }
 }
 
+
+
+
+
+.link-projects {
+}
+
+.link-about {
+}
+
+.link-contact {
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}

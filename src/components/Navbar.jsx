@@ -24,16 +24,17 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbar-portfolio">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link link-projects" href="#">Projects</a>
+                <a className="nav-link link link-about" href="#">Projects</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link link-about" href="#">About</a>
+                <a className="nav-link link link-about" href="#">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link link-contact" href="#">Contact</a>
+                <a className="nav-link link link-contact" href="#">Contact</a>
               </li>
             </ul>
           </div>
+
         </nav>
       </React.Fragment>
     )
