@@ -45,15 +45,6 @@
 @media screen and (max-width: 768px) {
   .navbar .navbar-nav {
     text-align: center; }
-    .navbar .navbar-nav .link-projects {
-      background-color: #FCFAED;
-      color: #0A2425; }
-    .navbar .navbar-nav .link-about {
-      background-color: #043546;
-      color: #ECD4B0; }
-    .navbar .navbar-nav .link-contact {
-      background-color: #ECD4B0;
-      color: #043546; }
   .navbar-toggler {
     transition: all 0.3s ease-in-out; }
     .navbar-toggler .nav-line-hamburger {
