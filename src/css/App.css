@@ -13,6 +13,7 @@
     margin-left: auto; }
   .navbar .nav-item a {
     color: #0A2425;
+    margin: 0 1rem;
     position: relative; }
     .navbar .nav-item a::before, .navbar .nav-item a::after {
       content: "";
@@ -27,6 +28,14 @@
     .navbar .nav-item a::after {
       right: 0;
       background-color: #1B969E; }
+    .navbar .nav-item a:focus {
+      color: #FCFAED; }
+      .navbar .nav-item a:focus::before, .navbar .nav-item a:focus::after {
+        height: 100%;
+        width: 50%;
+        z-index: -1; }
+      .navbar .nav-item a:focus:hover {
+        color: #FCFAED; }
     .navbar .nav-item a:hover {
       color: #1B969E;
       cursor: pointer; }

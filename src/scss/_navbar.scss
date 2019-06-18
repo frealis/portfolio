@@ -9,6 +9,7 @@
   .nav-item {
     a {
       color: $primary-color;
+      margin: 0 1rem;
       position: relative;
       &::before,
       &::after {
@@ -26,6 +27,18 @@
       &::after {
         right: 0;
         background-color: $quinary-color;
+      }
+      &:focus {
+        color: $secondary-color;
+        &::before,
+        &::after {
+          height: 100%;
+          width: 50%;
+          z-index: -1;
+        }
+        &:hover {
+          color: $secondary-color;
+        }
       }
       &:hover {
         color: $quinary-color;
@@ -84,10 +97,6 @@
     }
   }
 }
-
-
-
-
 
 .link-projects {
 }
