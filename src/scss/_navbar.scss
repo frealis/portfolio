@@ -13,8 +13,7 @@
       color: $tertiary-color;
       margin: 0 1rem;
       position: relative;
-      &::before,
-      &::after {
+      &:before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -26,28 +25,12 @@
         left: 0;
         background-color: $quinary-color;
       }
-      &::after {
-        right: 0;
-        background-color: $quinary-color;
-      }
-      &:focus {
-        color: white;
-        &::before,
-        &::after {
-          height: 100%;
-          width: 50%;
-          z-index: -1;
-        }
-        &:hover {
-          color: white;
-        }
-      }
       &:hover {
         color: $quinary-color;
         cursor: pointer;
         &::before,
         &::after {
-          width: 50%;
+          width: 100%;
         }
       }
     }

@@ -10,7 +10,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects">
-        <span id="projects_link"></span>
+        <div id="projects-anchor"></div>
         <h1 className="projects-header">Projects</h1>
         <div className="container thumbnails">
           <div className="row no-gutters">
