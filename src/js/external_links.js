@@ -11,6 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open('https://github.com/frealis/River-City-Pro-Wash', '_blank');
   });
 
+  // Pinocchio's Pizza & Subs
+  document.querySelector('.ext-link-pinocchios').addEventListener('click', () => {
+    window.open('https://cs50-pinocchios-pizza.herokuapp.com/', '_blank');
+  });
+  document.querySelector('.ext-link-pinocchios-github').addEventListener('click', () => {
+    window.open('https://github.com/frealis/Pinocchios-Pizza-And-Subs', '_blank');
+  });
+
   // Technology icons
   document.querySelector('.ext-link-bootstrap').addEventListener('click', () => {
     window.open('https://getbootstrap.com/', '_blank');

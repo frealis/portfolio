@@ -1,10 +1,4 @@
 // Projects
-.bd-placeholder-img {
-  border-radius: 0.5rem;
-  position: relative;
-  z-index: -2;
-}
-
 .btn {
   background-color: white;
   color: $tertiary-color;
@@ -27,9 +21,10 @@
 }
 
 figure {
-  height: 225px;  // set to same height as thumbnail image
+  height: 15rem;  // set to same height as thumbnail image
   margin-bottom: 0;
   position: relative;
+  width: 100%;
 }
 
 figcaption {
@@ -39,6 +34,7 @@ figcaption {
   position: absolute;
   top: 0;
   transition: 0.5s;
+  width: 100%;
   &::before {
     background: $tertiary-color;
     border-radius: 0.5rem;
@@ -74,6 +70,12 @@ figcaption {
 
 .projects-thumbnail-description {
   color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.projects-thumbnail-header {
+  color: white;
   font-size: 1.25rem;
   margin: 1rem 0 0 0;
   text-align: center;
@@ -87,8 +89,16 @@ figcaption {
 }
 
 .projects-thumbnail-icon {
-  height: 1rem;
+  height: 1.25rem;
   &:hover {
     cursor: pointer;
   }
+}
+
+.projects-thumbnail {
+  border-radius: 0.5rem;
+  height: 15rem;
+  position: relative;
+  width: 100%;
+  z-index: -2;
 }
