@@ -5,7 +5,7 @@ import ThumbnailBookReviews from '../img/thumbnail-book-reviews.svg';
 class BookReviews extends Component {
   render() {
     return (
-      <div className="col-md-6">
+      <div className="col-md-6 projects-col">
         <figure>
           <img className="projects-thumbnail" alt="Book Reviews" src={ ThumbnailBookReviews } />
           <figcaption className="d-flex flex-column justify-content-between">

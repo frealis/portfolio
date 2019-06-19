@@ -4,7 +4,7 @@ import ThumbnailMicroChat from '../img/thumbnail-microchat.svg';
 class ProjectsMicroChat extends Component {
   render() {
     return (
-      <div className="col-md-6">
+      <div className="col-md-6 projects-col">
         <figure>
           <img className="projects-thumbnail" alt="microChat" src={ ThumbnailMicroChat } />
           <figcaption className="d-flex flex-column justify-content-between">

@@ -61,6 +61,10 @@ figcaption {
   visibility: hidden;
 }
 
+.projects-col {
+  margin-bottom: 2rem;
+}
+
 .projects-header {
   color: $primary-color;
   font-size: 2rem;
@@ -103,8 +107,4 @@ figcaption {
   position: relative;
   width: 100%;
   z-index: -2;
-}
-
-.row {
-  margin-bottom: 2rem;
 }

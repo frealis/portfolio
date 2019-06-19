@@ -4,7 +4,7 @@ import ThumbnailRCPW from '../img/thumbnail-rcpw.svg';
 class ProjectsRCPW extends Component {
   render() {
     return (
-      <div className="col-md-6">
+      <div className="col-md-6 projects-col">
         <figure>
           <img className="projects-thumbnail" alt="River City Pro Wash" src={ ThumbnailRCPW } />
           <figcaption className="d-flex flex-column justify-content-between">
