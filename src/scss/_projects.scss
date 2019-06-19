@@ -8,6 +8,10 @@
 .btn {
   background-color: white;
   color: $tertiary-color;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
   &:hover {
   background-color: $quinary-color;
   color: white;
@@ -23,6 +27,8 @@
 }
 
 figure {
+  height: 225px;  // set to same height as thumbnail image
+  margin-bottom: 0;
   position: relative;
 }
 
@@ -30,7 +36,6 @@ figcaption {
   height: 100%;
   left: 0;
   opacity: 0;
-  // padding: 1rem;
   position: absolute;
   top: 0;
   transition: 0.5s;

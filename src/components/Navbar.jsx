@@ -5,7 +5,7 @@ class Navbar extends Component {
     return (
       <React.Fragment>
         <nav className="navbar navbar-expand-md fixed-top">
-          <span className="navbar-brand" href="#">MH</span>
+          <span className="navbar-brand">MH</span>
           <button 
             className="navbar-toggler" 
             type="button" 
@@ -24,13 +24,13 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbar-portfolio">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link link link-projects" href="#">Projects</a>
+                <a className="nav-link link link-projects" href="#projects">Projects</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link link link-about" href="#">About</a>
+                <a className="nav-link link link-about" href="#about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link link link-contact" href="#">Contact</a>
+                <a className="nav-link link link-contact" href="#contact">Contact</a>
               </li>
             </ul>
           </div>

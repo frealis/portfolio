@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import IconGitHub from '../img/GitHub.svg';
-import IconView from '../img/custom-view.svg';
+// import IconGitHub from '../img/GitHub.svg';
+// import IconView from '../img/custom-view.svg';
 import IconDjango from '../img/django.svg';
 import IconPostgres from '../img/postgresql-horizontal.svg';
 import IconAWS from '../img/aws.svg';
@@ -10,6 +10,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects">
+        <span id="projects_link"></span>
         <h1 className="projects-header">Projects</h1>
         <div className="container thumbnails">
           <div className="row no-gutters">
@@ -25,18 +26,10 @@ class Projects extends Component {
                     <button className="btn btn-sm btn-source">Source</button>
                   </div>
                   <div className="d-flex projects-project-icons justify-content-around">
-                    <a href="https://www.getbootstrap.com" target="_blank">
-                      <img className="projects-project-icon" src={ IconBootstrap } />
-                    </a>
-                    <a href="https://www.djangoproject.com/" target="_blank">
-                      <img className="projects-project-icon" src={ IconDjango } />
-                    </a>
-                    <a href="https://www.postgresql.org/" target="_blank">
-                      <img className="projects-project-icon" src={ IconPostgres } />
-                    </a>
-                    <a href="https://aws.amazon.com/" target="_blank">
-                      <img className="projects-project-icon" src={ IconAWS } />
-                    </a>
+                    <img className="projects-project-icon" alt="Bootstrap" src={ IconBootstrap } />
+                    <img className="projects-project-icon" alt="Django" src={ IconDjango } />
+                    <img className="projects-project-icon" alt="Postgres" src={ IconPostgres } />
+                    <img className="projects-project-icon" alt="AWS" src={ IconAWS } />
                   </div>
                 </figcaption>
               </figure>
