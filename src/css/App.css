@@ -145,6 +145,9 @@ figcaption {
   width: 100%;
   z-index: -2; }
 
+.row {
+  margin-bottom: 2rem; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   padding: 60px 0 0 0;
