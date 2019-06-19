@@ -12,7 +12,7 @@
   .navbar .navbar-nav {
     margin-left: auto; }
   .navbar .nav-item a {
-    color: #0A2425;
+    color: #043546;
     margin: 0 1rem;
     position: relative; }
     .navbar .nav-item a::before, .navbar .nav-item a::after {
@@ -29,13 +29,13 @@
       right: 0;
       background-color: #1B969E; }
     .navbar .nav-item a:focus {
-      color: #FCFAED; }
+      color: white; }
       .navbar .nav-item a:focus::before, .navbar .nav-item a:focus::after {
         height: 100%;
         width: 50%;
         z-index: -1; }
       .navbar .nav-item a:focus:hover {
-        color: #FCFAED; }
+        color: white; }
     .navbar .nav-item a:hover {
       color: #1B969E;
       cursor: pointer; }
@@ -67,6 +67,46 @@
 .main {
   min-height: calc(100vh - 90px); }
 
+.bd-placeholder-img {
+  border-radius: 0.5rem; }
+
+.btn {
+  background-color: white;
+  color: #043546; }
+  .btn:hover {
+    background-color: #1B969E;
+    color: white; }
+
+figure {
+  position: relative; }
+
+figcaption {
+  height: 100%;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0; }
+
+.projects-header {
+  color: #0A2425;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+.projects-project-description {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  text-align: center; }
+
+.projects-project-icons {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem; }
+
+.projects-project-icon {
+  height: 1rem; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   padding: 60px 0 0 0;
@@ -75,3 +115,6 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+html {
+  scroll-behavior: smooth; }

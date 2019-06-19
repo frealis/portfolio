@@ -1,6 +1,7 @@
 @import 'config';
 @import 'navbar';
 @import 'main';
+@import 'projects';
 @import 'footer';
 
 body {
@@ -15,4 +16,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html {
+  scroll-behavior: smooth;
 }
