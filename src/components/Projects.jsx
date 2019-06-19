@@ -21,8 +21,8 @@ class Projects extends Component {
                 <figcaption className="d-flex flex-column justify-content-between">
                   <p className="projects-project-description">Residential and commercial pressure washing services</p>
                   <div className="d-flex btn-group justify-content-center">
-                    <button className="btn btn-small">View</button> &nbsp;
-                    <button className="btn btn-small">Source</button>
+                    <button className="btn btn-sm">View</button> &nbsp;
+                    <button className="btn btn-sm">Source</button>
                   </div>
                   <div className="d-flex projects-project-icons justify-content-around">
                     <img className="projects-project-icon" src={ IconBootstrap } />

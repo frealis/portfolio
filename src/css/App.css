@@ -85,9 +85,12 @@ figure {
 figcaption {
   height: 100%;
   left: 0;
+  opacity: 0;
   padding: 1rem;
   position: absolute;
   top: 0; }
+  figcaption:hover {
+    opacity: 1; }
 
 .projects-header {
   color: #0A2425;

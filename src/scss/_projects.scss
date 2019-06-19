@@ -19,9 +19,13 @@ figure {
 figcaption {
   height: 100%;
   left: 0;
+  opacity: 0;
   padding: 1rem;
   position: absolute;
   top: 0;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .projects-header {
