@@ -19,6 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open('https://github.com/frealis/Pinocchios-Pizza-And-Subs', '_blank');
   });
 
+  // microChat
+  document.querySelector('.ext-link-microchat').addEventListener('click', () => {
+    window.open('https://cs50-microchat.herokuapp.com/', '_blank');
+  });
+  document.querySelector('.ext-link-microchat-github').addEventListener('click', () => {
+    window.open('https://github.com/frealis/micro-Chat', '_blank');
+  });
+
+  // Book Reviews w/Goodreads
+  document.querySelector('.ext-link-bookreviews').addEventListener('click', () => {
+    window.open('https://cs50-book-review-w-goodreads.herokuapp.com/', '_blank');
+  });
+  document.querySelector('.ext-link-bookreviews-github').addEventListener('click', () => {
+    window.open('https://github.com/frealis/Book-Reviews-with-Goodreads', '_blank');
+  });
+
   // Technology icons
   const aws = document.querySelectorAll('.ext-link-aws');
   aws.forEach((icon) => {
@@ -36,6 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
   django.forEach((icon) => {
     icon.addEventListener('click', () => {
       window.open('https://www.djangoproject.com/', '_blank');
+    });
+  });
+  const flask = document.querySelectorAll('.ext-link-flask');
+  flask.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('http://flask.pocoo.org/', '_blank');
     });
   });
   const heroku = document.querySelectorAll('.ext-link-heroku');
