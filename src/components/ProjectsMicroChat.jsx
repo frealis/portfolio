@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import ThumbnailMicroChat from '../img/thumbnail-microchat.svg';
 
 class ProjectsMicroChat extends Component {
   render() {
     return (
       <div className="col-md-6">
         <figure>
-          <svg className="projects-thumbnail" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+          <img className="projects-thumbnail" alt="microChat" src={ ThumbnailMicroChat } />
           <figcaption className="d-flex flex-column justify-content-between">
             <div>
               <h2 className="projects-thumbnail-header">microChat</h2>
