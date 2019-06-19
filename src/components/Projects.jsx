@@ -21,14 +21,22 @@ class Projects extends Component {
                 <figcaption className="d-flex flex-column justify-content-between">
                   <p className="projects-project-description">Residential and commercial pressure washing services</p>
                   <div className="d-flex btn-group justify-content-center">
-                    <button className="btn btn-sm">View</button> &nbsp;
-                    <button className="btn btn-sm">Source</button>
+                    <button className="btn btn-sm btn-view">View</button>
+                    <button className="btn btn-sm btn-source">Source</button>
                   </div>
                   <div className="d-flex projects-project-icons justify-content-around">
-                    <img className="projects-project-icon" src={ IconBootstrap } />
-                    <img className="projects-project-icon" src={ IconDjango } />
-                    <img className="projects-project-icon" src={ IconPostgres } />
-                    <img className="projects-project-icon" src={ IconAWS } />
+                    <a href="https://www.getbootstrap.com" target="_blank">
+                      <img className="projects-project-icon" src={ IconBootstrap } />
+                    </a>
+                    <a href="https://www.djangoproject.com/" target="_blank">
+                      <img className="projects-project-icon" src={ IconDjango } />
+                    </a>
+                    <a href="https://www.postgresql.org/" target="_blank">
+                      <img className="projects-project-icon" src={ IconPostgres } />
+                    </a>
+                    <a href="https://aws.amazon.com/" target="_blank">
+                      <img className="projects-project-icon" src={ IconAWS } />
+                    </a>
                   </div>
                 </figcaption>
               </figure>
