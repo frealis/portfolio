@@ -1,5 +1,7 @@
 // Navbar
 .navbar {
+  background-color: white;
+  border-bottom: 0.1rem solid $primary-color;
   color: $primary-color;
   .navbar-nav {
     margin-left: auto;

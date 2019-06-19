@@ -8,6 +8,8 @@
   background-color: blue; }
 
 .navbar {
+  background-color: white;
+  border-bottom: 0.1rem solid #0A2425;
   color: #0A2425; }
   .navbar .navbar-nav {
     margin-left: auto; }
