@@ -20,17 +20,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Technology icons
-  document.querySelector('.ext-link-bootstrap').addEventListener('click', () => {
-    window.open('https://getbootstrap.com/', '_blank');
+  const aws = document.querySelectorAll('.ext-link-aws');
+  aws.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://aws.amazon.com/', '_blank');
+    });
   });
-  document.querySelector('.ext-link-django').addEventListener('click', () => {
-    window.open('https://www.djangoproject.com/', '_blank');
+  const bootstrap = document.querySelectorAll('.ext-link-bootstrap');
+  bootstrap.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://getbootstrap.com/', '_blank');
+    });
   });
-  document.querySelector('.ext-link-postgres').addEventListener('click', () => {
-    window.open('https://www.postgresql.org/', '_blank');
+  const django = document.querySelectorAll('.ext-link-django');
+  django.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://www.djangoproject.com/', '_blank');
+    });
   });
-  document.querySelector('.ext-link-aws').addEventListener('click', () => {
-    window.open('https://aws.amazon.com/', '_blank');
+  const heroku = document.querySelectorAll('.ext-link-heroku');
+  heroku.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://www.heroku.com/', '_blank');
+    });
   });
-
+  const postgres = document.querySelectorAll('.ext-link-postgres');
+  postgres.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://www.postgresql.org/', '_blank');
+    });
+  });
 });
