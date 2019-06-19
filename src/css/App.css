@@ -70,7 +70,9 @@
   min-height: calc(100vh - 90px); }
 
 .bd-placeholder-img {
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: -2; }
 
 .btn {
   background-color: white;
@@ -86,11 +88,23 @@ figcaption {
   height: 100%;
   left: 0;
   opacity: 0;
-  padding: 1rem;
   position: absolute;
-  top: 0; }
+  top: 0;
+  transition: 0.5s; }
+  figcaption::before {
+    background: #043546;
+    border-radius: 0.5rem;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+    z-index: -1; }
   figcaption:hover {
     opacity: 1; }
+    figcaption:hover::before {
+      height: 100%; }
 
 .projects-header {
   color: #0A2425;
@@ -101,12 +115,13 @@ figcaption {
 .projects-project-description {
   color: white;
   font-size: 1.25rem;
-  margin-bottom: 0;
+  margin: 1rem 0 0 0;
   text-align: center; }
 
 .projects-project-icons {
   background-color: white;
   border-radius: 0.5rem;
+  margin: 0 1rem 1rem 1rem;
   padding: 0.5rem; }
 
 .projects-project-icon {
