@@ -22,14 +22,14 @@ class Projects extends Component {
                 <figcaption className="d-flex flex-column justify-content-between">
                   <p className="projects-thumbnail-description">Residential and commercial pressure washing services</p>
                   <div className="d-flex btn-group justify-content-center">
-                    <button className="btn btn-sm btn-view">View</button>
-                    <button className="btn btn-sm btn-source">Source</button>
+                    <button className="btn btn-sm btn-view ext-link-rcpw">View</button>
+                    <button className="btn btn-sm btn-source ext-link-rcpw-github">Source</button>
                   </div>
                   <div className="d-flex projects-thumbnail-icons justify-content-around">
-                    <img className="projects-thumbnail-icon" alt="Bootstrap" src={ IconBootstrap } />
-                    <img className="projects-thumbnail-icon" alt="Django" src={ IconDjango } />
-                    <img className="projects-thumbnail-icon" alt="Postgres" src={ IconPostgres } />
-                    <img className="projects-thumbnail-icon" alt="AWS" src={ IconAWS } />
+                    <img className="projects-thumbnail-icon ext-link-bootstrap" alt="Bootstrap" src={ IconBootstrap } />
+                    <img className="projects-thumbnail-icon ext-link-django" alt="Django" src={ IconDjango } />
+                    <img className="projects-thumbnail-icon ext-link-postgres" alt="Postgres" src={ IconPostgres } />
+                    <img className="projects-thumbnail-icon ext-link-aws" alt="AWS" src={ IconAWS } />
                   </div>
                 </figcaption>
               </figure>
