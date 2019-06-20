@@ -1,5 +1,9 @@
 This is a portfolio website located at https://www.matthigg.com.
 
+Todo:
+  - fix bug with rapidly clicking hamburger icon
+  - update javascript, django, and flask icons
+
 ## Boiler Plate create-react-app README below this point
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

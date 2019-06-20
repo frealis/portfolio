@@ -14,7 +14,7 @@ class ProjectsRCPW extends Component {
           <figcaption className="d-flex flex-column justify-content-between">
             <div>
               <h2 className="projects-thumbnail-header">River City Pro Wash</h2>
-              <p className="projects-thumbnail-description">Residential and commercial pressure washing services</p>
+              <p className="projects-thumbnail-description">Residential and commercial pressure washing company</p>
             </div>
             <div className="d-flex btn-group justify-content-center">
               <button className="btn btn-sm btn-view ext-link-rcpw">View</button>

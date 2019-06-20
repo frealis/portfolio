@@ -109,7 +109,7 @@ figcaption {
     figcaption:hover::before {
       width: 100%; }
 
-#projects-anchor {
+#anchor-projects {
   display: block;
   position: relative;
   top: -60px;
@@ -148,6 +148,36 @@ figcaption {
   position: relative;
   width: 100%;
   z-index: -2; }
+
+#anchor-about {
+  display: block;
+  position: relative;
+  top: -60px;
+  visibility: hidden; }
+
+.about-icon {
+  width: 1.75rem; }
+
+.about-skills-category {
+  font-size: 1rem; }
+
+.about-skills-header {
+  font-size: 1rem; }
+
+.about-skills-section {
+  margin-bottom: 1rem; }
+
+.about-tech {
+  margin: 0.25rem; }
+
+.about-text {
+  margin-bottom: 2rem; }
+
+#anchor-contact {
+  display: block;
+  position: relative;
+  top: -60px;
+  visibility: hidden; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
