@@ -1,4 +1,4 @@
-This is a portfolio website at https://www.matthigg.com.
+This is a portfolio website located at https://www.matthigg.com.
 
 ## Boiler Plate create-react-app README below this point
 

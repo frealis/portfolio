@@ -3,6 +3,10 @@ import ThumbnailRCPW from '../img/thumbnail-rcpw.svg';
 
 class ProjectsRCPW extends Component {
   render() {
+
+    // Destructure this.props
+    const { IconAWS, IconBootstrap, IconDjango, IconPostgres } = this.props;
+
     return (
       <div className="col-md-6 projects-col">
         <figure>
@@ -17,10 +21,10 @@ class ProjectsRCPW extends Component {
               <button className="btn btn-sm btn-source ext-link-rcpw-github">Source</button>
             </div>
             <div className="d-flex projects-thumbnail-icons justify-content-around">
-              <img className="projects-thumbnail-icon ext-link-bootstrap" alt="Bootstrap" src={ this.props.IconBootstrap } />
-              <img className="projects-thumbnail-icon ext-link-django" alt="Django" src={ this.props.IconDjango } />
-              <img className="projects-thumbnail-icon ext-link-postgres" alt="Postgres" src={ this.props.IconPostgres } />
-              <img className="projects-thumbnail-icon ext-link-aws" alt="AWS" src={ this.props.IconAWS } />
+              <img className="projects-thumbnail-icon ext-link-bootstrap" alt="Bootstrap" src={ IconBootstrap } />
+              <img className="projects-thumbnail-icon ext-link-django" alt="Django" src={ IconDjango } />
+              <img className="projects-thumbnail-icon ext-link-postgres" alt="Postgres" src={ IconPostgres } />
+              <img className="projects-thumbnail-icon ext-link-aws" alt="AWS" src={ IconAWS } />
             </div>
           </figcaption>
         </figure>

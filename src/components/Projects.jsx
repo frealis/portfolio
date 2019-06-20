@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
 
-// import IconGitHub from '../img/GitHub.svg';
-// import IconView from '../img/custom-view.svg';
-import IconAWS from '../img/aws.svg';
-import IconBootstrap from '../img/bootstrap - symbol.svg';
-import IconDjango from '../img/django.svg';
-import IconFlask from '../img/flask.svg';
-import IconHeroku from '../img/heroku-icon.svg';
-import IconPostgres from '../img/postgresql-icon.svg';
-
 import ProjectsRCPW from './ProjectsRCPW.jsx';
 import ProjectsPinocchios from './ProjectsPinocchios.jsx';
 import ProjectsMicroChat from './ProjectsMicroChat.jsx';
 import ProjectsBookReviews from './ProjectsBookReviews.jsx';
 
 class Projects extends Component {
+
   render() {
+
+    // Destructure this.props
+    const { IconAWS, IconBootstrap, IconDjango, IconFlask, IconHeroku, IconPostgres } = this.props;
+
     return (
       <div className="projects">
         <div id="projects-anchor"></div>
-        <h1 className="projects-header">Projects</h1>
+        <h1>Projects</h1>
         <div className="container thumbnails">
 
           {/* River City Pro Wash, Pinocchio's Pizza & Subs */}

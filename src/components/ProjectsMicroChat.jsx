@@ -3,6 +3,10 @@ import ThumbnailMicroChat from '../img/thumbnail-microchat.svg';
 
 class ProjectsMicroChat extends Component {
   render() {
+
+    // Destructure this.props
+    const { IconBootstrap, IconFlask, IconHeroku } = this.props;
+
     return (
       <div className="col-md-6 projects-col">
         <figure>
@@ -17,9 +21,9 @@ class ProjectsMicroChat extends Component {
               <button className="btn btn-sm btn-source ext-link-microchat-github">Source</button>
             </div>
             <div className="d-flex projects-thumbnail-icons justify-content-around">
-              <img className="projects-thumbnail-icon ext-link-bootstrap" alt="Bootstrap" src={ this.props.IconBootstrap } />
-              <img className="projects-thumbnail-icon ext-link-flask" alt="Flask" src={ this.props.IconFlask } />
-              <img className="projects-thumbnail-icon ext-link-heroku" alt="Heroku" src={ this.props.IconHeroku } />
+              <img className="projects-thumbnail-icon ext-link-bootstrap" alt="Bootstrap" src={ IconBootstrap } />
+              <img className="projects-thumbnail-icon ext-link-flask" alt="Flask" src={ IconFlask } />
+              <img className="projects-thumbnail-icon ext-link-heroku" alt="Heroku" src={ IconHeroku } />
             </div>
           </figcaption>
         </figure>

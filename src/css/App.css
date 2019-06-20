@@ -55,6 +55,12 @@
     .navbar-toggler.close-navbar-toggler .nav-line-hamburger:nth-child(3) {
       transform: rotate(-45deg) scale(0.7) translate(0.3rem, -0.6rem); } }
 
+h1 {
+  color: #0A2425;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center; }
+
 .main {
   min-height: calc(100vh - 90px); }
 
@@ -111,12 +117,6 @@ figcaption {
 
 .projects-col {
   margin-bottom: 2rem; }
-
-.projects-header {
-  color: #0A2425;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  text-align: center; }
 
 .projects-thumbnail-description {
   color: white;

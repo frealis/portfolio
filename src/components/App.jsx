@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Main from './Main';
 import Footer from './Footer';
+
+import IconAWS from '../img/aws.svg';
+import IconBootstrap from '../img/bootstrap - symbol.svg';
+import IconDjango from '../img/django.svg';
+import IconFlask from '../img/flask.svg';
+import IconHeroku from '../img/heroku-icon.svg';
+import IconPostgres from '../img/postgresql-icon.svg';
+
 import '../js/external_links';
 
 class App extends Component {
@@ -22,7 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar toggleHamburger={ this.toggleHamburger } />
-        <Main />
+        <Main IconAWS={ IconAWS } IconBootstrap={ IconBootstrap } IconDjango={ IconDjango } IconFlask={ IconFlask } IconHeroku={ IconHeroku } IconPostgres={ IconPostgres } />
         <Footer />
       </div>
     );

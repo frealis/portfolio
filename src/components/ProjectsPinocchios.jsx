@@ -3,6 +3,10 @@ import ThumbnailPinocchios from '../img/thumbnail-pinocchios.svg';
 
 class ProjectsPinocchios extends Component {
   render() {
+
+    // Destructure this.props
+    const { IconBootstrap, IconDjango, IconHeroku, IconPostgres } = this.props;
+
     return (
       <div className="col-md-6 projects-col">
         <figure>
@@ -17,10 +21,10 @@ class ProjectsPinocchios extends Component {
               <button className="btn btn-sm btn-source ext-link-pinocchios-github">Source</button>
             </div>
             <div className="d-flex projects-thumbnail-icons justify-content-around">
-              <img className="projects-thumbnail-icon ext-link-bootstrap" alt="Bootstrap" src={ this.props.IconBootstrap } />
-              <img className="projects-thumbnail-icon ext-link-django" alt="Django" src={ this.props.IconDjango } />
-              <img className="projects-thumbnail-icon ext-link-postgres" alt="Postgres" src={ this.props.IconPostgres } />
-              <img className="projects-thumbnail-icon ext-link-heroku" alt="Heroku" src={ this.props.IconHeroku } />
+              <img className="projects-thumbnail-icon ext-link-bootstrap" alt="Bootstrap" src={ IconBootstrap } />
+              <img className="projects-thumbnail-icon ext-link-django" alt="Django" src={ IconDjango } />
+              <img className="projects-thumbnail-icon ext-link-postgres" alt="Postgres" src={ IconPostgres } />
+              <img className="projects-thumbnail-icon ext-link-heroku" alt="Heroku" src={ IconHeroku } />
             </div>
           </figcaption>
         </figure>
