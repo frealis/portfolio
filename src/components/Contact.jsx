@@ -17,7 +17,7 @@ class Contact extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <form action="" method="POST">
+              <form action="https://formspree.io/email@domain.tld" method="POST">
                 <div className="contact-input">
                   <input name="contact_name" id="contact-name" className="contact-input-field" type="text" required />
                   <label htmlFor="contact-name" className="floating-placeholder">Name</label>
@@ -38,7 +38,7 @@ class Contact extends Component {
 
             <div className="col-md-5">
               <div className="d-flex align-items-center contact-link contact-link-email">
-                <IconEmail className="contact-icon" /> <span className="contact-email-address">matt@matthigg.com</span>
+                <IconEmail className="contact-icon" /> <span className="contact-email-address">mhh129@gmail.com</span>
               </div>
               <div className="clecm-reference-point">
                 <button className="clecm-button">

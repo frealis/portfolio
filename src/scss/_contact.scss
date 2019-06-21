@@ -85,6 +85,10 @@
   left: 12rem;
   top: -2.25rem;
   width: 0.75rem;
+  &:hover {
+    color: $quinary-color;
+    cursor: pointer;
+  }
 }
 
 .clecm-button {
@@ -94,8 +98,6 @@
   position: absolute;
   width: 0;
   &:hover {
-    color: $quinary-color;
-    cursor: pointer;
     &~ .clecm-info {
       opacity: 1;
     }
