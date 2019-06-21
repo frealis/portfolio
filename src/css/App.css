@@ -55,10 +55,16 @@
     .navbar-toggler.close-navbar-toggler .nav-line-hamburger:nth-child(3) {
       transform: rotate(-45deg) scale(0.7) translate(0.3rem, -0.6rem); } }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -5rem;
+  visibility: hidden; }
+
 h1 {
   color: #0A2425;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin: 3rem 0;
   text-align: center; }
 
 .main {
@@ -109,12 +115,6 @@ figcaption {
     figcaption:hover::before {
       width: 100%; }
 
-#anchor-projects {
-  display: block;
-  position: relative;
-  top: -60px;
-  visibility: hidden; }
-
 .projects-col {
   margin-bottom: 2rem; }
 
@@ -149,35 +149,58 @@ figcaption {
   width: 100%;
   z-index: -2; }
 
-#anchor-about {
-  display: block;
-  position: relative;
-  top: -60px;
-  visibility: hidden; }
-
 .about-icon {
   width: 1.75rem; }
 
-.about-skills-category {
+.about-category {
   font-size: 1rem; }
-
-.about-skills-header {
-  font-size: 1rem; }
-
-.about-skills-section {
-  margin-bottom: 1rem; }
 
 .about-tech {
   margin: 0.25rem; }
 
 .about-text {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  text-align: center; }
 
-#anchor-contact {
+#contact-button-send {
+  border: 0.1rem solid #1B969E;
+  color: #1B969E;
   display: block;
-  position: relative;
-  top: -60px;
-  visibility: hidden; }
+  font-size: 1rem;
+  margin: 0 auto; }
+  #contact-button-send:hover {
+    border: 1px solid #1B969E;
+    color: white; }
+
+#contact-email,
+#contact-name {
+  height: 2.5rem;
+  width: 100%; }
+
+.contact-input {
+  margin-bottom: 1rem;
+  position: relative; }
+
+#contact-message {
+  width: 100%; }
+
+.floating-placeholder {
+  top: 0.5rem;
+  color: #1B969E;
+  cursor: text;
+  left: 0.5rem;
+  position: absolute;
+  transition: 0.1s; }
+
+.contact-input-field:focus ~ .floating-placeholder,
+.contact-input-field:not(:focus):valid ~ .floating-placeholder {
+  color: #1B969E;
+  font-size: 0.7rem;
+  top: 0;
+  transition: 0.1s; }
+
+.contact-input-field {
+  padding: 1rem 0 0 0.2rem; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

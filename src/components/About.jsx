@@ -8,22 +8,24 @@ class About extends Component {
 
     return (
       <div className="about">
-        <div id="anchor-about"></div>
+        <div id="anchor-about" className="anchor"></div>
         <h1>About</h1>
         <div className="container">
 
           <div className="row about-text">
-            <div className="col-md-12">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, nesciunt.
+            <div className="col-md-3"></div>
+            <div className="col-md-6">
+              I'm a freelance web developer. Here are some of the technologies I've used:
             </div>
           </div>
+          <div className="col-md-3"></div>
 
           <div className="row">
   
             {/* Languages */}
             <div className="col-md-4">
-              <div className="about-skills-section d-flex flex-column flex-wrap justify-content-center">
-                <h3 className="about-skills-category">Languages</h3>
+              <div className="d-flex flex-column flex-wrap justify-content-center">
+                <h2 className="about-category">Languages</h2>
                 <div className="about-tech">
                   <img className="about-icon" src={ IconHTML } alt="HTML5" /> HTML
                 </div>
@@ -41,8 +43,8 @@ class About extends Component {
 
             {/* Frameworks & Libraries */}
             <div className="col-md-4">
-              <div className="about-skills-section d-flex flex-column flex-wrap justify-content-center">
-                <h3 className="about-skills-category">Frameworks & Libraries</h3>
+              <div className="d-flex flex-column flex-wrap justify-content-center">
+                <h2 className="about-category">Frameworks & Libraries</h2>
                 <div className="about-tech">
                   <img className="about-icon" src={ IconBootstrap } alt="Bootstrap" /> Bootstrap
                 </div>
@@ -61,10 +63,10 @@ class About extends Component {
               </div>
             </div>
 
+            {/* Database & DevOps */}
             <div className="col-md-4">
-              {/* Database & DevOps */}
-              <div className="about-skills-section d-flex flex-column flex-wrap justify-content-center">
-                <h3 className="about-skills-category">Database & DevOps</h3>
+              <div className="d-flex flex-column flex-wrap justify-content-center">
+                <h2 className="about-category">Database & DevOps</h2>
                 <div className="about-tech">
                   <img className="about-icon" src={ IconPostgres } alt="Postgres" /> Postgres
                 </div>
@@ -76,9 +78,7 @@ class About extends Component {
                 </div>
               </div>
             </div>            
-
           </div>
-
         </div>
       </div>
     )

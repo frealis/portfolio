@@ -1,24 +1,9 @@
-#anchor-about {
-  display: block;
-  position: relative;
-  top: -60px;
-  visibility: hidden;
-}
-
 .about-icon {
   width: 1.75rem;
 }
 
-.about-skills-category {
+.about-category {
   font-size: 1rem;
-}
-
-.about-skills-header {
-  font-size: 1rem;
-}
-
-.about-skills-section {
-  margin-bottom: 1rem;
 }
 
 .about-tech {
@@ -27,4 +12,5 @@
 
 .about-text {
   margin-bottom: 2rem;
+  text-align: center;
 }
