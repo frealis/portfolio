@@ -13,23 +13,20 @@
       color: $tertiary-color;
       margin: 0 1rem;
       position: relative;
-      &:before {
+      &::before {
+        background-color: $quinary-color;
         content: "";
         position: absolute;
         bottom: 0;
         height: 0.1rem;
+        left: 0;
         width: 0;
         transition-duration: 0.25s;
-      }
-      &::before {
-        left: 0;
-        background-color: $quinary-color;
       }
       &:hover {
         color: $quinary-color;
         cursor: pointer;
-        &::before,
-        &::after {
+        &::before {
           width: 100%;
         }
       }

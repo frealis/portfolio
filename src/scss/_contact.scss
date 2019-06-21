@@ -31,9 +31,25 @@
 .contact-link {
   color: $tertiary-color;
   margin-bottom: 1rem;
+  position: relative;
+  transition: 0.3s;
+  width: max-content;
+  &:before {
+    background-color: $quinary-color;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.1rem;
+    left: 2.25rem;
+    width: 0;
+    transition-duration: 0.25s;
+  }
   &:hover {
     color: $quinary-color;
     cursor: pointer;
+    &::before {
+      width: calc(100% - 2.25rem);
+    }
   }
 }
 
