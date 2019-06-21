@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ReactComponent as IconCopy } from '../img/custom-copy.svg';
 import { ReactComponent as IconEmail } from '../img/custom-email-043546.svg';
 import { ReactComponent as IconGitHub } from '../img/GitHub-043546.svg';
 import { ReactComponent as IconLinkedIn } from '../img/LinkedIn-043546.svg';
@@ -37,16 +38,20 @@ class Contact extends Component {
 
             <div className="col-md-5">
               <div className="d-flex align-items-center contact-link contact-link-email">
-                <IconEmail className="contact-icon" /> matt@matthigg.com
-                {/* <img className="contact-icon" src={ IconEmail } /> matt@matthigg.com */}
+                <IconEmail className="contact-icon" /> <span className="contact-email-address">matt@matthigg.com</span>
+              </div>
+              <div className="clecm-reference-point">
+                <button className="clecm-button">
+                  <IconCopy className="contact-link-email-copy" />
+                </button>
+                <span className="clecm-message clecm-info">Click to copy</span>
+                <span className="clecm-message clecm-success">Copied!</span>
               </div>
               <div className="d-flex align-items-center contact-link contact-link-github">
                 <IconGitHub className="contact-icon" /> GitHub
-                {/* <img className="contact-icon" src={ IconGitHub } /> GitHub */}
               </div>
               <div className="d-flex align-items-center contact-link contact-link-linkedin">
                 <IconLinkedIn className="contact-icon" /> LinkedIn
-                {/* <img className="contact-icon" src={ IconLinkedIn } /> LinkedIn */}
               </div>
             </div>
           </div>

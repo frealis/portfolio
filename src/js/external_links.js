@@ -36,11 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Contact links (resume, email, GitHub, LinkedIn)
+  const email = 'mhh129@gmail.com';
   // document.querySelector('.contact-link-resume').addEventListener('click', () => {
   //   window.open()
   // });
   document.querySelector('.contact-link-email').addEventListener('click', () => {
-    window.open()
+    window.open(`mailto:${email}`);
+  });
+  document.querySelector('.contact-link-email-copy').addEventListener('click', () => {
+    const input = document.createElement('input');
+    input.value = `${email}`;
+    input.type = 'hidden';
+    document.querySelector('.contact-email-address').appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    input.remove();
+
   });
   document.querySelector('.contact-link-github').addEventListener('click', () => {
     window.open('https://github.com/frealis', '_blank');

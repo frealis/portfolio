@@ -5,6 +5,7 @@ import Footer from './Footer';
 
 import IconAWS from '../img/aws.svg';
 import IconBootstrap from '../img/bootstrap - symbol.svg';
+import IconCopy from '../img/custom-copy.svg';
 import IconCSS from '../img/custom-css.svg';
 import IconDjango from '../img/djangoproject-icon2.svg';
 import IconEmail from '../img/custom-email-043546.svg';
@@ -41,7 +42,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar toggleHamburger={ this.toggleHamburger } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } />
-        <Main IconAWS={ IconAWS } IconBootstrap={ IconBootstrap } IconCSS={ IconCSS } IconDjango={ IconDjango } IconEmail={ IconEmail } IconFlask={ IconFlask } IconGitHub={ IconGitHub } IconHackerRank={ IconHackerRank } IconHeroku={ IconHeroku } IconHTML={ IconHTML } IconJavaScript={ IconJavaScript} IconLinkedIn={ IconLinkedIn } IconPostgres={ IconPostgres } IconPython={ IconPython } IconReact={ IconReact } IconResume={ IconResume } IconSass={ IconSass } />
+        <Main IconAWS={ IconAWS } IconBootstrap={ IconBootstrap } IconCopy={ IconCopy } IconCSS={ IconCSS } IconDjango={ IconDjango } IconEmail={ IconEmail } IconFlask={ IconFlask } IconGitHub={ IconGitHub } IconHackerRank={ IconHackerRank } IconHeroku={ IconHeroku } IconHTML={ IconHTML } IconJavaScript={ IconJavaScript} IconLinkedIn={ IconLinkedIn } IconPostgres={ IconPostgres } IconPython={ IconPython } IconReact={ IconReact } IconResume={ IconResume } IconSass={ IconSass } />
         <Footer IconEmail={ IconEmail } IconGitHub={ IconGitHub } IconHackerRank={ IconHackerRank } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } />
       </div>
     );

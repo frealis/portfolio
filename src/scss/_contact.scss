@@ -28,6 +28,27 @@
   position: relative;
 }
 
+// https://stackoverflow.com/questions/35942247/how-to-move-placeholder-to-top-on-focus-and-while-typing#
+.contact-input-field:focus ~ .floating-placeholder,
+.contact-input-field:not(:focus):valid ~ .floating-placeholder {
+  color: $quinary-color;
+  font-size: 0.7rem;
+  top: 0;
+  transition: 0.1s;
+}
+
+.contact-input-field {
+  border: 0.1rem solid $tertiary-color;
+  border-radius: 0.3rem;
+  color: $tertiary-color;
+  padding: 1rem 0 0 0.5rem;
+  &:focus {
+    border-color: $quinary-color;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
 .contact-link {
   color: $tertiary-color;
   margin-bottom: 1rem;
@@ -53,6 +74,69 @@
   }
 }
 
+// This class's object has several other elements to support the "Click to copy"
+// and "Copied" messages on hover, and supporting classes are abbreviated 
+// 'clecm' for brevity.
+.contact-link-email-copy {
+  color: $tertiary-color;
+  height: 0.75rem;
+  margin-left: 1rem;
+  position: absolute;
+  left: 12rem;
+  top: -2.25rem;
+  width: 0.75rem;
+}
+
+.clecm-button {
+  border: 0;
+  height: 0;
+  padding: 0;
+  position: absolute;
+  width: 0;
+  &:hover {
+    color: $quinary-color;
+    cursor: pointer;
+    &~ .clecm-info {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    outline: none;
+    &~ .clecm-info {
+      opacity: 0;
+      }
+    &~ .clecm-success {
+    opacity: 1;
+    }
+  }
+}
+
+.clecm-message {
+  background-color: $tertiary-color;
+  border-radius: 0.2rem;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.3rem;
+  position: absolute;
+  top: -4rem;
+}
+
+.clecm-message.clecm-info {
+  left: 11rem;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.clecm-reference-point {
+  position: relative;
+}
+
+.clecm-message.clecm-success {
+  left: 12rem;
+  opacity: 0;
+  transition: 0.2s;
+}
+
 #contact-message {
   width: 100%;
 }
@@ -64,25 +148,4 @@
   left: 0.5rem;
   position: absolute;
   transition: 0.2s;
-}
-
-// https://stackoverflow.com/questions/35942247/how-to-move-placeholder-to-top-on-focus-and-while-typing#
-.contact-input-field:focus ~ .floating-placeholder,
-.contact-input-field:not(:focus):valid ~ .floating-placeholder {
-  color: $quinary-color;
-  font-size: 0.7rem;
-  top: 0;
-  transition: 0.1s;
-}
-
-.contact-input-field {
-  border: 0.1rem solid $tertiary-color;
-  border-radius: 0.3rem;
-  color: $tertiary-color;
-  padding: 1rem 0 0 0.5rem;
-  &:focus {
-    border-color: $quinary-color;
-    box-shadow: none;
-    outline: none;
-  }
 }
