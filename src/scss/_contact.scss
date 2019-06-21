@@ -1,18 +1,19 @@
 #contact-button-send {
-  border: 0.1rem solid $quinary-color;
+  border: 0.1rem solid $tertiary-color;
+  border-radius: 0.3rem;
   color: $quinary-color;
   display: block;
   font-size: 1rem;
   margin: 0 auto;
   &:hover {
-    border: 1px solid $quinary-color;
+    border: 0.1rem solid $quinary-color;
     color: white;
   }
 }
 
 #contact-email,
 #contact-name {
-  height: 2.5rem;
+  height: 2.75rem;
   width: 100%;
 }
 
@@ -44,5 +45,13 @@
 }
 
 .contact-input-field {
-  padding: 1rem 0 0 0.2rem;
+  border: 0.1rem solid $tertiary-color;
+  border-radius: 0.3rem;
+  color: $tertiary-color;
+  padding: 1rem 0 0 0.5rem;
+  &:focus {
+    border-color: $quinary-color;
+    box-shadow: none;
+    outline: none;
+  }
 }

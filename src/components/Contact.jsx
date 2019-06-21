@@ -26,7 +26,7 @@ class Contact extends Component {
                 </div>
               </form>
 
-              <button id="contact-button-send" className="btn btn-sm">Send Message</button>
+              <button id="contact-button-send" className="btn btn-sm">Send</button>
             </div>
             <div className="col-md-6">
               matt@matthigg.com
