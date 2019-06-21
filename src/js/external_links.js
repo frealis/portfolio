@@ -35,6 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open('https://github.com/frealis/Book-Reviews-with-Goodreads', '_blank');
   });
 
+  // Contact links (resume, email, GitHub, LinkedIn)
+  // document.querySelector('.contact-link-resume').addEventListener('click', () => {
+  //   window.open()
+  // });
+  document.querySelector('.contact-link-email').addEventListener('click', () => {
+    window.open()
+  });
+  document.querySelector('.contact-link-github').addEventListener('click', () => {
+    window.open('https://github.com/frealis', '_blank');
+  });
+  document.querySelector('.contact-link-linkedin').addEventListener('click', () => {
+    window.open('https://www.linkedin.com/in/matt-higginbotham', '_blank')
+  });
+
   // Technology icons
   const aws = document.querySelectorAll('.ext-link-aws');
   aws.forEach((icon) => {

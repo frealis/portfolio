@@ -1,7 +1,7 @@
 #contact-button-send {
   border: 0.1rem solid $tertiary-color;
   border-radius: 0.3rem;
-  color: $quinary-color;
+  color: $tertiary-color;
   display: block;
   font-size: 1rem;
   margin: 0 auto;
@@ -17,9 +17,24 @@
   width: 100%;
 }
 
+.contact-icon {
+  height: 1.75rem;
+  margin-right: 0.75rem;
+  width: 1.75rem;
+}
+
 .contact-input {
   margin-bottom: 1rem;
   position: relative;
+}
+
+.contact-link {
+  color: $tertiary-color;
+  margin-bottom: 1rem;
+  &:hover {
+    color: $quinary-color;
+    cursor: pointer;
+  }
 }
 
 #contact-message {
@@ -32,7 +47,7 @@
   cursor: text;
   left: 0.5rem;
   position: absolute;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 
 // https://stackoverflow.com/questions/35942247/how-to-move-placeholder-to-top-on-focus-and-while-typing#

@@ -1,11 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
-  <defs>
-    <clipPath id="clip-path">
-      <rect width="100" height="100" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="Linkedin_1" data-name="Linkedin – 1" clip-path="url(#clip-path)">
-    <circle id="Ellipse_3" data-name="Ellipse 3" cx="50" cy="50" r="50" fill="#043546"/>
-    <text id="in" transform="translate(20.5 70)" fill="#edeeef" font-size="71" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700"><tspan x="0" y="0">in</tspan></text>
-  </g>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
+  <path id="Subtraction_1" data-name="Subtraction 1" d="M50,100A50.013,50.013,0,0,1,30.538,3.929,50.013,50.013,0,0,1,69.462,96.071,49.686,49.686,0,0,1,50,100ZM60.97,43.233a4.717,4.717,0,0,1,4.2,2.086,9.848,9.848,0,0,1,1.269,5.44V70H77.229V49.41c0-9.336-4.645-14.91-12.425-14.91a12.719,12.719,0,0,0-10.721,5.539H53.87l-.5-4.757H44c.141,3.03.284,6.716.284,11.076V70H55.077V49.978a7.385,7.385,0,0,1,.426-2.7,6.473,6.473,0,0,1,1.881-2.769A5.409,5.409,0,0,1,60.97,43.233ZM24.831,35.281V70H35.623V35.281Zm5.4-15.123a5.84,5.84,0,0,0-4.242,1.633,5.245,5.245,0,0,0-1.439,3.834,5.148,5.148,0,0,0,1.442,3.758,5.739,5.739,0,0,0,4.167,1.638c3.374,0,5.822-2.27,5.822-5.4A5.394,5.394,0,0,0,30.227,20.158Z" transform="translate(0.5 0.5)" stroke="rgba(0,0,0,0)" stroke-width="1"/>
 </svg>

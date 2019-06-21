@@ -165,7 +165,7 @@ figcaption {
 #contact-button-send {
   border: 0.1rem solid #043546;
   border-radius: 0.3rem;
-  color: #1B969E;
+  color: #043546;
   display: block;
   font-size: 1rem;
   margin: 0 auto; }
@@ -178,9 +178,21 @@ figcaption {
   height: 2.75rem;
   width: 100%; }
 
+.contact-icon {
+  height: 1.75rem;
+  margin-right: 0.75rem;
+  width: 1.75rem; }
+
 .contact-input {
   margin-bottom: 1rem;
   position: relative; }
+
+.contact-link {
+  color: #043546;
+  margin-bottom: 1rem; }
+  .contact-link:hover {
+    color: #1B969E;
+    cursor: pointer; }
 
 #contact-message {
   width: 100%; }
@@ -191,7 +203,7 @@ figcaption {
   cursor: text;
   left: 0.5rem;
   position: absolute;
-  transition: 0.1s; }
+  transition: 0.2s; }
 
 .contact-input-field:focus ~ .floating-placeholder,
 .contact-input-field:not(:focus):valid ~ .floating-placeholder {
