@@ -5,9 +5,9 @@
     </clipPath>
   </defs>
   <g id="System_resume2_negative_1" data-name="System, resume2, negative – 1" clip-path="url(#clip-path)">
-    <circle id="Ellipse_8" data-name="Ellipse 8" cx="50" cy="50" r="50" fill="#043546"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="50" cy="50" r="50"/>
     <g id="Group_10" data-name="Group 10" transform="translate(-127.748 -72.5)">
-      <rect id="Rectangle_2" data-name="Rectangle 2" width="49.306" height="60" transform="translate(152.748 92.5)" fill="#043546" stroke="#fff" stroke-miterlimit="10" stroke-width="6"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="49.306" height="60" transform="translate(152.748 92.5)" stroke="#fff" stroke-miterlimit="10" stroke-width="6"/>
       <line id="Line_6" data-name="Line 6" x2="36.522" transform="translate(159.14 106.848)" stroke="#fff" stroke-miterlimit="10" stroke-width="6"/>
       <line id="Line_7" data-name="Line 7" x2="20.87" transform="translate(173.977 117.283)" stroke="#fff" stroke-miterlimit="10" stroke-width="6"/>
       <line id="Line_8" data-name="Line 8" x2="20.87" transform="translate(173.977 127.717)" stroke="#fff" stroke-miterlimit="10" stroke-width="6"/>
