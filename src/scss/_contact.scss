@@ -4,16 +4,25 @@
   color: $tertiary-color;
   display: block;
   font-size: 1rem;
-  margin: 0 auto;
+  height: 2.5rem;
+  margin: auto 0;
   &:hover {
     border: 0.1rem solid $quinary-color;
     color: white;
   }
 }
 
-#contact-email,
-#contact-name {
+.contact-button-and-email-links {
+  padding: 0.5rem 0;
+}
+
+#contact-email-input,
+#contact-name-input {
   height: 2.75rem;
+  width: 100%;
+}
+
+#contact-message-input {
   width: 100%;
 }
 
@@ -51,7 +60,7 @@
 
 .contact-link {
   color: $tertiary-color;
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
   position: relative;
   transition: 0.3s;
   width: max-content;
@@ -74,6 +83,10 @@
   }
 }
 
+.contact-link-email {
+  // margin: auto 0;
+}
+
 // This class's object has several other elements to support the "Click to copy"
 // and "Copied" messages on hover, and supporting classes are abbreviated 
 // 'clecm' for brevity.
@@ -83,7 +96,7 @@
   margin-left: 1rem;
   position: absolute;
   left: 12rem;
-  top: -2.25rem;
+  top: -1.25rem;
   width: 0.75rem;
   &:hover {
     color: $quinary-color;
@@ -92,6 +105,7 @@
 }
 
 .clecm-button {
+  background: orange;
   border: 0;
   height: 0;
   padding: 0;
@@ -120,13 +134,14 @@
   font-size: 0.75rem;
   padding: 0.15rem 0.3rem;
   position: absolute;
-  top: -4rem;
+  top: -3rem;
+  transition: 0.2s;
+  width: max-content; // Prevents line breaks
 }
 
 .clecm-message.clecm-info {
   left: 11rem;
   opacity: 0;
-  transition: 0.2s;
 }
 
 .clecm-reference-point {
@@ -136,7 +151,6 @@
 .clecm-message.clecm-success {
   left: 12rem;
   opacity: 0;
-  transition: 0.2s;
 }
 
 #contact-message {
