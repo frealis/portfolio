@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     input.select();
     document.execCommand('copy');
     input.remove();
+    document.querySelector('.clec-button').focus()
   });
   document.querySelector('.contact-link-github').addEventListener('click', () => {
     window.open('https://github.com/frealis', '_blank');
