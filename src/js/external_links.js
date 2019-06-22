@@ -46,12 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.contact-link-email-copy').addEventListener('click', () => {
     const input = document.createElement('input');
     input.value = `${email}`;
-    input.type = 'hidden';
     document.querySelector('.contact-email-address').appendChild(input);
     input.select();
     document.execCommand('copy');
     input.remove();
-
   });
   document.querySelector('.contact-link-github').addEventListener('click', () => {
     window.open('https://github.com/frealis', '_blank');

@@ -176,13 +176,12 @@ figcaption {
 .contact-button-and-email-links {
   padding: 0.5rem 0; }
 
-#contact-email-input,
-#contact-name-input {
-  height: 2.75rem;
-  width: 100%; }
+#contact-email-input {
+  display: block;
+  height: 2.75rem; }
 
-#contact-message-input {
-  width: 100%; }
+#contact-name-input {
+  height: 2.75rem; }
 
 .contact-icon {
   height: 1.75rem;
@@ -191,7 +190,8 @@ figcaption {
 
 .contact-input {
   margin-bottom: 1rem;
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .contact-input-field:focus ~ .floating-placeholder,
 .contact-input-field:not(:focus):valid ~ .floating-placeholder {
@@ -204,7 +204,8 @@ figcaption {
   border: 0.1rem solid #043546;
   border-radius: 0.3rem;
   color: #043546;
-  padding: 1rem 0 0 0.5rem; }
+  padding: 1rem 0 0 0.5rem;
+  width: 100%; }
   .contact-input-field:focus {
     border-color: #1B969E;
     box-shadow: none;

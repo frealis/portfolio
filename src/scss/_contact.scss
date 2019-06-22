@@ -16,14 +16,16 @@
   padding: 0.5rem 0;
 }
 
-#contact-email-input,
-#contact-name-input {
+#contact-email-input {
+  display: block;
   height: 2.75rem;
-  width: 100%;
 }
 
 #contact-message-input {
-  width: 100%;
+}
+
+#contact-name-input {
+  height: 2.75rem;
 }
 
 .contact-icon {
@@ -35,6 +37,7 @@
 .contact-input {
   margin-bottom: 1rem;
   position: relative;
+  width: 100%;
 }
 
 // https://stackoverflow.com/questions/35942247/how-to-move-placeholder-to-top-on-focus-and-while-typing#
@@ -51,6 +54,7 @@
   border-radius: 0.3rem;
   color: $tertiary-color;
   padding: 1rem 0 0 0.5rem;
+  width: 100%;
   &:focus {
     border-color: $quinary-color;
     box-shadow: none;
