@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.contact-link-email').addEventListener('click', () => {
     window.open(`mailto:${email}`);
   });
-  document.querySelector('.contact-link-email-copy').addEventListener('click', () => {
+  document.querySelector('.clec').addEventListener('click', () => {
     const input = document.createElement('input');
     input.value = `${email}`;
     document.querySelector('.contact-email-address').appendChild(input);

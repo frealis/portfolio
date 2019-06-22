@@ -1,3 +1,71 @@
+// The name of this class is an abbreviation for 'contact-link-email-copy'
+.clec {
+  color: $tertiary-color;
+  height: 0.75rem;
+  margin-left: 1rem;
+  position: absolute;
+  left: 12rem;
+  top: -1.25rem;
+  width: 0.75rem;
+  &:hover {
+    color: $quinary-color;
+    cursor: pointer;
+  }
+}
+
+.clec-button {
+  background: orange;
+  border: 0;
+  height: 0;
+  padding: 0;
+  position: absolute;
+  width: 0;
+  &:hover {
+    &~ .clec-info {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    outline: none;
+    &~ .clec-info {
+      opacity: 0;
+      }
+    &~ .clec-success {
+    opacity: 1;
+    }
+  }
+}
+
+.clec-message {
+  background-color: $tertiary-color;
+  border-radius: 0.2rem;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.3rem;
+  position: absolute;
+  top: -3rem;
+  transition: 0.2s;
+  width: max-content; // Prevents line breaks
+}
+
+.clec-message.clec-info {
+  left: 11rem;
+  opacity: 0;
+}
+
+.clec-message.clec-success {
+  left: 12rem;
+  opacity: 0;
+}
+
+.clec-reference-point {
+  position: relative;
+}
+
+.contact-button-and-email-links {
+  padding: 0.5rem 0;
+}
+
 #contact-button-send {
   border: 0.1rem solid $tertiary-color;
   border-radius: 0.3rem;
@@ -12,20 +80,20 @@
   }
 }
 
-.contact-button-and-email-links {
-  padding: 0.5rem 0;
-}
-
 #contact-email-input {
   display: block;
   height: 2.75rem;
 }
 
-#contact-message-input {
+.contact-form-row {
+  margin-bottom: 5rem;
 }
 
-#contact-name-input {
-  height: 2.75rem;
+.contact-hr {
+  background: $primary-color;
+  border: 0;
+  height: 0.1rem;
+  width: 100%;
 }
 
 .contact-icon {
@@ -64,7 +132,6 @@
 
 .contact-link {
   color: $tertiary-color;
-  // margin-bottom: 1rem;
   position: relative;
   transition: 0.3s;
   width: max-content;
@@ -87,78 +154,18 @@
   }
 }
 
-.contact-link-email {
-  // margin: auto 0;
-}
-
-// This class's object has several other elements to support the "Click to copy"
-// and "Copied" messages on hover, and supporting classes are abbreviated 
-// 'clecm' for brevity.
-.contact-link-email-copy {
-  color: $tertiary-color;
-  height: 0.75rem;
-  margin-left: 1rem;
-  position: absolute;
-  left: 12rem;
-  top: -1.25rem;
-  width: 0.75rem;
-  &:hover {
-    color: $quinary-color;
-    cursor: pointer;
-  }
-}
-
-.clecm-button {
-  background: orange;
-  border: 0;
-  height: 0;
-  padding: 0;
-  position: absolute;
-  width: 0;
-  &:hover {
-    &~ .clecm-info {
-      opacity: 1;
-    }
-  }
-  &:focus {
-    outline: none;
-    &~ .clecm-info {
-      opacity: 0;
-      }
-    &~ .clecm-success {
-    opacity: 1;
-    }
-  }
-}
-
-.clecm-message {
-  background-color: $tertiary-color;
-  border-radius: 0.2rem;
-  color: white;
-  font-size: 0.75rem;
-  padding: 0.15rem 0.3rem;
-  position: absolute;
-  top: -3rem;
-  transition: 0.2s;
-  width: max-content; // Prevents line breaks
-}
-
-.clecm-message.clecm-info {
-  left: 11rem;
-  opacity: 0;
-}
-
-.clecm-reference-point {
-  position: relative;
-}
-
-.clecm-message.clecm-success {
-  left: 12rem;
-  opacity: 0;
+.contact-link-github,
+.contact-link-linkedin,
+.contact-link-resume {
+  margin: 0 1rem;
 }
 
 #contact-message {
   width: 100%;
+}
+
+#contact-name-input {
+  height: 2.75rem;
 }
 
 .floating-placeholder {
