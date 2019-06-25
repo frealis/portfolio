@@ -37,10 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Contact links (resume, email, GitHub, LinkedIn)
   const email = 'mhh129@gmail.com';
-  document.querySelector('.contact-link-resume').addEventListener('click', () => {
-    // window.open('/../img/resume_webdev_2.pdf', '_blank');
-    // window.open('../img/resume_webdev_2.pdf');
-  });
   document.querySelector('.contact-link-email').addEventListener('click', () => {
     window.open(`mailto:${email}`);
   });
@@ -54,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.clec-button').focus()
   });
   document.querySelector('.contact-link-github').addEventListener('click', () => {
-    window.open('https://github.com/frealis', '_blank');
+    window.open('https://github.com/matthigg', '_blank');
   });
   document.querySelector('.contact-link-linkedin').addEventListener('click', () => {
     window.open('https://www.linkedin.com/in/matt-higginbotham', '_blank')

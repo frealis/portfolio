@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import { ReactComponent as IconCopy } from '../img/custom-copy.svg';
 import { ReactComponent as IconEmail } from '../img/custom-email-043546.svg';
 import { ReactComponent as IconGitHub } from '../img/GitHub-043546.svg';
-import { ReactComponent as IconHackerRank } from '../img/HackerRank_logo.svg';
 import { ReactComponent as IconLinkedIn } from '../img/LinkedIn-043546.svg';
 import { ReactComponent as IconResume } from '../img/custom-resume-043546.svg';
-// import { ReactComponent as ResumePDF } from '../img/resume_webdev_2.pdf';
-import ResumePDF from '../img/resume_webdev_2.pdf';
+import ResumePDF from '../img/Matt_Higginbotham_Resume.pdf';
 
 class Contact extends Component {
   render() {
