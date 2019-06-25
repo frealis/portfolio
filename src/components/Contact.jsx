@@ -5,6 +5,8 @@ import { ReactComponent as IconGitHub } from '../img/GitHub-043546.svg';
 import { ReactComponent as IconHackerRank } from '../img/HackerRank_logo.svg';
 import { ReactComponent as IconLinkedIn } from '../img/LinkedIn-043546.svg';
 import { ReactComponent as IconResume } from '../img/custom-resume-043546.svg';
+// import { ReactComponent as ResumePDF } from '../img/resume_webdev_2.pdf';
+import ResumePDF from '../img/resume_webdev_2.pdf';
 
 class Contact extends Component {
   render() {
@@ -59,9 +61,11 @@ class Contact extends Component {
           <div className="row">
             <div className="col-md-1"></div>
             <div className="col-md-10 d-flex justify-content-center">
-              <div className="d-flex align-items-center contact-link contact-link-resume">
-                <IconResume className="contact-icon" /> Resumé
-              </div>
+              <a className="contact-a" href={ ResumePDF } target="_blank">
+                <div className="d-flex align-items-center contact-link contact-link-resume">
+                  <IconResume className="contact-icon" /> <span className="contact-a">Resumé</span>
+                </div>
+              </a>
               <div className="d-flex align-items-center contact-link contact-link-linkedin">
                 <IconLinkedIn className="contact-icon" /> LinkedIn
               </div>

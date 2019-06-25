@@ -210,6 +210,11 @@ figcaption {
 .clec-reference-point {
   position: relative; }
 
+.contact-a {
+  color: none; }
+  .contact-a:hover {
+    text-decoration: none; }
+
 .contact-button-and-email-links {
   padding: 0.5rem 0; }
 
