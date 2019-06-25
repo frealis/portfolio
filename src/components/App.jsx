@@ -14,7 +14,7 @@ import IconGitHub from '../img/GitHub-043546.svg';
 import IconHackerRank from '../img/HackerRank_logo.svg';
 import IconHeroku from '../img/heroku-icon.svg';
 import IconHTML from '../img/custom-html5.svg';
-import IconJavaScript from '../img/custom-javascript.svg';
+import IconJavaScript from '../img/javascript-icon2.svg';
 import IconLinkedIn from '../img/LinkedIn-043546.svg';
 import IconPostgres from '../img/postgresql-icon.svg';
 import IconPython from '../img/custom-python.svg';
