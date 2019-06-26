@@ -1,5 +1,4 @@
-// Add event listeners to icons that handle taking users to an
-// external link
+// Add event listeners to icons that handle taking users to an external link
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -8,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open('https://www.rivercityprowash.com', '_blank');
   });
   document.querySelector('.ext-link-rcpw-github').addEventListener('click', () => {
-    window.open('https://github.com/frealis/River-City-Pro-Wash', '_blank');
+    window.open('https://github.com/matthigg/River-City-Pro-Wash', '_blank');
   });
 
   // Pinocchio's Pizza & Subs
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open('https://cs50-pinocchios-pizza.herokuapp.com/', '_blank');
   });
   document.querySelector('.ext-link-pinocchios-github').addEventListener('click', () => {
-    window.open('https://github.com/frealis/Pinocchios-Pizza-And-Subs', '_blank');
+    window.open('https://github.com/matthigg/Pinocchios-Pizza-And-Subs', '_blank');
   });
 
   // microChat
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open('https://cs50-microchat.herokuapp.com/', '_blank');
   });
   document.querySelector('.ext-link-microchat-github').addEventListener('click', () => {
-    window.open('https://github.com/frealis/micro-Chat', '_blank');
+    window.open('https://github.com/matthigg/micro-Chat', '_blank');
   });
 
   // Book Reviews w/Goodreads
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open('https://cs50-book-review-w-goodreads.herokuapp.com/', '_blank');
   });
   document.querySelector('.ext-link-bookreviews-github').addEventListener('click', () => {
-    window.open('https://github.com/frealis/Book-Reviews-with-Goodreads', '_blank');
+    window.open('https://github.com/matthigg/Book-Reviews-with-Goodreads', '_blank');
   });
 
   // Contact links (resume, email, GitHub, LinkedIn)

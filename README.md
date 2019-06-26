@@ -1,27 +1,33 @@
-This is a portfolio website located at https://www.matthigg.com.
+This is a portfolio website located at https://www.matthigg.com and hosted on GitHub pages. It uses an npm module called 'gh-pages' that creates a separate branch, also called 'gh-pages', that is used to contain the files that will be hosted. To install gh-pages:
+
+  $ npm i gh-pages
+
+# Local Development
+
+To run the website locally, run:
+
+  $ npm start
+
+  ... which will automatically open a new tab and display the page at http://localhost:3000.
 
 To start the sass-watching script in package.json, run:
 
   $ npm run sass
 
+# Production
+
+To deploy this web portfolio, run the custom 'deploy' script in package.json, "deploy": "gh-pages -d dist", via:
+
+  $ npm run deploy
+
 Todo:
   - fix bug with rapidly clicking hamburger icon
 
-## Boiler Plate create-react-app README below this point
+## --- Boiler Plate create-react-app README below this point ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
 ### `npm test`
 
