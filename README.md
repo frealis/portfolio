@@ -20,6 +20,10 @@ To deploy this web portfolio, run the custom 'deploy' script in package.json, "d
 
   $ npm run deploy
 
+  ... if there is some error, like if you try to deploy the site via https and accidentally enter incorrect information at the username/password prompt and now there is a 'gh-pages' branch that exists and prevents you from running the "deploy" script, you can start over by running this:
+
+  $ rm -rf node_modules/gh-pages/.cache
+
 Todo:
   - fix bug with rapidly clicking hamburger icon
 
