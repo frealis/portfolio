@@ -11,11 +11,11 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "deploy": "gh-pages -d build",
-    "start": "sleep 1 && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build",
     "sass": "node-sass -w src/scss/ -o src/css/ --recursive"
   },
   "eslintConfig": {
