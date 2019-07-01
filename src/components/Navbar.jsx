@@ -5,7 +5,7 @@ class Navbar extends Component {
     return (
       <React.Fragment>
         <nav className="navbar navbar-expand-md fixed-top">
-          <span className="navbar-brand">MH</span>
+          <span className="navbar-brand">Matt Higginbotham</span>
           <button 
             className="navbar-toggler" 
             type="button" 
