@@ -44,7 +44,7 @@ class Contact extends Component {
                       {/* The abbreviation 'clec' stands for 'copy-link-email-copy' */}
                       <IconCopy className="clec" />
                     </button>
-                    <span className="clec-message clec-info">Click to copy</span>
+                    <span className="clec-message clec-info">Click to Copy</span>
                     <span className="clec-message clec-success">Copied!</span>
                   </div>
                 </div>
