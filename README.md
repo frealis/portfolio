@@ -1,6 +1,4 @@
-This is a portfolio website located at https://www.matthigg.com and hosted on GitHub pages. It uses an npm module called 'gh-pages' that creates a separate branch, also called 'gh-pages', that is used to contain the files that will be hosted. To install gh-pages:
-
-  $ npm i gh-pages
+This is a portfolio website created using create-react-app, located at https://www.matthigg.com and hosted on GitHub pages.
 
 # Local Development
 
@@ -8,15 +6,37 @@ To run the website locally, run:
 
   $ npm start
 
-  ... which will automatically open a new tab and display the page at http://localhost:3000.
+  ... which will automatically open a new tab and display the page at http://localhost:3000 (note: if this was cloned from GitHub, you may have to run `npm install` in order to get the node_modules folder, since it is usually added to .gitignore).
 
-To start the sass-watching script in package.json, run:
+To add Sass: install typescript & node-sass, add the script to package.json, and run the sass-watching script from the command line:
+
+  $ npm i typescript
+  $ npm i node-sass
+
+-- package.json
+  ...
+  "scripts": {
+    ...
+    "sass": "node-sass -w src/scss/ -o src/css/ --recursive"
+  },
+  ...
 
   $ npm run sass
 
 # Production
 
-To deploy this web portfolio, run the custom 'deploy' script in package.json, "deploy": "gh-pages -d dist", via:
+This site is hosted on GitHub pages using an npm module called 'gh-pages' that creates a separate branch, also called 'gh-pages', that is used to contain the files that will be hosted on GitHub. To install gh-pages:
+
+  $ npm i gh-pages
+
+To deploy this web portfolio to GitHub pages, add a custom 'deploy' script to package.json & deploy it from the command line:
+-- package.json
+  ...
+  "scripts": {
+    ...
+    "deploy": "npm run build && gh-pages -d build"
+  },
+  ...
 
   $ npm run deploy
 
