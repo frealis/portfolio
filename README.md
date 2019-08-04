@@ -2,13 +2,13 @@ This is a portfolio website created using create-react-app, located at https://w
 
 # Local Development
 
-To run the website locally, run:
+- To run the website locally, run:
 
   $ npm start
 
   ... which will automatically open a new tab and display the page at http://localhost:3000 (note: if this was cloned from GitHub, you may have to run `npm install` in order to get the node_modules folder, since it is usually added to .gitignore).
 
-To add Sass: install typescript & node-sass, add the script to package.json, and run the sass-watching script from the command line:
+- To add Sass: install typescript & node-sass, add the script to package.json, and run the sass-watching script from the command line:
 
   $ npm i typescript
   $ npm i node-sass
@@ -25,11 +25,15 @@ To add Sass: install typescript & node-sass, add the script to package.json, and
 
 # Production
 
-This site is hosted on GitHub pages using an npm module called 'gh-pages' that creates a separate branch, also called 'gh-pages', that is used to contain the files that will be hosted on GitHub. To install gh-pages:
+- This site is hosted on GitHub pages using an npm module called 'gh-pages' that creates a separate branch, also called 'gh-pages', that is used to contain the files that will be hosted on GitHub. To install gh-pages:
 
   $ npm i gh-pages
 
-To deploy this web portfolio to GitHub pages, add a custom 'deploy' script to package.json & deploy it from the command line:
+  ... note (8/4/2019) gh-pages v2.1 throws an error that reads: ""file" argument must be a non-empty string...", downgrade to v2.0 via:
+
+    $  npm install gh-pages@2.0 --save-dev
+
+- To deploy this web portfolio to GitHub pages, add a custom 'deploy' script to package.json & deploy it from the command line:
 -- package.json
   ...
   "scripts": {
@@ -40,14 +44,18 @@ To deploy this web portfolio to GitHub pages, add a custom 'deploy' script to pa
 
   $ npm run deploy
 
-  ... if there is some error, like if you try to deploy the site via https and accidentally enter incorrect information at the username/password prompt and now there is a 'gh-pages' branch that exists and prevents you from running the "deploy" script, you can start over by running this:
+  1. https://www.npmjs.com/package/gh-pages
+  2. https://stackoverflow.com/questions/57331878/gh-pages-d-build-gives-error-file-argument-must-be-a-non-empty-string
+
+# Production (Troubleshooting)
+
+- If you try to deploy the site via https and accidentally enter incorrect information at the username/password prompt and now there is a 'gh-pages' branch that exists and prevents you from running the "deploy" script, you can start over by running this:
 
   $ rm -rf node_modules/gh-pages/.cache
 
-  1. https://www.npmjs.com/package/gh-pages
+## Todo
 
-Todo:
-  - fix bug with rapidly clicking hamburger icon
+- Fix bug with rapidly clicking hamburger icon
 
 ## --- Boiler Plate create-react-app README below this point ---
 
