@@ -44,6 +44,8 @@ To deploy this web portfolio to GitHub pages, add a custom 'deploy' script to pa
 
   $ rm -rf node_modules/gh-pages/.cache
 
+  1. https://www.npmjs.com/package/gh-pages
+
 Todo:
   - fix bug with rapidly clicking hamburger icon
 
