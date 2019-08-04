@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.64091f56.chunk.css",
+    "main.js": "/portfolio/static/js/main.04c23dc6.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.04c23dc6.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
+    "static/js/2.52a6492a.chunk.js": "/portfolio/static/js/2.52a6492a.chunk.js",
+    "static/js/2.52a6492a.chunk.js.map": "/portfolio/static/js/2.52a6492a.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.b3127ac7da68c61d32ba966820f6c473.js": "/portfolio/precache-manifest.b3127ac7da68c61d32ba966820f6c473.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.64091f56.chunk.css.map": "/portfolio/static/css/main.64091f56.chunk.css.map",
+    "static/media/GitHub-043546.17d683be.svg": "/portfolio/static/media/GitHub-043546.17d683be.svg",
+    "static/media/LinkedIn-043546.9d77b295.svg": "/portfolio/static/media/LinkedIn-043546.9d77b295.svg",
+    "static/media/Matt_Higginbotham_Resume.pdf": "/portfolio/static/media/Matt_Higginbotham_Resume.a3dc93f6.pdf",
+    "static/media/custom-copy.a1050eeb.svg": "/portfolio/static/media/custom-copy.a1050eeb.svg",
+    "static/media/custom-email-043546.13a3903e.svg": "/portfolio/static/media/custom-email-043546.13a3903e.svg",
+    "static/media/custom-resume-043546.1c130eca.svg": "/portfolio/static/media/custom-resume-043546.1c130eca.svg",
+    "static/media/thumbnail-book-reviews.svg": "/portfolio/static/media/thumbnail-book-reviews.07075616.svg",
+    "static/media/thumbnail-microchat.svg": "/portfolio/static/media/thumbnail-microchat.553171ad.svg",
+    "static/media/thumbnail-pinocchios.svg": "/portfolio/static/media/thumbnail-pinocchios.d257c358.svg",
+    "static/media/thumbnail-rcpw.svg": "/portfolio/static/media/thumbnail-rcpw.da07fdac.svg"
+  }
+}
