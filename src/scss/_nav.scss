@@ -1,0 +1,19 @@
+nav {
+  align-items: center;
+  display: flex;
+  background-color: $secondary-color;
+  height: 10vh;
+  padding: 1rem 0;
+  width: 100%;
+  &.nav-fixed {
+    color: $tertiary-color;
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    & .fixed {
+      opacity: 1;
+    }
+  }
+  &.nav-fixed-vanish { display: none; }
+  &.nav-net-vanish { opacity: 0; }
+}
