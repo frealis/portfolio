@@ -102,10 +102,10 @@
   .scraps .scrap.display-none {
     display: none; }
 
-.scraps a {
+a {
   cursor: pointer;
   text-decoration: none; }
-  .scraps a:hover {
+  a:hover {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-name: animation-chromatophore-deconstructed;

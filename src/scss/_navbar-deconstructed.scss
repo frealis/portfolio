@@ -14,14 +14,4 @@
     & .link-projects { position: static; }
     &.display-none { display: none; }
   }
-  & a {
-    cursor: pointer;
-    text-decoration: none;
-    &:hover {
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
-      animation-name: animation-chromatophore-deconstructed;
-      animation-timing-function: linear;
-    }
-  }
 }

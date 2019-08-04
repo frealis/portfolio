@@ -8,6 +8,17 @@
 // @import 'contact';
 // @import 'footer';
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-name: animation-chromatophore-deconstructed;
+    animation-timing-function: linear;
+  }
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
