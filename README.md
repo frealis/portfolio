@@ -44,6 +44,12 @@ This is a portfolio website created using create-react-app, located at https://w
 
   $ npm run deploy
 
+- After successful deployment to GitHub Pages using the gh-pages module, the gh-pages branch on GitHub will contain whatever was contained within the build/ folder in the local root directory. It's important that the index.html file appears in the root directory of the gh-pages branch on GitHub.
+
+- To make sure that the hosted site at GitHub Pages is being built from the correct branch, check:
+
+  > Your repositories > (repository) > Settings > GitHub Pages > Source
+  
   1. https://www.npmjs.com/package/gh-pages
   2. https://stackoverflow.com/questions/57331878/gh-pages-d-build-gives-error-file-argument-must-be-a-non-empty-string
 
