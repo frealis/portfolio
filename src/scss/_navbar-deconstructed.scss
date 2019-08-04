@@ -1,0 +1,27 @@
+// Navbar Deconstructed
+.scraps {
+  & .scrap {
+    color: $tertiary-color;
+    font-weight: 600;
+    mix-blend-mode: difference;
+    padding: 0 1rem;
+    position: absolute;
+    z-index: 2;
+    &.brand { font-size: 1.5rem; left: 5vw; top: 20vh; }
+    & .brand-sub { display: block; font-size: 1rem; left: 1rem; position: relative; }
+    &.links { left: 50vw; top: 50vh; }
+    & .link-contact { position: static; }
+    & .link-projects { position: static; }
+    &.display-none { display: none; }
+  }
+  & a {
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-name: animation-chromatophore-deconstructed;
+      animation-timing-function: linear;
+    }
+  }
+}

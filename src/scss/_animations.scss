@@ -1,0 +1,72 @@
+// Animations
+@keyframes animation-asteroid-blocks {
+  0% { transform: translateZ(-1px); }
+  25% { transform: translateZ(1px); }
+  100% { transform: translateZ(-100px); }
+}
+
+.animation-asteroid-blocks {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: animation-asteroid-blocks;
+}
+
+@keyframes animation-asteroid-text {
+  0% { transform: scale(0.8); }
+  85% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.animation-asteroid-text {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: animation-asteroid-text;
+}
+
+@keyframes animation-container-zoom {
+  0% { perspective: 1px; }
+  100% { perspective: 10px; }
+}
+
+.animation-container-zoom {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: animation-container-zoom;
+}
+
+@keyframes animation-chromatophore {
+  0% { 
+    color: $primary-color; 
+    text-shadow: 
+      0 30px $quinary-color, 
+      0 -30px $quarternary-color;
+  }
+  25% { color: $secondary-color; }
+  50% { color: $quinary-color; }
+  75% { color: $quarternary-color; }
+  100% { color: $tertiary-color; }
+}
+
+.animation-chromatophore {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: animation-chromatophore;
+}
+
+@keyframes animation-chromatophore-deconstructed {
+  0% { color: $primary-color; }
+  25% { color: $secondary-color; }
+  50% { 
+    color: $tertiary-color;
+    text-shadow: 
+      0 15px $quinary-color, 
+      0 -15px $quarternary-color;
+  }
+  75% { color: $quarternary-color; }
+  100% { 
+    color: $quinary-color;
+    text-shadow: 
+      0 30px rgba(255, 255, 255, 0), 
+      0 -30px rgba(255, 255, 255, 0);
+  }
+}
