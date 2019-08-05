@@ -26,9 +26,11 @@ a {
   top: -20vh;
 }
 
+body {
+  background-color: $quinary-color; // override Bootstrap setting
+}
+
 html {
-  // background-color: $quinary-color;
-  background-color: red;
   box-sizing: border-box;
   font-family: Kozuka Gothic Pr6N, Segoe UI, Arial, Verdana;
   overflow-x: hidden;

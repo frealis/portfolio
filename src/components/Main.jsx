@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+
+import Contact from '/.Contact'
 import LandingPage from './LandingPage'
 import NavbarNet from './NavbarNet'
 import NavbarTripwire from './NavbarTripwire'
@@ -19,6 +21,7 @@ class Main extends Component {
         <NavbarTripwire />
         <PageSpacer />
         <Projects />
+        <Contact />
       </main>
     )
   }

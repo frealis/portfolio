@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+
 import NavbarDeconstructed from './NavbarDeconstructed'
 import NavbarConstructedFixed from './NavbarConstructedFixed'
 import Main from './Main'
 
 // import IconAWS from '../img/aws.svg'
-// import IconBootstrap from '../img/bootstrap - symbol.svg'
+// import IconBootstrap from '../img/bootstrap-symbol.svg'
 // import IconCopy from '../img/custom-copy.svg'
 // import IconCSS from '../img/custom-css.svg'
 // import IconDjango from '../img/djangoproject-icon2.svg'
