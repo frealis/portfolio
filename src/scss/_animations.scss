@@ -23,15 +23,15 @@
   animation-name: animation-asteroid-text;
 }
 
-@keyframes animation-container-zoom {
+@keyframes animation-main-zoom {
   0% { perspective: 1px; }
   100% { perspective: 10px; }
 }
 
-.animation-container-zoom {
+.animation-main-zoom {
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-name: animation-container-zoom;
+  animation-name: animation-main-zoom;
 }
 
 @keyframes animation-chromatophore {

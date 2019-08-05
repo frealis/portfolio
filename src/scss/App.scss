@@ -33,7 +33,8 @@ body {
 html {
   box-sizing: border-box;
   font-family: Kozuka Gothic Pr6N, Segoe UI, Arial, Verdana;
-  overflow-x: hidden;
+  height: max-content;
+  overflow: hidden;
 }
 
 .main {  

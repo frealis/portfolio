@@ -81,7 +81,7 @@ shuffle(colors);
 
 // Specify 'n' number of blocks that will eventually be created, 
 // specify unit of measurement, create list to store block ID values
-const n = 16;
+const n = 11;
 const unit = 'px';
 const blockIDList = [];
 
@@ -188,7 +188,7 @@ for (let i = 0; i < n; i++) {
   block.dataset.width     = block_size;
   
   // Place the fibonacci background block into the DOM
-  // document.querySelector('.main').appendChild(block);
+  document.querySelector('.main').appendChild(block);
 }
 
 // ========== ANIMATIONS ==================================================

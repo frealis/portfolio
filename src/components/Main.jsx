@@ -20,6 +20,7 @@ class Main extends Component {
         <NavbarTripwire />
         <PageSpacer />
         <Projects />
+        <PageSpacer />
         <Contact />
       </main>
     )

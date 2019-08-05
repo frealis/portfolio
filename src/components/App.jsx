@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import NavbarDeconstructed from './NavbarDeconstructed'
 import NavbarConstructedFixed from './NavbarConstructedFixed'
 import Main from './Main'
+import Html from './Html'
 
 // import IconAWS from '../img/aws.svg'
 // import IconBootstrap from '../img/bootstrap-symbol.svg'
@@ -37,21 +38,14 @@ class App extends Component {
   //   }
   // }
 
-  // Load custom JavaScript
-  componentDidMount() {
-    // const script = document.createElement('script')
-    // script.src = '../js/custom.js'
-    // script.type = 'text/babel'
-    // console.log(script)
-    // document.body.appendChild(script)
-  }
-
   render() {
     return (
       <div className="App">
-        <NavbarDeconstructed />
+        <Html />
+
+        {/* <NavbarDeconstructed />
         <NavbarConstructedFixed />
-        <Main />
+        <Main /> */}
 
         {/* <ExternalJS /> */}
         {/* <Navbar toggleHamburger={ this.toggleHamburger } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } /> */}
