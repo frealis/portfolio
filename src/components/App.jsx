@@ -23,6 +23,7 @@ import Main from './Main'
 // import IconResume from '../img/custom-resume-043546.svg'
 // import IconSass from '../img/Sass_Logo_Color.svg'
 
+import { CustomJS } from '../js/custom'
 // import ExternalJS from '../js/external_links'
 
 class App extends Component {
@@ -36,6 +37,15 @@ class App extends Component {
   //   }
   // }
 
+  // Load custom JavaScript
+  componentDidMount() {
+    // const script = document.createElement('script')
+    // script.src = '../js/custom.js'
+    // script.type = 'text/babel'
+    // console.log(script)
+    // document.body.appendChild(script)
+  }
+
   render() {
     return (
       <div className="App">
@@ -43,7 +53,6 @@ class App extends Component {
         <NavbarConstructedFixed />
         <Main />
 
-        
         {/* <ExternalJS /> */}
         {/* <Navbar toggleHamburger={ this.toggleHamburger } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } /> */}
         {/* <Main IconAWS={ IconAWS } IconBootstrap={ IconBootstrap } IconCopy={ IconCopy } IconCSS={ IconCSS } IconDjango={ IconDjango } IconEmail={ IconEmail } IconFlask={ IconFlask } IconGitHub={ IconGitHub } IconHackerRank={ IconHackerRank } IconHeroku={ IconHeroku } IconHTML={ IconHTML } IconJavaScript={ IconJavaScript} IconLinkedIn={ IconLinkedIn } IconPostgres={ IconPostgres } IconPython={ IconPython } IconReact={ IconReact } IconResume={ IconResume } IconSass={ IconSass } /> */}

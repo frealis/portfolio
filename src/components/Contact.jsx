@@ -5,8 +5,8 @@ class Contact extends Component {
     return (
       <div>
         <a id="anchor-contact"></a>
-        <div class="page">
-          <h1 class="page-header">Contact</h1>
+        <div className="page">
+          <h1 className="page-header">Contact</h1>
         </div>
       </div>
     )
