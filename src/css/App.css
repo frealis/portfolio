@@ -76,6 +76,25 @@
     color: #1B969E;
     text-shadow: 0 30px rgba(255, 255, 255, 0), 0 -30px rgba(255, 255, 255, 0); } }
 
+nav {
+  align-items: center;
+  display: flex;
+  background-color: #FCFAED;
+  height: 10vh;
+  padding: 1rem 0;
+  width: 100%; }
+  nav.nav-fixed {
+    color: #043546;
+    position: absolute;
+    opacity: 1;
+    z-index: 1; }
+    nav.nav-fixed .fixed {
+      opacity: 1; }
+  nav.nav-fixed-vanish {
+    display: none; }
+  nav.nav-net-vanish {
+    opacity: 0; }
+
 .scraps .scrap {
   color: #043546;
   font-weight: 600;
@@ -102,8 +121,56 @@
   .scraps .scrap.display-none {
     display: none; }
 
+.scraps-collected .scrap-collected {
+  color: #043546;
+  font-weight: 600;
+  padding: 0 1rem;
+  position: absolute;
+  z-index: 2; }
+  .scraps-collected .scrap-collected.brand {
+    font-size: 1.5rem;
+    left: 5vw; }
+  .scraps-collected .scrap-collected .brand-sub {
+    display: block;
+    font-size: 1rem;
+    left: 1rem;
+    position: relative; }
+  .scraps-collected .scrap-collected.links {
+    left: 50vw; }
+  .scraps-collected .scrap-collected .link-contact {
+    color: #043546;
+    position: static; }
+  .scraps-collected .scrap-collected .link-projects {
+    color: #043546;
+    position: static; }
+  .scraps-collected .scrap-collected.display-none {
+    display: none; }
+
+.page-landing {
+  height: 80vh; }
+
+.page-spacer {
+  height: 100px; }
+
+.page {
+  background-color: #FCFAED;
+  height: 100vh;
+  position: relative;
+  z-index: 0; }
+  .page .page-header {
+    color: #043546;
+    font-weight: normal;
+    font-size: 3rem;
+    left: calc(1rem + 1vw);
+    position: absolute;
+    z-index: 3; }
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
 a {
-  cursor: pointer;
   text-decoration: none; }
   a:hover {
     animation-duration: 0.5s;
@@ -111,11 +178,22 @@ a {
     animation-name: animation-chromatophore-deconstructed;
     animation-timing-function: linear; }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  padding: 60px 0 0 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+#anchor-contact,
+#anchor-projects {
+  display: block;
+  position: relative;
+  top: -20vh; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+html {
+  background-color: red;
+  box-sizing: border-box;
+  font-family: Kozuka Gothic Pr6N, Segoe UI, Arial, Verdana;
+  overflow-x: hidden; }
+
+.main {
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  scroll-behavior: smooth; }

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
 import NavbarDeconstructed from './NavbarDeconstructed'
+import NavbarConstructedFixed from './NavbarConstructedFixed'
 import Main from './Main'
-import Footer from './Footer'
 
 // import IconAWS from '../img/aws.svg'
 // import IconBootstrap from '../img/bootstrap - symbol.svg'
@@ -26,9 +25,6 @@ import Footer from './Footer'
 // import ExternalJS from '../js/external_links'
 
 class App extends Component {
-  state = {
-
-  }
 
   // toggleHamburger = () => {
   //   let navbar_toggler = document.querySelector('.navbar-toggler')
@@ -43,6 +39,10 @@ class App extends Component {
     return (
       <div className="App">
         <NavbarDeconstructed />
+        <NavbarConstructedFixed />
+        <Main />
+
+        
         {/* <ExternalJS /> */}
         {/* <Navbar toggleHamburger={ this.toggleHamburger } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } /> */}
         {/* <Main IconAWS={ IconAWS } IconBootstrap={ IconBootstrap } IconCopy={ IconCopy } IconCSS={ IconCSS } IconDjango={ IconDjango } IconEmail={ IconEmail } IconFlask={ IconFlask } IconGitHub={ IconGitHub } IconHackerRank={ IconHackerRank } IconHeroku={ IconHeroku } IconHTML={ IconHTML } IconJavaScript={ IconJavaScript} IconLinkedIn={ IconLinkedIn } IconPostgres={ IconPostgres } IconPython={ IconPython } IconReact={ IconReact } IconResume={ IconResume } IconSass={ IconSass } /> */}

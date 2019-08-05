@@ -1,0 +1,22 @@
+.page-landing {
+  height: 80vh;
+}
+
+.page-spacer {
+  height: 100px;
+}
+
+.page {
+  background-color: $secondary-color;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  & .page-header {    
+    color: $tertiary-color;
+    font-weight: normal;
+    font-size: 3rem;
+    left: calc(1rem + 1vw);
+    position: absolute;
+    z-index: 3;
+  }
+}
