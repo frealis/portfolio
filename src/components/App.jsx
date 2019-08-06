@@ -47,7 +47,6 @@ class App extends Component {
       scrap_links_loc: 0,
 
       // Fibonacci blocks
-      blockIDList: [],
       colors: [],
       fibSeq: [],
       n: 11,
@@ -63,7 +62,7 @@ class App extends Component {
     // Add link locations to 'Projects' and 'Contact' navbar links
     addLinkHrefs()
 
-    this.setState({
+    this.setState({ 
 
       // Navbar net & scraps
       nav_net_loc: getNavNetScrapsLocations().nav_net_loc,
@@ -72,7 +71,6 @@ class App extends Component {
       scrap_links_loc: getNavNetScrapsLocations().scrap_links_loc,
 
       // Fibonacci blocks
-      blockIDList: [],
       colors: colorsShuffled(),
       fibSeq: fibSequence(this.state.n),
     }, () => {
