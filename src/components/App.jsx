@@ -23,7 +23,7 @@ import Main from './Main'
 // import IconResume from '../img/custom-resume-043546.svg'
 // import IconSass from '../img/Sass_Logo_Color.svg'
 
-import { CustomJS } from '../js/custom'
+import CustomJS from '../js/custom'
 // import ExternalJS from '../js/external_links'
 
 class App extends Component {
@@ -37,9 +37,24 @@ class App extends Component {
   //   }
   // }
 
+  // Assign event handlers to links
+  // const link_contact_nodelist = document.querySelectorAll('.link-contact')
+  // link_contact_nodelist.forEach((link_contact) => {
+  //   link_contact.addEventListener('click', () => {
+  //     window.location.href = '#anchor-contact'
+  //   })
+  // })
+  // const link_projects_nodelist = document.querySelectorAll('.link-projects')
+  // link_projects_nodelist.forEach((link_projects) => {
+  //   link_projects.addEventListener('click', () => {
+  //     window.location.href = '#anchor-projects'
+  //   })
+  // })
+
   render() {
     return (
       <div className="App">
+        {/* <CustomJS /> */}
         <NavbarDeconstructed />
         <NavbarConstructedFixed />
         <Main />

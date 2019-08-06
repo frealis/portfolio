@@ -14,7 +14,7 @@ class Projects extends Component {
 
     return (
       <div>
-        <a id="anchor-projects"></a>
+        <span id="anchor-projects"></span>
         <div className="page">
           <h1 className="page-header">Projects</h1>
         </div>

@@ -4,7 +4,7 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <a id="anchor-contact"></a>
+        <span id="anchor-contact"></span>
         <div className="page">
           <h1 className="page-header">Contact</h1>
         </div>
