@@ -1,5 +1,7 @@
 .link-contact,
 .link-projects {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   &:hover {
     animation-duration: 0.5s;
@@ -7,8 +9,11 @@
     animation-name: animation-chromatophore-deconstructed;
     animation-timing-function: linear;
   }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }
-
 
 nav {
   align-items: center;

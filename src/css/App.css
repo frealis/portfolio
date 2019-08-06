@@ -78,6 +78,8 @@
 
 .link-contact,
 .link-projects {
+  background-color: transparent;
+  border: none;
   cursor: pointer; }
   .link-contact:hover,
   .link-projects:hover {
@@ -85,6 +87,10 @@
     animation-fill-mode: forwards;
     animation-name: animation-chromatophore-deconstructed;
     animation-timing-function: linear; }
+  .link-contact:focus,
+  .link-projects:focus {
+    outline: none;
+    box-shadow: none; }
 
 nav {
   align-items: center;

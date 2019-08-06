@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import NavbarDeconstructed from './NavbarDeconstructed'
 import NavbarConstructedFixed from './NavbarConstructedFixed'
 import Main from './Main'
-import Html from './Html'
 
 // import IconAWS from '../img/aws.svg'
 // import IconBootstrap from '../img/bootstrap-symbol.svg'
@@ -41,11 +40,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Html />
-
-        {/* <NavbarDeconstructed />
+        <NavbarDeconstructed />
         <NavbarConstructedFixed />
-        <Main /> */}
+        <Main />
 
         {/* <ExternalJS /> */}
         {/* <Navbar toggleHamburger={ this.toggleHamburger } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } /> */}

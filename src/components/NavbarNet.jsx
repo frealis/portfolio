@@ -10,8 +10,8 @@ class NavbarNet extends Component {
           <span className="brand-sub">Web Developer</span>
         </div>
         <div className="scrap-collected net links display-none">
-          <a className="scrap-collected net link-projects">Projects</a>
-          <a className="scrap-collected net link-contact">Contact</a>
+          <button className="scrap-collected net link-projects">Projects</button>
+          <button className="scrap-collected net link-contact">Contact</button>
         </div>
       </nav>
     )
