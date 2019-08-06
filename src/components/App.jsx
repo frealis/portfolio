@@ -29,6 +29,7 @@ import Main from './Main'
 // Import custom JavaScript functions
 import { addLinkHrefs } from '../js/add-link-hrefs'
 import { getNavNetScrapsLocations } from '../js/get-nav-net-scraps-locations'
+import { handleScroll } from '../js/handle-scroll'
 
 class App extends Component {
   constructor(props) {
@@ -36,23 +37,41 @@ class App extends Component {
 
     this.state = {
       nav_net_loc: 0,
+      nav_tripwire_loc: 0,
       scrap_brand_loc: 0,
       scrap_links_loc: 0,
     }
+
+    this.handleScroll = handleScroll.bind(this)
   }
 
   componentDidMount() {
+
+    // Add link locations to 'Projects' and 'Contact' navbar links
     addLinkHrefs()
+
+    // Handle scrolling, navbar net, & scraps (*.setState() is asynchronous, so
+    // it's better to attach the scroll event listener -after- the required
+    // variables have been set).
     this.setState({
       nav_net_loc: getNavNetScrapsLocations().nav_net_loc,
+      nav_tripwire_loc: getNavNetScrapsLocations().nav_tripwire_loc,
       scrap_brand_loc: getNavNetScrapsLocations().scrap_brand_loc,
       scrap_links_loc: getNavNetScrapsLocations().scrap_links_loc,
+    }, () => {
+      const main = document.querySelector('.main')
+      document.querySelector('.main').addEventListener('scroll', () => {
+        this.handleScroll(main)
+      })
     })
+
+    
+
   }
 
-  componentWillUnmount() {
-
-  }
+  // componentWillUnmount() {
+  //   document.querySelector('.main').removeEventListener('scroll', handleScroll)
+  // }
 
   render() {
     return (
