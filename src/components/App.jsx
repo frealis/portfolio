@@ -31,20 +31,31 @@ import { addLinkHrefs } from '../js/add-link-hrefs'
 import { getNavNetScrapsLocations } from '../js/get-nav-net-scraps-locations'
 import { handleScroll } from '../js/handle-scroll'
 import { colorsShuffled } from '../js/colors-shuffled'
+import { fibSequence } from '../js/fib-sequence'
+import { fibBlocks } from '../js/fib-blocks'
 
 class App extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      colors_shuffled: [],
+
+      // Nav net & scraps
       nav_net_loc: 0,
       nav_tripwire_loc: 0,
       scrap_brand_loc: 0,
       scrap_links_loc: 0,
+
+      // Fibonacci blocks
+      colors: [],
+      n: 11,
+      unit: 'px',
+      blockIDList: [],
+      fibSeq: [],
     }
 
     this.handleScroll = handleScroll.bind(this)
+    this.fibBlocks = fibBlocks.bind(this)
   }
 
   componentDidMount() {
@@ -67,13 +78,16 @@ class App extends Component {
       })
     })
 
-    // Get an array of shuffled colors
+    // Get an array of shuffled colors, create a fibonacci sequence from 1 to
+    // this.state.n, 
     this.setState({
-      colors_shuffled: colorsShuffled(),
+      colors: colorsShuffled(),
+      fibSeq: fibSequence(this.state.n),
     }, () => {
-      console.log(this.state.colors_shuffled)
+      let {n, fibSeq, unit, blockIDList, colors} = this.state
+      console.log(n, fibSeq, unit, blockIDList, colors)
+      fibBlocks(n, fibSeq, unit, blockIDList, colors)
     })
-    
   }
 
   // componentWillUnmount() {
