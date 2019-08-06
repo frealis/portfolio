@@ -33,8 +33,10 @@ This is a portfolio website created using create-react-app, located at https://w
 
     $  npm install gh-pages@2.0 --save-dev
 
-- To deploy this web portfolio to GitHub pages, add a custom 'deploy' script to package.json & deploy it from the command line:
+- To deploy this web portfolio to GitHub pages, add a "homepage" key:value pair to package.json, add a custom 'deploy' script to package.json, & then deploy it from the command line:
 -- package.json
+  ...
+  "homepage": "https://<username>.github.io/<repository name>/",
   ...
   "scripts": {
     ...
@@ -44,11 +46,25 @@ This is a portfolio website created using create-react-app, located at https://w
 
   $ npm run deploy
 
+  ... note that the "homepage" key:value pair needs to represent whatever URL points to the hosted GitHub site.
+
 - After successful deployment to GitHub Pages using the gh-pages module, the gh-pages branch on GitHub will contain whatever was contained within the build/ folder in the local root directory. It's important that the index.html file appears in the root directory of the gh-pages branch on GitHub.
 
 - To make sure that the hosted site at GitHub Pages is being built from the correct branch, check:
 
   > Your repositories > (repository) > Settings > GitHub Pages > Source
+
+- If the site has a custom domain name, you can specify the domain name here:
+
+  > Your repositories > (repository) > Settings > GitHub Pages > Custom domain
+
+  ... note that specifying a domain name in the GitHub Pages settings console creates a CNAME file in the root directory of the gh-pages branch. Each time the gh-pages branch is updated, it will remove this CNAME file and effectively reset this setting, which then prevents the custom domain name from working correctly. To fix this, you have to manually update the domain name after each update/push, or include a CNAME file in your local production root directory that gets pushed up by default.
+
+  ... also, don't forget to update the "homepage" key:value pair in package.json to reflect the new custom domain name:
+  -- package.json
+    ...
+    "homepage": "https://<custom domain name>",
+    ...
   
   1. https://www.npmjs.com/package/gh-pages
   2. https://stackoverflow.com/questions/57331878/gh-pages-d-build-gives-error-file-argument-must-be-a-non-empty-string
