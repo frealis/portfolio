@@ -203,8 +203,14 @@ html {
 .main {
   height: 100vh;
   overflow-x: hidden;
+<<<<<<< HEAD
   overflow-y: scroll;
   perspective: 1px;
   position: relative;
   scroll-behavior: smooth;
   z-index: 0; }
+=======
+  overflow-y: auto;
+  perspective: 1px;
+  scroll-behavior: smooth; }
+>>>>>>> 9b2705355b1a18a437183e8d8e061234e57a9e66
