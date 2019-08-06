@@ -5,11 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Assign event handlers to links
 const link_contact_nodelist = document.querySelectorAll('.link-contact');
 link_contact_nodelist.forEach((link_contact) => {
-  link_contact.href = '#anchor-contact';
+  console.log(link_contact)
+  // link_contact.location.href = '#anchor-contact';
 })
 const link_projects_nodelist = document.querySelectorAll('.link-projects');
 link_projects_nodelist.forEach((link_projects) => {
-  link_projects.href = '#anchor-projects';
+  // link_projects.location.href = '#anchor-projects';
 })
 
 // ========== NAVBAR NET & SCRAPS ============================================

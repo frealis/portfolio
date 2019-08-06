@@ -10,8 +10,8 @@ class NavbarDeconstructed extends Component {
           <span className="brand-sub">Web Developer</span>
         </div>
         <div className="scrap free links">
-          <a className="scrap free link-projects">Projects</a>
-          <a className="scrap free link-contact">Contact</a>
+          <button className="scrap free link-projects">Projects</button>
+          <button className="scrap free link-contact">Contact</button>
         </div>
       </div>
     )
