@@ -58,7 +58,7 @@ This is a portfolio website created using create-react-app, located at https://w
 
   > Your repositories > (repository) > Settings > GitHub Pages > Custom domain
 
-  ... note that specifying a domain name in the GitHub Pages settings console creates a CNAME file in the root directory of the gh-pages branch. Each time the gh-pages branch is updated, it will remove this CNAME file and effectively reset this setting, which then prevents the custom domain name from working correctly. To fix this, you have to manually update the domain name after each update/push, or include a CNAME file in your local production root directory that gets pushed up by default.
+  ... note that specifying a domain name in the GitHub Pages settings console creates a CNAME file in the root directory of the gh-pages branch. Each time the gh-pages branch is updated, it will remove this CNAME file and effectively reset this setting, which then prevents the custom domain name from working correctly. To fix this, you have to manually update the domain name after each update/push, or include a CNAME file in your local public/ directory (anything in a local public/ directory gets pushed to its branch's root directory on GitHub).
 
   ... also, don't forget to update the "homepage" key:value pair in package.json to reflect the new custom domain name:
   -- package.json
