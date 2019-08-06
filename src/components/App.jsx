@@ -47,11 +47,11 @@ class App extends Component {
       scrap_links_loc: 0,
 
       // Fibonacci blocks
+      blockIDList: [],
       colors: [],
+      fibSeq: [],
       n: 11,
       unit: 'px',
-      blockIDList: [],
-      fibSeq: [],
     }
 
     this.handleScroll = handleScroll.bind(this)
@@ -63,30 +63,29 @@ class App extends Component {
     // Add link locations to 'Projects' and 'Contact' navbar links
     addLinkHrefs()
 
-    // Handle scrolling, navbar net, & scraps (*.setState() is asynchronous, so
-    // it's better to attach the scroll event listener -after- the required
-    // variables have been set).
     this.setState({
+
+      // Navbar net & scraps
       nav_net_loc: getNavNetScrapsLocations().nav_net_loc,
       nav_tripwire_loc: getNavNetScrapsLocations().nav_tripwire_loc,
       scrap_brand_loc: getNavNetScrapsLocations().scrap_brand_loc,
       scrap_links_loc: getNavNetScrapsLocations().scrap_links_loc,
+
+      // Fibonacci blocks
+      blockIDList: [],
+      colors: colorsShuffled(),
+      fibSeq: fibSequence(this.state.n),
     }, () => {
+
+      // Navbar net & scraps
       const main = document.querySelector('.main')
       document.querySelector('.main').addEventListener('scroll', () => {
         this.handleScroll(main)
       })
-    })
 
-    // Get an array of shuffled colors, create a fibonacci sequence from 1 to
-    // this.state.n, 
-    this.setState({
-      colors: colorsShuffled(),
-      fibSeq: fibSequence(this.state.n),
-    }, () => {
-      let {n, fibSeq, unit, blockIDList, colors} = this.state
-      console.log(n, fibSeq, unit, blockIDList, colors)
-      fibBlocks(n, fibSeq, unit, blockIDList, colors)
+      // Fibonacci blocks
+      let {n, fibSeq, unit, colors} = this.state
+      this.fibBlocks(n, fibSeq, unit, colors)
     })
   }
 

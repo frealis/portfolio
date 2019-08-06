@@ -1,6 +1,6 @@
 // Create 'n' number of blocks
 
-export function fibBlocks(n, fibSeq, unit, blockIDList, colors) {
+export function fibBlocks(n, fibSeq, unit, colors) {
   for (let i = 0; i < n; i++) {
     const block = document.createElement('block')
     const factor = 40
@@ -67,7 +67,6 @@ export function fibBlocks(n, fibSeq, unit, blockIDList, colors) {
     
     // Create a unique ID value for each block
     const blockID = 'blockID' + i
-    blockIDList.push(blockID)
     
     // Set block properties
     block.classList.add('background-fibonacci-block')
@@ -83,8 +82,6 @@ export function fibBlocks(n, fibSeq, unit, blockIDList, colors) {
     // Create two sets of sizes for each block, scattered and regular sizes
     block.style.height      = block_size
     block.style.width       = block_size
-    block.dataset.height    = block_size
-    block.dataset.width     = block_size
     
     // Place the fibonacci background block into the DOM
     document.querySelector('.main').appendChild(block)
