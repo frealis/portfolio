@@ -5,52 +5,52 @@ class Html extends Component {
     return (
       <div>
 
-        <div class="scraps">
-          <div class="scrap free brand">
+        <div className="scraps">
+          <div className="scrap free brand">
             Mustachio the Pistachio
-            <span class="brand-sub">Web Developer</span>
+            <span className="brand-sub">Web Developer</span>
           </div>
-          <div class="scrap free links">
-            <a class="scrap free link-projects">Projects</a>
-            <a class="scrap free link-contact">Contact</a>
+          <div className="scrap free links">
+            <a className="scrap free link-projects">Projects</a>
+            <a className="scrap free link-contact">Contact</a>
           </div>
         </div>
 
-        <nav class="nav-fixed scraps-collected nav-fixed-vanish">
+        <nav className="nav-fixed scraps-collected nav-fixed-vanish">
         {/* <nav class="nav-fixed scraps-collected"> */}
-          <div class="scrap-collected fixed brand">      
+          <div className="scrap-collected fixed brand">      
             Mustachio the Pistachio
-            <span class="brand-sub">Web Developer</span>
+            <span className="brand-sub">Web Developer</span>
           </div>
-          <div class="scrap-collected fixed links">
-            <a class="scrap-collected fixed link-projects">Projects</a>
-            <a class="scrap-collected fixed link-contact">Contact</a>
+          <div className="scrap-collected fixed links">
+            <a className="scrap-collected fixed link-projects">Projects</a>
+            <a className="scrap-collected fixed link-contact">Contact</a>
           </div>
         </nav>
 
-        <div class="main">
-          <div class="page-landing"></div>
-          <nav class="nav-net scraps-collected">
-            <div class="scrap-collected net brand display-none">
+        <div className="main">
+          <div className="page-landing"></div>
+          <nav className="nav-net scraps-collected">
+            <div className="scrap-collected net brand display-none">
               Mustachio the Pistachio
-              <span class="brand-sub">Web Developer</span>
+              <span className="brand-sub">Web Developer</span>
             </div>
-            <div class="scrap-collected net links display-none">
-              <a class="scrap-collected net link-projects">Projects</a>
-              <a class="scrap-collected net link-contact">Contact</a>
+            <div className="scrap-collected net links display-none">
+              <a className="scrap-collected net link-projects">Projects</a>
+              <a className="scrap-collected net link-contact">Contact</a>
             </div>
           </nav>
-          <div class="nav-tripwire page-spacer"></div>
+          <div className="nav-tripwire page-spacer"></div>
           <a id="anchor-projects"></a>
-          <div class="page">
-            <h1 class="page-header">Projects</h1>
+          <div className="page">
+            <h1 className="page-header">Projects</h1>
           </div>
-          <div class="page-spacer"></div>
+          <div className="page-spacer"></div>
           <a id="anchor-contact"></a>
-          <div class="page">
-            <h1 class="page-header">Contact</h1>
+          <div className="page">
+            <h1 className="page-header">Contact</h1>
           </div>
-          <footer class="footer"></footer>
+          <footer className="footer"></footer>
         </div>
 
       </div>

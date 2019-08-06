@@ -28,16 +28,24 @@ a {
 
 body {
   background-color: $quinary-color; // override Bootstrap setting
+  // overflow-x: hidden;
+  // overflow-y: auto;
+  // perspective: 1px;
+  // transform-style: preserve-3d;
 }
 
 html {
   box-sizing: border-box;
   font-family: Kozuka Gothic Pr6N, Segoe UI, Arial, Verdana;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 .main {  
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll; // necessary for parallax but causes fixed nav to cover scrollbar
   perspective: 1px;
+  position: relative;
+  scroll-behavior: smooth;
+  z-index: 0;
 }

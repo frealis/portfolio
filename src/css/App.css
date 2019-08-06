@@ -81,8 +81,8 @@ nav {
   display: flex;
   background-color: #FCFAED;
   height: 10vh;
-  padding: 1rem 0;
-  width: 100%; }
+  padding: calc(2rem + 2vh) 0;
+  width: 80vw; }
   nav.nav-fixed {
     color: #043546;
     position: fixed;
@@ -190,9 +190,13 @@ body {
 html {
   box-sizing: border-box;
   font-family: Kozuka Gothic Pr6N, Segoe UI, Arial, Verdana;
-  overflow-x: hidden;
-  scroll-behavior: smooth; }
+  overflow: hidden; }
 
 .main {
   height: 100vh;
-  perspective: 1px; }
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+  position: relative;
+  scroll-behavior: smooth;
+  z-index: 0; }
