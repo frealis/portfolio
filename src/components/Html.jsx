@@ -4,7 +4,7 @@ class Html extends Component {
   render() {
     return (
       <div>
-        
+
         <div class="scraps">
           <div class="scrap free brand">
             Mustachio the Pistachio
@@ -17,6 +17,7 @@ class Html extends Component {
         </div>
 
         <nav class="nav-fixed scraps-collected nav-fixed-vanish">
+        {/* <nav class="nav-fixed scraps-collected"> */}
           <div class="scrap-collected fixed brand">      
             Mustachio the Pistachio
             <span class="brand-sub">Web Developer</span>

@@ -33,15 +33,11 @@ body {
 html {
   box-sizing: border-box;
   font-family: Kozuka Gothic Pr6N, Segoe UI, Arial, Verdana;
-  height: max-content;
-  overflow: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .main {  
-  box-sizing: border-box;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
   perspective: 1px;
-  scroll-behavior: smooth;
 }

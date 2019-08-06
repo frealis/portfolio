@@ -85,7 +85,7 @@ nav {
   width: 100%; }
   nav.nav-fixed {
     color: #043546;
-    position: absolute;
+    position: fixed;
     opacity: 1;
     z-index: 1; }
     nav.nav-fixed .fixed {
@@ -100,7 +100,7 @@ nav {
   font-weight: 600;
   mix-blend-mode: difference;
   padding: 0 1rem;
-  position: absolute;
+  position: fixed;
   z-index: 2; }
   .scraps .scrap.brand {
     font-size: 1.5rem;
@@ -190,13 +190,9 @@ body {
 html {
   box-sizing: border-box;
   font-family: Kozuka Gothic Pr6N, Segoe UI, Arial, Verdana;
-  height: max-content;
-  overflow: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 .main {
-  box-sizing: border-box;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 1px;
-  scroll-behavior: smooth; }
+  perspective: 1px; }

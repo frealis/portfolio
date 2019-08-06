@@ -15,7 +15,6 @@ link_projects_nodelist.forEach((link_projects) => {
 // ========== NAVBAR NET & SCRAPS ============================================
 
 // Scroll events determine whether brand & link elements get attached to navbar
-const main                = document.querySelector('.main');
 const nav_net             = document.querySelector('.nav-net');
 const scrap_brand         = document.querySelector('.scrap.free.brand');
 const scrap_links         = document.querySelector('.scrap.free.links');
@@ -23,10 +22,10 @@ const nav_net_loc         = nav_net.offsetTop + nav_net.offsetHeight / 2
 const scrap_brand_loc     = scrap_brand.offsetTop + scrap_brand.offsetHeight / 2
 const scrap_links_loc     = scrap_links.offsetTop + scrap_links.offsetHeight / 2
 
-main.onscroll = () => {
+window.onscroll = () => {
       
   // Nav Brand Name
-  if (main.scrollTop > nav_net_loc - scrap_brand_loc) {
+  if (window.scrollY > nav_net_loc - scrap_brand_loc) {
     document.querySelector('.scrap.free.brand').classList.add('display-none');
     document.querySelector('.scrap-collected.net.brand').classList.remove('display-none');
     document.querySelector('.scrap-collected.net.brand').classList.add('animation-chromatophore');
@@ -37,7 +36,7 @@ main.onscroll = () => {
   }
   
   // Nav Links
-  if (main.scrollTop > nav_net_loc - scrap_links_loc) {
+  if (window.scrollY > nav_net_loc - scrap_links_loc) {
     document.querySelector('.scrap.free.links').classList.add('display-none');
     document.querySelector('.scrap-collected.net.links').classList.remove('display-none');
     document.querySelector('.scrap-collected.net.link-projects').classList.add('animation-chromatophore');
@@ -51,7 +50,7 @@ main.onscroll = () => {
   
   // Hide the net navbar, reveal the fixed navbar
   const nav_tripwire  = document.querySelector('.nav-tripwire');
-  if (main.scrollTop > nav_tripwire.offsetTop - nav_net.offsetHeight) {
+  if (window.scrollY > nav_tripwire.offsetTop - nav_net.offsetHeight) {
     document.querySelector('.nav-net').classList.add('nav-net-vanish');
     document.querySelector('.nav-fixed').classList.remove('nav-fixed-vanish');
   } else {
@@ -81,7 +80,7 @@ shuffle(colors);
 
 // Specify 'n' number of blocks that will eventually be created, 
 // specify unit of measurement, create list to store block ID values
-const n = 11;
+const n = 16;
 const unit = 'px';
 const blockIDList = [];
 
@@ -194,18 +193,18 @@ for (let i = 0; i < n; i++) {
 // ========== ANIMATIONS ==================================================
 
 // Change translateZ property of blocks for an 'asteroid zoom' effect
-// function asteroidBlocks() {
-//   for (let i = 0; i < blockIDList.length; i++) {
-//     const block = document.getElementById(blockIDList[i]);
-//     window.setTimeout(() => {
-//       block.classList.add('animation-asteroid-blocks')
-//     }, i * 100);
-//   }
-// }
-// asteroidBlocks()
+function asteroidBlocks() {
+  for (let i = 0; i < blockIDList.length; i++) {
+    const block = document.getElementById(blockIDList[i]);
+    window.setTimeout(() => {
+      block.classList.add('animation-asteroid-blocks')
+    }, i * 100);
+  }
+}
+asteroidBlocks()
 
 // Change perspective of fibonacci blocks <div> (ie. 'main') to create a zoom effect
-// document.querySelector('.main').classList.add('animation-main-zoom');
+document.querySelector('.main').classList.add('animation-main-zoom');
 
 // Change scale to animate brand text and links
 // function asteroidText() {
