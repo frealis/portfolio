@@ -30,12 +30,14 @@ import Main from './Main'
 import { addLinkHrefs } from '../js/add-link-hrefs'
 import { getNavNetScrapsLocations } from '../js/get-nav-net-scraps-locations'
 import { handleScroll } from '../js/handle-scroll'
+import { colorsShuffled } from '../js/colors-shuffled'
 
 class App extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
+      colors_shuffled: [],
       nav_net_loc: 0,
       nav_tripwire_loc: 0,
       scrap_brand_loc: 0,
@@ -65,8 +67,13 @@ class App extends Component {
       })
     })
 
+    // Get an array of shuffled colors
+    this.setState({
+      colors_shuffled: colorsShuffled(),
+    }, () => {
+      console.log(this.state.colors_shuffled)
+    })
     
-
   }
 
   // componentWillUnmount() {

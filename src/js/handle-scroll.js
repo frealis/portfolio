@@ -1,7 +1,5 @@
 // Handle scroll events that deal with the navbar net & scraps
 export function handleScroll(main) {
-  // console.log(this.state.nav_net_loc)
-  // console.log(this.state.scrap_brand_loc)
 
   // Nav Brand Name
   if (main.scrollTop > this.state.nav_net_loc - this.state.scrap_brand_loc) {
