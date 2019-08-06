@@ -1,24 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
 
 // ========== LINKS ==========================================================
 
 // Assign event handlers to links
-const link_contact_nodelist = document.querySelectorAll('.link-contact')
-link_contact_nodelist.forEach((link_contact) => {
-  link_contact.addEventListener('click', () => {
-    window.location.href = '#anchor-contact'
+export function addLinkHrefs() {
+  const link_contact_nodelist = document.querySelectorAll('.link-contact')
+  link_contact_nodelist.forEach((link_contact) => {
+    link_contact.addEventListener('click', () => {
+      window.location.href = '#anchor-contact'
+    })
   })
-})
-const link_projects_nodelist = document.querySelectorAll('.link-projects')
-link_projects_nodelist.forEach((link_projects) => {
-  link_projects.addEventListener('click', () => {
-    window.location.href = '#anchor-projects'
+  const link_projects_nodelist = document.querySelectorAll('.link-projects')
+  link_projects_nodelist.forEach((link_projects) => {
+    link_projects.addEventListener('click', () => {
+      window.location.href = '#anchor-projects'
+    })
   })
-})
+}
 
 // ========== NAVBAR NET & SCRAPS ============================================
 
-// Scroll events determine whether brand & link elements get attached to navbar
+// Global variables used to manipulate navbar elements
 const main                = document.querySelector('.main')
 const nav_net             = document.querySelector('.nav-net')
 const scrap_brand         = document.querySelector('.scrap.free.brand')
@@ -27,6 +29,7 @@ const nav_net_loc         = nav_net.offsetTop + nav_net.offsetHeight / 2
 const scrap_brand_loc     = scrap_brand.offsetTop + scrap_brand.offsetHeight / 2
 const scrap_links_loc     = scrap_links.offsetTop + scrap_links.offsetHeight / 2
 
+// Scroll events determine whether brand & link elements get attached to navbar
 main.onscroll = () => {
       
   // Nav Brand Name
@@ -223,4 +226,4 @@ document.querySelector('.main').classList.add('animation-main-zoom')
 // }
 // asteroidText()
 
-})
+// })

@@ -23,33 +23,36 @@ import Main from './Main'
 // import IconResume from '../img/custom-resume-043546.svg'
 // import IconSass from '../img/Sass_Logo_Color.svg'
 
-import CustomJS from '../js/custom'
+// import CustomJS from '../js/custom'
 // import ExternalJS from '../js/external_links'
 
+// Import custom JavaScript functions
+import { addLinkHrefs } from '../js/add-link-hrefs'
+import { getNavNetScrapsLocations } from '../js/get-nav-net-scraps-locations'
+
 class App extends Component {
+  constructor(props) {
+    super(props)
 
-  // toggleHamburger = () => {
-  //   let navbar_toggler = document.querySelector('.navbar-toggler')
-  //   if (navbar_toggler.classList.contains('close-navbar-toggler')) {
-  //     navbar_toggler.classList.remove('close-navbar-toggler')
-  //   } else {
-  //     navbar_toggler.classList.add('close-navbar-toggler')
-  //   }
-  // }
+    this.state = {
+      nav_net_loc: 0,
+      scrap_brand_loc: 0,
+      scrap_links_loc: 0,
+    }
+  }
 
-  // Assign event handlers to links
-  // const link_contact_nodelist = document.querySelectorAll('.link-contact')
-  // link_contact_nodelist.forEach((link_contact) => {
-  //   link_contact.addEventListener('click', () => {
-  //     window.location.href = '#anchor-contact'
-  //   })
-  // })
-  // const link_projects_nodelist = document.querySelectorAll('.link-projects')
-  // link_projects_nodelist.forEach((link_projects) => {
-  //   link_projects.addEventListener('click', () => {
-  //     window.location.href = '#anchor-projects'
-  //   })
-  // })
+  componentDidMount() {
+    addLinkHrefs()
+    this.setState({
+      nav_net_loc: getNavNetScrapsLocations().nav_net_loc,
+      scrap_brand_loc: getNavNetScrapsLocations().scrap_brand_loc,
+      scrap_links_loc: getNavNetScrapsLocations().scrap_links_loc,
+    })
+  }
+
+  componentWillUnmount() {
+
+  }
 
   render() {
     return (
