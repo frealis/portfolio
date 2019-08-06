@@ -15,17 +15,18 @@ link_projects_nodelist.forEach((link_projects) => {
 // ========== NAVBAR NET & SCRAPS ============================================
 
 // Scroll events determine whether brand & link elements get attached to navbar
-const nav_net             = document.querySelector('.nav-net');
-const scrap_brand         = document.querySelector('.scrap.free.brand');
-const scrap_links         = document.querySelector('.scrap.free.links');
+const main                = document.querySelector('.main')
+const nav_net             = document.querySelector('.nav-net')
+const scrap_brand         = document.querySelector('.scrap.free.brand')
+const scrap_links         = document.querySelector('.scrap.free.links')
 const nav_net_loc         = nav_net.offsetTop + nav_net.offsetHeight / 2
 const scrap_brand_loc     = scrap_brand.offsetTop + scrap_brand.offsetHeight / 2
 const scrap_links_loc     = scrap_links.offsetTop + scrap_links.offsetHeight / 2
 
-window.onscroll = () => {
+main.onscroll = () => {
       
   // Nav Brand Name
-  if (window.scrollY > nav_net_loc - scrap_brand_loc) {
+  if (main.scrollTop > nav_net_loc - scrap_brand_loc) {
     document.querySelector('.scrap.free.brand').classList.add('display-none');
     document.querySelector('.scrap-collected.net.brand').classList.remove('display-none');
     document.querySelector('.scrap-collected.net.brand').classList.add('animation-chromatophore');
@@ -36,7 +37,7 @@ window.onscroll = () => {
   }
   
   // Nav Links
-  if (window.scrollY > nav_net_loc - scrap_links_loc) {
+  if (main.scrollTop > nav_net_loc - scrap_links_loc) {
     document.querySelector('.scrap.free.links').classList.add('display-none');
     document.querySelector('.scrap-collected.net.links').classList.remove('display-none');
     document.querySelector('.scrap-collected.net.link-projects').classList.add('animation-chromatophore');
@@ -50,7 +51,7 @@ window.onscroll = () => {
   
   // Hide the net navbar, reveal the fixed navbar
   const nav_tripwire  = document.querySelector('.nav-tripwire');
-  if (window.scrollY > nav_tripwire.offsetTop - nav_net.offsetHeight) {
+  if (main.scrollTop > nav_tripwire.offsetTop - nav_net.offsetHeight) {
     document.querySelector('.nav-net').classList.add('nav-net-vanish');
     document.querySelector('.nav-fixed').classList.remove('nav-fixed-vanish');
   } else {

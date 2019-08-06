@@ -190,9 +190,11 @@ body {
 html {
   box-sizing: border-box;
   font-family: Kozuka Gothic Pr6N, Segoe UI, Arial, Verdana;
-  overflow-x: hidden;
-  scroll-behavior: smooth; }
+  overflow: hidden; }
 
 .main {
   height: 100vh;
-  perspective: 1px; }
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  scroll-behavior: smooth; }
