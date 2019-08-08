@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import ThumbnailRCPW from '../img/thumbnail-rcpw.svg'
-import IconExternalLink from '../img/svg-components/component-custom-external-link'
 
 class ProjectsRCPW extends Component {
   render() {
-    const { IconAWS, IconBootstrap, IconDjango, IconPostgres } = this.props;
+    const { IconAWS, LogoBootstrap, LogoDjango, IconExternalLink, LogoPostgreSQL } = this.props;
     return (
       <div className="row">
 
@@ -27,11 +26,11 @@ class ProjectsRCPW extends Component {
             <IconExternalLink />
             Source
           </button>
-          <div className="d-flex projects-thumbnail-icons justify-content-around">
-            <img className="projects-thumbnail-icon ext-link-bootstrap" alt="Bootstrap" src={ IconBootstrap } />
-            <img className="projects-thumbnail-icon ext-link-django" alt="Django" src={ IconDjango } />
-            <img className="projects-thumbnail-icon ext-link-postgres" alt="Postgres" src={ IconPostgres } />
-            <img className="projects-thumbnail-icon ext-link-aws" alt="AWS" src={ IconAWS } />
+          <div className="projects-tech">
+            <button className="btn btn-bootstrap ext-link-bootstrap"><LogoBootstrap /></button>
+            <button className="btn btn-django ext-link-django"><LogoDjango /></button>
+            <button className="btn btn-postgresql ext-link-postgres"><LogoPostgreSQL /></button>
+            <button className="btn btn-aws ext-link-aws"><IconAWS /></button>
           </div>
         </div>
 

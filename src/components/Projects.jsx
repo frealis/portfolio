@@ -5,11 +5,11 @@ import ProjectsRCPW from './ProjectsRCPW.jsx';
 // import ProjectsMicroChat from './ProjectsMicroChat.jsx';
 // import ProjectsBookReviews from './ProjectsBookReviews.jsx';
 
-import IconAWS from '../img/aws.svg'
-import IconBootstrap from '../img/bootstrap-symbol.svg'
-import IconDjango from '../img/djangoproject-icon2.svg'
-import IconPostgres from '../img/postgresql-icon.svg'
-
+import IconAWS from '../img/svg-components/icon-aws'
+import LogoBootstrap from '../img/svg-components/logo-bootstrap'
+import LogoDjango from '../img/svg-components/logo-django'
+import IconExternalLink from '../img/svg-components/icon-external-link'
+import LogoPostgreSQL from '../img/svg-components/logo-postgresql'
 
 class Projects extends Component {
   render() {
@@ -18,7 +18,7 @@ class Projects extends Component {
         <span id="anchor-projects"></span>
         <div className="page">
           <h1 className="page-header">Projects</h1>
-          <ProjectsRCPW IconBootstrap={ IconBootstrap } IconDjango={ IconDjango } IconPostgres={ IconPostgres} IconAWS={ IconAWS} />
+          <ProjectsRCPW IconAWS={ IconAWS} LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } IconExternalLink={ IconExternalLink } LogoPostgreSQL={ LogoPostgreSQL } />
         </div>
       </div>
     )
