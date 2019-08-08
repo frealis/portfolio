@@ -1,3 +1,5 @@
+$projects-transition: 0.5s ease-out;
+
 .projects-row {
   & .btn {
     align-items: center;
@@ -11,8 +13,8 @@
     }
   }
 
-  & .btn-source,
-  & .btn-view {
+  & .ext-link-rcpw,
+  & .ext-link-rcpw-github {
     &:hover {
       animation-duration: 0.35s;
       animation-fill-mode: forwards;
@@ -23,6 +25,31 @@
   svg {
     height: 1.5rem;
   }
+
+  .ext-link-bootstrap {
+    & .logo-bootstrap-path {
+      fill: #ccc;
+      transition: $projects-transition;
+    }
+    &:hover {
+      & .logo-bootstrap-path {
+        fill: #563d7c;
+      }
+    }
+  }
+
+  .ext-link-django {
+    & path {
+      fill: #ccc;
+      transition: $projects-transition;
+    }
+    &:hover {
+      & path {
+        fill: #092e20;
+      }
+    }
+  }
+
 
   .icon-external-link {
     height: 1rem;

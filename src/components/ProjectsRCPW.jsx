@@ -18,19 +18,19 @@ class ProjectsRCPW extends Component {
             <h2 className="projects-thumbnail-header">River City Pro Wash</h2>
             <p className="projects-thumbnail-description">Residential and commercial pressure washing company</p>
           </div>
-          <button className="btn btn-view ext-link-rcpw">
+          <button className="btn ext-link-rcpw">
             <IconExternalLink />
             View
           </button>
-          <button className="btn btn-source ext-link-rcpw-github">
+          <button className="btn ext-link-rcpw-github">
             <IconExternalLink />
             Source
           </button>
           <div className="projects-tech">
-            <button className="btn btn-projects-tech ext-link-bootstrap"><LogoBootstrap /></button>
-            <button className="btn btn-projects-tech ext-link-django"><LogoDjango /></button>
-            <button className="btn btn-projects-tech ext-link-postgres"><LogoPostgreSQL /></button>
-            <button className="btn btn-projects-tech ext-link-aws"><IconAWS /></button>
+            <button className="btn ext-link-bootstrap"><LogoBootstrap /></button>
+            <button className="btn ext-link-django"><LogoDjango /></button>
+            <button className="btn ext-link-postgres"><LogoPostgreSQL /></button>
+            <button className="btn ext-link-aws"><IconAWS /></button>
           </div>
         </div>
 
