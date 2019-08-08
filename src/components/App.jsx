@@ -34,6 +34,7 @@ import { colorsShuffled } from '../js/colors-shuffled'
 import { fibSequence } from '../js/fib-sequence'
 import { fibBlocks } from '../js/fib-blocks'
 import { fibAsteroidBlocks } from '../js/fib-asteroid-blocks'
+import { fibAsteroidZoom } from '../js/fib-asteroid-zoom'
 
 class App extends Component {
   constructor(props) {
@@ -50,7 +51,7 @@ class App extends Component {
       // Fibonacci blocks
       colors: [],
       fibSeq: [],
-      n: 11,
+      n: 16,
       unit: 'px',
     }
 
@@ -86,6 +87,7 @@ class App extends Component {
       let {n, fibSeq, unit, colors} = this.state
       this.fibBlocks(n, fibSeq, unit, colors)
       fibAsteroidBlocks()
+      fibAsteroidZoom()
     })
   }
 
