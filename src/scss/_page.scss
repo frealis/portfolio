@@ -8,11 +8,12 @@
 
 .page {
   background-color: $secondary-color;
-  height: 100vh;
+  padding: calc(2rem + 2vw);
+  width: 90vw;
   & .page-header {    
     color: $tertiary-color;
     font-weight: normal;
     font-size: 3rem;
-    padding: calc(2rem + 2vw);
+    padding: calc(1rem + 1vw);
   }
 }

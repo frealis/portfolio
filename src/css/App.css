@@ -176,105 +176,98 @@ nav {
 
 .page {
   background-color: #FCFAED;
-  height: 100vh; }
+  padding: calc(2rem + 2vw);
+  width: 90vw; }
   .page .page-header {
     color: #043546;
     font-weight: normal;
     font-size: 3rem;
-    padding: calc(2rem + 2vw); }
+    padding: calc(1rem + 1vw); }
 
-.projects-row .btn {
-  align-items: center;
-  color: #043546;
-  stroke: #043546;
-  display: flex;
-  font-weight: 600; }
-  .projects-row .btn:focus {
-    outline: none;
-    box-shadow: none; }
-
-.projects-row .ext-link-rcpw:hover,
-.projects-row .ext-link-rcpw-github:hover {
-  animation-duration: 0.35s;
-  animation-fill-mode: forwards;
-  animation-name: animation-chromatophore-external-link; }
-
-.projects-row .ext-link-aws path {
-  fill: #ccc;
-  transition: 0.35s ease-out; }
-
-.projects-row .ext-link-aws:hover .icon-aws-text {
-  fill: #252f3e; }
-
-.projects-row .ext-link-aws:hover .icon-aws-arrow {
-  fill: #f90; }
-
-.projects-row .ext-link-bootstrap .logo-bootstrap-path {
-  fill: #ccc;
-  transition: 0.35s ease-out; }
-
-.projects-row .ext-link-bootstrap:hover .logo-bootstrap-path {
-  fill: #563d7c; }
-
-.projects-row .ext-link-django path {
-  fill: #ccc;
-  transition: 0.35s ease-out; }
-
-.projects-row .ext-link-django:hover path {
-  fill: #092e20; }
-
-.projects-row .ext-link-postgresql path {
-  fill: #ccc;
-  transition: 0.35s ease-out; }
-
-.projects-row .ext-link-postgresql:hover .logo-postgresql-fill-none-stroke-fff {
-  fill: none;
-  stroke: #fff; }
-
-.projects-row .ext-link-postgresql:hover .logo-postgresql-fill-fff-stroke-fff {
-  fill: #fff;
-  stroke: #fff; }
-
-.projects-row .ext-link-postgresql:hover .logo-postgresql-fill-336791 {
-  fill: #336791; }
-
-.projects-row .ext-link-postgresql:hover .logo-postgresql-stroke-000 {
-  stroke: #000; }
-
-.projects-row .ext-link-postgresql:hover .logo-postgresql-fill-585858 {
-  fill: #585858; }
-
-.projects-row figure {
-  margin: 0;
-  padding-left: calc(2rem + 2vw); }
-
-.projects-row .icon-external-link {
-  height: 1rem;
-  margin: 0 0.5rem;
-  width: 1rem; }
-
-.projects-row .projects-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.projects-row .projects-tech {
-  display: flex;
-  flex-direction: row; }
-
-.projects-row .projects-thumbnail {
-  height: 50vh;
-  object-fit: cover;
-  width: 100%; }
-
-.projects-row .projects-thumbnail-description {
-  max-width: 30vw; }
-
-.projects-row .projects-thumbnail-header {
-  color: #043546; }
-
-.projects-row svg {
-  height: 1.5rem; }
+.projects-row {
+  margin: calc(2rem + 2vw) 0; }
+  .projects-row a {
+    color: #043546;
+    font-weight: 700;
+    text-decoration: none; }
+    .projects-row a:hover {
+      animation-duration: 0.35s;
+      animation-fill-mode: forwards;
+      animation-name: animation-chromatophore-external-link; }
+  .projects-row .btn {
+    align-items: center;
+    color: #043546;
+    stroke: #043546;
+    display: flex;
+    font-weight: 600; }
+    .projects-row .btn:focus {
+      outline: none;
+      box-shadow: none; }
+  .projects-row .btn-view:hover,
+  .projects-row .btn-source:hover {
+    animation-duration: 0.35s;
+    animation-fill-mode: forwards;
+    animation-name: animation-chromatophore-external-link; }
+  .projects-row .ext-link-aws path {
+    fill: #ccc;
+    transition: 0.35s ease-out; }
+  .projects-row .ext-link-aws:hover .icon-aws-text {
+    fill: #252f3e; }
+  .projects-row .ext-link-aws:hover .icon-aws-arrow {
+    fill: #f90; }
+  .projects-row .ext-link-bootstrap .logo-bootstrap-path {
+    fill: #ccc;
+    transition: 0.35s ease-out; }
+  .projects-row .ext-link-bootstrap:hover .logo-bootstrap-path {
+    fill: #563d7c; }
+  .projects-row .ext-link-django path {
+    fill: #ccc;
+    transition: 0.35s ease-out; }
+  .projects-row .ext-link-django:hover path {
+    fill: #092e20; }
+  .projects-row .ext-link-heroku .logo-heroku-path {
+    fill: #ccc;
+    transition: 0.35s ease-out; }
+  .projects-row .ext-link-heroku:hover .logo-heroku-path {
+    fill: #430098; }
+  .projects-row .ext-link-postgresql path {
+    fill: #ccc;
+    transition: 0.35s ease-out; }
+  .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-none-stroke-fff {
+    fill: none;
+    stroke: #fff; }
+  .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-fff-stroke-fff {
+    fill: #fff;
+    stroke: #fff; }
+  .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-336791 {
+    fill: #336791; }
+  .projects-row .ext-link-postgresql:hover .logo-postgresql-stroke-000 {
+    stroke: #000; }
+  .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-585858 {
+    fill: #585858; }
+  .projects-row figure {
+    margin: 0; }
+  .projects-row .icon-external-link {
+    height: 1rem;
+    margin: 0 0.5rem;
+    width: 1rem; }
+  .projects-row .projects-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .projects-row .projects-tech {
+    display: flex;
+    flex-direction: row; }
+  .projects-row .projects-thumbnail {
+    height: 50vh;
+    object-fit: cover;
+    width: 100%; }
+  .projects-row .projects-thumbnail-description {
+    max-width: 30vw; }
+  .projects-row .projects-thumbnail-header {
+    color: #043546; }
+  .projects-row svg {
+    height: 1.5rem; }
 
 * {
   border: 0;

@@ -19,11 +19,11 @@ class ProjectsRCPW extends Component {
             <p className="projects-thumbnail-description">This is a business website for a pressure washing company hosted on Amazon Web Services that uses AWS SES to handle contact form requests for customer contact and follow-up, as well as Amazon RDS to store contact form submissions. It also uses the Google Maps Javascript API to display a custom map, as well as reCAPTCHA v3 to monitor contact form submissions.</p>
           </div>
           <div className="projects-col-bottom">
-            <button className="btn ext-link-rcpw">
+            <button className="btn btn-view ext-link-rcpw">
               <IconExternalLink />
               View Site
             </button>
-            <button className="btn ext-link-rcpw-github">
+            <button className="btn btn-source ext-link-rcpw-github">
               <IconExternalLink />
               Source Code
             </button>

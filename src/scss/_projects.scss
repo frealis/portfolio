@@ -1,6 +1,17 @@
 $projects-transition: 0.35s ease-out;
 
 .projects-row {
+  margin: calc(2rem + 2vw) 0;
+  & a {
+    color: $tertiary-color;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+      animation-duration: 0.35s;
+      animation-fill-mode: forwards;
+      animation-name: animation-chromatophore-external-link;
+    }
+  }
   & .btn {
     align-items: center;
     color: $tertiary-color;
@@ -13,8 +24,8 @@ $projects-transition: 0.35s ease-out;
     }
   }
 
-  & .ext-link-rcpw,
-  & .ext-link-rcpw-github {
+  & .btn-view,
+  & .btn-source {
     &:hover {
       animation-duration: 0.35s;
       animation-fill-mode: forwards;
@@ -61,6 +72,18 @@ $projects-transition: 0.35s ease-out;
     }
   }
 
+  .ext-link-heroku {
+    & .logo-heroku-path {
+      fill: #ccc;
+      transition: $projects-transition;
+    }
+    &:hover {
+      & .logo-heroku-path {
+        fill: #430098;
+      }
+    }
+  }
+
   .ext-link-postgresql {
     & path {
       fill: #ccc;
@@ -89,7 +112,6 @@ $projects-transition: 0.35s ease-out;
 
   figure {
     margin: 0;
-    padding-left: calc(2rem + 2vw);
   }
 
   .icon-external-link {
@@ -99,7 +121,6 @@ $projects-transition: 0.35s ease-out;
   }
 
   .projects-col {
-    // align-items: flex-end;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

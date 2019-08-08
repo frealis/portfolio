@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import ProjectsRCPW from './ProjectsRCPW.jsx';
-// import ProjectsPinocchios from './ProjectsPinocchios.jsx';
+import ProjectsPinocchios from './ProjectsPinocchios.jsx';
 // import ProjectsMicroChat from './ProjectsMicroChat.jsx';
 // import ProjectsBookReviews from './ProjectsBookReviews.jsx';
 
@@ -9,6 +9,7 @@ import IconAWS from '../img/svg-components/icon-aws'
 import LogoBootstrap from '../img/svg-components/logo-bootstrap'
 import LogoDjango from '../img/svg-components/logo-django'
 import IconExternalLink from '../img/svg-components/icon-external-link'
+import LogoHeroku from '../img/svg-components/logo-heroku'
 import LogoPostgreSQL from '../img/svg-components/logo-postgresql'
 
 class Projects extends Component {
@@ -19,6 +20,7 @@ class Projects extends Component {
         <div className="page">
           <h1 className="page-header">Projects</h1>
           <ProjectsRCPW IconAWS={ IconAWS} LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } IconExternalLink={ IconExternalLink } LogoPostgreSQL={ LogoPostgreSQL } />
+          <ProjectsPinocchios LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } IconExternalLink={ IconExternalLink } LogoHeroku={ LogoHeroku }LogoPostgreSQL={ LogoPostgreSQL } />
         </div>
       </div>
     )
