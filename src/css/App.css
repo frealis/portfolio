@@ -229,8 +229,22 @@ nav {
   fill: #ccc;
   transition: 0.5s ease-out; }
 
-.projects-row .ext-link-postgresql:hover path {
-  fill: #092e20; }
+.projects-row .ext-link-postgresql:hover .logo-postgresql-fill-none-stroke-fff {
+  fill: none;
+  stroke: #fff; }
+
+.projects-row .ext-link-postgresql:hover .logo-postgresql-fill-fff-stroke-fff {
+  fill: #fff;
+  stroke: #fff; }
+
+.projects-row .ext-link-postgresql:hover .logo-postgresql-fill-336791 {
+  fill: #336791; }
+
+.projects-row .ext-link-postgresql:hover .logo-postgresql-stroke-000 {
+  stroke: #000; }
+
+.projects-row .ext-link-postgresql:hover .logo-postgresql-fill-585858 {
+  fill: #585858; }
 
 .projects-row .icon-external-link {
   height: 1rem;

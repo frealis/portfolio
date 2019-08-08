@@ -71,8 +71,22 @@ $projects-transition: 0.5s ease-out;
       transition: $projects-transition;
     }
     &:hover {
-      & path {
-        fill: #092e20;
+      & .logo-postgresql-fill-none-stroke-fff {
+        fill: none;
+        stroke: #fff;
+      }
+      & .logo-postgresql-fill-fff-stroke-fff {
+        fill: #fff;
+        stroke: #fff;
+      }
+      & .logo-postgresql-fill-336791 {
+        fill: #336791;
+      }
+      & .logo-postgresql-stroke-000 {
+        stroke: #000;
+      }
+      & .logo-postgresql-fill-585858 {
+        fill: #585858;
       }
     }
   }
