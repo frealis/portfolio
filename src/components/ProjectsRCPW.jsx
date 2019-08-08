@@ -13,24 +13,26 @@ class ProjectsRCPW extends Component {
           </figure>
         </div>
 
-        <div className="col-md-7">
-          <div>
+        <div className="col-md-7 projects-col">
+          <div className="projects-col-top">
             <h2 className="projects-thumbnail-header">River City Pro Wash</h2>
-            <p className="projects-thumbnail-description">Residential and commercial pressure washing company</p>
+            <p className="projects-thumbnail-description">This is a business website for a pressure washing company hosted on Amazon Web Services that uses AWS SES to handle contact form requests for customer contact and follow-up, as well as Amazon RDS to store contact form submissions. It also uses the Google Maps Javascript API to display a custom map, as well as reCAPTCHA v3 to monitor contact form submissions.</p>
           </div>
-          <button className="btn ext-link-rcpw">
-            <IconExternalLink />
-            View
-          </button>
-          <button className="btn ext-link-rcpw-github">
-            <IconExternalLink />
-            Source
-          </button>
-          <div className="projects-tech">
-            <button className="btn ext-link-bootstrap"><LogoBootstrap /></button>
-            <button className="btn ext-link-django"><LogoDjango /></button>
-            <button className="btn ext-link-postgresql"><LogoPostgreSQL /></button>
-            <button className="btn ext-link-aws"><IconAWS /></button>
+          <div className="projects-col-bottom">
+            <button className="btn ext-link-rcpw">
+              <IconExternalLink />
+              View Site
+            </button>
+            <button className="btn ext-link-rcpw-github">
+              <IconExternalLink />
+              Source Code
+            </button>
+            <div className="projects-tech">
+              <button className="btn ext-link-bootstrap"><LogoBootstrap /></button>
+              <button className="btn ext-link-django"><LogoDjango /></button>
+              <button className="btn ext-link-postgresql"><LogoPostgreSQL /></button>
+              <button className="btn ext-link-aws"><IconAWS /></button>
+            </div>
           </div>
         </div>
 

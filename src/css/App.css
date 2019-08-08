@@ -180,7 +180,8 @@ nav {
   .page .page-header {
     color: #043546;
     font-weight: normal;
-    font-size: 3rem; }
+    font-size: 3rem;
+    padding: calc(2rem + 2vw); }
 
 .projects-row .btn {
   align-items: center;
@@ -197,9 +198,6 @@ nav {
   animation-duration: 0.35s;
   animation-fill-mode: forwards;
   animation-name: animation-chromatophore-external-link; }
-
-.projects-row svg {
-  height: 1.5rem; }
 
 .projects-row .ext-link-aws path {
   fill: #ccc;
@@ -246,18 +244,37 @@ nav {
 .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-585858 {
   fill: #585858; }
 
+.projects-row figure {
+  margin: 0;
+  padding-left: calc(2rem + 2vw); }
+
 .projects-row .icon-external-link {
   height: 1rem;
   margin: 0 0.5rem;
   width: 1rem; }
+
+.projects-row .projects-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.projects-row .projects-tech {
+  display: flex;
+  flex-direction: row; }
 
 .projects-row .projects-thumbnail {
   height: 50vh;
   object-fit: cover;
   width: 100%; }
 
+.projects-row .projects-thumbnail-description {
+  max-width: 30vw; }
+
 .projects-row .projects-thumbnail-header {
   color: #043546; }
+
+.projects-row svg {
+  height: 1.5rem; }
 
 * {
   border: 0;
