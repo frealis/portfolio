@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
       window.open('https://www.heroku.com/', '_blank');
     });
   });
-  const postgres = document.querySelectorAll('.ext-link-postgres');
-  postgres.forEach((icon) => {
+  const postgresql = document.querySelectorAll('.ext-link-postgresql');
+  postgresql.forEach((icon) => {
     icon.addEventListener('click', () => {
       window.open('https://www.postgresql.org/', '_blank');
     });

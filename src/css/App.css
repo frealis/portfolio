@@ -201,6 +201,16 @@ nav {
 .projects-row svg {
   height: 1.5rem; }
 
+.projects-row .ext-link-aws path {
+  fill: #ccc;
+  transition: 0.5s ease-out; }
+
+.projects-row .ext-link-aws:hover .icon-aws-text {
+  fill: #252f3e; }
+
+.projects-row .ext-link-aws:hover .icon-aws-arrow {
+  fill: #f90; }
+
 .projects-row .ext-link-bootstrap .logo-bootstrap-path {
   fill: #ccc;
   transition: 0.5s ease-out; }
@@ -213,6 +223,13 @@ nav {
   transition: 0.5s ease-out; }
 
 .projects-row .ext-link-django:hover path {
+  fill: #092e20; }
+
+.projects-row .ext-link-postgresql path {
+  fill: #ccc;
+  transition: 0.5s ease-out; }
+
+.projects-row .ext-link-postgresql:hover path {
   fill: #092e20; }
 
 .projects-row .icon-external-link {

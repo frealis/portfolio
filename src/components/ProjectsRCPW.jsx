@@ -29,7 +29,7 @@ class ProjectsRCPW extends Component {
           <div className="projects-tech">
             <button className="btn ext-link-bootstrap"><LogoBootstrap /></button>
             <button className="btn ext-link-django"><LogoDjango /></button>
-            <button className="btn ext-link-postgres"><LogoPostgreSQL /></button>
+            <button className="btn ext-link-postgresql"><LogoPostgreSQL /></button>
             <button className="btn ext-link-aws"><IconAWS /></button>
           </div>
         </div>

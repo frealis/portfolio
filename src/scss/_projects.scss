@@ -26,6 +26,21 @@ $projects-transition: 0.5s ease-out;
     height: 1.5rem;
   }
 
+  .ext-link-aws {
+    & path {
+      fill: #ccc;
+      transition: $projects-transition;
+    }
+    &:hover {
+      & .icon-aws-text {
+        fill: #252f3e;
+      }
+      & .icon-aws-arrow {
+        fill: #f90;
+      }
+    }
+  }
+
   .ext-link-bootstrap {
     & .logo-bootstrap-path {
       fill: #ccc;
@@ -50,6 +65,17 @@ $projects-transition: 0.5s ease-out;
     }
   }
 
+  .ext-link-postgresql {
+    & path {
+      fill: #ccc;
+      transition: $projects-transition;
+    }
+    &:hover {
+      & path {
+        fill: #092e20;
+      }
+    }
+  }
 
   .icon-external-link {
     height: 1rem;
