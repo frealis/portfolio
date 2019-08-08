@@ -75,6 +75,16 @@ This is a portfolio website created using create-react-app, located at https://w
 
   $ rm -rf node_modules/gh-pages/.cache
 
+# Using Custom JavaScript
+
+- There are several ways to include custom JavaScript files in React. This site imports *.js files from ~/src/js/ into ~/src/components/App.jsx an invokes them within the componentDidMount() lifecycle hook.
+
+# Importing SVG files
+
+- In order to customize SVG icons and logos using CSS, the *.svg files are changed to *.jsx files and exported as stateless functional components from ~/src/img/svg-components/ into whichever component uses them (for example, Projects.jsx uses a lot of <svg> elements).
+
+- When converting *.svg files to *.jsx, you have to also convert all <svg> attributes, and children element attributes, to camel-case notation since that is the syntax for JSX & Babel. Otherwise, warning messages will show up in the console.
+
 ## Todo
 
 - Fix bug with rapidly clicking hamburger icon

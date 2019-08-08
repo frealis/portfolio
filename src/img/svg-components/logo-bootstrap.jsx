@@ -8,7 +8,7 @@ export default function logoBootstrap() {
           <rect width="406" height="100" fill="none"/>
         </clipPath>
       </defs>
-      <g id="Bootstrap_logo_1" data-name="Bootstrap logo – 1" clip-path="url(#clip-path)">
+      <g id="Bootstrap_logo_1" data-name="Bootstrap logo – 1" clipPath="url(#clipPath)">
         <g id="Bootstrap">
           <path id="bg" d="M100,83.333A16.716,16.716,0,0,1,83.333,100H16.667A16.716,16.716,0,0,1,0,83.333V16.667A16.716,16.716,0,0,1,16.667,0H83.333A16.716,16.716,0,0,1,100,16.667Z" fill="#563d7c"/>
           <g id="B" transform="translate(27.215 21.782)">
