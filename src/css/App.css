@@ -70,7 +70,7 @@
   25% {
     color: #FCFAED;
     stroke: #FCFAED;
-    text-shadow: 15px 0 #1B969E, -15px 0 #ECD4B0; }
+    text-shadow: 15px 0 #1B969E, -15px 0 #043546; }
   50% {
     color: #043546;
     stroke: #043546; }
@@ -203,7 +203,7 @@ nav {
 
 .projects-row .ext-link-aws path {
   fill: #ccc;
-  transition: 0.5s ease-out; }
+  transition: 0.35s ease-out; }
 
 .projects-row .ext-link-aws:hover .icon-aws-text {
   fill: #252f3e; }
@@ -213,21 +213,21 @@ nav {
 
 .projects-row .ext-link-bootstrap .logo-bootstrap-path {
   fill: #ccc;
-  transition: 0.5s ease-out; }
+  transition: 0.35s ease-out; }
 
 .projects-row .ext-link-bootstrap:hover .logo-bootstrap-path {
   fill: #563d7c; }
 
 .projects-row .ext-link-django path {
   fill: #ccc;
-  transition: 0.5s ease-out; }
+  transition: 0.35s ease-out; }
 
 .projects-row .ext-link-django:hover path {
   fill: #092e20; }
 
 .projects-row .ext-link-postgresql path {
   fill: #ccc;
-  transition: 0.5s ease-out; }
+  transition: 0.35s ease-out; }
 
 .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-none-stroke-fff {
   fill: none;
