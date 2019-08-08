@@ -5,7 +5,7 @@ class ProjectsRCPW extends Component {
   render() {
     const { IconAWS, LogoBootstrap, LogoDjango, IconExternalLink, LogoPostgreSQL } = this.props;
     return (
-      <div className="row">
+      <div className="row projects-row">
 
         <div className="col-md-5">
           <figure>
@@ -27,10 +27,10 @@ class ProjectsRCPW extends Component {
             Source
           </button>
           <div className="projects-tech">
-            <button className="btn btn-bootstrap ext-link-bootstrap"><LogoBootstrap /></button>
-            <button className="btn btn-django ext-link-django"><LogoDjango /></button>
-            <button className="btn btn-postgresql ext-link-postgres"><LogoPostgreSQL /></button>
-            <button className="btn btn-aws ext-link-aws"><IconAWS /></button>
+            <button className="btn btn-projects-tech ext-link-bootstrap"><LogoBootstrap /></button>
+            <button className="btn btn-projects-tech ext-link-django"><LogoDjango /></button>
+            <button className="btn btn-projects-tech ext-link-postgres"><LogoPostgreSQL /></button>
+            <button className="btn btn-projects-tech ext-link-aws"><IconAWS /></button>
           </div>
         </div>
 

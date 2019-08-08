@@ -182,31 +182,36 @@ nav {
     font-weight: normal;
     font-size: 3rem; }
 
-.btn {
+.projects-row .btn {
   align-items: center;
   color: #043546;
   stroke: #043546;
   display: flex;
   font-weight: 600; }
-  .btn:focus {
+  .projects-row .btn:focus {
     outline: none;
     box-shadow: none; }
-  .btn:hover {
-    animation-duration: 0.35s;
-    animation-fill-mode: forwards;
-    animation-name: animation-chromatophore-external-link; }
 
-.icon-external-link {
+.projects-row .btn-source:hover,
+.projects-row .btn-view:hover {
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+  animation-name: animation-chromatophore-external-link; }
+
+.projects-row svg {
+  height: 1.5rem; }
+
+.projects-row .icon-external-link {
   height: 1rem;
   margin: 0 0.5rem;
   width: 1rem; }
 
-.projects-thumbnail {
+.projects-row .projects-thumbnail {
   height: 50vh;
   object-fit: cover;
   width: 100%; }
 
-.projects-thumbnail-header {
+.projects-row .projects-thumbnail-header {
   color: #043546; }
 
 * {
