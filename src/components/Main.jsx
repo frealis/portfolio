@@ -9,10 +9,6 @@ import Projects from './Projects'
 
 class Main extends Component {
   render() {
-
-    // Destructure this.props
-    // const { IconAWS, IconBootstrap, IconCopy, IconCSS } = this.props;
-
     return (
       <main className="main">
         <LandingPage />

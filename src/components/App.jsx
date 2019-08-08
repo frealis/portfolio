@@ -23,9 +23,6 @@ import Main from './Main'
 // import IconResume from '../img/custom-resume-043546.svg'
 // import IconSass from '../img/Sass_Logo_Color.svg'
 
-// import CustomJS from '../js/custom'
-// import ExternalJS from '../js/external_links'
-
 // Import custom JavaScript functions
 import { addLinkHrefs } from '../js/add-link-hrefs'
 import { getNavNetScrapsLocations } from '../js/get-nav-net-scraps-locations'
@@ -51,7 +48,7 @@ class App extends Component {
       // Fibonacci blocks
       colors: [],
       fibSeq: [],
-      n: 16,
+      n: 12,
       unit: 'px',
     }
 
@@ -86,26 +83,25 @@ class App extends Component {
       // Fibonacci blocks
       let {n, fibSeq, unit, colors} = this.state
       this.fibBlocks(n, fibSeq, unit, colors)
-      fibAsteroidBlocks()
-      fibAsteroidZoom()
+      // fibAsteroidBlocks()
+      // fibAsteroidZoom()
     })
   }
 
-  // componentWillUnmount() {
-  //   document.querySelector('.main').removeEventListener('scroll', handleScroll)
-  // }
+  componentWillUnmount() {
+    const main = document.querySelector('.main')
+    document.querySelector('.main').removeEventListener('scroll', () => {
+      this.handleScroll(main)
+    })  
+  }
 
   render() {
     return (
       <div className="App">
-        {/* <CustomJS /> */}
         <NavbarDeconstructed />
         <NavbarConstructedFixed />
         <Main />
 
-        {/* <ExternalJS /> */}
-        {/* <Navbar toggleHamburger={ this.toggleHamburger } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } /> */}
-        {/* <Main IconAWS={ IconAWS } IconBootstrap={ IconBootstrap } IconCopy={ IconCopy } IconCSS={ IconCSS } IconDjango={ IconDjango } IconEmail={ IconEmail } IconFlask={ IconFlask } IconGitHub={ IconGitHub } IconHackerRank={ IconHackerRank } IconHeroku={ IconHeroku } IconHTML={ IconHTML } IconJavaScript={ IconJavaScript} IconLinkedIn={ IconLinkedIn } IconPostgres={ IconPostgres } IconPython={ IconPython } IconReact={ IconReact } IconResume={ IconResume } IconSass={ IconSass } /> */}
         {/* <Footer IconEmail={ IconEmail } IconGitHub={ IconGitHub } IconHackerRank={ IconHackerRank } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } /> */}
       </div>
     )

@@ -1,0 +1,32 @@
+.btn {
+  align-items: center;
+  color: $tertiary-color;
+  stroke: $tertiary-color;
+  display: flex;
+  font-weight: 600;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:hover {
+    animation-duration: 0.35s;
+    animation-fill-mode: forwards;
+    animation-name: animation-chromatophore-external-link;
+  }
+}
+
+.icon-external-link {
+  height: 1rem;
+  margin: 0 0.5rem;
+  width: 1rem;
+}
+
+.projects-thumbnail {
+  height: 50vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.projects-thumbnail-header {
+  color: $tertiary-color;
+}

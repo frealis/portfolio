@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 
-// import ProjectsRCPW from './ProjectsRCPW.jsx';
+import ProjectsRCPW from './ProjectsRCPW.jsx';
 // import ProjectsPinocchios from './ProjectsPinocchios.jsx';
 // import ProjectsMicroChat from './ProjectsMicroChat.jsx';
 // import ProjectsBookReviews from './ProjectsBookReviews.jsx';
 
+import IconAWS from '../img/aws.svg'
+import IconBootstrap from '../img/bootstrap-symbol.svg'
+import IconDjango from '../img/djangoproject-icon2.svg'
+import IconPostgres from '../img/postgresql-icon.svg'
+
+
 class Projects extends Component {
-
   render() {
-
-    // Destructure this.props
-    // const { IconAWS, IconBootstrap, IconDjango, IconFlask, IconHeroku, IconPostgres } = this.props;
-
     return (
       <div>
         <span id="anchor-projects"></span>
         <div className="page">
           <h1 className="page-header">Projects</h1>
+          <ProjectsRCPW IconBootstrap={ IconBootstrap } IconDjango={ IconDjango } IconPostgres={ IconPostgres} IconAWS={ IconAWS} />
         </div>
       </div>
     )

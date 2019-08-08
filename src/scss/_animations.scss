@@ -58,3 +58,32 @@
       0 -30px rgba(255, 255, 255, 0);
   }
 }
+
+@keyframes animation-chromatophore-external-link {
+  0% { 
+    color: $primary-color;
+    stroke: $primary-color;
+  }
+  25% { 
+    color: $secondary-color;
+    stroke: $secondary-color;
+    text-shadow: 
+      15px 0 $quinary-color, 
+      -15px 0 $quarternary-color;
+  }
+  50% { 
+    color: $tertiary-color;
+    stroke: $tertiary-color;
+  }
+  75% { 
+    color: $quarternary-color;
+    stroke: $quarternary-color;
+   }
+  100% { 
+    color: $quinary-color;
+    stroke: $quinary-color;
+    text-shadow: 
+      0 15px rgba(255, 255, 255, 0), 
+      0 -15px rgba(255, 255, 255, 0);
+  }
+}
