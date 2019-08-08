@@ -33,6 +33,7 @@ import { handleScroll } from '../js/handle-scroll'
 import { colorsShuffled } from '../js/colors-shuffled'
 import { fibSequence } from '../js/fib-sequence'
 import { fibBlocks } from '../js/fib-blocks'
+import { fibAsteroidBlocks } from '../js/fib-asteroid-blocks'
 
 class App extends Component {
   constructor(props) {
@@ -84,6 +85,7 @@ class App extends Component {
       // Fibonacci blocks
       let {n, fibSeq, unit, colors} = this.state
       this.fibBlocks(n, fibSeq, unit, colors)
+      fibAsteroidBlocks()
     })
   }
 

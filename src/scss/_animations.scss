@@ -11,27 +11,15 @@
   animation-name: animation-asteroid-blocks;
 }
 
-@keyframes animation-asteroid-text {
-  0% { transform: scale(0.8); }
-  85% { transform: scale(1.2); }
-  100% { transform: scale(1); }
-}
-
-.animation-asteroid-text {
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-name: animation-asteroid-text;
-}
-
-@keyframes animation-main-zoom {
+@keyframes animation-asteroid-zoom {
   0% { perspective: 1px; }
   100% { perspective: 10px; }
 }
 
-.animation-main-zoom {
+.animation-asteroid-zoom {
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-name: animation-main-zoom;
+  animation-name: animation-asteroid-zoom;
 }
 
 @keyframes animation-chromatophore {

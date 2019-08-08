@@ -65,12 +65,8 @@ export function fibBlocks(n, fibSeq, unit, colors) {
       position_y = position_y - factor * 1868 + unit
     }
     
-    // Create a unique ID value for each block
-    const blockID = 'blockID' + i
-    
     // Set block properties
     block.classList.add('background-fibonacci-block')
-    block.id                = blockID
     block.style.background  = colors[i % colors.length]
     block.style.display     = 'block'
     block.style.left        = position_x

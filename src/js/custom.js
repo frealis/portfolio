@@ -214,7 +214,7 @@ function asteroidBlocks() {
 asteroidBlocks()
 
 // Change perspective of fibonacci blocks <div> (ie. 'main') to create a zoom effect
-document.querySelector('.main').classList.add('animation-main-zoom')
+document.querySelector('.main').classList.add('animation-asteroid-zoom')
 
 // Change scale to animate brand text and links
 // function asteroidText() {
