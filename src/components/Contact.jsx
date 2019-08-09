@@ -18,11 +18,11 @@ class Contact extends Component {
               <form action="" method="POST">
                 <div className="contact-input">
                   <input name="contact_name" id="contact-name-input" className="contact-input-field" type="text" required placeholder="name" />
-                  <label for="contact-name" className="floating-placeholder">Name</label>
+                  <label htmlFor="contact-name" className="floating-placeholder">Name</label>
                 </div>
                 <div className="contact-input">
                   <input name="contact_email" id="contact-email-input" className="contact-input-field" type="text" required placeholder="email" />
-                  <label for="contact-email" className="floating-placeholder">Email</label>
+                  <label htmlFor="contact-email" className="floating-placeholder">Email</label>
                 </div>
                 <div className="contact-input">
                   <textarea name="contact_message" 
@@ -30,7 +30,7 @@ class Contact extends Component {
                             className="contact-input-field" 
                             cols="10" rows="5"
                             required placeholder="message"></textarea>
-                  <label for="contact-message" className="floating-placeholder">Message</label>
+                  <label htmlFor="contact-message" className="floating-placeholder">Message</label>
                 </div>
               </form>
               <button id="contact-button-send" className="btn">Send Message</button>
