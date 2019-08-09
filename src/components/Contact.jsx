@@ -42,21 +42,21 @@ class Contact extends Component {
                   <IconEmail /> 
                   <span className="contact-text-email"></span>
                 </button>
-                <span className="contact-ctc contact-ctc-email"><IconCopy /></span>
+                <button className="contact-ctc contact-ctc-email"><IconCopy /></button>
               </div>
               <div className="contact-link-wrapper">
                 <button className="btn contact-icon-wrapper contact-link-github">
                   <IconGitHub /> 
                   <span className="contact-text-github"></span>
                 </button>
-                <span className="contact-ctc contact-ctc-github"><IconCopy /></span>
+                {/* <span className="contact-ctc contact-ctc-github"><IconCopy /></span> */}
               </div>
               <div className="contact-link-wrapper">
                 <button className="btn contact-icon-wrapper contact-link-linkedin">
                   <IconLinkedIn /> 
                   <span className="contact-text-linkedin"></span>
                 </button>
-                <span className="contact-ctc contact-ctc-linkedin"><IconCopy /></span>
+                {/* <span className="contact-ctc contact-ctc-linkedin"><IconCopy /></span> */}
               </div>
             </div>
           </div>

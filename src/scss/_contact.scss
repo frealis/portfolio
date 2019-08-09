@@ -69,6 +69,7 @@ $contact-link-transition: 0.25s ease-out;
     display: flex;
     .contact-icon-wrapper {
       color: $tertiary-color;
+      user-select: auto;
       & .icon-email {
         fill: $tertiary-color;
         height: 2rem;
@@ -119,6 +120,7 @@ $contact-link-transition: 0.25s ease-out;
   }
 
   & .contact-ctc {
+    background: none;
     & .icon-copy {
       fill: none;
       height: 1rem;
@@ -146,6 +148,13 @@ $contact-link-transition: 0.25s ease-out;
         background-color: $quinary-color;
         opacity: 1;
         transition: $contact-link-transition;
+      }
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      &::after {
+        content: 'Copied!';
       }
     }
   }

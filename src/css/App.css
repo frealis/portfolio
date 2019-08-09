@@ -331,7 +331,8 @@ nav {
   align-items: center;
   display: flex; }
   .contact-row .contact-link-wrapper .contact-icon-wrapper {
-    color: #043546; }
+    color: #043546;
+    user-select: auto; }
     .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email {
       fill: #043546;
       height: 2rem; }
@@ -365,32 +366,37 @@ nav {
       outline: none;
       box-shadow: none; }
 
-.contact-row .contact-ctc .icon-copy {
-  fill: none;
-  height: 1rem;
-  position: relative;
-  stroke: #043546;
-  top: -0.2rem; }
-
-.contact-row .contact-ctc::after {
-  background-color: #ECD4B0;
-  border-radius: 0.25rem;
-  color: #FCFAED;
-  content: 'Click to Copy';
-  font-size: 0.75rem;
-  margin-left: 0.5rem;
-  opacity: 0;
-  padding: 0.1rem 0.25rem; }
-
-.contact-row .contact-ctc:hover {
-  cursor: pointer; }
-  .contact-row .contact-ctc:hover .icon-copy {
-    stroke: #1B969E;
-    transition: 0.25s ease-out; }
-  .contact-row .contact-ctc:hover::after {
-    background-color: #1B969E;
-    opacity: 1;
-    transition: 0.25s ease-out; }
+.contact-row .contact-ctc {
+  background: none; }
+  .contact-row .contact-ctc .icon-copy {
+    fill: none;
+    height: 1rem;
+    position: relative;
+    stroke: #043546;
+    top: -0.2rem; }
+  .contact-row .contact-ctc::after {
+    background-color: #ECD4B0;
+    border-radius: 0.25rem;
+    color: #FCFAED;
+    content: 'Click to Copy';
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    opacity: 0;
+    padding: 0.1rem 0.25rem; }
+  .contact-row .contact-ctc:hover {
+    cursor: pointer; }
+    .contact-row .contact-ctc:hover .icon-copy {
+      stroke: #1B969E;
+      transition: 0.25s ease-out; }
+    .contact-row .contact-ctc:hover::after {
+      background-color: #1B969E;
+      opacity: 1;
+      transition: 0.25s ease-out; }
+  .contact-row .contact-ctc:focus {
+    outline: none;
+    box-shadow: none; }
+    .contact-row .contact-ctc:focus::after {
+      content: 'Copied!'; }
 
 .contact-row input::placeholder,
 .contact-row textarea::placeholder {

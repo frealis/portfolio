@@ -101,13 +101,13 @@ export function addLinkHrefs() {
       input.select()
       document.execCommand('copy')
       input.remove()
-      // document.querySelector('.clec-button').focus()
+      document.querySelector(`${ctc_link.class_ctc}`).focus()
     })
   }
 
   createCTCLink(email)
-  createCTCLink(github)
-  createCTCLink(linkedin)
+  // createCTCLink(github)
+  // createCTCLink(linkedin)
 
   // ========== TECHNOLOGY ICONS ===============================================
 
