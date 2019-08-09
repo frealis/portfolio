@@ -1,3 +1,5 @@
+$contact-link-transition: 0.25s ease-out;
+
 .contact-row {
   & #contact-button-send {
     background-color: $secondary-color;
@@ -62,54 +64,89 @@
     width: 100%;
   }
 
-  .contact-icon-wrapper {
-    color: $tertiary-color;
-    display: block;
-    & .icon-email {
-      fill: $tertiary-color;
-      height: 2rem;
-      & line,
-      & path,
-      & rect {
-        stroke: $secondary-color;
-      }
-    }
-    & .icon-github {
-      fill: $tertiary-color;
-      height: 2rem;
-    }
-    & .icon-linkedin {
-      height: 2rem;
-      & circle {
-        fill: $tertiary-color;
-      }
-      & path {
-        fill: $secondary-color;
-      }
-    }
-    & span {
-      padding: 0 calc(0.25rem + 0.25vw);
-    }
-    &:hover {
-      color: $quinary-color;
+  .contact-link-wrapper {
+    align-items: center;
+    display: flex;
+    .contact-icon-wrapper {
+      color: $tertiary-color;
       & .icon-email {
-        fill: $quinary-color;
-        transition: 0.15s ease-in-out;
-      }
-      & .icon-github {
-        fill: $quinary-color;
-        transition: 0.15s ease-in-out;
-      }
-      & .icon-linkedin {
-        & circle {
-          fill: $quinary-color;
-          transition: 0.15s ease-in-out;
+        fill: $tertiary-color;
+        height: 2rem;
+        & line,
+        & path,
+        & rect {
+          stroke: $secondary-color;
         }
       }
+      & .icon-github {
+        fill: $tertiary-color;
+        height: 2rem;
+      }
+      & .icon-linkedin {
+        height: 2rem;
+        & circle {
+          fill: $tertiary-color;
+        }
+        & path {
+          fill: $secondary-color;
+        }
+      }
+      & span {
+        padding: 0 calc(0.25rem + 0.25vw);
+      }
+      &:hover {
+        color: $quinary-color;
+        & .icon-email {
+          fill: $quinary-color;
+          transition: $contact-link-transition;
+        }
+        & .icon-github {
+          fill: $quinary-color;
+          transition: $contact-link-transition;
+        }
+        & .icon-linkedin {
+          & circle {
+            fill: $quinary-color;
+            transition: $contact-link-transition;
+          }
+        }
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
     }
-    &:focus {
-      outline: none;
-      box-shadow: none;
+  }
+
+  & .contact-ctc {
+    & .icon-copy {
+      fill: none;
+      height: 1rem;
+      position: relative;
+      stroke: $tertiary-color;
+      top: -0.2rem;
+    }
+    &::after {
+      background-color: $quarternary-color;
+      border-radius: 0.25rem;
+      color: $secondary-color;
+      content: 'Click to Copy';
+      font-size: 0.75rem;
+      margin-left: 0.5rem;
+      opacity: 0;
+      padding: 0.1rem 0.25rem;
+    }
+    &:hover {
+      cursor: pointer;
+      & .icon-copy {
+        stroke: $quinary-color;
+        transition: $contact-link-transition;
+      }
+      &::after {
+        background-color: $quinary-color;
+        opacity: 1;
+        transition: $contact-link-transition;
+      }
     }
   }
 

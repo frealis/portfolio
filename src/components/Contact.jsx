@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import IconCopy from '../img/svg-components/icon-copy'
 import IconEmail from '../img/svg-components/icon-email'
 import IconGitHub from '../img/svg-components/icon-github'
 import IconLinkedIn from '../img/svg-components/icon-linkedin'
@@ -11,8 +12,8 @@ class Contact extends Component {
         <span id="anchor-contact"></span>
         <div className="page">
           <h1 className="page-header">Contact</h1>
-
           <div className="row contact-row">
+
             <div className="col-md-6">
               <form action="" method="POST">
                 <div className="contact-input">
@@ -36,29 +37,29 @@ class Contact extends Component {
             </div>
 
             <div className="col-md-6">
-
-              <button className="btn contact-icon-wrapper contact-link-email">
-                <IconEmail /> 
-                <span className="contact-text-email"></span>
-              </button>
-              <span className="contact-ctc-email">Copy Email</span>
-
-              <button className="btn contact-icon-wrapper contact-link-github">
-                <IconGitHub /> 
-                <span className="contact-text-github"></span>
-              </button>
-              <span className="contact-ctc-github">Copy GitHub</span>
-
-              <button className="btn contact-icon-wrapper contact-link-linkedin">
-                <IconLinkedIn /> 
-                <span className="contact-text-linkedin"></span>
-              </button>
-              <span className="contact-ctc-linkedin">Copy LinkedIn</span>
-
+              <div className="contact-link-wrapper">
+                <button className="btn contact-icon-wrapper contact-link-email">
+                  <IconEmail /> 
+                  <span className="contact-text-email"></span>
+                </button>
+                <span className="contact-ctc contact-ctc-email"><IconCopy /></span>
+              </div>
+              <div className="contact-link-wrapper">
+                <button className="btn contact-icon-wrapper contact-link-github">
+                  <IconGitHub /> 
+                  <span className="contact-text-github"></span>
+                </button>
+                <span className="contact-ctc contact-ctc-github"><IconCopy /></span>
+              </div>
+              <div className="contact-link-wrapper">
+                <button className="btn contact-icon-wrapper contact-link-linkedin">
+                  <IconLinkedIn /> 
+                  <span className="contact-text-linkedin"></span>
+                </button>
+                <span className="contact-ctc contact-ctc-linkedin"><IconCopy /></span>
+              </div>
             </div>
-
           </div>
-
         </div>
       </div>
     )

@@ -327,41 +327,70 @@ nav {
   margin: auto;
   width: 100%; }
 
-.contact-row .contact-icon-wrapper {
-  color: #043546;
-  display: block; }
-  .contact-row .contact-icon-wrapper .icon-email {
-    fill: #043546;
-    height: 2rem; }
-    .contact-row .contact-icon-wrapper .icon-email line,
-    .contact-row .contact-icon-wrapper .icon-email path,
-    .contact-row .contact-icon-wrapper .icon-email rect {
-      stroke: #FCFAED; }
-  .contact-row .contact-icon-wrapper .icon-github {
-    fill: #043546;
-    height: 2rem; }
-  .contact-row .contact-icon-wrapper .icon-linkedin {
-    height: 2rem; }
-    .contact-row .contact-icon-wrapper .icon-linkedin circle {
-      fill: #043546; }
-    .contact-row .contact-icon-wrapper .icon-linkedin path {
-      fill: #FCFAED; }
-  .contact-row .contact-icon-wrapper span {
-    padding: 0 calc(0.25rem + 0.25vw); }
-  .contact-row .contact-icon-wrapper:hover {
-    color: #1B969E; }
-    .contact-row .contact-icon-wrapper:hover .icon-email {
-      fill: #1B969E;
-      transition: 0.15s ease-in-out; }
-    .contact-row .contact-icon-wrapper:hover .icon-github {
-      fill: #1B969E;
-      transition: 0.15s ease-in-out; }
-    .contact-row .contact-icon-wrapper:hover .icon-linkedin circle {
-      fill: #1B969E;
-      transition: 0.15s ease-in-out; }
-  .contact-row .contact-icon-wrapper:focus {
-    outline: none;
-    box-shadow: none; }
+.contact-row .contact-link-wrapper {
+  align-items: center;
+  display: flex; }
+  .contact-row .contact-link-wrapper .contact-icon-wrapper {
+    color: #043546; }
+    .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email {
+      fill: #043546;
+      height: 2rem; }
+      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email line,
+      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email path,
+      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email rect {
+        stroke: #FCFAED; }
+    .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-github {
+      fill: #043546;
+      height: 2rem; }
+    .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-linkedin {
+      height: 2rem; }
+      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-linkedin circle {
+        fill: #043546; }
+      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-linkedin path {
+        fill: #FCFAED; }
+    .contact-row .contact-link-wrapper .contact-icon-wrapper span {
+      padding: 0 calc(0.25rem + 0.25vw); }
+    .contact-row .contact-link-wrapper .contact-icon-wrapper:hover {
+      color: #1B969E; }
+      .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-email {
+        fill: #1B969E;
+        transition: 0.25s ease-out; }
+      .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-github {
+        fill: #1B969E;
+        transition: 0.25s ease-out; }
+      .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-linkedin circle {
+        fill: #1B969E;
+        transition: 0.25s ease-out; }
+    .contact-row .contact-link-wrapper .contact-icon-wrapper:focus {
+      outline: none;
+      box-shadow: none; }
+
+.contact-row .contact-ctc .icon-copy {
+  fill: none;
+  height: 1rem;
+  position: relative;
+  stroke: #043546;
+  top: -0.2rem; }
+
+.contact-row .contact-ctc::after {
+  background-color: #ECD4B0;
+  border-radius: 0.25rem;
+  color: #FCFAED;
+  content: 'Click to Copy';
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  opacity: 0;
+  padding: 0.1rem 0.25rem; }
+
+.contact-row .contact-ctc:hover {
+  cursor: pointer; }
+  .contact-row .contact-ctc:hover .icon-copy {
+    stroke: #1B969E;
+    transition: 0.25s ease-out; }
+  .contact-row .contact-ctc:hover::after {
+    background-color: #1B969E;
+    opacity: 1;
+    transition: 0.25s ease-out; }
 
 .contact-row input::placeholder,
 .contact-row textarea::placeholder {
