@@ -36,9 +36,9 @@ class Contact extends Component {
             </div>
 
             <div className="col-md-6">
-              <button className="btn contact-icon-wrapper"><IconEmail /> mhh129@gmail.com</button>
-              <button className="btn contact-icon-wrapper"><IconGitHub /> https://github.com/matthigg</button>
-              <button className="btn contact-icon-wrapper"><IconLinkedIn /> https://www.linkedin.com/in/matt-higg/</button>
+              <button className="btn contact-icon-wrapper contact-link-email"><IconEmail /> mhh129@gmail.com</button>
+              <button className="btn contact-icon-wrapper contact-link-github"><IconGitHub /> https://github.com/matthigg</button>
+              <button className="btn contact-icon-wrapper contact-link-linkedin"><IconLinkedIn /> https://www.linkedin.com/in/matt-higg/</button>
             </div>
 
           </div>

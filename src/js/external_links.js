@@ -1,3 +1,5 @@
+// This file is here for reference
+
 // Add event listeners to icons that handle taking users to an external link
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,11 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open('https://github.com/matthigg/Book-Reviews-with-Goodreads', '_blank');
   });
 
-  // Contact links (resume, email, GitHub, LinkedIn)
-  const email = 'mhh129@gmail.com';
-  document.querySelector('.contact-link-email').addEventListener('click', () => {
-    window.open(`mailto:${email}`);
-  });
+  // Click-to-copy script
   document.querySelector('.clec').addEventListener('click', () => {
     const input = document.createElement('input');
     input.value = `${email}`;
@@ -47,6 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.execCommand('copy');
     input.remove();
     document.querySelector('.clec-button').focus()
+  });
+
+  // Contact links (email, GitHub, LinkedIn)
+  const email = 'mhh129@gmail.com';
+  document.querySelector('.contact-link-email').addEventListener('click', () => {
+    window.open(`mailto:${email}`);
   });
   document.querySelector('.contact-link-github').addEventListener('click', () => {
     window.open('https://github.com/matthigg', '_blank');
