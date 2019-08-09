@@ -4,31 +4,40 @@ import ThumbnailBookReviews from '../img/thumbnail-book-reviews.svg';
 
 class BookReviews extends Component {
   render() {
-
-    // Destructure this.props
-    const { IconBootstrap, IconFlask, IconHeroku, IconPostgres } = this.props;
-
+    const { IconExternalLink, LogoBootstrap, LogoFlask, LogoHeroku, LogoPostgreSQL } = this.props;
     return (
-      <div className="col-md-6 projects-col">
-        <figure>
-          <img className="projects-thumbnail" alt="Book Reviews" src={ ThumbnailBookReviews } />
-          <figcaption className="d-flex flex-column justify-content-between">
-            <div>
-              <h2 className="projects-thumbnail-header">Book Reviews w/Goodreads</h2>
-              <p className="projects-thumbnail-description">Book database and reviews website</p>
+      <div className="row projects-row">
+
+        <div className="col-md-5">
+          <figure>
+            <img className="projects-thumbnail" alt="Book Reviews" src={ ThumbnailBookReviews } />
+          </figure>
+        </div>
+
+        <div className="col-md-7 projects-col">
+          <div className="projects-col-top">
+            <h2 className="projects-thumbnail-header">Book Reviews w/Goodreads</h2>
+            <p className="projects-thumbnail-description">This is a book reviews website that allows user account creation, login & authentication through Flask Sessions, a database search utility that interfaces with a Heroku Postgres database containing data on 5,000 books. The site also allows visitors to read and write reviews for those books, rate the books, and provides instructions on how to access the site's API which serves book reviews and details data in JSON format.</p>
+            <p className="projects-thumbnail-description">Additionally, this site also retrieves book ratings on the same books from <a href="https://www.goodreads.com">Goodreads</a> through the <a href="https://www.goodreads.com/api">Goodreads API</a>.</p>
+          </div>
+          <div className="projects-col-bottom">
+            <button className="btn btn-view ext-link-bookreviews">
+              <IconExternalLink />
+              View Site
+            </button>
+            <button className="btn btn-source ext-link-bookreviews-github">
+              <IconExternalLink />
+              Source Code
+            </button>
+            <div className="projects-tech">
+              <button className="btn ext-link-bootstrap"><LogoBootstrap /></button>
+              <button className="btn ext-link-flask"><LogoFlask /></button>
+              <button className="btn ext-link-postgresql"><LogoPostgreSQL /></button>
+              <button className="btn ext-link-heroku"><LogoHeroku /></button>
             </div>
-            <div className="d-flex btn-group justify-content-center">
-              <button className="btn btn-sm btn-view ext-link-bookreviews">View</button>
-              <button className="btn btn-sm btn-source ext-link-bookreviews-github">Source</button>
-            </div>
-            <div className="d-flex projects-thumbnail-icons justify-content-around">
-              <img className="projects-thumbnail-icon ext-link-bootstrap" alt="Bootstrap" src={ IconBootstrap } />
-              <img className="projects-thumbnail-icon ext-link-flask" alt="Flask" src={ IconFlask } />
-              <img className="projects-thumbnail-icon ext-link-postgres" alt="Postgres" src={ IconPostgres } />
-              <img className="projects-thumbnail-icon ext-link-heroku" alt="Heroku" src={ IconHeroku } />
-            </div>
-          </figcaption>
-        </figure>
+          </div>
+        </div>
+
       </div>
     )
   }

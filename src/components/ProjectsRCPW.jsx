@@ -3,7 +3,7 @@ import ThumbnailRCPW from '../img/thumbnail-rcpw.svg'
 
 class ProjectsRCPW extends Component {
   render() {
-    const { IconAWS, LogoBootstrap, LogoDjango, IconExternalLink, LogoPostgreSQL } = this.props;
+    const { IconAWS, IconExternalLink, LogoBootstrap, LogoDjango, LogoPostgreSQL } = this.props;
     return (
       <div className="row projects-row">
 

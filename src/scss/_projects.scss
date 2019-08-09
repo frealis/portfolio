@@ -72,6 +72,18 @@ $projects-transition: 0.35s ease-out;
     }
   }
 
+  .ext-link-flask {
+    & path {
+      fill: #ccc;
+      transition: $projects-transition;
+    }
+    &:hover {
+      & path {
+        fill: black;
+      }
+    }
+  }
+
   .ext-link-heroku {
     & .logo-heroku-path {
       fill: #ccc;

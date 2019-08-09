@@ -225,6 +225,11 @@ nav {
     transition: 0.35s ease-out; }
   .projects-row .ext-link-django:hover path {
     fill: #092e20; }
+  .projects-row .ext-link-flask path {
+    fill: #ccc;
+    transition: 0.35s ease-out; }
+  .projects-row .ext-link-flask:hover path {
+    fill: black; }
   .projects-row .ext-link-heroku .logo-heroku-path {
     fill: #ccc;
     transition: 0.35s ease-out; }

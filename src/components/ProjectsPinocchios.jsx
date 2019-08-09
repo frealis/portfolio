@@ -3,7 +3,7 @@ import ThumbnailPinocchios from '../img/thumbnail-pinocchios.svg';
 
 class ProjectsPinocchios extends Component {
   render() {
-    const { LogoBootstrap, LogoDjango, IconExternalLink, LogoHeroku, LogoPostgreSQL } = this.props;
+    const { IconExternalLink, LogoBootstrap, LogoDjango, LogoHeroku, LogoPostgreSQL } = this.props;
     return (
       <div className="row projects-row">
 
