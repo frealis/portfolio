@@ -7,8 +7,8 @@ export function fibBlocks(n, fibSeq, unit, colors) {
     const block_size = factor * fibSeq[i] + unit
     
     // Pick a starting point on the page's (x, y) axis
-    let position_x = window.innerWidth * 3 / 4
-    let position_y = window.innerHeight / 4
+    let position_x = window.innerWidth * 2 / 4
+    let position_y = window.innerHeight * 1.5 / 4
     
     // Create positioning coordinates for each block (need to figure 
     // out a compact function for this someday)

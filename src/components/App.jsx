@@ -48,7 +48,7 @@ class App extends Component {
       // Fibonacci blocks
       colors: [],
       fibSeq: [],
-      n: 12,
+      n: 14,
       unit: 'px',
     }
 
@@ -83,8 +83,8 @@ class App extends Component {
       // Fibonacci blocks
       let {n, fibSeq, unit, colors} = this.state
       this.fibBlocks(n, fibSeq, unit, colors)
-      // fibAsteroidBlocks()
-      // fibAsteroidZoom()
+      fibAsteroidBlocks()
+      fibAsteroidZoom()
     })
   }
 

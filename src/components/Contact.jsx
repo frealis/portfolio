@@ -7,6 +7,34 @@ class Contact extends Component {
         <span id="anchor-contact"></span>
         <div className="page">
           <h1 className="page-header">Contact</h1>
+
+          <div className="row contact-row">
+            <div className="col-md-6">
+              <form action="" method="POST">
+                <div className="contact-input">
+                  <input name="contact_name" id="contact-name-input" className="contact-input-field" type="text" required placeholder="name" />
+                  <label for="contact-name" className="floating-placeholder">Name</label>
+                </div>
+                <div className="contact-input">
+                  <input name="contact_email" id="contact-email-input" className="contact-input-field" type="text" required placeholder="email" />
+                  <label for="contact-email" className="floating-placeholder">Email</label>
+                </div>
+                <div className="contact-input">
+                  <textarea name="contact_message" 
+                            id="contact-message-input" 
+                            className="contact-input-field" 
+                            cols="10" rows="5"
+                            required placeholder="message"></textarea>
+                  <label for="contact-message" className="floating-placeholder">Message</label>
+                </div>
+              </form>
+              <button id="contact-button-send" className="btn btn-sm">Send Message</button>
+            </div>
+
+            <div className="col-md-6"></div>
+
+          </div>
+
         </div>
       </div>
     )

@@ -16,7 +16,7 @@ class ProjectsMicroChat extends Component {
         <div className="col-md-7 projects-col">
           <div className="projects-col-top">
             <h2 className="projects-thumbnail-header">microChat</h2>
-            <p className="projects-thumbnail-description">This is a chatroom application built using Flask SocketIO. Visitors can create a display name and then either join or create new chatroom channels. No passwords are necessary. A random avatar is assigned to each display name through the <a href="http://avatars.adorable.io/">Adorable Avatars!></a> API.</p>
+            <p className="projects-thumbnail-description">This is a chatroom application built using Flask SocketIO. Visitors can create a display name and then either join or create new chatroom channels. No passwords are necessary. A random avatar is assigned to each display name through the <a href="http://avatars.adorable.io/">Adorable Avatars!</a> API.</p>
             <p className="projects-thumbnail-description">Chatrooms will save up to 100 of the latest messages, and once visitors log out their display name becomes available for anyone else to use.</p>
           </div>
           <div className="projects-col-bottom">
