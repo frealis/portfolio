@@ -1,6 +1,8 @@
 // Navbar Net
 import React, { Component } from 'react'
 
+import IconResume from '../img/svg-components/icon-resume'
+
 class NavbarNet extends Component {
   render() {
     return (
@@ -12,6 +14,7 @@ class NavbarNet extends Component {
         <div className="scrap-collected net links display-none">
           <button className="scrap-collected net link-projects">Projects</button>
           <button className="scrap-collected net link-contact">Contact</button>
+          <button className="scrap-collected net link-resume"><IconResume /></button>
         </div>
       </nav>
     )

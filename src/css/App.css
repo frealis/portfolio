@@ -98,6 +98,17 @@
     outline: none;
     box-shadow: none; }
 
+.link-resume {
+  background-color: transparent; }
+  .link-resume .icon-resume {
+    height: 2rem; }
+    .link-resume .icon-resume circle {
+      fill: #043546; }
+    .link-resume .icon-resume line,
+    .link-resume .icon-resume rect {
+      fill: none;
+      stroke: #FCFAED; }
+
 nav {
   align-items: center;
   display: flex;

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function iconEmail() {
   return (
-    <svg className="icon-email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <svg className="icon-email" stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
       <g transform="translate(-1827 -29)">
         <circle cx="50" cy="50" r="50" transform="translate(1827 29)"/>
         <rect width="65.306" height="35.102" transform="translate(1844.449 61.449)" strokeWidth="4"/>

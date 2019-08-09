@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function logoBootstrap() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 100">
-      <g stroke="none">
+    <svg stroke="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 100">
+      <g>
         <g>
           <path className="logo-bootstrap-path" d="M100,83.333A16.716,16.716,0,0,1,83.333,100H16.667A16.716,16.716,0,0,1,0,83.333V16.667A16.716,16.716,0,0,1,16.667,0H83.333A16.716,16.716,0,0,1,100,16.667Z"/>
           <g transform="translate(27.215 21.782)">

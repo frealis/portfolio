@@ -15,6 +15,21 @@
   }
 }
 
+.link-resume {
+  background-color: transparent;
+  .icon-resume {
+    height: 2rem;
+    & circle {
+      fill: $tertiary-color;
+    }
+    & line,
+    & rect {
+      fill: none;
+      stroke: $secondary-color;
+    }
+  }
+}
+
 nav {
   align-items: center;
   display: flex;
