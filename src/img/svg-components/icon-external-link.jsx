@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function iconExternalLink() {
   return (
-    <svg className="icon-external-link" stroke="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 106.247 106.246" enableBackground="new 0 0 106.247 106.246">
+    <svg className="icon-external-link" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 106.247 106.246" enableBackground="new 0 0 106.247 106.246">
       <polyline fill="none" strokeWidth="10" strokeMiterlimit="10" points="101.247,45.957 101.247,5 60.291,5 "/>
       <polyline fill="none" strokeWidth="10" strokeMiterlimit="10" points="45.956,19.334 5,19.334 5,101.246 
         86.912,101.246 86.912,60.291 "/>

@@ -2,7 +2,6 @@
 import React, { Component } from 'react'
 
 class NavbarDeconstructed extends Component {
-
   render() {
     const { IconGitHub, IconLinkedIn, IconResume } = this.props
     return (

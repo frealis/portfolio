@@ -1,10 +1,9 @@
 // Navbar Constructed Fixed
 import React, { Component } from 'react'
 
-import IconResume from '../img/svg-components/icon-resume'
-
 class NavbarConstructedFixed extends Component {
   render() {
+    const { IconGitHub, IconLinkedIn, IconResume } = this.props
     return (
       <nav className="nav-fixed scraps-collected nav-fixed-vanish">
         <div className="scrap-collected fixed brand">      
@@ -15,6 +14,8 @@ class NavbarConstructedFixed extends Component {
           <button className="scrap-collected fixed link-projects">Projects</button>
           <button className="scrap-collected fixed link-contact">Contact</button>
           <button className="scrap-collected fixed link-resume"><IconResume /></button>
+          <button className="scrap-collected fixed link-github"><IconGitHub /></button>
+          <button className="scrap-collected fixed link-linkedin"><IconLinkedIn /></button>
         </div>
       </nav>
     )

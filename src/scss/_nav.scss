@@ -118,10 +118,10 @@ nav {
       & line,
       & rect { stroke: $secondary-color; }
     }
-    & .link-github { fill: $quarternary-color; }
+    & .link-github { fill: $tertiary-color; }
     & .link-linkedin {
-      & circle { fill: $quarternary-color; }
-      & path { fill: $primary-color; }
+      & circle { fill: $tertiary-color; }
+      & path { fill: $secondary-color; }
     }
     &.display-none { display: none; }
   }

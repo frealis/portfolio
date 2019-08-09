@@ -13,7 +13,7 @@ class Main extends Component {
     return (
       <main className="main">
         <LandingPage />
-        <NavbarNet />
+        <NavbarNet IconGitHub={ this.props.IconGitHub } IconLinkedIn={ this.props.IconLinkedIn } IconResume={ this.props.IconResume } />
         <NavbarTripwire />
         <PageSpacer />
         <Projects />
