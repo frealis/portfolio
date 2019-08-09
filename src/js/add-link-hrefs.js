@@ -53,38 +53,39 @@ export function addLinkHrefs() {
     window.open('https://github.com/matthigg/Book-Reviews-with-Goodreads', '_blank')
   })
 
-  // ========== CONTACT LINKS ===================================================
+  // ========== EXTERNAL LINKS ===================================================
 
   const email = {
-    class_ctc: '.contact-ctc-email',
-    class_link: '.contact-link-email',
-    class_text: '.contact-text-email',
+    class_ctc: '.ctc-email',
+    class_link: '.link-email',
+    class_text: '.text-email',
     text: 'mhh129@gmail.com',
     url: 'mailto:mhh129@gmail.com',
   }
 
   const github = {
-    class_ctc: '.contact-ctc-github',
-    class_link: '.contact-link-github',
-    class_text: '.contact-text-github',
+    class_link: '.link-github',
+    class_text: '.text-github',
     text: 'https://github.com/matthigg',
     url: 'https://github.com/matthigg',
   }
 
   const linkedin = {
-    class_ctc: '.contact-ctc-linkedin',
-    class_link: '.contact-link-linkedin',
-    class_text: '.contact-text-linkedin',
+    class_link: '.link-linkedin',
+    class_text: '.text-linkedin',
     text: 'https://www.linkedin.com/in/matt-higg/',
     url: 'https://www.linkedin.com/in/matt-higg/',
   }
 
-  // Create contact link
-  function createContactLink(contact_link) {
-    document.querySelector(`${contact_link.class_link}`).addEventListener('click', () => {
-      window.open(`${contact_link.url}`)
+  // Create external link
+  function createContactLink(ext_link) {
+    document.querySelectorAll(`${ext_link.class_link}`).forEach(link => {
+      link.addEventListener('click', () => {
+        window.open(`${ext_link.url}`)
+      })
     })
-    document.querySelector(`${contact_link.class_text}`).innerHTML = contact_link.text
+
+    document.querySelector(`${ext_link.class_text}`).innerHTML = ext_link.text
   }
 
   createContactLink(email)
