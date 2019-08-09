@@ -2,11 +2,10 @@ import React, { Component } from 'react'
 
 import IconCopy from '../img/svg-components/icon-copy'
 import IconEmail from '../img/svg-components/icon-email'
-import IconGitHub from '../img/svg-components/icon-github'
-import IconLinkedIn from '../img/svg-components/icon-linkedin'
 
 class Contact extends Component {
   render() {
+    const { IconGitHub, IconLinkedIn } = this.props
     return (
       <div>
         <span id="anchor-contact"></span>

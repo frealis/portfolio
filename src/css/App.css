@@ -98,16 +98,34 @@
     outline: none;
     box-shadow: none; }
 
-.link-resume {
+.link-resume,
+.link-github {
   background-color: transparent; }
-  .link-resume .icon-resume {
+  .link-resume .icon-resume,
+  .link-github .icon-resume {
     height: 2rem; }
-    .link-resume .icon-resume circle {
-      fill: #043546; }
+    .link-resume .icon-resume circle,
+    .link-github .icon-resume circle {
+      fill: #ECD4B0; }
     .link-resume .icon-resume line,
-    .link-resume .icon-resume rect {
+    .link-resume .icon-resume rect,
+    .link-github .icon-resume line,
+    .link-github .icon-resume rect {
       fill: none;
-      stroke: #FCFAED; }
+      stroke: #0A2425; }
+  .link-resume .icon-github,
+  .link-github .icon-github {
+    fill: #ECD4B0;
+    height: 2rem; }
+  .link-resume .icon-linkedin,
+  .link-github .icon-linkedin {
+    height: 2rem; }
+    .link-resume .icon-linkedin circle,
+    .link-github .icon-linkedin circle {
+      fill: #ECD4B0; }
+    .link-resume .icon-linkedin path,
+    .link-github .icon-linkedin path {
+      fill: #0A2425; }
 
 nav {
   align-items: center;
@@ -150,6 +168,10 @@ nav {
   .scraps .scrap .link-contact {
     position: static; }
   .scraps .scrap .link-projects {
+    position: static; }
+  .scraps .scrap .link-resume {
+    position: static; }
+  .scraps .scrap .link-github {
     position: static; }
   .scraps .scrap.display-none {
     display: none; }

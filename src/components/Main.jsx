@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+// Import components
 import Contact from './Contact'
 import LandingPage from './LandingPage'
 import NavbarNet from './NavbarNet'
@@ -17,7 +18,7 @@ class Main extends Component {
         <PageSpacer />
         <Projects />
         <PageSpacer />
-        <Contact />
+        <Contact IconGitHub={ this.props.IconGitHub } IconLinkedIn={ this.props.IconLinkedIn } IconResume={ this.props.IconResume } />
       </main>
     )
   }

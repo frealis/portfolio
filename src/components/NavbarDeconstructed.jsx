@@ -1,10 +1,10 @@
 // Navbar Deconstructed
 import React, { Component } from 'react'
 
-import IconResume from '../img/svg-components/icon-resume'
-
 class NavbarDeconstructed extends Component {
+
   render() {
+    const { IconGitHub, IconLinkedIn, IconResume } = this.props
     return (
       <div className="scraps">
         <div className="scrap free brand">
@@ -15,8 +15,8 @@ class NavbarDeconstructed extends Component {
           <button className="scrap free link-projects">Projects</button>
           <button className="scrap free link-contact">Contact</button>
           <button className="scrap free link-resume"><IconResume /></button>
-          {/* <button className="scrap free link-github">GitHub</button> */}
-          {/* <button className="scrap free link-linkedin">LinkedIn</button> */}
+          <button className="scrap free link-github"><IconGitHub /></button>
+          <button className="scrap free link-linkedin"><IconLinkedIn /></button>
         </div>
       </div>
     )

@@ -5,10 +5,11 @@ import ProjectsPinocchios from './ProjectsPinocchios.jsx';
 import ProjectsMicroChat from './ProjectsMicroChat.jsx';
 import ProjectsBookReviews from './ProjectsBookReviews.jsx';
 
+// Import <svg> components
 import IconAWS from '../img/svg-components/icon-aws'
+import IconExternalLink from '../img/svg-components/icon-external-link'
 import LogoBootstrap from '../img/svg-components/logo-bootstrap'
 import LogoDjango from '../img/svg-components/logo-django'
-import IconExternalLink from '../img/svg-components/icon-external-link'
 import LogoFlask from '../img/svg-components/logo-flask-02'
 import LogoHeroku from '../img/svg-components/logo-heroku'
 import LogoPostgreSQL from '../img/svg-components/logo-postgresql'

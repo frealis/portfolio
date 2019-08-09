@@ -15,17 +15,31 @@
   }
 }
 
-.link-resume {
+.link-resume,
+.link-github {
   background-color: transparent;
-  .icon-resume {
+  & .icon-resume {
     height: 2rem;
     & circle {
-      fill: $tertiary-color;
+      fill: $quarternary-color;
     }
     & line,
     & rect {
       fill: none;
-      stroke: $secondary-color;
+      stroke: $primary-color;
+    }
+  }
+  & .icon-github {
+    fill: $quarternary-color;
+    height: 2rem;
+  }
+  & .icon-linkedin {
+    height: 2rem;
+    & circle {
+      fill: $quarternary-color;
+    }
+    & path {
+      fill: $primary-color;
     }
   }
 }
@@ -63,6 +77,8 @@ nav {
     &.links { left: 50vw; top: 50vh; }
     & .link-contact { position: static; }
     & .link-projects { position: static; }
+    & .link-resume { position: static; }
+    & .link-github { position: static; }
     &.display-none { display: none; }
   }
 }

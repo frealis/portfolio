@@ -1,27 +1,14 @@
 import React, { Component } from 'react'
 
+// Import components
 import NavbarDeconstructed from './NavbarDeconstructed'
 import NavbarConstructedFixed from './NavbarConstructedFixed'
 import Main from './Main'
 
-// import IconAWS from '../img/aws.svg'
-// import IconBootstrap from '../img/bootstrap-symbol.svg'
-// import IconCopy from '../img/custom-copy.svg'
-// import IconCSS from '../img/custom-css.svg'
-// import IconDjango from '../img/djangoproject-icon2.svg'
-// import IconEmail from '../img/custom-email-043546.svg'
-// import IconFlask from '../img/flask-icon.svg'
-// import IconGitHub from '../img/GitHub-043546.svg'
-// import IconHackerRank from '../img/HackerRank_logo.svg'
-// import IconHeroku from '../img/heroku-icon.svg'
-// import IconHTML from '../img/custom-html5.svg'
-// import IconJavaScript from '../img/javascript-icon2.svg'
-// import IconLinkedIn from '../img/LinkedIn-043546.svg'
-// import IconPostgres from '../img/postgresql-icon.svg'
-// import IconPython from '../img/custom-python.svg'
-// import IconReact from '../img/React-icon2.svg'
-// import IconResume from '../img/custom-resume-043546.svg'
-// import IconSass from '../img/Sass_Logo_Color.svg'
+// Import <svg> components
+import IconGitHub from '../img/svg-components/icon-github'
+import IconLinkedIn from '../img/svg-components/icon-linkedin'
+import IconResume from '../img/svg-components/icon-resume'
 
 // Import custom JavaScript functions
 import { addLinkHrefs } from '../js/add-link-hrefs'
@@ -98,9 +85,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavbarDeconstructed />
-        <NavbarConstructedFixed />
-        <Main />
+        <NavbarDeconstructed IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} />
+        <NavbarConstructedFixed IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} />
+        <Main IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} />
 
         {/* <Footer IconEmail={ IconEmail } IconGitHub={ IconGitHub } IconHackerRank={ IconHackerRank } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } /> */}
       </div>
