@@ -1,10 +1,10 @@
 nav {
   align-items: center;
+  // background-color: $secondary-color;
   display: flex;
-  background-color: $secondary-color;
   height: 10vh;
   padding: calc(2rem + 2vh) 0;
-  width: 80vw;
+  width: 90vw;
   &.nav-fixed {
     color: $tertiary-color;
     position: fixed;
@@ -32,6 +32,7 @@ nav {
     & .link-contact,
     & .link-projects {
       background-color: transparent;
+      font-size: 1.5rem;
       position: static; 
       &:hover {
         animation-duration: 0.25s;
@@ -77,6 +78,7 @@ nav {
   & .scrap-collected {
     color: $tertiary-color;
     font-weight: 600;
+    // mix-blend-mode: difference;
     padding: 0 1rem;
     position: absolute;
     z-index: 2;
@@ -86,6 +88,7 @@ nav {
     & .link-contact,
     & .link-projects {
       background-color: transparent;
+      font-size: 1.5rem;
       position: static; 
       &:hover {
         animation-duration: 0.25s;

@@ -85,10 +85,9 @@
 nav {
   align-items: center;
   display: flex;
-  background-color: #FCFAED;
   height: 10vh;
   padding: calc(2rem + 2vh) 0;
-  width: 80vw; }
+  width: 90vw; }
   nav.nav-fixed {
     color: #043546;
     position: fixed;
@@ -123,6 +122,7 @@ nav {
   .scraps .scrap .link-contact,
   .scraps .scrap .link-projects {
     background-color: transparent;
+    font-size: 1.5rem;
     position: static; }
     .scraps .scrap .link-contact:hover,
     .scraps .scrap .link-projects:hover {
@@ -187,6 +187,7 @@ nav {
   .scraps-collected .scrap-collected .link-contact,
   .scraps-collected .scrap-collected .link-projects {
     background-color: transparent;
+    font-size: 1.5rem;
     position: static; }
     .scraps-collected .scrap-collected .link-contact:hover,
     .scraps-collected .scrap-collected .link-projects:hover {

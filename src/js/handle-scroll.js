@@ -6,6 +6,7 @@ export function handleScroll(main) {
     document.querySelector('.scrap.free.brand').classList.add('display-none')
     document.querySelector('.scrap-collected.net.brand').classList.remove('display-none')
     document.querySelector('.scrap-collected.net.brand').classList.add('animation-chromatophore')
+    // document.querySelector('.nav-net').
   } else {
     document.querySelector('.scrap.free.brand').classList.remove('display-none')
     document.querySelector('.scrap-collected.net.brand').classList.add('display-none')
@@ -33,5 +34,4 @@ export function handleScroll(main) {
     document.querySelector('.nav-net').classList.remove('nav-net-vanish')
     document.querySelector('.nav-fixed').classList.add('nav-fixed-vanish')
   }
-
 }
