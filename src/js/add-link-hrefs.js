@@ -67,6 +67,7 @@ export function addLinkHrefs() {
     class_link: '.link-github',
     class_text: '.text-github',
     text: 'https://github.com/matthigg',
+    window_feature: '_blank',
     url: 'https://github.com/matthigg',
   }
 
@@ -74,23 +75,36 @@ export function addLinkHrefs() {
     class_link: '.link-linkedin',
     class_text: '.text-linkedin',
     text: 'https://www.linkedin.com/in/matt-higg/',
+    window_feature: '_blank',
     url: 'https://www.linkedin.com/in/matt-higg/',
   }
 
+  // const resume = {
+  //   class_link: '.link-resume',
+  //   url: '',
+  // }
+
   // Create external link
-  function createContactLink(ext_link) {
+  function createExternalLink(ext_link) {
     document.querySelectorAll(`${ext_link.class_link}`).forEach(link => {
       link.addEventListener('click', () => {
-        window.open(`${ext_link.url}`)
+        window.open(`${ext_link.url}`, `${ext_link.window_feature}`)
       })
+      link.setAttribute('rel', 'noopener noreferrer')
     })
 
-    document.querySelector(`${ext_link.class_text}`).innerHTML = ext_link.text
+    // After checking 'ext_link' for a 'text' property, this portion of code 
+    // assumes that there is only one HTML element with the appropriate 
+    // .class_text class in Contact.jsx that is used to display an email address
+    // or GitHub/LinkedIn address.
+    if (ext_link.text) {
+      document.querySelector(`${ext_link.class_text}`).innerHTML = ext_link.text
+    }
   }
 
-  createContactLink(email)
-  createContactLink(github)
-  createContactLink(linkedin)
+  createExternalLink(email)
+  createExternalLink(github)
+  createExternalLink(linkedin)
 
   // Create contact click-to-copy (ctc) link
   function createCTCLink(ctc_link) {
@@ -111,54 +125,56 @@ export function addLinkHrefs() {
 
   const aws = {
     nodelist: document.querySelectorAll('.ext-link-aws'),
-    url: 'https://aws.amazon.com/',
     window_feature: '_blank',
+    url: 'https://aws.amazon.com/',
   }
 
   const bootstrap = {
     nodelist: document.querySelectorAll('.ext-link-bootstrap'),
-    url: 'https://getbootstrap.com/',
     window_feature: '_blank',
+    url: 'https://getbootstrap.com/',
   }
 
   const django = {
     nodelist: document.querySelectorAll('.ext-link-django'),
-    url: 'https://www.djangoproject.com/',
     window_feature: '_blank',
+    url: 'https://www.djangoproject.com/',
   }
 
   const flask = {
     nodelist: document.querySelectorAll('.ext-link-flask'),
-    url: 'https://palletsprojects.com/p/flask/',
     window_feature: '_blank',
+    url: 'https://palletsprojects.com/p/flask/',
   }
 
   const heroku = {
     nodelist: document.querySelectorAll('.ext-link-heroku'),
-    url: 'https://www.heroku.com/',
     window_feature: '_blank',
+    url: 'https://www.heroku.com/',
   }
 
   const postgresql = {
     nodelist: document.querySelectorAll('.ext-link-postgresql'),
-    url: 'https://www.postgresql.org/',
     window_feature: '_blank',
+    url: 'https://www.postgresql.org/',
   }
 
   // Add tech icon links
-  function addTechIconLinks(tech_icon) {
-    tech_icon.nodelist.forEach(icon => {
-      icon.addEventListener('click', () => {
-        window.open(`${tech_icon.url}`, `${tech_icon.window_feature}`)
+  function createTechIconLink(tech_link) {
+    tech_link.nodelist.forEach(link => {
+      link.addEventListener('click', () => {
+        window.open(`${tech_link.url}`, `${tech_link.window_feature}`)
       })
+      link.setAttribute('rel', 'noopener noreferrer')
+      console.log(link)
     })
   }
  
-  addTechIconLinks(aws)
-  addTechIconLinks(bootstrap)
-  addTechIconLinks(django)
-  addTechIconLinks(flask)
-  addTechIconLinks(heroku)
-  addTechIconLinks(postgresql)
+  createTechIconLink(aws)
+  createTechIconLink(bootstrap)
+  createTechIconLink(django)
+  createTechIconLink(flask)
+  createTechIconLink(heroku)
+  createTechIconLink(postgresql)
 
 }

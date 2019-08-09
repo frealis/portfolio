@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 import NavbarDeconstructed from './NavbarDeconstructed'
 import NavbarConstructedFixed from './NavbarConstructedFixed'
 import Main from './Main'
+import Resume from '../img/resume.pdf'
 
 // Import <svg> components
 import IconGitHub from '../img/svg-components/icon-github'
@@ -85,7 +86,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavbarDeconstructed IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} />
+        <NavbarDeconstructed IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} Resume={ Resume } />
         <NavbarConstructedFixed IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} />
         <Main IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} />
 
