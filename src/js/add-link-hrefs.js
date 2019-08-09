@@ -64,4 +64,53 @@ export function addLinkHrefs() {
   document.querySelector('.contact-link-linkedin').addEventListener('click', () => {
     window.open('https://www.linkedin.com/in/matt-higginbotham', '_blank')
   });
+
+  // AWS
+  const aws = document.querySelectorAll('.ext-link-aws');
+  aws.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://aws.amazon.com/', '_blank');
+    });
+  });
+
+  // Bootstrap
+  const bootstrap = document.querySelectorAll('.ext-link-bootstrap');
+  bootstrap.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://getbootstrap.com/', '_blank');
+    });
+  });
+
+  // Django
+  const django = document.querySelectorAll('.ext-link-django');
+  django.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://www.djangoproject.com/', '_blank');
+    });
+  });
+
+  // Flask
+  const flask = document.querySelectorAll('.ext-link-flask');
+  flask.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('http://flask.pocoo.org/', '_blank');
+    });
+  });
+
+  // Heroku 
+  const heroku = document.querySelectorAll('.ext-link-heroku');
+  heroku.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://www.heroku.com/', '_blank');
+    });
+  });
+
+  // PostgreSQL
+  const postgresql = document.querySelectorAll('.ext-link-postgresql');
+  postgresql.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      window.open('https://www.postgresql.org/', '_blank');
+    });
+  });
+
 }
