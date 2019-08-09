@@ -87,6 +87,9 @@
         fill: $secondary-color;
       }
     }
+    & span {
+      padding: 0 calc(0.25rem + 0.25vw);
+    }
     &:hover {
       color: $quinary-color;
       & .icon-email {
