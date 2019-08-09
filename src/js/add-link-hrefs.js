@@ -55,7 +55,6 @@ export function addLinkHrefs() {
 
   // ========== CONTACT LINKS ===================================================
 
-  // Email
   const email = {
     class_ctc: '.contact-ctc-email',
     class_link: '.contact-link-email',
@@ -80,7 +79,7 @@ export function addLinkHrefs() {
     url: 'https://www.linkedin.com/in/matt-higg/',
   }
 
-  // Create link
+  // Create contact link
   function createContactLink(contact_link) {
     document.querySelector(`${contact_link.class_link}`).addEventListener('click', () => {
       window.open(`${contact_link.url}`)
@@ -92,7 +91,7 @@ export function addLinkHrefs() {
   createContactLink(github)
   createContactLink(linkedin)
 
-  // Create click-to-copy (ctc) link
+  // Create contact click-to-copy (ctc) link
   function createCTCLink(ctc_link) {
     document.querySelector(`${ctc_link.class_ctc}`).addEventListener('click', () => {
       const input = document.createElement('input')
@@ -106,57 +105,59 @@ export function addLinkHrefs() {
   }
 
   createCTCLink(email)
-  // createCTCLink(github)
-  // createCTCLink(linkedin)
 
   // ========== TECHNOLOGY ICONS ===============================================
 
-  // AWS
-  const aws = document.querySelectorAll('.ext-link-aws')
-  aws.forEach((icon) => {
-    icon.addEventListener('click', () => {
-      window.open('https://aws.amazon.com/', '_blank')
-    })
-  })
+  const aws = {
+    nodelist: document.querySelectorAll('.ext-link-aws'),
+    url: 'https://aws.amazon.com/',
+    window_feature: '_blank',
+  }
 
-  // Bootstrap
-  const bootstrap = document.querySelectorAll('.ext-link-bootstrap')
-  bootstrap.forEach((icon) => {
-    icon.addEventListener('click', () => {
-      window.open('https://getbootstrap.com/', '_blank')
-    })
-  })
+  const bootstrap = {
+    nodelist: document.querySelectorAll('.ext-link-bootstrap'),
+    url: 'https://getbootstrap.com/',
+    window_feature: '_blank',
+  }
 
-  // Django
-  const django = document.querySelectorAll('.ext-link-django')
-  django.forEach((icon) => {
-    icon.addEventListener('click', () => {
-      window.open('https://www.djangoproject.com/', '_blank')
-    })
-  })
+  const django = {
+    nodelist: document.querySelectorAll('.ext-link-django'),
+    url: 'https://www.djangoproject.com/',
+    window_feature: '_blank',
+  }
 
-  // Flask
-  const flask = document.querySelectorAll('.ext-link-flask')
-  flask.forEach((icon) => {
-    icon.addEventListener('click', () => {
-      window.open('http://flask.pocoo.org/', '_blank')
-    })
-  })
+  const flask = {
+    nodelist: document.querySelectorAll('.ext-link-flask'),
+    url: 'https://palletsprojects.com/p/flask/',
+    window_feature: '_blank',
+  }
 
-  // Heroku 
-  const heroku = document.querySelectorAll('.ext-link-heroku')
-  heroku.forEach((icon) => {
-    icon.addEventListener('click', () => {
-      window.open('https://www.heroku.com/', '_blank')
-    })
-  })
+  const heroku = {
+    nodelist: document.querySelectorAll('.ext-link-heroku'),
+    url: 'https://www.heroku.com/',
+    window_feature: '_blank',
+  }
 
-  // PostgreSQL
-  const postgresql = document.querySelectorAll('.ext-link-postgresql')
-  postgresql.forEach((icon) => {
-    icon.addEventListener('click', () => {
-      window.open('https://www.postgresql.org/', '_blank')
+  const postgresql = {
+    nodelist: document.querySelectorAll('.ext-link-postgresql'),
+    url: 'https://www.postgresql.org/',
+    window_feature: '_blank',
+  }
+
+  // Add tech icon links
+  function addTechIconLinks(tech_icon) {
+    tech_icon.nodelist.forEach(icon => {
+      icon.addEventListener('click', () => {
+        window.open(`${tech_icon.url}`, `${tech_icon.window_feature}`)
+      })
     })
-  })
+  }
+ 
+  addTechIconLinks(aws)
+  addTechIconLinks(bootstrap)
+  addTechIconLinks(django)
+  addTechIconLinks(flask)
+  addTechIconLinks(heroku)
+  addTechIconLinks(postgresql)
 
 }
