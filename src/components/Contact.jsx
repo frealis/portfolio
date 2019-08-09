@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+import IconEmail from '../img/svg-components/icon-email'
+import IconGitHub from '../img/svg-components/icon-github'
+import IconLinkedIn from '../img/svg-components/icon-linkedin'
+
 class Contact extends Component {
   render() {
     return (
@@ -28,10 +32,14 @@ class Contact extends Component {
                   <label for="contact-message" className="floating-placeholder">Message</label>
                 </div>
               </form>
-              <button id="contact-button-send" className="btn btn-sm">Send Message</button>
+              <button id="contact-button-send" className="btn">Send Message</button>
             </div>
 
-            <div className="col-md-6"></div>
+            <div className="col-md-6">
+              <button className="btn contact-icon-wrapper"><IconEmail /> mhh129@gmail.com</button>
+              <button className="btn contact-icon-wrapper"><IconGitHub /> https://github.com/matthigg</button>
+              <button className="btn contact-icon-wrapper"><IconLinkedIn /> https://www.linkedin.com/in/matt-higg/</button>
+            </div>
 
           </div>
 

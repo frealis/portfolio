@@ -59,7 +59,55 @@
   & form {
     display: block;
     margin: auto;
-    width: 80%;
+    width: 100%;
+  }
+
+  .contact-icon-wrapper {
+    color: $tertiary-color;
+    display: block;
+    & .icon-email {
+      fill: $tertiary-color;
+      height: 2rem;
+      & line,
+      & path,
+      & rect {
+        stroke: $secondary-color;
+      }
+    }
+    & .icon-github {
+      fill: $tertiary-color;
+      height: 2rem;
+    }
+    & .icon-linkedin {
+      height: 2rem;
+      & circle {
+        fill: $tertiary-color;
+      }
+      & path {
+        fill: $secondary-color;
+      }
+    }
+    &:hover {
+      color: $quinary-color;
+      & .icon-email {
+        fill: $quinary-color;
+        transition: 0.15s ease-in-out;
+      }
+      & .icon-github {
+        fill: $quinary-color;
+        transition: 0.15s ease-in-out;
+      }
+      & .icon-linkedin {
+        & circle {
+          fill: $quinary-color;
+          transition: 0.15s ease-in-out;
+        }
+      }
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
   }
 
   // Give every <input> and <textarea> an invisible placeholder so that the 
