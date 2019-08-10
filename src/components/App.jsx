@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
 // Import components
-import NavbarDeconstructed from './NavbarDeconstructed'
-import NavbarConstructedFixed from './NavbarConstructedFixed'
 import Main from './Main'
+import NavbarConstructedFixed from './NavbarConstructedFixed'
+import NavbarDeconstructed from './NavbarDeconstructed'
 import Resume from '../img/resume.pdf'
 
 // Import <svg> components

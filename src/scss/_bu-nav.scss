@@ -1,12 +1,12 @@
 nav {
   align-items: center;
-  background-color: $secondary-color;
+  // background-color: orange;
   display: flex;
   height: 10vh;
   padding: calc(2rem + 2vh) 0;
   width: 90vw;
   &.nav-fixed {
-    position: absolute;
+    position: fixed;
     z-index: 1;
   }
   &.nav-fixed-vanish { display: none; }
@@ -23,17 +23,17 @@ nav {
     z-index: 2;
     &.brand { font-size: 1.5rem; left: 5vw; top: 20vh; }
     & .brand-sub { display: block; font-size: 1rem; left: 1rem; position: relative; }
-    &.links { left: 60vw; top: 50vh; }
+    &.links { left: 50vw; top: 50vh; }
     & .link-contact,
     & .link-projects {
       background-color: transparent;
-      font-size: 1rem;
+      font-size: 1.5rem;
       position: static; 
       &:hover {
-        animation-duration: 0.25s;
-        animation-fill-mode: forwards;
-        animation-name: animation-chromatophore-deconstructed;
-        animation-timing-function: linear;
+        // animation-duration: 0.25s;
+        // animation-fill-mode: forwards;
+        // animation-name: animation-chromatophore-deconstructed;
+        // animation-timing-function: linear;
       }
       &:focus {
         outline: none;
@@ -58,12 +58,12 @@ nav {
     & .link-resume { 
       & circle { fill: $secondary-color; }
       & line,
-      & rect { stroke: $tertiary-color; }
+      & rect { stroke: $primary-color; }
     }
     & .link-github { fill: $secondary-color; }
     & .link-linkedin {
       & circle { fill: $secondary-color; }
-      & path { fill: $tertiary-color; }
+      & path { fill: $primary-color; }
     }
     &.display-none { display: none; }
   }
@@ -71,24 +71,25 @@ nav {
 
 .scraps-collected {
   & .scrap-collected {
-    color: $tertiary-color;
+    color: $secondary-color;
     font-weight: 600;
+    mix-blend-mode: difference;
     padding: 0 1rem;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     &.brand { font-size: 1.5rem; left: 5vw; }
     & .brand-sub { display: block; font-size: 1rem; left: 1rem; position: relative; }
-    &.links { left: 60vw; }
+    &.links { left: 50vw; }
     & .link-contact,
     & .link-projects {
       background-color: transparent;
-      font-size: 1rem;
+      font-size: 1.5rem;
       position: static; 
       &:hover {
-        animation-duration: 0.25s;
-        animation-fill-mode: forwards;
-        animation-name: animation-chromatophore-deconstructed;
-        animation-timing-function: linear;
+        // animation-duration: 0.25s;
+        // animation-fill-mode: forwards;
+        // animation-name: animation-chromatophore-deconstructed;
+        // animation-timing-function: linear;
       }
       &:focus {
         outline: none;
@@ -111,13 +112,13 @@ nav {
       }
     }
     & .link-resume { 
-      & circle { fill: $tertiary-color; }
+      & circle { fill: $secondary-color; }
       & line,
       & rect { stroke: $secondary-color; }
     }
-    & .link-github { fill: $tertiary-color; }
+    & .link-github { fill: $secondary-color; }
     & .link-linkedin {
-      & circle { fill: $tertiary-color; }
+      & circle { fill: $secondary-color; }
       & path { fill: $secondary-color; }
     }
     &.display-none { display: none; }

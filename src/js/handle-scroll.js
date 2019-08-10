@@ -6,7 +6,6 @@ export function handleScroll(main) {
     document.querySelector('.scrap.free.brand').classList.add('display-none')
     document.querySelector('.scrap-collected.net.brand').classList.remove('display-none')
     document.querySelector('.scrap-collected.net.brand').classList.add('animation-chromatophore')
-    // document.querySelector('.nav-net').
   } else {
     document.querySelector('.scrap.free.brand').classList.remove('display-none')
     document.querySelector('.scrap-collected.net.brand').classList.add('display-none')

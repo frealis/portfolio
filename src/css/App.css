@@ -84,24 +84,21 @@
 
 nav {
   align-items: center;
+  background-color: #FCFAED;
   display: flex;
   height: 10vh;
   padding: calc(2rem + 2vh) 0;
   width: 90vw; }
   nav.nav-fixed {
-    color: #043546;
-    position: fixed;
-    opacity: 1;
+    position: absolute;
     z-index: 1; }
-    nav.nav-fixed .fixed {
-      opacity: 1; }
   nav.nav-fixed-vanish {
     display: none; }
   nav.nav-net-vanish {
     opacity: 0; }
 
 .scraps .scrap {
-  color: #ECD4B0;
+  color: #FCFAED;
   font-weight: 600;
   mix-blend-mode: difference;
   padding: 0 1rem;
@@ -117,12 +114,12 @@ nav {
     left: 1rem;
     position: relative; }
   .scraps .scrap.links {
-    left: 50vw;
+    left: 60vw;
     top: 50vh; }
   .scraps .scrap .link-contact,
   .scraps .scrap .link-projects {
     background-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: static; }
     .scraps .scrap .link-contact:hover,
     .scraps .scrap .link-projects:hover {
@@ -155,16 +152,16 @@ nav {
       outline: none;
       box-shadow: none; }
   .scraps .scrap .link-resume circle {
-    fill: #ECD4B0; }
+    fill: #FCFAED; }
   .scraps .scrap .link-resume line,
   .scraps .scrap .link-resume rect {
-    stroke: #0A2425; }
+    stroke: #043546; }
   .scraps .scrap .link-github {
-    fill: #ECD4B0; }
+    fill: #FCFAED; }
   .scraps .scrap .link-linkedin circle {
-    fill: #ECD4B0; }
+    fill: #FCFAED; }
   .scraps .scrap .link-linkedin path {
-    fill: #0A2425; }
+    fill: #043546; }
   .scraps .scrap.display-none {
     display: none; }
 
@@ -183,11 +180,11 @@ nav {
     left: 1rem;
     position: relative; }
   .scraps-collected .scrap-collected.links {
-    left: 50vw; }
+    left: 60vw; }
   .scraps-collected .scrap-collected .link-contact,
   .scraps-collected .scrap-collected .link-projects {
     background-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: static; }
     .scraps-collected .scrap-collected .link-contact:hover,
     .scraps-collected .scrap-collected .link-projects:hover {
@@ -237,12 +234,11 @@ nav {
   height: 80vh; }
 
 .page-spacer {
-  height: 10vh; }
+  height: 20vh; }
 
 .page {
   background-color: #FCFAED;
-  padding: calc(2rem + 2vw);
-  width: 90vw; }
+  padding: calc(2rem + 2vw); }
   .page .page-header {
     color: #043546;
     font-weight: normal;
@@ -491,6 +487,4 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   perspective: 1px;
-  position: relative;
-  scroll-behavior: smooth;
-  z-index: 0; }
+  scroll-behavior: smooth; }

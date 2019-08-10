@@ -3,13 +3,12 @@
 }
 
 .page-spacer {
-  height: 10vh;
+  height: 20vh;
 }
 
 .page {
   background-color: $secondary-color;
   padding: calc(2rem + 2vw);
-  width: 90vw;
   & .page-header {    
     color: $tertiary-color;
     font-weight: normal;
