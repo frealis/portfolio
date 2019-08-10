@@ -12,7 +12,7 @@ import IconLinkedIn from '../img/svg-components/icon-linkedin'
 import IconResume from '../img/svg-components/icon-resume'
 
 // Import custom JavaScript functions
-import { addLinkHrefs } from '../js/add-link-hrefs'
+import { addLinks } from '../js/add-links'
 import { getNavNetScrapsLocations } from '../js/get-nav-net-scraps-locations'
 import { handleScroll } from '../js/handle-scroll'
 import { colorsShuffled } from '../js/colors-shuffled'
@@ -47,7 +47,7 @@ class App extends Component {
   componentDidMount() {
 
     // Add link locations to 'Projects' and 'Contact' navbar links
-    addLinkHrefs()
+    addLinks()
 
     this.setState({ 
 

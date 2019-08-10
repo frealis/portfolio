@@ -1,5 +1,5 @@
 // Assign event handlers to links
-export function addLinkHrefs() {
+export function addLinks() {
 
   // ========== NAVBAR LINKS ===================================================
  
@@ -22,12 +22,38 @@ export function addLinkHrefs() {
   // ========== PROJECT LINKS ==================================================
 
   // River City Pro Wash
-  document.querySelector('.ext-link-rcpw').addEventListener('click', () => {
-    window.open('https://www.rivercityprowash.com', '_blank')
-  })
-  document.querySelector('.ext-link-rcpw-github').addEventListener('click', () => {
-    window.open('https://github.com/matthigg/River-City-Pro-Wash', '_blank')
-  })
+  const rcpw = {
+    nodelist: document.querySelectorAll('.ext-link-rcpw'),
+    nodelist_github: document.querySelectorAll('.ext-link-rcpw-github'),
+    url: 'https://www.rivercityprowash.com',
+    url_github: 'https://github.com/matthigg/River-City-Pro-Wash',
+    window_feature: '_blank',
+  }
+
+  const pinocchios = {
+    nodelist: document.querySelectorAll('.ext-link-pinocchios'),
+    nodelist_github: document.querySelectorAll('.ext-link-pinocchios-github'),
+    url: 'https://cs50-pinocchios-pizza.herokuapp.com/',
+    url_github: 'https://github.com/matthigg/Pinocchios-Pizza-And-Subs',
+    window_feature: '_blank',
+  }
+
+  function createProjectLink(project_link) {
+    project_link.nodelist.forEach(link => {
+      link.addEventListener('click', () => {
+        window.open(`${project_link.url}`, `${project_link.window_feature}`)
+      })
+      link.setAttribute('rel', 'noopener noreferrer')
+    })
+    project_link.nodelist_github.forEach(link => {
+      link.addEventListener('click', () => {
+        window.open(`${project_link.url_github}`, `${project_link.window_feature}`)
+      })
+      link.setAttribute('rel', 'noopener noreferrer')
+    })
+  }
+
+  createProjectLink(rcpw)
 
   // Pinocchio's Pizza & Subs
   document.querySelector('.ext-link-pinocchios').addEventListener('click', () => {
@@ -166,7 +192,6 @@ export function addLinkHrefs() {
         window.open(`${tech_link.url}`, `${tech_link.window_feature}`)
       })
       link.setAttribute('rel', 'noopener noreferrer')
-      console.log(link)
     })
   }
  

@@ -238,7 +238,8 @@ nav {
 
 .page {
   background-color: #FCFAED;
-  padding: calc(2rem + 2vw); }
+  padding: calc(2rem + 2vw);
+  width: 80vw; }
   .page .page-header {
     color: #043546;
     font-weight: normal;
@@ -325,13 +326,15 @@ nav {
     display: flex;
     flex-direction: row; }
   .projects-row .projects-thumbnail {
-    height: 50vh;
     object-fit: cover;
     width: 100%; }
   .projects-row .projects-thumbnail-description {
-    max-width: 30vw; }
+    color: #043546;
+    font-size: 1.1rem;
+    padding: 0 calc(1rem + 1vw); }
   .projects-row .projects-thumbnail-header {
-    color: #043546; }
+    color: #043546;
+    text-align: center; }
   .projects-row svg {
     height: 1.5rem; }
 

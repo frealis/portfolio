@@ -9,13 +9,13 @@ class ProjectsRCPW extends Component {
 
         <div className="col-md-5">
           <figure>
-            <img className="projects-thumbnail" alt="River City Pro Wash" src={ ThumbnailRCPW } />
+            <img className="projects-thumbnail ext-link-rcpw" alt="River City Pro Wash" src={ ThumbnailRCPW } />
           </figure>
         </div>
 
         <div className="col-md-7 projects-col">
           <div className="projects-col-top">
-            <h2 className="projects-thumbnail-header">River City Pro Wash</h2>
+            <h2 className="projects-thumbnail-header ext-link-rcpw">River City Pro Wash</h2>
             <p className="projects-thumbnail-description">This is a business website for a pressure washing company hosted on Amazon Web Services that uses AWS SES to handle contact form requests for customer contact and follow-up, as well as Amazon RDS to store contact form submissions. It also uses the Google Maps Javascript API to display a custom map, as well as reCAPTCHA v3 to monitor contact form submissions.</p>
           </div>
           <div className="projects-col-bottom">

@@ -144,17 +144,19 @@ $projects-transition: 0.35s ease-out;
   }
 
   .projects-thumbnail {
-    height: 50vh;
     object-fit: cover;
     width: 100%;
   }
 
   .projects-thumbnail-description {
-    max-width: 30vw;
+    color: $tertiary-color;
+    font-size: 1.1rem;
+    padding: 0 calc(1rem + 1vw);
   }
 
   .projects-thumbnail-header {
     color: $tertiary-color;
+    text-align: center;
   }
 
   svg {
