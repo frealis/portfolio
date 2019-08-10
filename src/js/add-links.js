@@ -38,6 +38,22 @@ export function addLinks() {
     window_feature: '_blank',
   }
 
+  const microchat = {
+    nodelist: document.querySelectorAll('.ext-link-microchat'),
+    nodelist_github: document.querySelectorAll('.ext-link-microchat-github'),
+    url: 'https://cs50-microchat.herokuapp.com/',
+    url_github: 'https://github.com/matthigg/micro-Chat',
+    window_feature: '_blank',
+  }
+
+  const bookreviews = {
+    nodelist: document.querySelectorAll('.ext-link-bookreviews'),
+    nodelist_github: document.querySelectorAll('.ext-link-bookreviews-github'),
+    url: 'https://cs50-book-review-w-goodreads.herokuapp.com/',
+    url_github: 'https://github.com/matthigg/Book-Reviews-with-Goodreads',
+    window_feature: '_blank',
+  }
+
   function createProjectLink(project_link) {
     project_link.nodelist.forEach(link => {
       link.addEventListener('click', () => {
@@ -54,30 +70,9 @@ export function addLinks() {
   }
 
   createProjectLink(rcpw)
-
-  // Pinocchio's Pizza & Subs
-  document.querySelector('.ext-link-pinocchios').addEventListener('click', () => {
-    window.open('https://cs50-pinocchios-pizza.herokuapp.com/', '_blank')
-  })
-  document.querySelector('.ext-link-pinocchios-github').addEventListener('click', () => {
-    window.open('https://github.com/matthigg/Pinocchios-Pizza-And-Subs', '_blank')
-  })
-
-  // microChat
-  document.querySelector('.ext-link-microchat').addEventListener('click', () => {
-    window.open('https://cs50-microchat.herokuapp.com/', '_blank')
-  })
-  document.querySelector('.ext-link-microchat-github').addEventListener('click', () => {
-    window.open('https://github.com/matthigg/micro-Chat', '_blank')
-  })
-
-  // Book Reviews w/Goodreads
-  document.querySelector('.ext-link-bookreviews').addEventListener('click', () => {
-    window.open('https://cs50-book-review-w-goodreads.herokuapp.com/', '_blank')
-  })
-  document.querySelector('.ext-link-bookreviews-github').addEventListener('click', () => {
-    window.open('https://github.com/matthigg/Book-Reviews-with-Goodreads', '_blank')
-  })
+  createProjectLink(pinocchios)
+  createProjectLink(microchat)
+  createProjectLink(bookreviews)
 
   // ========== EXTERNAL LINKS ===================================================
 
