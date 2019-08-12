@@ -241,6 +241,8 @@
     .page-projects .projects-row .projects-thumbnail {
       object-fit: cover;
       width: 100%; }
+      .page-projects .projects-row .projects-thumbnail:hover {
+        cursor: pointer; }
     .page-projects .projects-row .projects-thumbnail-description {
       color: #043546;
       font-size: 1.1rem;
@@ -248,6 +250,8 @@
     .page-projects .projects-row .projects-thumbnail-header {
       color: #043546;
       text-align: center; }
+      .page-projects .projects-row .projects-thumbnail-header:hover {
+        cursor: pointer; }
     .page-projects .projects-row svg {
       height: 1.5rem; }
 

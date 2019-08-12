@@ -62,16 +62,21 @@ export function addLinks() {
   // Create Project link
   function createProjectLink(project_link) {
     project_link.nodelist.forEach(link => {
+      console.log(link)
       link.addEventListener('click', () => {
         window.open(`${project_link.url}`, `${project_link.window_feature}`)
       })
       link.setAttribute('rel', 'noopener noreferrer')
+      if (link.innerHTML !== '') {
+        link.classList.add('animation-chromatophore-reel')
+      }
     })
     project_link.nodelist_github.forEach(link => {
       link.addEventListener('click', () => {
         window.open(`${project_link.url_github}`, `${project_link.window_feature}`)
       })
       link.setAttribute('rel', 'noopener noreferrer')
+      link.classList.add('animation-chromatophore-reel')
     })
   }
 
@@ -82,12 +87,6 @@ export function addLinks() {
 
   // Add animations to <a> tags, View, and Source links in Projects.jsx
   document.querySelectorAll('.projects-reference-link').forEach(link => {
-    link.classList.add('animation-chromatophore-reel')
-  })
-  document.querySelectorAll('.btn-source').forEach(link => {
-    link.classList.add('animation-chromatophore-reel')
-  })
-  document.querySelectorAll('.btn-view').forEach(link => {
     link.classList.add('animation-chromatophore-reel')
   })
 
