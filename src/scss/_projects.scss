@@ -1,165 +1,169 @@
 $projects-transition: 0.35s ease-out;
 
-.projects-row {
-  margin: calc(2rem + 2vw) 0;
-  & a {
-    color: $tertiary-color;
-    font-weight: 700;
-    text-decoration: none;
-    &:hover {
-      animation-duration: 0.35s;
-      animation-fill-mode: forwards;
-      animation-name: animation-chromatophore-external-link;
-    }
-  }
-  & .btn {
-    align-items: center;
-    color: $tertiary-color;
-    stroke: $tertiary-color;
-    display: flex;
-    font-weight: 600;
-    &:focus {
-      outline: none;
-      box-shadow: none;
-    }
-  }
-
-  & .btn-view,
-  & .btn-source {
-    &:hover {
-      animation-duration: 0.35s;
-      animation-fill-mode: forwards;
-      animation-name: animation-chromatophore-external-link;
-    }
-  }
-
-  .ext-link-aws {
-    & path {
-      fill: #ccc;
-      transition: $projects-transition;
-    }
-    &:hover {
-      & .icon-aws-text {
-        fill: #252f3e;
-      }
-      & .icon-aws-arrow {
-        fill: #f90;
+.page-projects {
+  width: 75vw;
+  margin-left: 12.5vw;
+  .projects-row {
+    margin: calc(2rem + 2vw) 0;
+    & a {
+      color: $tertiary-color;
+      font-weight: 700;
+      text-decoration: none;
+      &:hover {
+        animation-duration: 0.35s;
+        animation-fill-mode: forwards;
+        animation-name: animation-chromatophore-external-link;
       }
     }
-  }
-
-  .ext-link-bootstrap {
-    & .logo-bootstrap-path {
-      fill: #ccc;
-      transition: $projects-transition;
+    & .btn {
+      align-items: center;
+      color: $tertiary-color;
+      stroke: $tertiary-color;
+      display: flex;
+      font-weight: 600;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
     }
-    &:hover {
+
+    & .btn-view,
+    & .btn-source {
+      &:hover {
+        animation-duration: 0.35s;
+        animation-fill-mode: forwards;
+        animation-name: animation-chromatophore-external-link;
+      }
+    }
+
+    .ext-link-aws {
+      & path {
+        fill: #ccc;
+        transition: $projects-transition;
+      }
+      &:hover {
+        & .icon-aws-text {
+          fill: #252f3e;
+        }
+        & .icon-aws-arrow {
+          fill: #f90;
+        }
+      }
+    }
+
+    .ext-link-bootstrap {
       & .logo-bootstrap-path {
-        fill: #563d7c;
+        fill: #ccc;
+        transition: $projects-transition;
+      }
+      &:hover {
+        & .logo-bootstrap-path {
+          fill: #563d7c;
+        }
       }
     }
-  }
 
-  .ext-link-django {
-    & path {
-      fill: #ccc;
-      transition: $projects-transition;
-    }
-    &:hover {
+    .ext-link-django {
       & path {
-        fill: #092e20;
+        fill: #ccc;
+        transition: $projects-transition;
+      }
+      &:hover {
+        & path {
+          fill: #092e20;
+        }
       }
     }
-  }
 
-  .ext-link-flask {
-    & path {
-      fill: #ccc;
-      transition: $projects-transition;
-    }
-    &:hover {
+    .ext-link-flask {
       & path {
-        fill: black;
+        fill: #ccc;
+        transition: $projects-transition;
+      }
+      &:hover {
+        & path {
+          fill: black;
+        }
       }
     }
-  }
 
-  .ext-link-heroku {
-    & .logo-heroku-path {
-      fill: #ccc;
-      transition: $projects-transition;
-    }
-    &:hover {
+    .ext-link-heroku {
       & .logo-heroku-path {
-        fill: #430098;
+        fill: #ccc;
+        transition: $projects-transition;
+      }
+      &:hover {
+        & .logo-heroku-path {
+          fill: #430098;
+        }
       }
     }
-  }
 
-  .ext-link-postgresql {
-    & path {
-      fill: #ccc;
-      transition: $projects-transition;
+    .ext-link-postgresql {
+      & path {
+        fill: #ccc;
+        transition: $projects-transition;
+      }
+      &:hover {
+        & .logo-postgresql-fill-none-stroke-fff {
+          fill: none;
+          stroke: #fff;
+        }
+        & .logo-postgresql-fill-fff-stroke-fff {
+          fill: #fff;
+          stroke: #fff;
+        }
+        & .logo-postgresql-fill-336791 {
+          fill: #336791;
+        }
+        & .logo-postgresql-stroke-000 {
+          stroke: #000;
+        }
+        & .logo-postgresql-fill-585858 {
+          fill: #585858;
+        }
+      }
     }
-    &:hover {
-      & .logo-postgresql-fill-none-stroke-fff {
-        fill: none;
-        stroke: #fff;
-      }
-      & .logo-postgresql-fill-fff-stroke-fff {
-        fill: #fff;
-        stroke: #fff;
-      }
-      & .logo-postgresql-fill-336791 {
-        fill: #336791;
-      }
-      & .logo-postgresql-stroke-000 {
-        stroke: #000;
-      }
-      & .logo-postgresql-fill-585858 {
-        fill: #585858;
-      }
+
+    figure {
+      margin: 0;
     }
-  }
 
-  figure {
-    margin: 0;
-  }
+    .icon-external-link {
+      height: 1rem;
+      margin: 0 0.5rem;
+      width: 1rem;
+    }
 
-  .icon-external-link {
-    height: 1rem;
-    margin: 0 0.5rem;
-    width: 1rem;
-  }
+    .projects-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-  .projects-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+    .projects-tech {
+      display: flex;
+      flex-direction: row;
+    }
 
-  .projects-tech {
-    display: flex;
-    flex-direction: row;
-  }
+    .projects-thumbnail {
+      object-fit: cover;
+      width: 100%;
+    }
 
-  .projects-thumbnail {
-    object-fit: cover;
-    width: 100%;
-  }
+    .projects-thumbnail-description {
+      color: $tertiary-color;
+      font-size: 1.1rem;
+      padding: 0 calc(1rem + 1vw);
+    }
 
-  .projects-thumbnail-description {
-    color: $tertiary-color;
-    font-size: 1.1rem;
-    padding: 0 calc(1rem + 1vw);
-  }
+    .projects-thumbnail-header {
+      color: $tertiary-color;
+      text-align: center;
+    }
 
-  .projects-thumbnail-header {
-    color: $tertiary-color;
-    text-align: center;
-  }
-
-  svg {
-    height: 1.5rem;
+    svg {
+      height: 1.5rem;
+    }
   }
 }

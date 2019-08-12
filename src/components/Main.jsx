@@ -19,6 +19,7 @@ class Main extends Component {
         <Projects />
         <PageSpacer />
         <Contact IconGitHub={ this.props.IconGitHub } IconLinkedIn={ this.props.IconLinkedIn } IconResume={ this.props.IconResume } />
+        <PageSpacer />
       </main>
     )
   }

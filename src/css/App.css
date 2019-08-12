@@ -84,7 +84,6 @@
 
 nav {
   align-items: center;
-  background-color: #FCFAED;
   display: flex;
   height: 10vh;
   padding: calc(2rem + 2vh) 0;
@@ -113,14 +112,10 @@ nav {
     font-size: 1rem;
     left: 1rem;
     position: relative; }
-  .scraps .scrap.links {
-    left: 60vw;
-    top: 50vh; }
   .scraps .scrap .link-contact,
   .scraps .scrap .link-projects {
     background-color: transparent;
-    font-size: 1rem;
-    position: static; }
+    font-size: 1rem; }
     .scraps .scrap .link-contact:hover,
     .scraps .scrap .link-projects:hover {
       animation-duration: 0.25s;
@@ -131,11 +126,14 @@ nav {
     .scraps .scrap .link-projects:focus {
       outline: none;
       box-shadow: none; }
+  .scraps .scrap .link-contact {
+    top: 35vh; }
+  .scraps .scrap .link-projects {
+    top: 30vh; }
   .scraps .scrap .link-resume,
   .scraps .scrap .link-github,
   .scraps .scrap .link-linkedin {
-    background-color: transparent;
-    position: static; }
+    background-color: transparent; }
     .scraps .scrap .link-resume .icon-github,
     .scraps .scrap .link-resume .icon-linkedin,
     .scraps .scrap .link-resume .icon-resume,
@@ -151,17 +149,22 @@ nav {
     .scraps .scrap .link-linkedin:focus {
       outline: none;
       box-shadow: none; }
-  .scraps .scrap .link-resume circle {
-    fill: #FCFAED; }
-  .scraps .scrap .link-resume line,
-  .scraps .scrap .link-resume rect {
-    stroke: #043546; }
+  .scraps .scrap .link-resume {
+    top: 40vh; }
+    .scraps .scrap .link-resume circle {
+      fill: #FCFAED; }
+    .scraps .scrap .link-resume line,
+    .scraps .scrap .link-resume rect {
+      stroke: #043546; }
   .scraps .scrap .link-github {
-    fill: #FCFAED; }
-  .scraps .scrap .link-linkedin circle {
-    fill: #FCFAED; }
-  .scraps .scrap .link-linkedin path {
-    fill: #043546; }
+    fill: #FCFAED;
+    top: 50vh; }
+  .scraps .scrap .link-linkedin {
+    top: 60vh; }
+    .scraps .scrap .link-linkedin circle {
+      fill: #FCFAED; }
+    .scraps .scrap .link-linkedin path {
+      fill: #043546; }
   .scraps .scrap.display-none {
     display: none; }
 
@@ -180,12 +183,11 @@ nav {
     left: 1rem;
     position: relative; }
   .scraps-collected .scrap-collected.links {
-    left: 60vw; }
+    left: 15vw; }
   .scraps-collected .scrap-collected .link-contact,
   .scraps-collected .scrap-collected .link-projects {
     background-color: transparent;
-    font-size: 1rem;
-    position: static; }
+    font-size: 1rem; }
     .scraps-collected .scrap-collected .link-contact:hover,
     .scraps-collected .scrap-collected .link-projects:hover {
       animation-duration: 0.25s;
@@ -199,8 +201,7 @@ nav {
   .scraps-collected .scrap-collected .link-resume,
   .scraps-collected .scrap-collected .link-github,
   .scraps-collected .scrap-collected .link-linkedin {
-    background-color: transparent;
-    position: static; }
+    background-color: transparent; }
     .scraps-collected .scrap-collected .link-resume .icon-github,
     .scraps-collected .scrap-collected .link-resume .icon-linkedin,
     .scraps-collected .scrap-collected .link-resume .icon-resume,
@@ -238,233 +239,229 @@ nav {
 
 .page {
   background-color: #FCFAED;
-  padding: calc(2rem + 2vw);
-  width: 80vw; }
+  padding: calc(2rem + 2vw); }
   .page .page-header {
     color: #043546;
     font-weight: normal;
     font-size: 3rem;
     padding: calc(1rem + 1vw); }
 
-.projects-row {
-  margin: calc(2rem + 2vw) 0; }
-  .projects-row a {
-    color: #043546;
-    font-weight: 700;
-    text-decoration: none; }
-    .projects-row a:hover {
+.page-projects {
+  width: 75vw;
+  margin-left: 12.5vw; }
+  .page-projects .projects-row {
+    margin: calc(2rem + 2vw) 0; }
+    .page-projects .projects-row a {
+      color: #043546;
+      font-weight: 700;
+      text-decoration: none; }
+      .page-projects .projects-row a:hover {
+        animation-duration: 0.35s;
+        animation-fill-mode: forwards;
+        animation-name: animation-chromatophore-external-link; }
+    .page-projects .projects-row .btn {
+      align-items: center;
+      color: #043546;
+      stroke: #043546;
+      display: flex;
+      font-weight: 600; }
+      .page-projects .projects-row .btn:focus {
+        outline: none;
+        box-shadow: none; }
+    .page-projects .projects-row .btn-view:hover,
+    .page-projects .projects-row .btn-source:hover {
       animation-duration: 0.35s;
       animation-fill-mode: forwards;
       animation-name: animation-chromatophore-external-link; }
-  .projects-row .btn {
-    align-items: center;
+    .page-projects .projects-row .ext-link-aws path {
+      fill: #ccc;
+      transition: 0.35s ease-out; }
+    .page-projects .projects-row .ext-link-aws:hover .icon-aws-text {
+      fill: #252f3e; }
+    .page-projects .projects-row .ext-link-aws:hover .icon-aws-arrow {
+      fill: #f90; }
+    .page-projects .projects-row .ext-link-bootstrap .logo-bootstrap-path {
+      fill: #ccc;
+      transition: 0.35s ease-out; }
+    .page-projects .projects-row .ext-link-bootstrap:hover .logo-bootstrap-path {
+      fill: #563d7c; }
+    .page-projects .projects-row .ext-link-django path {
+      fill: #ccc;
+      transition: 0.35s ease-out; }
+    .page-projects .projects-row .ext-link-django:hover path {
+      fill: #092e20; }
+    .page-projects .projects-row .ext-link-flask path {
+      fill: #ccc;
+      transition: 0.35s ease-out; }
+    .page-projects .projects-row .ext-link-flask:hover path {
+      fill: black; }
+    .page-projects .projects-row .ext-link-heroku .logo-heroku-path {
+      fill: #ccc;
+      transition: 0.35s ease-out; }
+    .page-projects .projects-row .ext-link-heroku:hover .logo-heroku-path {
+      fill: #430098; }
+    .page-projects .projects-row .ext-link-postgresql path {
+      fill: #ccc;
+      transition: 0.35s ease-out; }
+    .page-projects .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-none-stroke-fff {
+      fill: none;
+      stroke: #fff; }
+    .page-projects .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-fff-stroke-fff {
+      fill: #fff;
+      stroke: #fff; }
+    .page-projects .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-336791 {
+      fill: #336791; }
+    .page-projects .projects-row .ext-link-postgresql:hover .logo-postgresql-stroke-000 {
+      stroke: #000; }
+    .page-projects .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-585858 {
+      fill: #585858; }
+    .page-projects .projects-row figure {
+      margin: 0; }
+    .page-projects .projects-row .icon-external-link {
+      height: 1rem;
+      margin: 0 0.5rem;
+      width: 1rem; }
+    .page-projects .projects-row .projects-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .page-projects .projects-row .projects-tech {
+      display: flex;
+      flex-direction: row; }
+    .page-projects .projects-row .projects-thumbnail {
+      object-fit: cover;
+      width: 100%; }
+    .page-projects .projects-row .projects-thumbnail-description {
+      color: #043546;
+      font-size: 1.1rem;
+      padding: 0 calc(1rem + 1vw); }
+    .page-projects .projects-row .projects-thumbnail-header {
+      color: #043546;
+      text-align: center; }
+    .page-projects .projects-row svg {
+      height: 1.5rem; }
+
+.page-contact {
+  width: 60vw;
+  margin-left: 20vw; }
+  .page-contact .contact-row #contact-button-send {
+    background-color: #FCFAED;
+    border: 0.1rem solid #043546;
+    border-radius: 0.3rem;
     color: #043546;
-    stroke: #043546;
-    display: flex;
-    font-weight: 600; }
-    .projects-row .btn:focus {
-      outline: none;
-      box-shadow: none; }
-  .projects-row .btn-view:hover,
-  .projects-row .btn-source:hover {
-    animation-duration: 0.35s;
-    animation-fill-mode: forwards;
-    animation-name: animation-chromatophore-external-link; }
-  .projects-row .ext-link-aws path {
-    fill: #ccc;
-    transition: 0.35s ease-out; }
-  .projects-row .ext-link-aws:hover .icon-aws-text {
-    fill: #252f3e; }
-  .projects-row .ext-link-aws:hover .icon-aws-arrow {
-    fill: #f90; }
-  .projects-row .ext-link-bootstrap .logo-bootstrap-path {
-    fill: #ccc;
-    transition: 0.35s ease-out; }
-  .projects-row .ext-link-bootstrap:hover .logo-bootstrap-path {
-    fill: #563d7c; }
-  .projects-row .ext-link-django path {
-    fill: #ccc;
-    transition: 0.35s ease-out; }
-  .projects-row .ext-link-django:hover path {
-    fill: #092e20; }
-  .projects-row .ext-link-flask path {
-    fill: #ccc;
-    transition: 0.35s ease-out; }
-  .projects-row .ext-link-flask:hover path {
-    fill: black; }
-  .projects-row .ext-link-heroku .logo-heroku-path {
-    fill: #ccc;
-    transition: 0.35s ease-out; }
-  .projects-row .ext-link-heroku:hover .logo-heroku-path {
-    fill: #430098; }
-  .projects-row .ext-link-postgresql path {
-    fill: #ccc;
-    transition: 0.35s ease-out; }
-  .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-none-stroke-fff {
-    fill: none;
-    stroke: #fff; }
-  .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-fff-stroke-fff {
-    fill: #fff;
-    stroke: #fff; }
-  .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-336791 {
-    fill: #336791; }
-  .projects-row .ext-link-postgresql:hover .logo-postgresql-stroke-000 {
-    stroke: #000; }
-  .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-585858 {
-    fill: #585858; }
-  .projects-row figure {
-    margin: 0; }
-  .projects-row .icon-external-link {
-    height: 1rem;
-    margin: 0 0.5rem;
-    width: 1rem; }
-  .projects-row .projects-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-  .projects-row .projects-tech {
-    display: flex;
-    flex-direction: row; }
-  .projects-row .projects-thumbnail {
-    object-fit: cover;
-    width: 100%; }
-  .projects-row .projects-thumbnail-description {
-    color: #043546;
-    font-size: 1.1rem;
-    padding: 0 calc(1rem + 1vw); }
-  .projects-row .projects-thumbnail-header {
-    color: #043546;
-    text-align: center; }
-  .projects-row svg {
-    height: 1.5rem; }
-
-.contact-row #contact-button-send {
-  background-color: #FCFAED;
-  border: 0.1rem solid #043546;
-  border-radius: 0.3rem;
-  color: #043546;
-  display: block;
-  font-size: 1rem;
-  height: 2.5rem;
-  margin: auto; }
-  .contact-row #contact-button-send:hover {
-    background-color: #1B969E;
-    border: 0.1rem solid #1B969E;
-    color: #FCFAED; }
-
-.contact-row #contact-email-input,
-.contact-row #contact-name-input {
-  height: 3rem; }
-
-.contact-row .contact-input {
-  margin-bottom: 1rem;
-  position: relative; }
-
-.contact-row .contact-input-field:focus ~ .floating-placeholder,
-.contact-row .contact-input-field:not(:placeholder-shown) ~ .floating-placeholder {
-  color: #1B969E;
-  font-size: 0.7rem;
-  top: 0.1rem;
-  transition: 0.1s; }
-
-.contact-row .contact-input-field {
-  background-color: #FCFAED;
-  border-bottom: 0.1rem solid #043546;
-  color: #043546;
-  padding: 1rem 0 0 0.5rem;
-  width: 100%; }
-  .contact-row .contact-input-field:focus {
-    border-color: #1B969E;
-    box-shadow: none;
-    outline: none; }
-
-.contact-row .floating-placeholder {
-  top: 0.5rem;
-  color: #043546;
-  cursor: text;
-  left: 0.5rem;
-  position: absolute;
-  transition: 0.2s; }
-
-.contact-row form {
-  display: block;
-  margin: auto;
-  width: 100%; }
-
-.contact-row .contact-link-wrapper {
-  align-items: center;
-  display: flex; }
-  .contact-row .contact-link-wrapper .contact-icon-wrapper {
-    color: #043546;
-    user-select: auto; }
-    .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email {
-      fill: #043546;
-      height: 2rem; }
-      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email line,
-      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email path,
-      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email rect {
-        stroke: #FCFAED; }
-    .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-github {
-      fill: #043546;
-      height: 2rem; }
-    .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-linkedin {
-      height: 2rem; }
-      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-linkedin circle {
-        fill: #043546; }
-      .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-linkedin path {
-        fill: #FCFAED; }
-    .contact-row .contact-link-wrapper .contact-icon-wrapper span {
-      padding: 0 calc(0.25rem + 0.25vw); }
-    .contact-row .contact-link-wrapper .contact-icon-wrapper:hover {
-      color: #1B969E; }
-      .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-email {
-        fill: #1B969E;
-        transition: 0.25s ease-out; }
-      .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-github {
-        fill: #1B969E;
-        transition: 0.25s ease-out; }
-      .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-linkedin circle {
-        fill: #1B969E;
-        transition: 0.25s ease-out; }
-    .contact-row .contact-link-wrapper .contact-icon-wrapper:focus {
-      outline: none;
-      box-shadow: none; }
-
-.contact-row .contact-ctc {
-  background: none; }
-  .contact-row .contact-ctc .icon-copy {
-    fill: none;
-    height: 1rem;
-    position: relative;
-    stroke: #043546;
-    top: -0.2rem; }
-  .contact-row .contact-ctc::after {
-    background-color: #ECD4B0;
-    border-radius: 0.25rem;
-    color: #FCFAED;
-    content: 'Click to Copy';
-    font-size: 0.75rem;
-    margin-left: 0.5rem;
-    opacity: 0;
-    padding: 0.1rem 0.25rem; }
-  .contact-row .contact-ctc:hover {
-    cursor: pointer; }
-    .contact-row .contact-ctc:hover .icon-copy {
-      stroke: #1B969E;
-      transition: 0.25s ease-out; }
-    .contact-row .contact-ctc:hover::after {
+    display: block;
+    font-size: 1rem;
+    height: 2.5rem;
+    margin: auto; }
+    .page-contact .contact-row #contact-button-send:hover {
       background-color: #1B969E;
-      opacity: 1;
-      transition: 0.25s ease-out; }
-  .contact-row .contact-ctc:focus {
-    outline: none;
-    box-shadow: none; }
-    .contact-row .contact-ctc:focus::after {
-      content: 'Copied!'; }
-
-.contact-row input::placeholder,
-.contact-row textarea::placeholder {
-  opacity: 0; }
+      border: 0.1rem solid #1B969E;
+      color: #FCFAED; }
+  .page-contact .contact-row #contact-email-input,
+  .page-contact .contact-row #contact-name-input {
+    height: 3rem; }
+  .page-contact .contact-row .contact-input {
+    margin-bottom: 1rem;
+    position: relative; }
+  .page-contact .contact-row .contact-input-field:focus ~ .floating-placeholder,
+  .page-contact .contact-row .contact-input-field:not(:placeholder-shown) ~ .floating-placeholder {
+    color: #1B969E;
+    font-size: 0.7rem;
+    top: 0.1rem;
+    transition: 0.1s; }
+  .page-contact .contact-row .contact-input-field {
+    background-color: #FCFAED;
+    border-bottom: 0.1rem solid #043546;
+    color: #043546;
+    padding: 1rem 0 0 0.5rem;
+    width: 100%; }
+    .page-contact .contact-row .contact-input-field:focus {
+      border-color: #1B969E;
+      box-shadow: none;
+      outline: none; }
+  .page-contact .contact-row .floating-placeholder {
+    top: 0.5rem;
+    color: #043546;
+    cursor: text;
+    left: 0.5rem;
+    position: absolute;
+    transition: 0.2s; }
+  .page-contact .contact-row form {
+    display: block;
+    margin: auto;
+    width: 100%; }
+  .page-contact .contact-row .contact-link-wrapper {
+    align-items: center;
+    display: flex; }
+    .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper {
+      color: #043546;
+      user-select: auto; }
+      .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email {
+        fill: #043546;
+        height: 2rem; }
+        .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email line,
+        .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email path,
+        .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-email rect {
+          stroke: #FCFAED; }
+      .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-github {
+        fill: #043546;
+        height: 2rem; }
+      .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-linkedin {
+        height: 2rem; }
+        .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-linkedin circle {
+          fill: #043546; }
+        .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper .icon-linkedin path {
+          fill: #FCFAED; }
+      .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper span {
+        padding: 0 calc(0.25rem + 0.25vw); }
+      .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:hover {
+        color: #1B969E; }
+        .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-email {
+          fill: #1B969E;
+          transition: 0.25s ease-out; }
+        .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-github {
+          fill: #1B969E;
+          transition: 0.25s ease-out; }
+        .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-linkedin circle {
+          fill: #1B969E;
+          transition: 0.25s ease-out; }
+      .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:focus {
+        outline: none;
+        box-shadow: none; }
+  .page-contact .contact-row .contact-ctc {
+    background: none; }
+    .page-contact .contact-row .contact-ctc .icon-copy {
+      fill: none;
+      height: 1rem;
+      position: relative;
+      stroke: #043546;
+      top: -0.2rem; }
+    .page-contact .contact-row .contact-ctc::after {
+      background-color: #ECD4B0;
+      border-radius: 0.25rem;
+      color: #FCFAED;
+      content: 'Click to Copy';
+      font-size: 0.75rem;
+      margin-left: 0.5rem;
+      opacity: 0;
+      padding: 0.1rem 0.25rem; }
+    .page-contact .contact-row .contact-ctc:hover {
+      cursor: pointer; }
+      .page-contact .contact-row .contact-ctc:hover .icon-copy {
+        stroke: #1B969E;
+        transition: 0.25s ease-out; }
+      .page-contact .contact-row .contact-ctc:hover::after {
+        background-color: #1B969E;
+        opacity: 1;
+        transition: 0.25s ease-out; }
+    .page-contact .contact-row .contact-ctc:focus {
+      outline: none;
+      box-shadow: none; }
+      .page-contact .contact-row .contact-ctc:focus::after {
+        content: 'Copied!'; }
+  .page-contact .contact-row input::placeholder,
+  .page-contact .contact-row textarea::placeholder {
+    opacity: 0; }
 
 * {
   border: 0;

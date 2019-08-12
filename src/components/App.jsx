@@ -28,10 +28,15 @@ class App extends Component {
     this.state = {
 
       // Nav net & scraps
-      nav_net_loc: 0,
-      nav_tripwire_loc: 0,
-      scrap_brand_loc: 0,
-      scrap_links_loc: 0,
+      // nav_net_loc: 0,
+      // nav_tripwire_loc: 0,
+      // scrap_brand_loc: 0,
+      // scrap_link_contact_loc: 0,
+      // scrap_link_projects_loc: 0,
+      // scrap_link_resume_loc: 0,
+      // scrap_link_github_loc: 0,
+      // scrap_link_linkedin_loc: 0,
+      scraps_locations: {},
 
       // Fibonacci blocks
       colors: [],
@@ -52,15 +57,14 @@ class App extends Component {
     this.setState({ 
 
       // Navbar net & scraps
-      nav_net_loc: getNavNetScrapsLocations().nav_net_loc,
-      nav_tripwire_loc: getNavNetScrapsLocations().nav_tripwire_loc,
-      scrap_brand_loc: getNavNetScrapsLocations().scrap_brand_loc,
-      scrap_links_loc: getNavNetScrapsLocations().scrap_links_loc,
+      scraps_locations: getNavNetScrapsLocations(),
 
       // Fibonacci blocks
       colors: colorsShuffled(),
       fibSeq: fibSequence(this.state.n),
     }, () => {
+      
+      // console.log(this.state.scraps_locations)
 
       // Navbar net & scraps
       const main = document.querySelector('.main')

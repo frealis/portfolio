@@ -9,7 +9,7 @@ class Contact extends Component {
     return (
       <div>
         <span id="anchor-contact"></span>
-        <div className="page">
+        <div className="page page-contact">
           <h1 className="page-header">Contact</h1>
           <div className="row contact-row">
 

@@ -1,8 +1,9 @@
 nav {
   align-items: center;
-  background-color: $secondary-color;
+  // background-color: $secondary-color;
   display: flex;
   height: 10vh;
+  // margin-left: 10vw;
   padding: calc(2rem + 2vh) 0;
   width: 90vw;
   &.nav-fixed {
@@ -17,18 +18,19 @@ nav {
   & .scrap {
     color: $secondary-color;
     font-weight: 600;
+    // margin-left: 10vw;
     mix-blend-mode: difference;
     padding: 0 1rem;
     position: fixed;
     z-index: 2;
     &.brand { font-size: 1.5rem; left: 5vw; top: 20vh; }
     & .brand-sub { display: block; font-size: 1rem; left: 1rem; position: relative; }
-    &.links { left: 60vw; top: 50vh; }
+    // &.links { left: 15vw; top: 50vh; }
     & .link-contact,
     & .link-projects {
       background-color: transparent;
       font-size: 1rem;
-      position: static; 
+      // position: static; 
       &:hover {
         animation-duration: 0.25s;
         animation-fill-mode: forwards;
@@ -40,11 +42,17 @@ nav {
         box-shadow: none;
       }
     }
+    & .link-contact {
+      top: 35vh;
+    }
+    & .link-projects {
+      top: 30vh;
+    }
     & .link-resume,
     & .link-github,
     & .link-linkedin {
       background-color: transparent;
-      position: static; 
+      // position: static; 
       & .icon-github,
       & .icon-linkedin,
       & .icon-resume {
@@ -56,12 +64,17 @@ nav {
       }
     }
     & .link-resume { 
+      top: 40vh;
       & circle { fill: $secondary-color; }
       & line,
       & rect { stroke: $tertiary-color; }
     }
-    & .link-github { fill: $secondary-color; }
+    & .link-github { 
+      fill: $secondary-color; 
+      top: 50vh;
+    }
     & .link-linkedin {
+      top: 60vh;
       & circle { fill: $secondary-color; }
       & path { fill: $tertiary-color; }
     }
@@ -78,12 +91,12 @@ nav {
     z-index: 2;
     &.brand { font-size: 1.5rem; left: 5vw; }
     & .brand-sub { display: block; font-size: 1rem; left: 1rem; position: relative; }
-    &.links { left: 60vw; }
+    &.links { left: 15vw; }
     & .link-contact,
     & .link-projects {
       background-color: transparent;
       font-size: 1rem;
-      position: static; 
+      // position: static; 
       &:hover {
         animation-duration: 0.25s;
         animation-fill-mode: forwards;
@@ -99,7 +112,7 @@ nav {
     & .link-github,
     & .link-linkedin {
       background-color: transparent;
-      position: static; 
+      // position: static; 
       & .icon-github,
       & .icon-linkedin,
       & .icon-resume {

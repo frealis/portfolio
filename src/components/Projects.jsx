@@ -19,7 +19,7 @@ class Projects extends Component {
     return (
       <div>
         <span id="anchor-projects"></span>
-        <div className="page">
+        <div className="page page-projects">
           <h1 className="page-header">Projects</h1>
           <ProjectsRCPW IconAWS={ IconAWS} IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } LogoPostgreSQL={ LogoPostgreSQL } />
           <ProjectsPinocchios IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } LogoHeroku={ LogoHeroku } LogoPostgreSQL={ LogoPostgreSQL } />
