@@ -66,9 +66,7 @@
     }
     & .link-resume { 
       top: 20vh;
-      & circle { fill: $secondary-color; }
-      & line,
-      & rect { stroke: $tertiary-color; }
+      & path { fill: $secondary-color; }
     }
     & .link-github { 
       fill: $secondary-color; 
@@ -76,8 +74,7 @@
     }
     & .link-linkedin {
       top: 40vh;
-      & circle { fill: $secondary-color; }
-      & path { fill: $tertiary-color; }
+      & path { fill: $secondary-color; }
     }
     &.display-none { display: none; }
   }

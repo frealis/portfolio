@@ -73,46 +73,22 @@ $contact-link-transition: 0.25s ease-out;
       .contact-icon-wrapper {
         color: $tertiary-color;
         user-select: auto;
-        & .icon-email {
-          fill: $tertiary-color;
-          height: 2rem;
-          & line,
-          & path,
-          & rect {
-            stroke: $secondary-color;
-          }
-        }
-        & .icon-github {
-          fill: $tertiary-color;
-          height: 2rem;
-        }
+        & .icon-email,
+        & .icon-github,
         & .icon-linkedin {
+          fill: $tertiary-color;
           height: 2rem;
-          & circle {
-            fill: $tertiary-color;
-          }
-          & path {
-            fill: $secondary-color;
-          }
         }
         & span {
           padding: 0 calc(0.25rem + 0.25vw);
         }
         &:hover {
           color: $quinary-color;
-          & .icon-email {
-            fill: $quinary-color;
-            transition: $contact-link-transition;
-          }
-          & .icon-github {
-            fill: $quinary-color;
-            transition: $contact-link-transition;
-          }
+          & .icon-email,
+          & .icon-github,
           & .icon-linkedin {
-            & circle {
-              fill: $quinary-color;
-              transition: $contact-link-transition;
-            }
+            fill: $quinary-color;
+            transition: $contact-link-transition;
           }
         }
         &:focus {
