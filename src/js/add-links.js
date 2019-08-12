@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Resume from '../img/resume.pdf'
 
 // Assign event handlers to links

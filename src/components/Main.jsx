@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 // Import components
 import Contact from './Contact'
 import LandingPage from './LandingPage'
-import NavbarNet from './NavbarNet'
-import NavbarTripwire from './NavbarTripwire'
+// import NavbarNet from './NavbarNet'
+// import NavbarTripwire from './NavbarTripwire'
 import PageSpacer from './PageSpacer'
 import Projects from './Projects'
 
