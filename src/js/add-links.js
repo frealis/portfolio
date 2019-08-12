@@ -9,6 +9,7 @@ export function addLinks() {
     link_contact.addEventListener('click', () => {
       window.location.href = '#anchor-contact'
     })
+    link_contact.classList.add('animation-chromatophore-expand')
   })
 
   // Projects
@@ -17,6 +18,7 @@ export function addLinks() {
     link_projects.addEventListener('click', () => {
       window.location.href = '#anchor-projects'
     })
+    link_projects.classList.add('animation-chromatophore-expand')
   })
 
   // ========== PROJECT LINKS ==================================================
@@ -30,6 +32,7 @@ export function addLinks() {
     window_feature: '_blank',
   }
 
+  // Pinocchio's Pizza & Subs
   const pinocchios = {
     nodelist: document.querySelectorAll('.ext-link-pinocchios'),
     nodelist_github: document.querySelectorAll('.ext-link-pinocchios-github'),
@@ -38,6 +41,7 @@ export function addLinks() {
     window_feature: '_blank',
   }
 
+  // microChat
   const microchat = {
     nodelist: document.querySelectorAll('.ext-link-microchat'),
     nodelist_github: document.querySelectorAll('.ext-link-microchat-github'),
@@ -46,6 +50,7 @@ export function addLinks() {
     window_feature: '_blank',
   }
 
+  // Book Reviews w/Goodreads
   const bookreviews = {
     nodelist: document.querySelectorAll('.ext-link-bookreviews'),
     nodelist_github: document.querySelectorAll('.ext-link-bookreviews-github'),
@@ -54,6 +59,7 @@ export function addLinks() {
     window_feature: '_blank',
   }
 
+  // Create Project link
   function createProjectLink(project_link) {
     project_link.nodelist.forEach(link => {
       link.addEventListener('click', () => {
@@ -74,8 +80,20 @@ export function addLinks() {
   createProjectLink(microchat)
   createProjectLink(bookreviews)
 
-  // ========== EXTERNAL LINKS ===================================================
+  // Add animations to <a> tags, View, and Source links in Projects.jsx
+  document.querySelectorAll('.projects-reference-link').forEach(link => {
+    link.classList.add('animation-chromatophore-reel')
+  })
+  document.querySelectorAll('.btn-source').forEach(link => {
+    link.classList.add('animation-chromatophore-reel')
+  })
+  document.querySelectorAll('.btn-view').forEach(link => {
+    link.classList.add('animation-chromatophore-reel')
+  })
 
+  // ========== CONTACT LINKS ===================================================
+
+  // Email
   const email = {
     class_ctc: '.ctc-email',
     class_link: '.link-email',
@@ -84,6 +102,7 @@ export function addLinks() {
     url: 'mailto:mhh129@gmail.com',
   }
 
+  // GitHub
   const github = {
     class_link: '.link-github',
     class_text: '.text-github',
@@ -92,6 +111,7 @@ export function addLinks() {
     url: 'https://github.com/matthigg',
   }
 
+  // LinkedIn
   const linkedin = {
     class_link: '.link-linkedin',
     class_text: '.text-linkedin',
@@ -99,11 +119,6 @@ export function addLinks() {
     window_feature: '_blank',
     url: 'https://www.linkedin.com/in/matt-higg/',
   }
-
-  // const resume = {
-  //   class_link: '.link-resume',
-  //   url: '',
-  // }
 
   // Create external link
   function createExternalLink(ext_link) {
@@ -144,43 +159,49 @@ export function addLinks() {
 
   // ========== TECHNOLOGY ICONS ===============================================
 
+  // AWS
   const aws = {
     nodelist: document.querySelectorAll('.ext-link-aws'),
     window_feature: '_blank',
     url: 'https://aws.amazon.com/',
   }
 
+  // Bootstrap
   const bootstrap = {
     nodelist: document.querySelectorAll('.ext-link-bootstrap'),
     window_feature: '_blank',
     url: 'https://getbootstrap.com/',
   }
 
+  // Django
   const django = {
     nodelist: document.querySelectorAll('.ext-link-django'),
     window_feature: '_blank',
     url: 'https://www.djangoproject.com/',
   }
 
+  // Flask
   const flask = {
     nodelist: document.querySelectorAll('.ext-link-flask'),
     window_feature: '_blank',
     url: 'https://palletsprojects.com/p/flask/',
   }
 
+  // Heroku
   const heroku = {
     nodelist: document.querySelectorAll('.ext-link-heroku'),
     window_feature: '_blank',
     url: 'https://www.heroku.com/',
   }
 
+  // PostgreSQL
   const postgresql = {
     nodelist: document.querySelectorAll('.ext-link-postgresql'),
     window_feature: '_blank',
     url: 'https://www.postgresql.org/',
   }
 
-  // Add tech icon links
+  // Add tech icon link
   function createTechIconLink(tech_link) {
     tech_link.nodelist.forEach(link => {
       link.addEventListener('click', () => {

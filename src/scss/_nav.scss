@@ -37,12 +37,12 @@
     & .link-projects {
       background-color: transparent;
       position: static;
-      &:hover {
-        animation-duration: 0.2s;
-        animation-fill-mode: forwards;
-        animation-name: animation-chromatophore-deconstructed;
-        animation-timing-function: linear;
-      }
+      // &:hover {
+      //   animation-duration: 0.2s;
+      //   animation-fill-mode: forwards;
+      //   animation-name: animation-chromatophore-expand;
+      //   animation-timing-function: linear;
+      // }
       &:focus {
         outline: none;
         box-shadow: none;

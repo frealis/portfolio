@@ -22,7 +22,7 @@
   animation-name: animation-asteroid-zoom;
 }
 
-@keyframes animation-chromatophore {
+@keyframes animation-chromatophore-contract {
   0% { 
     color: $primary-color; 
     text-shadow: 
@@ -35,13 +35,13 @@
   100% { color: $tertiary-color; }
 }
 
-.animation-chromatophore {
+.animation-chromatophore-contract {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  animation-name: animation-chromatophore;
+  animation-name: animation-chromatophore-contract;
 }
 
-@keyframes animation-chromatophore-deconstructed {
+@keyframes animation-chromatophore-expand {
   0% { color: $primary-color; }
   25% { color: $secondary-color; }
   50% { 
@@ -59,7 +59,16 @@
   }
 }
 
-@keyframes animation-chromatophore-external-link {
+.animation-chromatophore-expand {
+  &:hover {
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-name: animation-chromatophore-expand;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes animation-chromatophore-reel {
   0% { 
     color: $primary-color;
     stroke: $primary-color;
@@ -85,6 +94,14 @@
     text-shadow: 
       0 15px rgba(255, 255, 255, 0), 
       0 -15px rgba(255, 255, 255, 0);
+  }
+}
+
+.animation-chromatophore-reel {
+  &:hover {
+    animation-duration: 0.35s;
+    animation-fill-mode: forwards;
+    animation-name: animation-chromatophore-reel;
   }
 }
 

@@ -16,7 +16,7 @@ class ProjectsPinocchios extends Component {
         <div className="col-md-7 projects-col">
           <div className="projects-col-top">
             <h2 className="projects-thumbnail-header ext-link-pinocchios">Pinocchio's Pizza { '&' } Subs</h2>
-            <p className="projects-thumbnail-description">This website is a redesign project for <a href="https://www.pinocchiospizza.net/">Pinocchio's Pizza & Subs</a>. It uses Django's built-in admin panel along with a Postgres database to manage menu items as well as store customer orders. It is integrated with Stripe's payment processing API for testing purposes.</p>
+            <p className="projects-thumbnail-description">This website is a redesign project for <a className="projects-reference-link" href="https://www.pinocchiospizza.net/">Pinocchio's Pizza & Subs</a>. It uses Django's built-in admin panel along with a Postgres database to manage menu items as well as store customer orders. It is integrated with Stripe's payment processing API for testing purposes.</p>
           </div>
           <div className="projects-col-bottom">
             <button className="btn btn-view ext-link-pinocchios">
