@@ -6,6 +6,7 @@ export function getNavNetScrapsLocations() {
     nav_net: {
       class_name: '.nav-net',
       location: '',
+      offsetHeight: '',
     },
     nav_tripwire: {
       class_name: '.nav-tripwire',
@@ -43,20 +44,15 @@ export function getNavNetScrapsLocations() {
     },
   }
 
-  // Use FOR/IN loop to iterate over the scraps{} object
-  // for (let scrap in scraps) {
-  //   if (scraps[scrap].hasOwnProperty('class_name')) {
-  //     const DOM_element = document.querySelector(`${scraps[scrap].class_name}`)
-  //     scraps[scrap].location = DOM_element.offsetTop + DOM_element.offsetHeight / 2
-  //   }
-  // }
-
   // Use Object.keys() to turn the scraps{} object into an array before iterating
   // over it
   Object.keys(scraps).forEach(scrap => {
     const DOM_element = document.querySelector(`${scraps[scrap].class_name}`)
     scraps[scrap].location = DOM_element.offsetTop + DOM_element.offsetHeight / 2
   })
+
+  // Set nav_net offsetHeight
+  scraps.nav_net.offsetHeight = document.querySelector('.nav-net').offsetHeight
 
   return {
     scraps

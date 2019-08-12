@@ -18,7 +18,7 @@ export function handleScroll(main) {
   })
 
   // Hide the net navbar, reveal the fixed navbar
-  if (main.scrollTop > nav_tripwire.location) {
+  if (main.scrollTop > nav_tripwire.location - nav_net.offsetHeight) {
     document.querySelector('.nav-net').classList.add('nav-net-vanish')
     document.querySelector('.nav-fixed').classList.remove('nav-fixed-vanish')
   } else {
