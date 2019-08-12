@@ -31,22 +31,17 @@
   animation-fill-mode: forwards;
   animation-name: animation-asteroid-zoom; }
 
-@keyframes animation-chromatophore {
-  0% {
-    fill: #0A2425; }
-  25% {
-    fill: #FCFAED; }
+@keyframes animation-chromatophore-icon {
+  0% { }
   50% {
     fill: #1B969E; }
-  75% {
-    fill: #ECD4B0; }
   100% {
     fill: #043546; } }
 
-.animation-chromatophore:hover {
+.animation-chromatophore-icon:hover {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  animation-name: animation-chromatophore; }
+  animation-name: animation-chromatophore-icon; }
 
 @keyframes animation-chromatophore-contract {
   0% {
@@ -68,17 +63,12 @@
 
 @keyframes animation-chromatophore-expand {
   0% {
-    color: #0A2425; }
-  25% {
-    color: #FCFAED; }
+    text-shadow: 0 -10px #1B969E, 0 10px #043546; }
   50% {
-    color: #043546;
-    text-shadow: 0 15px #1B969E, 0 -15px #ECD4B0; }
-  75% {
-    color: #ECD4B0; }
+    color: #043546; }
   100% {
     color: #1B969E;
-    text-shadow: 0 30px rgba(255, 255, 255, 0), 0 -30px rgba(255, 255, 255, 0); } }
+    text-shadow: 0 10px rgba(255, 255, 255, 0), 0 -10px rgba(255, 255, 255, 0); } }
 
 .animation-chromatophore-expand:hover {
   animation-duration: 0.2s;
@@ -115,7 +105,7 @@
   font-weight: 600;
   font-size: 1rem;
   mix-blend-mode: difference;
-  padding: 1rem;
+  padding: 1rem 0;
   position: fixed;
   z-index: 2; }
   .scraps .scrap.brand {

@@ -27,14 +27,14 @@ export function addLinks() {
     window.open(Resume, '_blank')
   })
   link_resume.setAttribute('rel', 'noopener noreferrer')
-  link_resume.classList.add('animation-chromatophore-expand')
-  link_resume.firstChild.classList.add('animation-chromatophore')
+  link_resume.classList.add('animation-chromatophore-icon')
+  link_resume.firstChild.classList.add('animation-chromatophore-icon')
 
   // GitHub (also appears in CONTACT LINKS)
-  document.querySelector('.scrap.free.link-github').firstChild.classList.add('animation-chromatophore')
+  document.querySelector('.scrap.free.link-github').firstChild.classList.add('animation-chromatophore-icon')
 
   // LinkedIn (also appears in CONTACT LINKS)
-  document.querySelector('.scrap.free.link-linkedin').firstChild.classList.add('animation-chromatophore')
+  document.querySelector('.scrap.free.link-linkedin').firstChild.classList.add('animation-chromatophore-icon')
 
   // ========== PROJECT LINKS ==================================================
 
