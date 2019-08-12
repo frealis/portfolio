@@ -19,21 +19,26 @@
   & .scrap {
     color: $secondary-color;
     font-weight: 600;
+    font-size: 1rem;
     mix-blend-mode: difference;
-    padding: 0 1rem;
+    padding: 1rem;
     position: fixed;
-    right: 5vw;
     z-index: 2;
     &.brand { font-size: 1.5rem; left: 0vw; top: 5vh; }
     & .brand-sub { display: block; font-size: 1rem; left: 1rem; position: relative; }
-    // &.links { left: 15vw; top: 50vh; }
+    &.links { 
+      align-items: space-between;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      right: 5vw;
+     }
     & .link-contact,
     & .link-projects {
       background-color: transparent;
-      font-size: 1rem;
-      // position: static; 
+      position: static;
       &:hover {
-        animation-duration: 0.25s;
+        animation-duration: 0.2s;
         animation-fill-mode: forwards;
         animation-name: animation-chromatophore-deconstructed;
         animation-timing-function: linear;
@@ -43,17 +48,12 @@
         box-shadow: none;
       }
     }
-    & .link-contact {
-      top: 10vh;
-    }
-    & .link-projects {
-      top: 5vh;
-    }
     & .link-resume,
     & .link-github,
     & .link-linkedin {
       background-color: transparent;
-      // position: static; 
+      fill: $secondary-color;
+      position: static;
       & .icon-github,
       & .icon-linkedin,
       & .icon-resume {
@@ -65,16 +65,8 @@
       }
     }
     & .link-resume { 
-      top: 20vh;
       & path { fill: $secondary-color; }
-    }
-    & .link-github { 
-      fill: $secondary-color; 
-      top: 30vh;
-    }
-    & .link-linkedin {
-      top: 40vh;
-      & path { fill: $secondary-color; }
+      // fill: $secondary-color;
     }
     &.display-none { display: none; }
   }

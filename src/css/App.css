@@ -85,10 +85,10 @@
 .scraps .scrap {
   color: #FCFAED;
   font-weight: 600;
+  font-size: 1rem;
   mix-blend-mode: difference;
-  padding: 0 1rem;
+  padding: 1rem;
   position: fixed;
-  right: 5vw;
   z-index: 2; }
   .scraps .scrap.brand {
     font-size: 1.5rem;
@@ -99,13 +99,19 @@
     font-size: 1rem;
     left: 1rem;
     position: relative; }
+  .scraps .scrap.links {
+    align-items: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 5vw; }
   .scraps .scrap .link-contact,
   .scraps .scrap .link-projects {
     background-color: transparent;
-    font-size: 1rem; }
+    position: static; }
     .scraps .scrap .link-contact:hover,
     .scraps .scrap .link-projects:hover {
-      animation-duration: 0.25s;
+      animation-duration: 0.2s;
       animation-fill-mode: forwards;
       animation-name: animation-chromatophore-deconstructed;
       animation-timing-function: linear; }
@@ -113,14 +119,12 @@
     .scraps .scrap .link-projects:focus {
       outline: none;
       box-shadow: none; }
-  .scraps .scrap .link-contact {
-    top: 10vh; }
-  .scraps .scrap .link-projects {
-    top: 5vh; }
   .scraps .scrap .link-resume,
   .scraps .scrap .link-github,
   .scraps .scrap .link-linkedin {
-    background-color: transparent; }
+    background-color: transparent;
+    fill: #FCFAED;
+    position: static; }
     .scraps .scrap .link-resume .icon-github,
     .scraps .scrap .link-resume .icon-linkedin,
     .scraps .scrap .link-resume .icon-resume,
@@ -136,17 +140,8 @@
     .scraps .scrap .link-linkedin:focus {
       outline: none;
       box-shadow: none; }
-  .scraps .scrap .link-resume {
-    top: 20vh; }
-    .scraps .scrap .link-resume path {
-      fill: #FCFAED; }
-  .scraps .scrap .link-github {
-    fill: #FCFAED;
-    top: 30vh; }
-  .scraps .scrap .link-linkedin {
-    top: 40vh; }
-    .scraps .scrap .link-linkedin path {
-      fill: #FCFAED; }
+  .scraps .scrap .link-resume path {
+    fill: #FCFAED; }
   .scraps .scrap.display-none {
     display: none; }
 
@@ -270,6 +265,7 @@
     color: #043546;
     display: block;
     font-size: 1rem;
+    font-weight: 600;
     height: 2.5rem;
     margin: auto; }
     .page-contact .contact-row #contact-button-send:hover {
