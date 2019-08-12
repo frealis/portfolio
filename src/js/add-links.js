@@ -1,25 +1,40 @@
+import React from 'react'
+
+import Resume from '../img/resume.pdf'
+
 // Assign event handlers to links
 export function addLinks() {
 
   // ========== NAVBAR LINKS ===================================================
  
   // Contact
-  const link_contact_nodelist = document.querySelectorAll('.link-contact')
-  link_contact_nodelist.forEach((link_contact) => {
-    link_contact.addEventListener('click', () => {
-      window.location.href = '#anchor-contact'
-    })
-    link_contact.classList.add('animation-chromatophore-expand')
+  const link_contact = document.querySelector('.link-contact')
+  link_contact.addEventListener('click', () => {
+    window.location.href = '#anchor-contact'
   })
+  link_contact.classList.add('animation-chromatophore-expand')
 
   // Projects
-  const link_projects_nodelist = document.querySelectorAll('.link-projects')
-  link_projects_nodelist.forEach((link_projects) => {
-    link_projects.addEventListener('click', () => {
-      window.location.href = '#anchor-projects'
-    })
-    link_projects.classList.add('animation-chromatophore-expand')
+  const link_projects = document.querySelector('.link-projects')
+  link_projects.addEventListener('click', () => {
+    window.location.href = '#anchor-projects'
   })
+  link_projects.classList.add('animation-chromatophore-expand')
+
+  // Resume
+  const link_resume = document.querySelector('.link-resume')
+  link_resume.addEventListener('click', () => {
+    window.open(Resume, '_blank')
+  })
+  link_resume.setAttribute('rel', 'noopener noreferrer')
+  link_resume.classList.add('animation-chromatophore-expand')
+  link_resume.firstChild.classList.add('animation-chromatophore')
+
+  // GitHub (also appears in CONTACT LINKS)
+  document.querySelector('.scrap.free.link-github').firstChild.classList.add('animation-chromatophore')
+
+  // LinkedIn (also appears in CONTACT LINKS)
+  document.querySelector('.scrap.free.link-linkedin').firstChild.classList.add('animation-chromatophore')
 
   // ========== PROJECT LINKS ==================================================
 
@@ -62,7 +77,6 @@ export function addLinks() {
   // Create Project link
   function createProjectLink(project_link) {
     project_link.nodelist.forEach(link => {
-      console.log(link)
       link.addEventListener('click', () => {
         window.open(`${project_link.url}`, `${project_link.window_feature}`)
       })

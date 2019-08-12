@@ -22,9 +22,11 @@ $projects-transition: 0.35s ease-out;
       }
     }
 
+    $tech-icon-inactive: #aaa;
+
     .ext-link-aws {
       & path {
-        fill: #ccc;
+        fill: $tech-icon-inactive;
         transition: $projects-transition;
       }
       &:hover {
@@ -39,7 +41,7 @@ $projects-transition: 0.35s ease-out;
 
     .ext-link-bootstrap {
       & .logo-bootstrap-path {
-        fill: #ccc;
+        fill: $tech-icon-inactive;
         transition: $projects-transition;
       }
       &:hover {
@@ -51,7 +53,7 @@ $projects-transition: 0.35s ease-out;
 
     .ext-link-django {
       & path {
-        fill: #ccc;
+        fill: $tech-icon-inactive;
         transition: $projects-transition;
       }
       &:hover {
@@ -63,7 +65,7 @@ $projects-transition: 0.35s ease-out;
 
     .ext-link-flask {
       & path {
-        fill: #ccc;
+        fill: $tech-icon-inactive;
         transition: $projects-transition;
       }
       &:hover {
@@ -75,7 +77,7 @@ $projects-transition: 0.35s ease-out;
 
     .ext-link-heroku {
       & .logo-heroku-path {
-        fill: #ccc;
+        fill: $tech-icon-inactive;
         transition: $projects-transition;
       }
       &:hover {
@@ -87,7 +89,7 @@ $projects-transition: 0.35s ease-out;
 
     .ext-link-postgresql {
       & path {
-        fill: #ccc;
+        fill: $tech-icon-inactive;
         transition: $projects-transition;
       }
       &:hover {

@@ -14,9 +14,9 @@ class NavbarDeconstructed extends Component {
           <button className="scrap free link-projects">Projects</button>
           <button className="scrap free link-contact">Contact</button>
           <button className="scrap free link-resume">
-            <a href={ Resume } target="_blank" rel="noopener noreferrer">
+            {/* <a href={ Resume } target="_blank" rel="noopener noreferrer"> */}
               <IconResume />
-            </a>
+            {/* </a> */}
           </button>
           <button className="scrap free link-github"><IconGitHub /></button>
           <button className="scrap free link-linkedin"><IconLinkedIn /></button>

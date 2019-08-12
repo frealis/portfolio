@@ -31,6 +31,23 @@
   animation-fill-mode: forwards;
   animation-name: animation-asteroid-zoom; }
 
+@keyframes animation-chromatophore {
+  0% {
+    fill: #0A2425; }
+  25% {
+    fill: #FCFAED; }
+  50% {
+    fill: #1B969E; }
+  75% {
+    fill: #ECD4B0; }
+  100% {
+    fill: #043546; } }
+
+.animation-chromatophore:hover {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: animation-chromatophore; }
+
 @keyframes animation-chromatophore-contract {
   0% {
     color: #0A2425;
@@ -89,7 +106,7 @@
     text-shadow: 0 15px rgba(255, 255, 255, 0), 0 -15px rgba(255, 255, 255, 0); } }
 
 .animation-chromatophore-reel:hover {
-  animation-duration: 0.35s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-name: animation-chromatophore-reel; }
 
@@ -128,7 +145,6 @@
   .scraps .scrap .link-github,
   .scraps .scrap .link-linkedin {
     background-color: transparent;
-    fill: #FCFAED;
     position: static; }
     .scraps .scrap .link-resume .icon-github,
     .scraps .scrap .link-resume .icon-linkedin,
@@ -139,14 +155,13 @@
     .scraps .scrap .link-linkedin .icon-github,
     .scraps .scrap .link-linkedin .icon-linkedin,
     .scraps .scrap .link-linkedin .icon-resume {
+      fill: #FCFAED;
       height: 2rem; }
     .scraps .scrap .link-resume:focus,
     .scraps .scrap .link-github:focus,
     .scraps .scrap .link-linkedin:focus {
       outline: none;
       box-shadow: none; }
-  .scraps .scrap .link-resume path {
-    fill: #FCFAED; }
   .scraps .scrap.display-none {
     display: none; }
 
@@ -184,34 +199,34 @@
         outline: none;
         box-shadow: none; }
     .page-projects .projects-row .ext-link-aws path {
-      fill: #ccc;
+      fill: #aaa;
       transition: 0.35s ease-out; }
     .page-projects .projects-row .ext-link-aws:hover .icon-aws-text {
       fill: #252f3e; }
     .page-projects .projects-row .ext-link-aws:hover .icon-aws-arrow {
       fill: #f90; }
     .page-projects .projects-row .ext-link-bootstrap .logo-bootstrap-path {
-      fill: #ccc;
+      fill: #aaa;
       transition: 0.35s ease-out; }
     .page-projects .projects-row .ext-link-bootstrap:hover .logo-bootstrap-path {
       fill: #563d7c; }
     .page-projects .projects-row .ext-link-django path {
-      fill: #ccc;
+      fill: #aaa;
       transition: 0.35s ease-out; }
     .page-projects .projects-row .ext-link-django:hover path {
       fill: #092e20; }
     .page-projects .projects-row .ext-link-flask path {
-      fill: #ccc;
+      fill: #aaa;
       transition: 0.35s ease-out; }
     .page-projects .projects-row .ext-link-flask:hover path {
       fill: black; }
     .page-projects .projects-row .ext-link-heroku .logo-heroku-path {
-      fill: #ccc;
+      fill: #aaa;
       transition: 0.35s ease-out; }
     .page-projects .projects-row .ext-link-heroku:hover .logo-heroku-path {
       fill: #430098; }
     .page-projects .projects-row .ext-link-postgresql path {
-      fill: #ccc;
+      fill: #aaa;
       transition: 0.35s ease-out; }
     .page-projects .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-none-stroke-fff {
       fill: none;

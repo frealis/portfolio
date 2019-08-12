@@ -37,12 +37,6 @@
     & .link-projects {
       background-color: transparent;
       position: static;
-      // &:hover {
-      //   animation-duration: 0.2s;
-      //   animation-fill-mode: forwards;
-      //   animation-name: animation-chromatophore-expand;
-      //   animation-timing-function: linear;
-      // }
       &:focus {
         outline: none;
         box-shadow: none;
@@ -52,21 +46,17 @@
     & .link-github,
     & .link-linkedin {
       background-color: transparent;
-      fill: $secondary-color;
       position: static;
       & .icon-github,
       & .icon-linkedin,
       & .icon-resume {
+        fill: $secondary-color;
         height: 2rem;
       }
       &:focus {
         outline: none;
         box-shadow: none;
       }
-    }
-    & .link-resume { 
-      & path { fill: $secondary-color; }
-      // fill: $secondary-color;
     }
     &.display-none { display: none; }
   }
