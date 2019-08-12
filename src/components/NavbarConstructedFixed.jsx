@@ -10,16 +10,17 @@ class NavbarConstructedFixed extends Component {
           Mustachio the Pistachio
           <span className="brand-sub">Web Developer</span>
         </div>
-        <div className="scrap-collected fixed links">
-          <button className="scrap-collected fixed link-projects">Projects</button>
-          <button className="scrap-collected fixed link-contact">Contact</button>
-          <button className="scrap-collected fixed link-resume"><IconResume /></button>
-          <button className="scrap-collected fixed link-github"><IconGitHub /></button>
-          <button className="scrap-collected fixed link-linkedin"><IconLinkedIn /></button>
-        </div>
       </nav>
     )
   }
 }
 
 export default NavbarConstructedFixed
+
+{/* <div className="scrap-collected fixed links">
+  <button className="scrap-collected fixed link-projects">Projects</button>
+  <button className="scrap-collected fixed link-contact">Contact</button>
+  <button className="scrap-collected fixed link-resume"><IconResume /></button>
+  <button className="scrap-collected fixed link-github"><IconGitHub /></button>
+  <button className="scrap-collected fixed link-linkedin"><IconLinkedIn /></button>
+</div> */}

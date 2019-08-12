@@ -2,27 +2,42 @@
 export function handleScroll(main) {
 
   // const { nav_net, nav_tripwire, scrap_brand, scrap_link_contact, scrap_link_github, scrap_link_linkedin, scrap_link_projects, scrap_link_resume } = this.state.scraps_locations.scraps
-  const { nav_net, nav_tripwire, ...scraps } = this.state.scraps_locations.scraps
+  const { nav_net, nav_tripwire, scrap_brand, ...scraps } = this.state.scraps_locations.scraps
 
-  // Handle scraps
-  Object.keys(scraps).forEach(scrap => {
-    if (main.scrollTop > nav_net.location - `${scraps[scrap].location}`) {
-      document.querySelector(`${scraps[scrap].class_name}`).classList.add('display-none')
-      document.querySelector(`${scraps[scrap].class_name_collected}`).classList.remove('display-none')
-      document.querySelector(`${scraps[scrap].class_name_collected}`).classList.add('animation-chromatophore')
-    } else {
-      document.querySelector(`${scraps[scrap].class_name}`).classList.remove('display-none')
-      document.querySelector(`${scraps[scrap].class_name_collected}`).classList.add('display-none')
-      document.querySelector(`${scraps[scrap].class_name_collected}`).classList.remove('animation-chromatophore')
-    }
-  })
+  // Handle mobile scrap (scrap_brand)
+  if (main.scrollTop > nav_net.location - scrap_brand.location) {
+    // document.querySelector(`${scrap_brand.class_name}`).classList.add('display-none')
+    // document.querySelector(`${scrap_brand.class_name_collected}`).classList.remove('display-none')
+    // document.querySelector(`${scrap_brand.class_name_collected}`).classList.add('animation-chromatophore')
+  } else {
+    // document.querySelector(`${scrap_brand.class_name}`).classList.remove('display-none')
+    // document.querySelector(`${scrap_brand.class_name_collected}`).classList.add('display-none')
+    // document.querySelector(`${scrap_brand.class_name_collected}`).classList.remove('animation-chromatophore')
+  }
+
+  // Handle static scraps
+  // Object.keys(scraps).forEach(scrap => {
+  //   if (main.scrollTop > nav_net.location - `${scraps[scrap].location}`) {
+  //     document.querySelector(`${scraps[scrap].class_name_collected}`).classList.add('animation-chromatophore')
+  //   } else {
+  //     document.querySelector(`${scraps[scrap].class_name_collected}`).classList.remove('animation-chromatophore')
+  //   }
+  // })
 
   // Hide the net navbar, reveal the fixed navbar
   if (main.scrollTop > nav_tripwire.location - nav_net.offsetHeight) {
-    document.querySelector('.nav-net').classList.add('nav-net-vanish')
-    document.querySelector('.nav-fixed').classList.remove('nav-fixed-vanish')
+    // document.querySelector('.nav-net').classList.add('nav-net-vanish')
+    // document.querySelector('.nav-fixed').classList.remove('nav-fixed-vanish')
+    // Object.keys(scraps).forEach(scrap => {
+    //   document.querySelector(`${scraps[scrap].class_name}`).classList.add('display-none')
+    //   document.querySelector(`${scraps[scrap].class_name_collected}`).classList.remove('display-none')
+    // })
   } else {
-    document.querySelector('.nav-net').classList.remove('nav-net-vanish')
-    document.querySelector('.nav-fixed').classList.add('nav-fixed-vanish')
+    // document.querySelector('.nav-net').classList.remove('nav-net-vanish')
+    // document.querySelector('.nav-fixed').classList.add('nav-fixed-vanish')
+    // Object.keys(scraps).forEach(scrap => {
+    //   document.querySelector(`${scraps[scrap].class_name}`).classList.remove('display-none')
+    //   document.querySelector(`${scraps[scrap].class_name_collected}`).classList.add('display-none')
+    // })
   }
 }

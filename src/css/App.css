@@ -82,31 +82,18 @@
     stroke: #1B969E;
     text-shadow: 0 15px rgba(255, 255, 255, 0), 0 -15px rgba(255, 255, 255, 0); } }
 
-nav {
-  align-items: center;
-  display: flex;
-  height: 10vh;
-  padding: calc(2rem + 2vh) 0;
-  width: 90vw; }
-  nav.nav-fixed {
-    position: absolute;
-    z-index: 1; }
-  nav.nav-fixed-vanish {
-    display: none; }
-  nav.nav-net-vanish {
-    opacity: 0; }
-
 .scraps .scrap {
   color: #FCFAED;
   font-weight: 600;
   mix-blend-mode: difference;
   padding: 0 1rem;
   position: fixed;
+  right: 5vw;
   z-index: 2; }
   .scraps .scrap.brand {
     font-size: 1.5rem;
-    left: 5vw;
-    top: 20vh; }
+    left: 0vw;
+    top: 5vh; }
   .scraps .scrap .brand-sub {
     display: block;
     font-size: 1rem;
@@ -127,9 +114,9 @@ nav {
       outline: none;
       box-shadow: none; }
   .scraps .scrap .link-contact {
-    top: 35vh; }
+    top: 10vh; }
   .scraps .scrap .link-projects {
-    top: 30vh; }
+    top: 5vh; }
   .scraps .scrap .link-resume,
   .scraps .scrap .link-github,
   .scraps .scrap .link-linkedin {
@@ -150,7 +137,7 @@ nav {
       outline: none;
       box-shadow: none; }
   .scraps .scrap .link-resume {
-    top: 40vh; }
+    top: 20vh; }
     .scraps .scrap .link-resume circle {
       fill: #FCFAED; }
     .scraps .scrap .link-resume line,
@@ -158,77 +145,14 @@ nav {
       stroke: #043546; }
   .scraps .scrap .link-github {
     fill: #FCFAED;
-    top: 50vh; }
+    top: 30vh; }
   .scraps .scrap .link-linkedin {
-    top: 60vh; }
+    top: 40vh; }
     .scraps .scrap .link-linkedin circle {
       fill: #FCFAED; }
     .scraps .scrap .link-linkedin path {
       fill: #043546; }
   .scraps .scrap.display-none {
-    display: none; }
-
-.scraps-collected .scrap-collected {
-  color: #043546;
-  font-weight: 600;
-  padding: 0 1rem;
-  position: absolute;
-  z-index: 2; }
-  .scraps-collected .scrap-collected.brand {
-    font-size: 1.5rem;
-    left: 5vw; }
-  .scraps-collected .scrap-collected .brand-sub {
-    display: block;
-    font-size: 1rem;
-    left: 1rem;
-    position: relative; }
-  .scraps-collected .scrap-collected.links {
-    left: 15vw; }
-  .scraps-collected .scrap-collected .link-contact,
-  .scraps-collected .scrap-collected .link-projects {
-    background-color: transparent;
-    font-size: 1rem; }
-    .scraps-collected .scrap-collected .link-contact:hover,
-    .scraps-collected .scrap-collected .link-projects:hover {
-      animation-duration: 0.25s;
-      animation-fill-mode: forwards;
-      animation-name: animation-chromatophore-deconstructed;
-      animation-timing-function: linear; }
-    .scraps-collected .scrap-collected .link-contact:focus,
-    .scraps-collected .scrap-collected .link-projects:focus {
-      outline: none;
-      box-shadow: none; }
-  .scraps-collected .scrap-collected .link-resume,
-  .scraps-collected .scrap-collected .link-github,
-  .scraps-collected .scrap-collected .link-linkedin {
-    background-color: transparent; }
-    .scraps-collected .scrap-collected .link-resume .icon-github,
-    .scraps-collected .scrap-collected .link-resume .icon-linkedin,
-    .scraps-collected .scrap-collected .link-resume .icon-resume,
-    .scraps-collected .scrap-collected .link-github .icon-github,
-    .scraps-collected .scrap-collected .link-github .icon-linkedin,
-    .scraps-collected .scrap-collected .link-github .icon-resume,
-    .scraps-collected .scrap-collected .link-linkedin .icon-github,
-    .scraps-collected .scrap-collected .link-linkedin .icon-linkedin,
-    .scraps-collected .scrap-collected .link-linkedin .icon-resume {
-      height: 2rem; }
-    .scraps-collected .scrap-collected .link-resume:focus,
-    .scraps-collected .scrap-collected .link-github:focus,
-    .scraps-collected .scrap-collected .link-linkedin:focus {
-      outline: none;
-      box-shadow: none; }
-  .scraps-collected .scrap-collected .link-resume circle {
-    fill: #043546; }
-  .scraps-collected .scrap-collected .link-resume line,
-  .scraps-collected .scrap-collected .link-resume rect {
-    stroke: #FCFAED; }
-  .scraps-collected .scrap-collected .link-github {
-    fill: #043546; }
-  .scraps-collected .scrap-collected .link-linkedin circle {
-    fill: #043546; }
-  .scraps-collected .scrap-collected .link-linkedin path {
-    fill: #FCFAED; }
-  .scraps-collected .scrap-collected.display-none {
     display: none; }
 
 .page-landing {
