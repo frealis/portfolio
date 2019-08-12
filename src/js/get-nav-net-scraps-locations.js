@@ -4,36 +4,41 @@ export function getNavNetScrapsLocations() {
 
   const scraps = {
     nav_net: {
-      free_class_name: '.nav-net',
+      class_name: '.nav-net',
       location: '',
     },
     nav_tripwire: {
-      free_class_name: '.nav-tripwire',
+      class_name: '.nav-tripwire',
       location: '',
     },
     scrap_brand: {
-      free_class_name: '.scrap.free.brand',
-      collected_class_name: '.scrap-collected.net.brand',
+      class_name: '.scrap.free.brand',
+      class_name_collected: '.scrap-collected.net.brand',
       location: '',
     },
     scrap_link_contact: {
-      free_class_name: '.scrap.free.link-contact',
+      class_name: '.scrap.free.link-contact',
+      class_name_collected: '.scrap-collected.net.link-contact',
       location: '',
     },
     scrap_link_projects: {
-      free_class_name: '.scrap.free.link-projects',
+      class_name: '.scrap.free.link-projects',
+      class_name_collected: '.scrap-collected.net.link-projects',
       location: '',
     },
     scrap_link_resume: {
-      free_class_name: '.scrap.free.link-resume',
+      class_name: '.scrap.free.link-resume',
+      class_name_collected: '.scrap-collected.net.link-resume',
       location: '',
     },
     scrap_link_github: {
-      free_class_name: '.scrap.free.link-github',
+      class_name: '.scrap.free.link-github',
+      class_name_collected: '.scrap-collected.net.link-github',
       location: '',
     },
     scrap_link_linkedin: {
-      free_class_name: '.scrap.free.link-linkedin',
+      class_name: '.scrap.free.link-linkedin',
+      class_name_collected: '.scrap-collected.net.link-linkedin',
       location: '',
     },
   }
@@ -49,8 +54,7 @@ export function getNavNetScrapsLocations() {
   // Use Object.keys() to turn the scraps{} object into an array before iterating
   // over it
   Object.keys(scraps).forEach(scrap => {
-    // console.log(scrap)
-    const DOM_element = document.querySelector(`${scraps[scrap].free_class_name}`)
+    const DOM_element = document.querySelector(`${scraps[scrap].class_name}`)
     scraps[scrap].location = DOM_element.offsetTop + DOM_element.offsetHeight / 2
   })
 
