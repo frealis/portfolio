@@ -240,13 +240,16 @@
         content: '';
         height: 50%;
         position: absolute;
+        right: 0;
         top: 50%;
+        transition: 0.25s ease-in-out;
         width: 0; }
       .page-projects .projects-row figure::before {
         background-color: #043546;
         content: '';
         height: 50%;
         position: absolute;
+        transition: 0.25s ease-in-out;
         width: 0; }
       .page-projects .projects-row figure:hover {
         cursor: pointer; }
@@ -254,13 +257,13 @@
           background-color: #FCFAED;
           mix-blend-mode: difference;
           right: 0;
-          width: 100%;
-          transition: 0.5s ease-in; }
+          transition: 0.25s ease-in-out;
+          width: 100%; }
         .page-projects .projects-row figure:hover::before {
           background-color: #FCFAED;
           mix-blend-mode: difference;
-          width: 100%;
-          transition: 0.5s ease-in; }
+          transition: 0.25s ease-in-out;
+          width: 100%; }
     .page-projects .projects-row .icon-external-link {
       height: 1rem;
       margin: 0 0.5rem;
