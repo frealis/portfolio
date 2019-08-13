@@ -31,7 +31,7 @@ html {
 .main {  
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll; // necessary for parallax but causes fixed nav to cover scrollbar
+  overflow-y: scroll;
   perspective: 1px;
   scroll-behavior: smooth;
 }

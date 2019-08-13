@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 // Import components
 import Main from './Main'
-// import NavbarConstructedFixed from './NavbarConstructedFixed'
+import NavbarBootstrap from './NavbarBootstrap'
 import NavbarDeconstructed from './NavbarDeconstructed'
 import Resume from '../img/resume.pdf'
 
@@ -13,21 +13,19 @@ import IconResume from '../img/svg-components/icon-resume'
 
 // Import custom JavaScript functions
 import { addLinks } from '../js/add-links'
-// import { getNavNetScrapsLocations } from '../js/get-nav-net-scraps-locations'
-// import { handleScroll } from '../js/handle-scroll'
 import { colorsShuffled } from '../js/colors-shuffled'
 import { fibSequence } from '../js/fib-sequence'
 import { fibBlocks } from '../js/fib-blocks'
 import { fibAsteroidBlocks } from '../js/fib-asteroid-blocks'
 import { fibAsteroidZoom } from '../js/fib-asteroid-zoom'
 
+import { navbar } from '../js/navbar'
+
 class App extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-
-      scraps_locations: {},
 
       // Fibonacci blocks
       colors: [],
@@ -36,11 +34,12 @@ class App extends Component {
       unit: 'px',
     }
 
-    // this.handleScroll = handleScroll.bind(this)
     this.fibBlocks = fibBlocks.bind(this)
   }
 
   componentDidMount() {
+
+    navbar()
 
     // Add functionality & animations to links
     addLinks()
@@ -71,10 +70,8 @@ class App extends Component {
     return (
       <div className="App">
         <NavbarDeconstructed IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} Resume={ Resume } />
-        {/* <NavbarConstructedFixed IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} /> */}
+        <NavbarBootstrap />
         <Main IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} />
-
-        {/* <Footer IconEmail={ IconEmail } IconGitHub={ IconGitHub } IconHackerRank={ IconHackerRank } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume } /> */}
       </div>
     )
   }

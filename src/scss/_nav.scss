@@ -1,19 +1,15 @@
-// nav {
-//   align-items: center;
-//   background-color: $secondary-color;
-//   display: flex;
-//   height: 10vh;
-//   margin-left: 10vw;
-//   padding: calc(2rem + 2vh) 0;
-//   mix-blend-mode: difference;
-//   width: 20vw;
-//   &.nav-fixed {
-//     position: absolute;
-//     z-index: 1;
-//   }
-//   &.nav-fixed-vanish { display: none; }
-//   &.nav-net-vanish { opacity: 0; }
-// }
+nav {
+  &.navbar {
+    right: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    &.display-none {
+      display: none;
+    }
+  }
+}
 
 .scraps {
   & .scrap {
@@ -60,71 +56,7 @@
     }
     &.display-none { display: none; }
   }
+  @media (max-width: 767.98px) {
+    display: none;
+  }
 }
-
-// .scraps-collected {
-//   & .scrap-collected {
-//     // color: $secondary-color;
-//     font-weight: 600;
-//     mix-blend-mode: difference;
-//     padding: 0 1rem;
-//     position: fixed;
-//     z-index: 2;
-//     &.brand { font-size: 1.5rem; left: 5vw; }
-//     & .brand-sub { display: block; font-size: 1rem; left: 1rem; position: relative; }
-//     // &.links { left: 15vw; }
-//     & .link-contact,
-//     & .link-projects {
-//       background-color: transparent;
-//       font-size: 1rem;
-//       // position: static; 
-//       &:hover {
-//         animation-duration: 0.25s;
-//         animation-fill-mode: forwards;
-//         animation-name: animation-chromatophore-deconstructed;
-//         animation-timing-function: linear;
-//       }
-//       &:focus {
-//         outline: none;
-//         box-shadow: none;
-//       }
-//     }
-//     & .link-contact {
-//       top: 10vh;
-//     }
-//     & .link-projects {
-//       top: 5vh;
-//     }
-//     & .link-resume,
-//     & .link-github,
-//     & .link-linkedin {
-//       background-color: transparent;
-//       // position: static; 
-//       & .icon-github,
-//       & .icon-linkedin,
-//       & .icon-resume {
-//         height: 2rem;
-//       }
-//       &:focus {
-//         outline: none;
-//         box-shadow: none;
-//       }
-//     }
-//     & .link-resume { 
-//       top: 20vh;
-//       & circle { fill: $tertiary-color; }
-//       & line,
-//       & rect { stroke: $secondary-color; }
-//     }
-//     & .link-github { 
-//       fill: $tertiary-color; 
-//       top: 30vh;
-//     }
-//     & .link-linkedin {
-//       top: 40vh;
-//       & circle { fill: $tertiary-color; }
-//       & path { fill: $secondary-color; }
-//     }
-//     &.display-none { display: none; }
-//   }
-// }
