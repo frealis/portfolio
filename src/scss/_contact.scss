@@ -3,7 +3,7 @@ $contact-link-transition: 0.25s ease-out;
 .page-contact {
   width: 60vw;
   margin-left: 20vw;
-  .contact-row {
+  & .contact-row {
     & #contact-button-send {
       background-color: $secondary-color;
       border: 0.1rem solid $tertiary-color;
@@ -13,7 +13,7 @@ $contact-link-transition: 0.25s ease-out;
       font-size: 1rem;
       font-weight: 600;
       height: 2.5rem;
-      margin: auto;
+      margin: 0 auto calc(1rem + 1vw) auto;
       &:hover {
         background-color: $quinary-color;
         border: 0.1rem solid $quinary-color;
@@ -97,6 +97,16 @@ $contact-link-transition: 0.25s ease-out;
           box-shadow: none;
         }
       }
+      @media (max-width: 767.98px) {
+        & .contact-ctc,
+        & .contact-icon-wrapper.link-github,
+        & .contact-icon-wrapper.link-linkedin {
+          display: none;
+        }
+        & .contact-icon-wrapper.link-email {
+          margin: calc(2rem + 2vw) auto 0 auto;
+        }
+      }
     }
 
     & .contact-ctc {
@@ -149,5 +159,13 @@ $contact-link-transition: 0.25s ease-out;
         opacity: 0;
       }
     }
+  }
+  @media (max-width: 991.98px) {
+    width: 70vw;
+    margin-left: 15vw;
+  }
+  @media (max-width: 767.98px) {
+    width: 100%;
+    margin: 0;
   }
 }

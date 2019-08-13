@@ -320,7 +320,7 @@
     font-size: 1rem;
     font-weight: 600;
     height: 2.5rem;
-    margin: auto; }
+    margin: 0 auto calc(1rem + 1vw) auto; }
     .page-contact .contact-row #contact-button-send:hover {
       background-color: #1B969E;
       border: 0.1rem solid #1B969E;
@@ -381,6 +381,13 @@
       .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:focus {
         outline: none;
         box-shadow: none; }
+    @media (max-width: 767.98px) {
+      .page-contact .contact-row .contact-link-wrapper .contact-ctc,
+      .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper.link-github,
+      .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper.link-linkedin {
+        display: none; }
+      .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper.link-email {
+        margin: calc(2rem + 2vw) auto 0 auto; } }
   .page-contact .contact-row .contact-ctc {
     background: none; }
     .page-contact .contact-row .contact-ctc .icon-copy {
@@ -415,6 +422,14 @@
   .page-contact .contact-row input::placeholder,
   .page-contact .contact-row textarea::placeholder {
     opacity: 0; }
+  @media (max-width: 991.98px) {
+    .page-contact {
+      width: 70vw;
+      margin-left: 15vw; } }
+  @media (max-width: 767.98px) {
+    .page-contact {
+      width: 100%;
+      margin: 0; } }
 
 * {
   border: 0;

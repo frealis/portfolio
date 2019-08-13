@@ -13,7 +13,7 @@ class Contact extends Component {
           <h1 className="page-header">Contact</h1>
           <div className="row contact-row">
 
-            <div className="col-md-6">
+            <div className="col-12">
               <form action="" method="POST">
                 <div className="contact-input">
                   <input name="contact_name" id="contact-name-input" className="contact-input-field" type="text" required placeholder="name" />
@@ -33,9 +33,7 @@ class Contact extends Component {
                 </div>
               </form>
               <button id="contact-button-send" className="btn">Send Message</button>
-            </div>
-
-            <div className="col-md-6">
+            
               <div className="contact-link-wrapper">
                 <button className="btn contact-icon-wrapper link-email">
                   <IconEmail /> 
@@ -56,6 +54,7 @@ class Contact extends Component {
                 </button>
               </div>
             </div>
+
           </div>
         </div>
       </div>
