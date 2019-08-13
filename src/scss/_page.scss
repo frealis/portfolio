@@ -9,10 +9,10 @@
 .page {
   background-color: $secondary-color;
   padding: calc(2rem + 2vw);
-  & .page-header {    
+  & .page-header {
     color: $tertiary-color;
     font-weight: normal;
-    font-size: 3rem;
+    font-size: calc(1.5rem + 1.5vw);
     padding: calc(1rem + 1vw);
   }
 }

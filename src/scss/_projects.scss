@@ -129,6 +129,9 @@ $projects-transition: 0.35s ease-out;
         color: $tertiary-color;
         font-size: calc(0.75rem + 0.5vw);
         padding: 0 calc(1rem + 1vw);
+        @media (max-width: 767.98px) {
+          padding: 0;
+        }
       }
       & .projects-thumbnail-header {
         color: $tertiary-color;
@@ -164,5 +167,14 @@ $projects-transition: 0.35s ease-out;
     & svg {
       height: calc(0.75rem + 0.75vw);
     }
+  }
+  @media (max-width: 991.98px) {
+    margin-left: 15vw;
+    width: 70vw;
+  }
+  @media (max-width: 767.98px) {
+    margin: 0;
+    padding: calc(1rem + 1vw) 0;
+    width: 100%;
   }
 }
