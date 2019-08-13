@@ -231,7 +231,36 @@
     .page-projects .projects-row .ext-link-postgresql:hover .logo-postgresql-fill-585858 {
       fill: #585858; }
     .page-projects .projects-row figure {
-      margin: 0; }
+      margin: 0;
+      height: max-content;
+      position: absolute;
+      width: 100%; }
+      .page-projects .projects-row figure::after {
+        background-color: #0A2425;
+        content: '';
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        width: 0; }
+      .page-projects .projects-row figure::before {
+        background-color: #043546;
+        content: '';
+        height: 50%;
+        position: absolute;
+        width: 0; }
+      .page-projects .projects-row figure:hover {
+        cursor: pointer; }
+        .page-projects .projects-row figure:hover::after {
+          background-color: #FCFAED;
+          mix-blend-mode: difference;
+          right: 0;
+          width: 100%;
+          transition: 0.5s ease-in; }
+        .page-projects .projects-row figure:hover::before {
+          background-color: #FCFAED;
+          mix-blend-mode: difference;
+          width: 100%;
+          transition: 0.5s ease-in; }
     .page-projects .projects-row .icon-external-link {
       height: 1rem;
       margin: 0 0.5rem;
@@ -245,9 +274,8 @@
       flex-direction: row; }
     .page-projects .projects-row .projects-thumbnail {
       object-fit: cover;
+      height: 100%;
       width: 100%; }
-      .page-projects .projects-row .projects-thumbnail:hover {
-        cursor: pointer; }
     .page-projects .projects-row .projects-thumbnail-description {
       color: #043546;
       font-size: 1.1rem;
