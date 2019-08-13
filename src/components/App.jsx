@@ -42,30 +42,21 @@ class App extends Component {
 
   componentDidMount() {
 
-    // Add link locations to 'Projects' and 'Contact' navbar links
+    // Add functionality & animations to links
     addLinks()
 
     this.setState({ 
-
-      // Navbar net & scraps
-      // scraps_locations: getNavNetScrapsLocations(),
 
       // Fibonacci blocks
       colors: colorsShuffled(),
       fibSeq: fibSequence(this.state.n),
     }, () => {
-      
-      // Navbar net & scraps
-      // const main = document.querySelector('.main')
-      // document.querySelector('.main').addEventListener('scroll', () => {
-      //   this.handleScroll(main)
-      // })
 
       // Fibonacci blocks
       let {n, fibSeq, unit, colors} = this.state
       this.fibBlocks(n, fibSeq, unit, colors)
-      // fibAsteroidBlocks()
-      // fibAsteroidZoom()
+      fibAsteroidBlocks()
+      fibAsteroidZoom()
     })
   }
 

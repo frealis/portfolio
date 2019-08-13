@@ -228,5 +228,4 @@ export function addLinks() {
   createTechIconLink(flask)
   createTechIconLink(heroku)
   createTechIconLink(postgresql)
-
 }

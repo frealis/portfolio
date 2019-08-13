@@ -34,12 +34,12 @@
 @keyframes animation-chromatophore-icon {
   0% { }
   50% {
-    fill: #1B969E; }
+    fill: #043546; }
   100% {
-    fill: #043546; } }
+    fill: #1B969E; } }
 
 .animation-chromatophore-icon:hover {
-  animation-duration: 0.5s;
+  animation-duration: 0.2s;
   animation-fill-mode: forwards;
   animation-name: animation-chromatophore-icon; }
 
@@ -110,7 +110,7 @@
   z-index: 2; }
   .scraps .scrap.brand {
     font-size: 1.5rem;
-    left: 0vw;
+    left: 5vw;
     top: 5vh; }
   .scraps .scrap .brand-sub {
     display: block;

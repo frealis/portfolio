@@ -24,13 +24,13 @@
 
 @keyframes animation-chromatophore-icon {
   0% {  }
-  50% { fill: $quinary-color; }
-  100% { fill: $tertiary-color; }
+  50% { fill: $tertiary-color; }
+  100% { fill: $quinary-color; }
 }
 
 .animation-chromatophore-icon {
   &:hover {
-    animation-duration: 0.5s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
     animation-name: animation-chromatophore-icon;
   }
