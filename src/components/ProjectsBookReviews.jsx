@@ -8,13 +8,13 @@ class BookReviews extends Component {
     return (
       <div className="row projects-row">
 
-        <div className="col-md-5">
+        <div className="col-lg-5">
           <figure>
             <img className="projects-thumbnail ext-link-bookreviews" alt="Book Reviews" src={ ThumbnailBookReviews } />
           </figure>
         </div>
 
-        <div className="col-md-7 projects-col">
+        <div className="col-lg-7 projects-col">
           <div className="projects-col-top">
             <h2 className="projects-thumbnail-header ext-link-bookreviews">Book Reviews w/Goodreads</h2>
             <p className="projects-thumbnail-description">This is a book reviews website that allows user account creation, login & authentication using Flask Sessions, and database search utility that interfaces with a Heroku Postgres database containing data on 5,000 books. The site also allows visitors to read and write reviews for those books, rate the books, and provides instructions on how to access the site's API which serves book reviews and details data in JSON format.</p>
