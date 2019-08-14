@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1baa7b7c.chunk.css",
+    "main.css": "/static/css/main.95243b49.chunk.css",
     "main.js": "/static/js/main.f706be07.chunk.js",
     "main.js.map": "/static/js/main.f706be07.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.a9760ab4.chunk.js": "/static/js/2.a9760ab4.chunk.js",
     "static/js/2.a9760ab4.chunk.js.map": "/static/js/2.a9760ab4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c8e35955d2d8b65089e8615dccc0523a.js": "/precache-manifest.c8e35955d2d8b65089e8615dccc0523a.js",
+    "precache-manifest.f74099a388fff8117c4abad2b794c2e1.js": "/precache-manifest.f74099a388fff8117c4abad2b794c2e1.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1baa7b7c.chunk.css.map": "/static/css/main.1baa7b7c.chunk.css.map",
+    "static/css/main.95243b49.chunk.css.map": "/static/css/main.95243b49.chunk.css.map",
     "static/media/resume.pdf": "/static/media/resume.a3dc93f6.pdf",
     "static/media/thumbnail-book-reviews.svg": "/static/media/thumbnail-book-reviews.07075616.svg",
     "static/media/thumbnail-microchat.svg": "/static/media/thumbnail-microchat.553171ad.svg",
