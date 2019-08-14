@@ -65,7 +65,7 @@ nav {
   & .scrap {
     color: $secondary-color;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: calc(1rem + 0.25vw);
     mix-blend-mode: difference;
     padding: 1rem 0;
     position: fixed;

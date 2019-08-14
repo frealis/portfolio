@@ -36,7 +36,7 @@
   50% {
     fill: #043546; }
   100% {
-    fill: #1B969E; } }
+    fill: #097471; } }
 
 .animation-chromatophore-icon:hover {
   animation-duration: 0.2s;
@@ -46,11 +46,11 @@
 @keyframes animation-chromatophore-contract {
   0% {
     color: #0A2425;
-    text-shadow: 0 30px #1B969E, 0 -30px #ECD4B0; }
+    text-shadow: 0 30px #097471, 0 -30px #ECD4B0; }
   25% {
     color: #FCFAED; }
   50% {
-    color: #1B969E; }
+    color: #097471; }
   75% {
     color: #ECD4B0; }
   100% {
@@ -63,11 +63,11 @@
 
 @keyframes animation-chromatophore-expand {
   0% {
-    text-shadow: 0 -10px #1B969E, 0 10px #043546; }
+    text-shadow: 0 -10px #097471, 0 10px #043546; }
   50% {
     color: #043546; }
   100% {
-    color: #1B969E;
+    color: #097471;
     text-shadow: 0 10px rgba(255, 255, 255, 0), 0 -10px rgba(255, 255, 255, 0); } }
 
 .animation-chromatophore-expand:hover {
@@ -83,7 +83,7 @@
   25% {
     color: #FCFAED;
     stroke: #FCFAED;
-    text-shadow: 15px 0 #1B969E, -15px 0 #043546; }
+    text-shadow: 15px 0 #097471, -15px 0 #043546; }
   50% {
     color: #043546;
     stroke: #043546; }
@@ -91,8 +91,8 @@
     color: #ECD4B0;
     stroke: #ECD4B0; }
   100% {
-    color: #1B969E;
-    stroke: #1B969E;
+    color: #097471;
+    stroke: #097471;
     text-shadow: 0 15px rgba(255, 255, 255, 0), 0 -15px rgba(255, 255, 255, 0); } }
 
 .animation-chromatophore-reel:hover {
@@ -156,7 +156,7 @@ nav #nav-sidepanel {
     margin: auto;
     color: #043546; }
     nav #nav-sidepanel .nav-link:hover {
-      color: #1B969E; }
+      color: #097471; }
     nav #nav-sidepanel .nav-link:focus {
       box-shadow: none;
       outline: none; }
@@ -187,7 +187,7 @@ nav .nav-btn-toggle-sidepanel {
 .scraps .scrap {
   color: #FCFAED;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: calc(1rem + 0.25vw);
   mix-blend-mode: difference;
   padding: 1rem 0;
   position: fixed;
@@ -417,8 +417,8 @@ nav .nav-btn-toggle-sidepanel {
     height: 2.5rem;
     margin: 0 auto calc(1rem + 1vw) auto; }
     .page-contact .contact-row #contact-button-send:hover {
-      background-color: #1B969E;
-      border: 0.1rem solid #1B969E;
+      background-color: #097471;
+      border: 0.1rem solid #097471;
       color: #FCFAED; }
   .page-contact .contact-row #contact-email-input,
   .page-contact .contact-row #contact-name-input {
@@ -428,7 +428,7 @@ nav .nav-btn-toggle-sidepanel {
     position: relative; }
   .page-contact .contact-row .contact-input-field:focus ~ .floating-placeholder,
   .page-contact .contact-row .contact-input-field:not(:placeholder-shown) ~ .floating-placeholder {
-    color: #1B969E;
+    color: #097471;
     font-size: 0.7rem;
     top: 0.1rem;
     transition: 0.1s; }
@@ -439,7 +439,7 @@ nav .nav-btn-toggle-sidepanel {
     padding: 1rem 0 0 0.5rem;
     width: 100%; }
     .page-contact .contact-row .contact-input-field:focus {
-      border-color: #1B969E;
+      border-color: #097471;
       box-shadow: none;
       outline: none; }
   .page-contact .contact-row .floating-placeholder {
@@ -467,11 +467,11 @@ nav .nav-btn-toggle-sidepanel {
       .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper span {
         padding: 0 calc(0.25rem + 0.25vw); }
       .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:hover {
-        color: #1B969E; }
+        color: #097471; }
         .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-email,
         .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-github,
         .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:hover .icon-linkedin {
-          fill: #1B969E;
+          fill: #097471;
           transition: 0.25s ease-out; }
       .page-contact .contact-row .contact-link-wrapper .contact-icon-wrapper:focus {
         outline: none;
@@ -503,10 +503,10 @@ nav .nav-btn-toggle-sidepanel {
     .page-contact .contact-row .contact-ctc:hover {
       cursor: pointer; }
       .page-contact .contact-row .contact-ctc:hover .icon-copy {
-        stroke: #1B969E;
+        stroke: #097471;
         transition: 0.25s ease-out; }
       .page-contact .contact-row .contact-ctc:hover::after {
-        background-color: #1B969E;
+        background-color: #097471;
         opacity: 1;
         transition: 0.25s ease-out; }
     .page-contact .contact-row .contact-ctc:focus {
@@ -538,7 +538,7 @@ nav .nav-btn-toggle-sidepanel {
   top: -20vh; }
 
 body {
-  background-color: #1B969E; }
+  background-color: #0A2425; }
 
 html {
   box-sizing: border-box;
