@@ -1,8 +1,6 @@
 nav {
   &.navbar {
-    background-color: red;
     height: 0;
-    margin-left: -16px;
     padding: 0;
     position: absolute;
     top: 0px;
@@ -41,16 +39,20 @@ nav {
   }
   & .nav-btn-toggle-sidepanel {
     align-items: center;
-    background-color: transparent;
+    background-color: $secondary-color;
+    border-radius: calc(1rem + 0.5vw);
     display: flex;
+    height: calc(2rem + 1vw);
+    justify-content: center;
+    mix-blend-mode: difference;
     right: 10vw;
     position: absolute;
-    top: 5vw;
+    top: 7.5vw;
+    width: calc(2rem + 1vw);
     z-index: 1;
     & .icon-hamburger {
       height: calc(0.75rem + 0.25vw);
-      position: absolute;
-      stroke: black;
+      stroke: $tertiary-color;
     }
     &:focus {
       box-shadow: none;

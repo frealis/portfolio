@@ -1,7 +1,7 @@
 export function navbar() {
   
   // Collapse NavbarSidePanel.jsx if window width is > 768px, otherwise expand it
-  window.innerWidth > 768
+  window.innerWidth >= 768
     ? document.querySelector('.navbar').classList.add('display-none')
     : document.querySelector('.navbar').classList.remove('display-none')
 
