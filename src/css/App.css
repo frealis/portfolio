@@ -101,27 +101,32 @@
   animation-name: animation-chromatophore-reel; }
 
 nav.navbar {
-  height: 100%;
+  background-color: red;
+  height: 0;
   margin-left: -16px;
+  padding: 0;
   position: absolute;
-  width: 100%;
+  top: 0px;
+  width: 100vw;
   z-index: 1; }
   nav.navbar.display-none {
     display: none; }
 
 nav #nav-sidepanel {
-  background-color: green;
+  background-color: #FCFAED;
   font-size: calc(2rem + 0.5vw);
-  height: 100%;
+  height: min-content;
   left: 0;
-  padding: calc(1rem + 0.5vw);
+  padding: calc(3rem + 3vw) 0;
   position: absolute;
   text-align: center;
   top: 0;
   transition: 0.5s ease-in-out;
   width: 100%; }
-  nav #nav-sidepanel .nav-sidepanel {
-    width: max-content; }
+  nav #nav-sidepanel .nav-link {
+    color: #043546; }
+    nav #nav-sidepanel .nav-link:hover {
+      color: #1B969E; }
   nav #nav-sidepanel.collapse-sidepanel {
     left: -100%;
     transition: 0.5s ease-in-out; }
