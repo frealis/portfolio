@@ -113,6 +113,10 @@ $projects-transition: 0.35s ease-out;
           width: 100%;
         }
       }
+      @media (max-width: 767.98px) {
+        margin: auto;
+        width: 75%;
+      }
     }
 
     & .icon-external-link {
@@ -127,7 +131,7 @@ $projects-transition: 0.35s ease-out;
       justify-content: space-between;
       & .projects-thumbnail-description {
         color: $tertiary-color;
-        font-size: calc(0.75rem + 0.5vw);
+        font-size: calc(1rem + 0.25vw);
         padding: 0 calc(1rem + 1vw);
         @media (max-width: 767.98px) {
           padding: 0;

@@ -328,6 +328,10 @@ nav .nav-btn-toggle-sidepanel {
           mix-blend-mode: difference;
           transition: 0.25s ease-in-out;
           width: 100%; }
+      @media (max-width: 767.98px) {
+        .page-projects .projects-row figure {
+          margin: auto;
+          width: 75%; } }
     .page-projects .projects-row .icon-external-link {
       height: calc(0.5rem + 0.5vw);
       margin: 0 0.5rem;
@@ -338,7 +342,7 @@ nav .nav-btn-toggle-sidepanel {
       justify-content: space-between; }
       .page-projects .projects-row .projects-col .projects-thumbnail-description {
         color: #043546;
-        font-size: calc(0.75rem + 0.5vw);
+        font-size: calc(1rem + 0.25vw);
         padding: 0 calc(1rem + 1vw); }
         @media (max-width: 767.98px) {
           .page-projects .projects-row .projects-col .projects-thumbnail-description {
