@@ -6,33 +6,37 @@ export function addLinks() {
   // ========== NAVBAR LINKS ===================================================
  
   // Contact
-  const link_contact = document.querySelector('.link-contact')
-  link_contact.addEventListener('click', () => {
-    window.location.href = '#anchor-contact'
+  document.querySelectorAll('.link-contact').forEach(link => {
+    link.addEventListener('click', () => {
+      window.location.href = '#anchor-contact'
+    })
+    link.classList.add('animation-chromatophore-expand')
   })
-  link_contact.classList.add('animation-chromatophore-expand')
 
   // Projects
-  const link_projects = document.querySelector('.link-projects')
-  link_projects.addEventListener('click', () => {
-    window.location.href = '#anchor-projects'
+  document.querySelectorAll('.link-projects').forEach(link => {
+    link.addEventListener('click', () => {
+      window.location.href = '#anchor-projects'
+    })
+    link.classList.add('animation-chromatophore-expand')
   })
-  link_projects.classList.add('animation-chromatophore-expand')
 
   // Resume
-  const link_resume = document.querySelector('.link-resume')
-  link_resume.addEventListener('click', () => {
-    window.open(Resume, '_blank')
+  document.querySelectorAll('.link-resume').forEach(link => {
+    link.addEventListener('click', () => {
+      window.open(Resume, '_blank')
+    })
+    link.setAttribute('rel', 'noopener noreferrer')
+    link.classList.forEach(class_name => {
+      if (class_name === 'nav-link') {
+        link.classList.add('animation-chromatophore-expand')
+      } else if (class_name === 'scrap') {
+        link.firstChild.classList.add('animation-chromatophore-icon')
+      }
+    })
   })
-  link_resume.setAttribute('rel', 'noopener noreferrer')
-  link_resume.classList.add('animation-chromatophore-icon')
-  link_resume.firstChild.classList.add('animation-chromatophore-icon')
 
-  // GitHub (also appears in CONTACT LINKS)
-  document.querySelector('.scrap.free.link-github').firstChild.classList.add('animation-chromatophore-icon')
-
-  // LinkedIn (also appears in CONTACT LINKS)
-  document.querySelector('.scrap.free.link-linkedin').firstChild.classList.add('animation-chromatophore-icon')
+  // GitHub and LinkedIn links are handled in CONTACT LINKS
 
   // ========== PROJECT LINKS ==================================================
 
@@ -138,6 +142,13 @@ export function addLinks() {
         window.open(`${ext_link.url}`, `${ext_link.window_feature}`)
       })
       link.setAttribute('rel', 'noopener noreferrer')
+      link.classList.forEach(class_name => {
+        if (class_name === 'nav-link') {
+          link.classList.add('animation-chromatophore-expand')
+        } else if (class_name === 'scrap') {
+          link.firstChild.classList.add('animation-chromatophore-icon')
+        }
+      })
     })
 
     // After checking 'ext_link' for a 'text' property, this portion of code 

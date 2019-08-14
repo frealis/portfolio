@@ -12,23 +12,11 @@ class NavbarSidePanel extends Component {
         </button>
 
         <div id="nav-sidepanel">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="#anchor-projects">Projects</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#anchor-contact">Contact</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="www.matthigg.com">Resume</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="www.matthigg.com">GitHub</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="www.matthigg.com">LinkedIn</a>
-            </li>
-          </ul>
+          <button className="nav-link link-projects">Projects</button>
+          <button className="nav-link link-contact">Contact</button>
+          <button className="nav-link link-resume">Resume</button>
+          <button className="nav-link link-github">GitHub</button>
+          <button className="nav-link link-linkedin">LinkedIn</button>
         </div>
 
       </nav>
