@@ -128,6 +128,9 @@ nav #nav-sidepanel {
     color: #043546; }
     nav #nav-sidepanel .nav-link:hover {
       color: #1B969E; }
+    nav #nav-sidepanel .nav-link:focus {
+      box-shadow: none;
+      outline: none; }
   nav #nav-sidepanel.collapse-sidepanel {
     left: -100%;
     transition: 0.5s ease-in-out; }

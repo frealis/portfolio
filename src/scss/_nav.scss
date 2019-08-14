@@ -29,6 +29,10 @@ nav {
       &:hover {
         color: $quinary-color;
       }
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
     }
     &.collapse-sidepanel {
       left: -100%;
