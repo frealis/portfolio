@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 // Import components
 import Main from './Main'
-import NavbarBootstrap from './NavbarBootstrap'
+import NavbarSidePanel from './NavbarSidePanel'
 import NavbarDeconstructed from './NavbarDeconstructed'
 import Resume from '../img/resume.pdf'
 
@@ -70,7 +70,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavbarDeconstructed IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} Resume={ Resume } />
-        <NavbarBootstrap />
+        <NavbarSidePanel />
         <Main IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} />
       </div>
     )

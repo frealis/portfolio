@@ -101,13 +101,46 @@
   animation-name: animation-chromatophore-reel; }
 
 nav.navbar {
-  right: 0;
-  position: fixed;
-  top: 0;
+  height: 100%;
+  margin-left: -16px;
+  position: absolute;
   width: 100%;
   z-index: 1; }
   nav.navbar.display-none {
     display: none; }
+
+nav #nav-sidepanel {
+  background-color: green;
+  font-size: calc(2rem + 0.5vw);
+  height: 100%;
+  left: 0;
+  padding: calc(1rem + 0.5vw);
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: 0.5s ease-in-out;
+  width: 100%; }
+  nav #nav-sidepanel .nav-sidepanel {
+    width: max-content; }
+  nav #nav-sidepanel.collapse-sidepanel {
+    left: -100%;
+    transition: 0.5s ease-in-out; }
+
+nav .nav-btn-toggle-sidepanel {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  right: 10vw;
+  position: absolute;
+  top: 5vw;
+  z-index: 1; }
+  nav .nav-btn-toggle-sidepanel .icon-hamburger {
+    height: calc(0.75rem + 0.25vw);
+    position: absolute;
+    stroke: black; }
+  nav .nav-btn-toggle-sidepanel:focus {
+    box-shadow: none;
+    outline: none; }
 
 .scraps .scrap {
   color: #FCFAED;

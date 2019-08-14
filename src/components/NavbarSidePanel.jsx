@@ -2,18 +2,16 @@ import React, { Component } from 'react'
 
 import IconHamburger from '../img/svg-components/icon-hamburger'
 
-class NavbarBootstrap extends Component {
+class NavbarSidePanel extends Component {
   render() {
     return (
       <nav className="navbar">
         
-        <a className="navbar-brand" href="www.matthigg.com">Brand</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bootstrap" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="nav-btn-toggle-sidepanel" type="button" data-toggle="collapse-sidepanel" data-target="#nav-sidepanel" aria-controls="nav-sidepanel" aria-expanded="false" aria-label="Toggle navigation">
           <IconHamburger />
         </button>
 
-        <div className="collapse navbar-collapse" id="nav-bootstrap">
-        {/* <div className="collapse-left navbar-collapse-left" id="nav-bootstrap"> */}
+        <div id="nav-sidepanel">
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link" href="#anchor-projects">Projects</a>
@@ -38,4 +36,4 @@ class NavbarBootstrap extends Component {
   }
 }
 
-export default NavbarBootstrap
+export default NavbarSidePanel
