@@ -100,6 +100,37 @@
   animation-fill-mode: forwards;
   animation-name: animation-chromatophore-reel; }
 
+.brand {
+  color: #FCFAED;
+  font-weight: 600;
+  font-size: 1.5rem;
+  mix-blend-mode: difference;
+  padding: 2rem;
+  position: fixed;
+  transition: 0.2s ease-in;
+  z-index: 2; }
+  .brand .brand-sub {
+    display: block;
+    font-size: 1rem;
+    left: 1rem;
+    position: relative;
+    transition: 0.2s ease-in; }
+  .brand .brand-text {
+    transition: 0.2s ease-in; }
+  .brand.miniaturized {
+    border-radius: 3rem; }
+    .brand.miniaturized .brand-sub {
+      font-size: 0;
+      transition: 0.2s ease-in; }
+    .brand.miniaturized .brand-text {
+      font-size: 0;
+      transition: 0.2s ease-in; }
+  @media (max-width: 767.98px) {
+    .brand {
+      left: 7.5vw;
+      padding: 0;
+      top: 7.5vw; } }
+
 nav.navbar {
   height: 0;
   padding: 0;
@@ -161,15 +192,6 @@ nav .nav-btn-toggle-sidepanel {
   padding: 1rem 0;
   position: fixed;
   z-index: 2; }
-  .scraps .scrap.brand {
-    font-size: 1.5rem;
-    left: 5vw;
-    top: 5vh; }
-  .scraps .scrap .brand-sub {
-    display: block;
-    font-size: 1rem;
-    left: 1rem;
-    position: relative; }
   .scraps .scrap.links {
     align-items: space-between;
     display: flex;

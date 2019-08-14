@@ -70,8 +70,6 @@ nav {
     padding: 1rem 0;
     position: fixed;
     z-index: 2;
-    &.brand { font-size: 1.5rem; left: 5vw; top: 5vh; }
-    & .brand-sub { display: block; font-size: 1rem; left: 1rem; position: relative; }
     &.links { 
       align-items: space-between;
       display: flex;

@@ -1,0 +1,38 @@
+$brand-transition: 0.2s ease-in;
+
+.brand {
+  color: $secondary-color;
+  font-weight: 600;
+  font-size: 1.5rem;
+  mix-blend-mode: difference;
+  padding: 2rem;
+  position: fixed;
+  transition: $brand-transition;
+  z-index: 2;
+  & .brand-sub { 
+    display: block; 
+    font-size: 1rem; 
+    left: 1rem; 
+    position: relative; 
+    transition: $brand-transition;
+  }
+  & .brand-text {
+    transition: $brand-transition;
+  }
+  &.miniaturized {
+    border-radius: 3rem;
+    & .brand-sub {
+      font-size: 0;
+      transition: $brand-transition;
+    }
+    & .brand-text {
+      font-size: 0;
+      transition: $brand-transition;
+    }
+  }
+  @media (max-width: 767.98px) {
+    left: 7.5vw;
+    padding: 0;
+    top: 7.5vw;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 // Import components
+import Brand from './Brand'
 import Main from './Main'
 import NavbarSidePanel from './NavbarSidePanel'
 import NavbarDeconstructed from './NavbarDeconstructed'
@@ -12,6 +13,7 @@ import IconLinkedIn from '../img/svg-components/icon-linkedin'
 import IconResume from '../img/svg-components/icon-resume'
 
 // Import custom JavaScript functions
+import { brand } from '../js/brand'
 import { addLinks } from '../js/add-links'
 import { colorsShuffled } from '../js/colors-shuffled'
 import { fibSequence } from '../js/fib-sequence'
@@ -39,6 +41,10 @@ class App extends Component {
 
   componentDidMount() {
 
+    // Handle brand animations
+    brand()
+
+    // Add functionality to navbar side panel
     navbar()
 
     // Add functionality & animations to links
@@ -69,6 +75,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Brand />
         <NavbarDeconstructed IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} Resume={ Resume } />
         <NavbarSidePanel />
         <Main IconGitHub={ IconGitHub } IconLinkedIn={ IconLinkedIn } IconResume={ IconResume} />
