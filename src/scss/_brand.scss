@@ -8,17 +8,21 @@ $brand-transition: 0.2s ease-in;
   mix-blend-mode: difference;
   padding: 2rem 0;
   position: fixed;
-  transition: $brand-transition;
+  // transition: $brand-transition;
   z-index: 2;
   & .brand-sub { 
     display: block; 
     font-size: 1rem; 
     left: 1rem; 
     position: relative; 
-    transition: $brand-transition;
+    &:hover(not) {
+      transition: $brand-transition;
+    }
   }
   & .brand-text {
-    transition: $brand-transition;
+    &:hover(not) {
+      transition: $brand-transition;
+    }
   }
   &.miniaturized {
     border-radius: 3rem;

@@ -42,26 +42,44 @@
   }
 }
 
-@keyframes animation-chromatophore-contract {
-  0% { 
-    color: $primary-color; 
-    text-shadow: 
-      0 30px $quinary-color, 
-      0 -30px $quarternary-color;
+@keyframes animation-chromatophore-expand {
+  0% {
+    color: $primary-color;
+    text-shadow:
+      0 0 $tertiary-color,
+      0 0 $quarternary-color,
+      0 0 $quinary-color; 
   }
-  25% { color: $secondary-color; }
-  50% { color: $quinary-color; }
-  75% { color: $quarternary-color; }
-  100% { color: $tertiary-color; }
+  10% {
+    color: $secondary-color;
+    text-shadow:
+      10px 10px $tertiary-color,
+      -12.5px 0 $quarternary-color,
+      10px -10px $quinary-color; 
+  }
+  90% {
+    color: $tertiary-color;
+    text-shadow:
+      0 12.5px $tertiary-color,
+      -10px -10px $quarternary-color,
+      12.5px 0px $quinary-color; 
+  }
+  100% {
+    color: $secondary-color;
+    text-shadow:
+      0 0 $tertiary-color,
+      0 0 $quarternary-color,
+      0 0 $quinary-color; 
+  }
 }
 
-.animation-chromatophore-contract {
+.animation.chromatophore-expand {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  animation-name: animation-chromatophore-contract;
+  animation-name: animation-chromatophore-icon;
 }
 
-@keyframes animation-chromatophore-expand {
+@keyframes animation-chromatophore-pulse {
   0% { 
     color: $primary-color;
     text-shadow:
@@ -85,17 +103,13 @@
   }
 }
 
-.animation-chromatophore-expand {
+.animation-chromatophore-pulse {
   &:hover {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-name: animation-chromatophore-expand;
+    animation-name: animation-chromatophore-pulse;
     animation-timing-function: linear;
   }
-}
-
-.animation-chromatophore-expand::before {
-  opacity: 1;
 }
 
 @keyframes animation-chromatophore-reel {
@@ -168,21 +182,3 @@
   animation-fill-mode: none;
   animation-name: animation-destroy-block;
 }
-
-// @mixin rebound-mixin($duration, $fill-mode, $name, $start, $stop) {
-//   animation-duration: #{$duration};
-//   animation-fill-mode: #{$fill-mode};
-//   animation-name: #{$name};
-//   @keyframes #{$name} {
-//     0% { top: $start; }
-//     100% { top: $stop; }
-//   }
-// }
-
-// .rebound-down {
-//   @include rebound-mixin(0.5s, forwards, rebound-down, 0, 20vh);
-// }
-
-// .rebound-up {
-//   @include rebound-mixin(2s, forwards, rebound-up, 40vh, 20vh);
-// }

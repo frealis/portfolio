@@ -51,25 +51,26 @@
   animation-fill-mode: forwards;
   animation-name: animation-chromatophore-icon; }
 
-@keyframes animation-chromatophore-contract {
+@keyframes animation-chromatophore-expand {
   0% {
     color: #0A2425;
-    text-shadow: 0 30px #097471, 0 -30px #ECD4B0; }
-  25% {
-    color: #FCFAED; }
-  50% {
-    color: #097471; }
-  75% {
-    color: #ECD4B0; }
+    text-shadow: 0 0 #043546, 0 0 #ECD4B0, 0 0 #097471; }
+  10% {
+    color: #FCFAED;
+    text-shadow: 10px 10px #043546, -12.5px 0 #ECD4B0, 10px -10px #097471; }
+  90% {
+    color: #043546;
+    text-shadow: 0 12.5px #043546, -10px -10px #ECD4B0, 12.5px 0px #097471; }
   100% {
-    color: #043546; } }
+    color: #FCFAED;
+    text-shadow: 0 0 #043546, 0 0 #ECD4B0, 0 0 #097471; } }
 
-.animation-chromatophore-contract {
+.animation.chromatophore-expand {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  animation-name: animation-chromatophore-contract; }
+  animation-name: animation-chromatophore-icon; }
 
-@keyframes animation-chromatophore-expand {
+@keyframes animation-chromatophore-pulse {
   0% {
     color: #0A2425;
     text-shadow: 0 -10px #097471, 0 10px #043546; }
@@ -83,14 +84,11 @@
     color: #FCFAED;
     text-shadow: 0 10px rgba(255, 255, 255, 0), 0 -10px rgba(255, 255, 255, 0); } }
 
-.animation-chromatophore-expand:hover {
+.animation-chromatophore-pulse:hover {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  animation-name: animation-chromatophore-expand;
+  animation-name: animation-chromatophore-pulse;
   animation-timing-function: linear; }
-
-.animation-chromatophore-expand::before {
-  opacity: 1; }
 
 @keyframes animation-chromatophore-reel {
   0% {
@@ -159,15 +157,15 @@
   mix-blend-mode: difference;
   padding: 2rem 0;
   position: fixed;
-  transition: 0.2s ease-in;
   z-index: 2; }
   .brand .brand-sub {
     display: block;
     font-size: 1rem;
     left: 1rem;
-    position: relative;
-    transition: 0.2s ease-in; }
-  .brand .brand-text {
+    position: relative; }
+    .brand .brand-sub:hover(not) {
+      transition: 0.2s ease-in; }
+  .brand .brand-text:hover(not) {
     transition: 0.2s ease-in; }
   .brand.miniaturized {
     border-radius: 3rem; }

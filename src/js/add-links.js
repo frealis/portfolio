@@ -12,7 +12,8 @@ export function addLinks() {
 
   // ========== BRAND LINK ======================================================
 
-  document.querySelector('.brand').addEventListener('click', (e) => {
+  const brand = document.querySelector('.brand')
+  brand.addEventListener('click', (e) => {
     main.scrollTo(0, 0)
     fibDestroyBlocks()
     window.setTimeout(() => {
@@ -33,6 +34,8 @@ export function addLinks() {
     }, 5400)
   })
 
+  brand.classList.add('animation-chromatophore-pulse')
+
   // ========== NAVBAR LINKS ====================================================
  
   // Contact
@@ -41,7 +44,7 @@ export function addLinks() {
       const anchor_contact = document.querySelector('#anchor-contact').offsetTop
       main.scrollTo(0, anchor_contact)
     })
-    link.classList.add('animation-chromatophore-expand')
+    link.classList.add('animation-chromatophore-pulse')
   })
 
   // Projects
@@ -50,7 +53,7 @@ export function addLinks() {
       const anchor_projects = document.querySelector('#anchor-projects').offsetTop
       main.scrollTo(0, anchor_projects)
     })
-    link.classList.add('animation-chromatophore-expand')
+    link.classList.add('animation-chromatophore-pulse')
   })
 
   // Resume
@@ -61,7 +64,7 @@ export function addLinks() {
     link.setAttribute('rel', 'noopener noreferrer')
     link.classList.forEach(class_name => {
       if (class_name === 'nav-link' || class_name === 'footer-link') {
-        link.classList.add('animation-chromatophore-expand')
+        link.classList.add('animation-chromatophore-pulse')
       } else if (class_name === 'scrap') {
         link.firstChild.classList.add('animation-chromatophore-icon')
       }
@@ -176,7 +179,7 @@ export function addLinks() {
       link.setAttribute('rel', 'noopener noreferrer')
       link.classList.forEach(class_name => {
         if (class_name === 'nav-link' || class_name === 'footer-link') {
-          link.classList.add('animation-chromatophore-expand')
+          link.classList.add('animation-chromatophore-pulse')
         } else if (class_name === 'scrap') {
           link.firstChild.classList.add('animation-chromatophore-icon')
         }
