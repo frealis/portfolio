@@ -118,8 +118,9 @@
   color: #FCFAED;
   font-weight: 600;
   font-size: 1.5rem;
+  left: 4vw;
   mix-blend-mode: difference;
-  padding: 2rem;
+  padding: 2rem 0;
   position: fixed;
   transition: 0.2s ease-in;
   z-index: 2; }
@@ -211,7 +212,7 @@ nav .nav-btn-toggle-sidepanel {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    right: 5vw; }
+    right: 4vw; }
   .scraps .scrap .link-contact,
   .scraps .scrap .link-projects {
     background-color: transparent;
