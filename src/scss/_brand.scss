@@ -15,14 +15,10 @@ $brand-transition: 0.2s ease-in;
     font-size: 1rem; 
     left: 1rem; 
     position: relative; 
-    &:hover(not) {
-      transition: $brand-transition;
-    }
+    transition: $brand-transition;
   }
   & .brand-text {
-    &:hover(not) {
-      transition: $brand-transition;
-    }
+    transition: $brand-transition;
   }
   &.miniaturized {
     border-radius: 3rem;
@@ -37,6 +33,12 @@ $brand-transition: 0.2s ease-in;
   }
   &:hover {
     cursor: pointer;
+    & .brand-sub {
+      transition: none;
+    }
+    & .brand-text{
+      transition: none;
+    }
   }
   @media (max-width: 767.98px) {
     left: 7.5vw;

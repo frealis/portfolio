@@ -32,6 +32,7 @@ export function addLinks() {
       fibAsteroidBlocks()
       fibAsteroidZoom()
     }, 5400)
+    brand.classList.add('animation-chromatophore-expand')
   })
 
   brand.classList.add('animation-chromatophore-pulse')

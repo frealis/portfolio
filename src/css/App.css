@@ -162,10 +162,9 @@
     display: block;
     font-size: 1rem;
     left: 1rem;
-    position: relative; }
-    .brand .brand-sub:hover(not) {
-      transition: 0.2s ease-in; }
-  .brand .brand-text:hover(not) {
+    position: relative;
+    transition: 0.2s ease-in; }
+  .brand .brand-text {
     transition: 0.2s ease-in; }
   .brand.miniaturized {
     border-radius: 3rem; }
@@ -177,6 +176,10 @@
       transition: 0.2s ease-in; }
   .brand:hover {
     cursor: pointer; }
+    .brand:hover .brand-sub {
+      transition: none; }
+    .brand:hover .brand-text {
+      transition: none; }
   @media (max-width: 767.98px) {
     .brand {
       left: 7.5vw;
