@@ -28,7 +28,7 @@ export function addLinks() {
     })
     link.setAttribute('rel', 'noopener noreferrer')
     link.classList.forEach(class_name => {
-      if (class_name === 'nav-link') {
+      if (class_name === 'nav-link' || class_name === 'footer-link') {
         link.classList.add('animation-chromatophore-expand')
       } else if (class_name === 'scrap') {
         link.firstChild.classList.add('animation-chromatophore-icon')
@@ -143,7 +143,7 @@ export function addLinks() {
       })
       link.setAttribute('rel', 'noopener noreferrer')
       link.classList.forEach(class_name => {
-        if (class_name === 'nav-link') {
+        if (class_name === 'nav-link' || class_name === 'footer-link') {
           link.classList.add('animation-chromatophore-expand')
         } else if (class_name === 'scrap') {
           link.firstChild.classList.add('animation-chromatophore-icon')
@@ -209,6 +209,13 @@ export function addLinks() {
     url: 'https://palletsprojects.com/p/flask/',
   }
 
+  // GitHub Pages
+  const githubpages = {
+    nodelist: document.querySelectorAll('.ext-link-github-pages'),
+    window_feature: '_blank',
+    url: 'https://pages.github.com/',
+  }
+
   // Heroku
   const heroku = {
     nodelist: document.querySelectorAll('.ext-link-heroku'),
@@ -221,6 +228,13 @@ export function addLinks() {
     nodelist: document.querySelectorAll('.ext-link-postgresql'),
     window_feature: '_blank',
     url: 'https://www.postgresql.org/',
+  }
+
+  // React
+  const react = {
+    nodelist: document.querySelectorAll('.ext-link-react'),
+    window_feature: '_blank',
+    url: 'https://www.reactjs.org',
   }
 
   // Add tech icon link
@@ -237,6 +251,8 @@ export function addLinks() {
   createTechIconLink(bootstrap)
   createTechIconLink(django)
   createTechIconLink(flask)
+  createTechIconLink(githubpages)
   createTechIconLink(heroku)
   createTechIconLink(postgresql)
+  createTechIconLink(react)
 }

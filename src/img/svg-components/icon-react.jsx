@@ -16,7 +16,7 @@ export default function iconReact() {
         <ellipse cx="18.999" cy="46.766" rx="18.999" ry="46.766"/>
         <ellipse cx="18.999" cy="46.766" rx="15.999" ry="43.766"/>
       </g>
-      <circle cx="7.892" cy="7.892" r="7.892" transform="translate(288.942 2592.69)" fill="#7fd7f7"/>
+      <circle cx="7.892" cy="7.892" r="7.892" transform="translate(288.942 2592.69)"/>
     </g>
   </svg>
   )

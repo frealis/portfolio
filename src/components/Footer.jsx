@@ -7,11 +7,22 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <div>
-          This site was made with <span className="footer-link-wrapper footer-react"><IconReact /></span> and is hosted on <span className="footer-link-wrapper footer-github-pages"><LogoGitHubPages /></span>
+        <div className="footer-created-with">
+          This site was made with 
+          <span className="footer-icon-wrapper ext-link-react footer-react">
+            <IconReact />
+          </span> 
+          and is hosted on 
+          <span className="footer-icon-wrapper ext-link-github-pages footer-github-pages">
+            <LogoGitHubPages />
+          </span>
         </div>
-        <div>
-          Projects | Contact | Resume | GitHub | LinkedIn
+        <div className="footer-navigation">
+          <button className="footer-link link-projects">Projects</button> |
+          <button className="footer-link link-contact">Contact</button> | 
+          <button className="footer-link link-resume">Resume</button> | 
+          <button className="footer-link link-github">GitHub</button>| 
+          <button className="footer-link link-linkedin">LinkedIn</button>
         </div>
       </div>
     )

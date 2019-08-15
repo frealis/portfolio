@@ -3,15 +3,16 @@ $footer-transition: 0.25s ease-in;
 .footer {
   background-color: $tertiary-color;
   color: $quarternary-color;
-  font-size: calc(0.75rem + 0.25vw);
+  font-size: calc(1rem + 0.1vw);
   padding: calc(2rem + 2vw);
   text-align: center;
-  & .footer-link-wrapper {
+  & .footer-icon-wrapper {
     position: relative;
     &.footer-github-pages { top: -1rem; }
     &.footer-react { top: -0.5rem; }
     & .logo-github-pages {
       height: 3rem;
+      margin: 0 calc(0.1rem + 0.1vw);
       & path { 
         fill: $quarternary-color; 
         transition: $footer-transition;
@@ -19,6 +20,7 @@ $footer-transition: 0.25s ease-in;
     }
     & .icon-react {
       height: 2rem;
+      margin: 0 calc(0.1rem + 0.1vw);
       width: 2.2rem;
       & ellipse { 
         fill: none;
@@ -49,6 +51,14 @@ $footer-transition: 0.25s ease-in;
           transition: $footer-transition;
         }
       }
+    }
+  }
+  & .footer-navigation {
+    padding: calc(1rem + 1vw);
+    & .footer-link {
+      background-color: transparent;
+      color: $quarternary-color;
+      margin: 0 calc(0.5rem + 0.5vw);
     }
   }
 }
