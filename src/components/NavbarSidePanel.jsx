@@ -11,7 +11,7 @@ class NavbarSidePanel extends Component {
           <IconHamburger />
         </button>
 
-        <div id="nav-sidepanel">
+        <div id="nav-sidepanel" className="collapse-sidepanel">
           <button className="nav-link link-projects">Projects</button>
           <button className="nav-link link-contact">Contact</button>
           <button className="nav-link link-resume">Resume</button>

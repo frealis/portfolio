@@ -17,6 +17,8 @@ export function navbar() {
   // Add hamburger icon toggle functionality
   document.querySelector('.nav-btn-toggle-sidepanel').addEventListener('click', () => {
     let token_exists = false
+    console.log('target: ', target, ' | typeof(target): ', typeof(target))
+    console.log(document.querySelector(target))
     document.querySelector(target).classList.forEach(token => {
       if (token === toggle) {
         token_exists = true
