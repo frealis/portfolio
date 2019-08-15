@@ -7,7 +7,9 @@ export function fibDestroyBlocks() {
     window.setTimeout(() => {
       block.classList.add('animation-destroy-block')
       window.setTimeout(() => {
-        block.parentNode.removeChild(block)
+        if (block.parentNode) {
+          block.parentNode.removeChild(block)
+        }
       }, 1000)
     }, i * 100)
     // window.setTimeout(() => {
