@@ -521,12 +521,13 @@ nav .nav-btn-toggle-sidepanel {
     opacity: 0; }
   @media (max-width: 991.98px) {
     .page-contact {
-      width: 70vw;
-      margin-left: 15vw; } }
+      margin-left: 15vw;
+      width: 70vw; } }
   @media (max-width: 767.98px) {
     .page-contact {
-      width: 100%;
-      margin: 0; } }
+      margin: 0;
+      padding: calc(1rem + 1vw) 0;
+      width: 100%; } }
 
 .footer {
   background-color: #043546;
