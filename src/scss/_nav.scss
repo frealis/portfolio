@@ -11,7 +11,7 @@ nav {
     }
   }
   & #nav-sidepanel {
-    background-color: $secondary-color;
+    background-color: $tertiary-color;
     font-size: calc(2rem + 0.5vw);
     height: min-content;
     left: 0;
@@ -22,8 +22,8 @@ nav {
     width: 100%;
     & .nav-link {
       background-color: transparent;
-      margin: auto;
-      color: $tertiary-color;
+      margin: calc(1rem + 0.5vw) auto;
+      color: $quarternary-color;
       &:hover {
         color: $quinary-color;
       }

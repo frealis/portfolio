@@ -142,7 +142,7 @@ nav.navbar {
     display: none; }
 
 nav #nav-sidepanel {
-  background-color: #FCFAED;
+  background-color: #043546;
   font-size: calc(2rem + 0.5vw);
   height: min-content;
   left: 0;
@@ -153,8 +153,8 @@ nav #nav-sidepanel {
   width: 100%; }
   nav #nav-sidepanel .nav-link {
     background-color: transparent;
-    margin: auto;
-    color: #043546; }
+    margin: calc(1rem + 0.5vw) auto;
+    color: #ECD4B0; }
     nav #nav-sidepanel .nav-link:hover {
       color: #097471; }
     nav #nav-sidepanel .nav-link:focus {
