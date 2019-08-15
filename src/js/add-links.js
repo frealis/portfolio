@@ -35,13 +35,15 @@ export function addLinks() {
       fibAsteroidBlocks()
       fibAsteroidZoom()
     }, 5400)
+
+    // brand.classList.remove('animation-chromatophore-expand')
     brand.classList.add('animation-chromatophore-expand')
     window.setTimeout(() => {
       brand.classList.remove('animation-chromatophore-expand')
 
     // This timeout is set to a number higher than the animation-duration 
     // property of the .animation-chromatophore-expand class in _animations.scss
-    }, 10000) 
+    }, 9000) 
   })
 
   brand.classList.add('animation-chromatophore-pulse')
