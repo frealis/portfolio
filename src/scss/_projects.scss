@@ -1,8 +1,9 @@
 $projects-transition: 0.35s ease-out;
 
 .page-projects {
-  width: 75vw;
+  border: 10px solid $tertiary-color;
   margin-left: 12.5vw;
+  width: 75vw;
   & .projects-row {
     margin: calc(2rem + 2vw) 0;
     & a {

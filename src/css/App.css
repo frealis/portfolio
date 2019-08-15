@@ -250,8 +250,9 @@ nav .nav-btn-toggle-sidepanel {
     padding: calc(1rem + 1vw); }
 
 .page-projects {
-  width: 75vw;
-  margin-left: 12.5vw; }
+  border: 10px solid #043546;
+  margin-left: 12.5vw;
+  width: 75vw; }
   .page-projects .projects-row {
     margin: calc(2rem + 2vw) 0; }
     .page-projects .projects-row a {
@@ -404,8 +405,9 @@ nav .nav-btn-toggle-sidepanel {
       width: 100%; } }
 
 .page-contact {
-  width: 60vw;
-  margin-left: 20vw; }
+  border: 10px solid #043546;
+  margin-left: 12.5vw;
+  width: 75vw; }
   .page-contact .contact-row #contact-button-send {
     background-color: #FCFAED;
     border: 0.1rem solid #043546;
@@ -583,7 +585,7 @@ nav .nav-btn-toggle-sidepanel {
 #anchor-projects {
   display: block;
   position: relative;
-  top: -20vh; }
+  top: -5vh; }
 
 body {
   background-color: #0A2425; }
