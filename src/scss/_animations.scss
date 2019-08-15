@@ -134,6 +134,39 @@
   }
 }
 
+@keyframes animation-destroy-block {
+  0% { background-color: red; }
+  25% { background-color: orange; }
+  47% { background-color: transparent; }
+  50% { background-color: yellow; }
+  72% { background-color: transparent; }
+  75% { background-color: green; }
+  97% { background-color: transparent; }
+  100% { background-color: blue; }
+}
+
+.animation-destroy-block {
+  animation-duration: 1s;
+  animation-fill-mode: none;
+  animation-name: animation-destroy-block;
+}
+
+@keyframes animation-flicker-in {
+  // 0% { opacity: 0.5; }
+  // 25% { opacity: 0.25; }
+  // 50% { opacity: 0.75; }
+  // 75% { opacity: 0.5; }
+  // 100% { opacity: 1; }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animation-flicker-in {
+  animation-duration: 1s;
+  animation-fill-mode: none;
+  animation-name: animation-destroy-block;
+}
+
 // @mixin rebound-mixin($duration, $fill-mode, $name, $start, $stop) {
 //   animation-duration: #{$duration};
 //   animation-fill-mode: #{$fill-mode};

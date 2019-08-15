@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 // Import components
 import Brand from './Brand'
-import Footer from './Footer'
 import Main from './Main'
 import NavbarSidePanel from './NavbarSidePanel'
 import NavbarDeconstructed from './NavbarDeconstructed'
@@ -17,12 +16,11 @@ import IconResume from '../img/svg-components/icon-resume'
 import { brand } from '../js/brand'
 import { addLinks } from '../js/add-links'
 import { colorsShuffled } from '../js/colors-shuffled'
+import { navbar } from '../js/navbar'
 import { fibSequence } from '../js/fib-sequence'
-import { fibBlocks } from '../js/fib-blocks'
+import { fibCreateBlocks } from '../js/fib-create-blocks'
 import { fibAsteroidBlocks } from '../js/fib-asteroid-blocks'
 import { fibAsteroidZoom } from '../js/fib-asteroid-zoom'
-
-import { navbar } from '../js/navbar'
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +35,8 @@ class App extends Component {
       unit: 'px',
     }
 
-    this.fibBlocks = fibBlocks.bind(this)
+    this.fibCreateBlocks = fibCreateBlocks.bind(this)
+    this.addLinks = addLinks.bind(this)
   }
 
   componentDidMount() {
@@ -49,7 +48,7 @@ class App extends Component {
     navbar()
 
     // Add functionality & animations to links
-    addLinks()
+    this.addLinks()
 
     this.setState({ 
 
@@ -59,8 +58,8 @@ class App extends Component {
     }, () => {
 
       // Fibonacci blocks
-      let {n, fibSeq, unit, colors} = this.state
-      this.fibBlocks(n, fibSeq, unit, colors)
+      const {n, fibSeq, unit, colors} = this.state
+      this.fibCreateBlocks(n, fibSeq, unit, colors)
       fibAsteroidBlocks()
       fibAsteroidZoom()
     })

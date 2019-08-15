@@ -11,7 +11,6 @@ export function brand() {
   }
 
   // Minimize brand when screen size is < 768px wide
-  console.log(window.innerWidth)
   window.innerWidth >= 768
     ? document.querySelector('.brand').classList.remove('miniaturized')
     : document.querySelector('.brand').classList.add('miniaturized')

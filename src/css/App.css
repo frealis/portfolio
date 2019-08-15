@@ -114,6 +114,40 @@
   animation-fill-mode: forwards;
   animation-name: animation-chromatophore-reel; }
 
+@keyframes animation-destroy-block {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: orange; }
+  47% {
+    background-color: transparent; }
+  50% {
+    background-color: yellow; }
+  72% {
+    background-color: transparent; }
+  75% {
+    background-color: green; }
+  97% {
+    background-color: transparent; }
+  100% {
+    background-color: blue; } }
+
+.animation-destroy-block {
+  animation-duration: 1s;
+  animation-fill-mode: none;
+  animation-name: animation-destroy-block; }
+
+@keyframes animation-flicker-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.animation-flicker-in {
+  animation-duration: 1s;
+  animation-fill-mode: none;
+  animation-name: animation-destroy-block; }
+
 .brand {
   color: #FCFAED;
   font-weight: 600;
@@ -599,6 +633,9 @@ nav .nav-btn-toggle-sidepanel {
       background-color: transparent;
       color: #ECD4B0;
       margin: 0 calc(0.5rem + 0.5vw); }
+
+.fib-block-opacity-0 {
+  opacity: 0; }
 
 * {
   border: 0;

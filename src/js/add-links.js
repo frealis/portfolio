@@ -1,15 +1,36 @@
 import Resume from '../img/resume.pdf'
 
+import { fibAsteroidBlocks } from '../js/fib-asteroid-blocks'
+import { fibAsteroidZoom } from '../js/fib-asteroid-zoom'
+import { fibDestroyBlocks } from '../js/fib-destroy-blocks'
+
 // Assign event handlers to links
 export function addLinks() {
 
   // Used for scrolling-to-anchor links
   const main = document.querySelector('.main')
 
-  // ========== BRAND LINKS =====================================================
+  // ========== BRAND LINK ======================================================
 
   document.querySelector('.brand').addEventListener('click', (e) => {
     main.scrollTo(0, 0)
+    fibDestroyBlocks()
+    window.setTimeout(() => {
+      const {n, fibSeq, unit, colors} = this.state
+      this.fibCreateBlocks(n, fibSeq, unit, colors, 0)
+
+      const blocks = document.querySelectorAll('.background-fibonacci-block')
+      for (let i = 0; i < blocks.length; i++) {
+        window.setTimeout(() => {
+          blocks[i].classList.remove('fib-block-opacity-0')
+          blocks[i].classList.add('animation-flicker-in')
+        }, i * 100)
+      }
+    }, 2700)
+    window.setTimeout(() => {
+      fibAsteroidBlocks()
+      fibAsteroidZoom()
+    }, 5400)
   })
 
   // ========== NAVBAR LINKS ====================================================

@@ -1,6 +1,6 @@
 // Create 'n' number of blocks
 
-export function fibBlocks(n, fibSeq, unit, colors) {
+export function fibCreateBlocks(n, fibSeq, unit, colors, opacity) {
   for (let i = 0; i < n; i++) {
     const block = document.createElement('block')
     const factor = 40
@@ -58,10 +58,10 @@ export function fibBlocks(n, fibSeq, unit, colors) {
       position_x = position_x - factor * 168 + unit
       position_y = position_y + factor * 105 + unit
     } else if (i === 15) {           // fibSeq = 987
-      position_x = position_x - factor * 1154 + unit
+      position_x = position_x - factor * 1155 + unit
       position_y = position_y - factor * 272 + unit
     } else if (i === 16) {           // fibSeq = 1597
-      position_x = position_x - factor * 1154 + unit
+      position_x = position_x - factor * 1155 + unit
       position_y = position_y - factor * 1868 + unit
     }
     
@@ -74,6 +74,9 @@ export function fibBlocks(n, fibSeq, unit, colors) {
     block.style.top         = position_y
     block.style.transform   = 'translateZ(-1px)'
     block.style.zIndex      = '-1'
+    if (opacity !== undefined || opacity < 0 || opacity > 1) {
+      block.classList.add('fib-block-opacity-0')
+    }
     
     // Create two sets of sizes for each block, scattered and regular sizes
     block.style.height      = block_size
