@@ -8,20 +8,20 @@ $footer-transition: 0.25s ease-in;
   text-align: center;
   & .footer-icon-wrapper {
     position: relative;
-    &.footer-github-pages { top: -1rem; }
-    &.footer-react { top: -0.5rem; }
+    &.footer-github-pages { top: -0.15rem; }
+    &.footer-react { top: -0.15rem; }
     & .logo-github-pages {
-      height: 3rem;
-      margin: 0 calc(0.1rem + 0.1vw);
+      height: 2rem;
+      margin: 0 calc(0.25rem + 0.25vw);
       & path { 
         fill: $quarternary-color; 
         transition: $footer-transition;
       }
     }
-    & .icon-react {
+    & .logo-react {
       height: 2rem;
-      margin: 0 calc(0.1rem + 0.1vw);
-      width: 2.2rem;
+      margin: 0 calc(0.25rem + 0.25vw);
+      width: 5rem;
       & ellipse { 
         fill: none;
         stroke: $quarternary-color; 
@@ -32,6 +32,9 @@ $footer-transition: 0.25s ease-in;
         stroke: none;
         transition: $footer-transition;
       }
+      & path {
+        fill: $quarternary-color;
+      }
     }
     &:hover {
       cursor: pointer;
@@ -41,12 +44,16 @@ $footer-transition: 0.25s ease-in;
           transition: $footer-transition;
         }
       }
-      & .icon-react {
+      & .logo-react {
         & ellipse {
           stroke: #7fd7f7;
           transition: $footer-transition;
         }
         & circle {
+          fill: #7fd7f7;
+          transition: $footer-transition;
+        }
+        & path {
           fill: #7fd7f7;
           transition: $footer-transition;
         }

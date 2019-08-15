@@ -538,36 +538,41 @@ nav .nav-btn-toggle-sidepanel {
   .footer .footer-icon-wrapper {
     position: relative; }
     .footer .footer-icon-wrapper.footer-github-pages {
-      top: -1rem; }
+      top: -0.15rem; }
     .footer .footer-icon-wrapper.footer-react {
-      top: -0.5rem; }
+      top: -0.15rem; }
     .footer .footer-icon-wrapper .logo-github-pages {
-      height: 3rem;
-      margin: 0 calc(0.1rem + 0.1vw); }
+      height: 2rem;
+      margin: 0 calc(0.25rem + 0.25vw); }
       .footer .footer-icon-wrapper .logo-github-pages path {
         fill: #ECD4B0;
         transition: 0.25s ease-in; }
-    .footer .footer-icon-wrapper .icon-react {
+    .footer .footer-icon-wrapper .logo-react {
       height: 2rem;
-      margin: 0 calc(0.1rem + 0.1vw);
-      width: 2.2rem; }
-      .footer .footer-icon-wrapper .icon-react ellipse {
+      margin: 0 calc(0.25rem + 0.25vw);
+      width: 5rem; }
+      .footer .footer-icon-wrapper .logo-react ellipse {
         fill: none;
         stroke: #ECD4B0;
         transition: 0.25s ease-in; }
-      .footer .footer-icon-wrapper .icon-react circle {
+      .footer .footer-icon-wrapper .logo-react circle {
         fill: #ECD4B0;
         stroke: none;
         transition: 0.25s ease-in; }
+      .footer .footer-icon-wrapper .logo-react path {
+        fill: #ECD4B0; }
     .footer .footer-icon-wrapper:hover {
       cursor: pointer; }
       .footer .footer-icon-wrapper:hover .logo-github-pages path {
         fill: white;
         transition: 0.25s ease-in; }
-      .footer .footer-icon-wrapper:hover .icon-react ellipse {
+      .footer .footer-icon-wrapper:hover .logo-react ellipse {
         stroke: #7fd7f7;
         transition: 0.25s ease-in; }
-      .footer .footer-icon-wrapper:hover .icon-react circle {
+      .footer .footer-icon-wrapper:hover .logo-react circle {
+        fill: #7fd7f7;
+        transition: 0.25s ease-in; }
+      .footer .footer-icon-wrapper:hover .logo-react path {
         fill: #7fd7f7;
         transition: 0.25s ease-in; }
   .footer .footer-navigation {

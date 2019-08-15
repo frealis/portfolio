@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import IconReact from '../img/svg-components/icon-react'
+import LogoReact from '../img/svg-components/logo-react'
 import LogoGitHubPages from '../img/svg-components/logo-github-pages'
 
 class Footer extends Component {
@@ -10,7 +10,7 @@ class Footer extends Component {
         <div className="footer-created-with">
           This site was made with 
           <span className="footer-icon-wrapper ext-link-react footer-react">
-            <IconReact />
+            <LogoReact />
           </span> 
           and is hosted on 
           <span className="footer-icon-wrapper ext-link-github-pages footer-github-pages">
