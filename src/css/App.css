@@ -526,6 +526,46 @@ nav .nav-btn-toggle-sidepanel {
       width: 100%;
       margin: 0; } }
 
+.footer {
+  background-color: #043546;
+  color: #ECD4B0;
+  font-size: calc(0.75rem + 0.25vw);
+  padding: calc(2rem + 2vw);
+  text-align: center; }
+  .footer .footer-link-wrapper {
+    position: relative; }
+    .footer .footer-link-wrapper.footer-github-pages {
+      top: -1rem; }
+    .footer .footer-link-wrapper.footer-react {
+      top: -0.5rem; }
+    .footer .footer-link-wrapper .logo-github-pages {
+      height: 3rem; }
+      .footer .footer-link-wrapper .logo-github-pages path {
+        fill: #ECD4B0;
+        transition: 0.25s ease-in; }
+    .footer .footer-link-wrapper .icon-react {
+      height: 2rem;
+      width: 2.2rem; }
+      .footer .footer-link-wrapper .icon-react ellipse {
+        fill: none;
+        stroke: #ECD4B0;
+        transition: 0.25s ease-in; }
+      .footer .footer-link-wrapper .icon-react circle {
+        fill: #ECD4B0;
+        stroke: none;
+        transition: 0.25s ease-in; }
+    .footer .footer-link-wrapper:hover {
+      cursor: pointer; }
+      .footer .footer-link-wrapper:hover .logo-github-pages path {
+        fill: white;
+        transition: 0.25s ease-in; }
+      .footer .footer-link-wrapper:hover .icon-react ellipse {
+        stroke: #7fd7f7;
+        transition: 0.25s ease-in; }
+      .footer .footer-link-wrapper:hover .icon-react circle {
+        fill: #7fd7f7;
+        transition: 0.25s ease-in; }
+
 * {
   border: 0;
   margin: 0;

@@ -1,0 +1,8 @@
+.footer {
+  background-color: orange;
+  color: white;
+  font-size: calc(1rem + 0.25vw); }
+  .footer .logo-github-pages {
+    height: calc(2rem + 1vw); }
+    .footer .logo-github-pages path {
+      fill: white; }

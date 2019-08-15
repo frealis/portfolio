@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 // Import components
 import Brand from './Brand'
+import Footer from './Footer'
 import Main from './Main'
 import NavbarSidePanel from './NavbarSidePanel'
 import NavbarDeconstructed from './NavbarDeconstructed'
