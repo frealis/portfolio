@@ -12,6 +12,9 @@ export function addLinks() {
 
   // ========== BRAND LINK ======================================================
 
+  // The "brand" has 3 different animations on it. Settin the transition property
+  // on .brand-text and .brand-sub in _brand.scss prevents this animation from
+  // affecting most of the brand's lettering (only the initials are affected).
   const brand = document.querySelector('.brand')
   brand.addEventListener('click', (e) => {
     main.scrollTo(0, 0)
@@ -33,6 +36,12 @@ export function addLinks() {
       fibAsteroidZoom()
     }, 5400)
     brand.classList.add('animation-chromatophore-expand')
+    window.setTimeout(() => {
+      brand.classList.remove('animation-chromatophore-expand')
+
+    // This timeout is set to a number higher than the animation-duration 
+    // property of the .animation-chromatophore-expand class in _animations.scss
+    }, 10000) 
   })
 
   brand.classList.add('animation-chromatophore-pulse')

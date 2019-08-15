@@ -55,20 +55,20 @@
   0% {
     color: #0A2425;
     text-shadow: 0 0 #043546, 0 0 #ECD4B0, 0 0 #097471; }
-  10% {
+  4% {
     color: #FCFAED;
-    text-shadow: 10px 10px #043546, -12.5px 0 #ECD4B0, 10px -10px #097471; }
-  90% {
+    text-shadow: 40px 40px #043546, -50px 0 #ECD4B0, 40px -40px #097471; }
+  96% {
     color: #043546;
-    text-shadow: 0 12.5px #043546, -10px -10px #ECD4B0, 12.5px 0px #097471; }
+    text-shadow: 0 50px #043546, -40px -40px #ECD4B0, 50px 0px #097471; }
   100% {
     color: #FCFAED;
     text-shadow: 0 0 #043546, 0 0 #ECD4B0, 0 0 #097471; } }
 
-.animation.chromatophore-expand {
-  animation-duration: 0.5s;
+.animation-chromatophore-expand {
+  animation-duration: 7.5s;
   animation-fill-mode: forwards;
-  animation-name: animation-chromatophore-icon; }
+  animation-name: animation-chromatophore-expand; }
 
 @keyframes animation-chromatophore-pulse {
   0% {
@@ -176,10 +176,6 @@
       transition: 0.2s ease-in; }
   .brand:hover {
     cursor: pointer; }
-    .brand:hover .brand-sub {
-      transition: none; }
-    .brand:hover .brand-text {
-      transition: none; }
   @media (max-width: 767.98px) {
     .brand {
       left: 7.5vw;

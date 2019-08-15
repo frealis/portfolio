@@ -42,6 +42,8 @@
   }
 }
 
+// This animation only works on text that isn't assigned a 'transition' CSS
+// property (ie. .brand-text and .brand-sub in Brand.jsx are excluded)
 @keyframes animation-chromatophore-expand {
   0% {
     color: $primary-color;
@@ -50,19 +52,19 @@
       0 0 $quarternary-color,
       0 0 $quinary-color; 
   }
-  10% {
+  4% {
     color: $secondary-color;
     text-shadow:
-      10px 10px $tertiary-color,
-      -12.5px 0 $quarternary-color,
-      10px -10px $quinary-color; 
+      40px 40px $tertiary-color,
+      -50px 0 $quarternary-color,
+      40px -40px $quinary-color; 
   }
-  90% {
+  96% {
     color: $tertiary-color;
     text-shadow:
-      0 12.5px $tertiary-color,
-      -10px -10px $quarternary-color,
-      12.5px 0px $quinary-color; 
+      0 50px $tertiary-color,
+      -40px -40px $quarternary-color,
+      50px 0px $quinary-color; 
   }
   100% {
     color: $secondary-color;
@@ -73,10 +75,10 @@
   }
 }
 
-.animation.chromatophore-expand {
-  animation-duration: 0.5s;
+.animation-chromatophore-expand {
+  animation-duration: 7.5s;
   animation-fill-mode: forwards;
-  animation-name: animation-chromatophore-icon;
+  animation-name: animation-chromatophore-expand;
 }
 
 @keyframes animation-chromatophore-pulse {
