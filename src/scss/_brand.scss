@@ -31,6 +31,9 @@ $brand-transition: 0.2s ease-in;
       transition: $brand-transition;
     }
   }
+  &:hover {
+    cursor: pointer;
+  }
   @media (max-width: 767.98px) {
     left: 7.5vw;
     padding: 0;

@@ -3,12 +3,22 @@ import Resume from '../img/resume.pdf'
 // Assign event handlers to links
 export function addLinks() {
 
-  // ========== NAVBAR LINKS ===================================================
+  // Used for scrolling-to-anchor links
+  const main = document.querySelector('.main')
+
+  // ========== BRAND LINKS =====================================================
+
+  document.querySelector('.brand').addEventListener('click', (e) => {
+    main.scrollTo(0, 0)
+  })
+
+  // ========== NAVBAR LINKS ====================================================
  
   // Contact
   document.querySelectorAll('.link-contact').forEach(link => {
     link.addEventListener('click', () => {
-      window.location.href = '#anchor-contact'
+      const anchor_contact = document.querySelector('#anchor-contact').offsetTop
+      main.scrollTo(0, anchor_contact)
     })
     link.classList.add('animation-chromatophore-expand')
   })
@@ -16,7 +26,8 @@ export function addLinks() {
   // Projects
   document.querySelectorAll('.link-projects').forEach(link => {
     link.addEventListener('click', () => {
-      window.location.href = '#anchor-projects'
+      const anchor_projects = document.querySelector('#anchor-projects').offsetTop
+      main.scrollTo(0, anchor_projects)
     })
     link.classList.add('animation-chromatophore-expand')
   })
