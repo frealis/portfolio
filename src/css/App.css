@@ -32,14 +32,19 @@
   animation-name: animation-asteroid-zoom; }
 
 @keyframes animation-chromatophore-icon {
-  0% { }
+  0% {
+    fill: #0A2425; }
+  25% {
+    fill: #FCFAED; }
   50% {
     fill: #043546; }
+  75% {
+    fill: #ECD4B0; }
   100% {
-    fill: #097471; } }
+    fill: #FCFAED; } }
 
 .animation-chromatophore-icon:hover {
-  animation-duration: 0.2s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-name: animation-chromatophore-icon; }
 
@@ -63,18 +68,26 @@
 
 @keyframes animation-chromatophore-expand {
   0% {
+    color: #0A2425;
     text-shadow: 0 -10px #097471, 0 10px #043546; }
+  25% {
+    color: #FCFAED; }
   50% {
     color: #043546; }
+  75% {
+    color: #ECD4B0; }
   100% {
-    color: #097471;
+    color: #FCFAED;
     text-shadow: 0 10px rgba(255, 255, 255, 0), 0 -10px rgba(255, 255, 255, 0); } }
 
 .animation-chromatophore-expand:hover {
-  animation-duration: 0.2s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-name: animation-chromatophore-expand;
   animation-timing-function: linear; }
+
+.animation-chromatophore-expand::before {
+  opacity: 1; }
 
 @keyframes animation-chromatophore-reel {
   0% {
@@ -92,11 +105,12 @@
     stroke: #ECD4B0; }
   100% {
     color: #097471;
+    mix-blend-mode: difference;
     stroke: #097471;
     text-shadow: 0 15px rgba(255, 255, 255, 0), 0 -15px rgba(255, 255, 255, 0); } }
 
 .animation-chromatophore-reel:hover {
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-name: animation-chromatophore-reel; }
 
@@ -409,14 +423,15 @@ nav .nav-btn-toggle-sidepanel {
   margin-left: 12.5vw;
   width: 75vw; }
   .page-contact .contact-row #contact-button-send {
+    align-items: center;
     background-color: #FCFAED;
     border: 0.1rem solid #043546;
     border-radius: 0.3rem;
     color: #043546;
-    display: block;
-    font-size: 1rem;
+    display: flex;
+    font-size: calc(1rem + 0.25vw);
     font-weight: 600;
-    height: 2.5rem;
+    height: 3rem;
     margin: 0 auto calc(1rem + 1vw) auto; }
     .page-contact .contact-row #contact-button-send:hover {
       background-color: #097471;
@@ -594,7 +609,7 @@ nav .nav-btn-toggle-sidepanel {
   top: -5vh; }
 
 body {
-  background-color: #0A2425; }
+  background-color: #097471; }
 
 html {
   box-sizing: border-box;

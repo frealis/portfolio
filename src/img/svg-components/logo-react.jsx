@@ -5,15 +5,15 @@ export default function LogoReact() {
     <svg className="logo-react" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235.678 100">
       <g transform="translate(-454.096 -1030)">
         <g transform="translate(454.096 1030)">
-          <g transform="translate(93.532 30.994) rotate(90)" strokeWidth="4">
+          <g transform="translate(93.532 30.994) rotate(90)" strokeWidth="2">
             <ellipse cx="19.006" cy="46.766" rx="19.006" ry="46.766"/>
             <ellipse cx="19.006" cy="46.766" rx="16.006" ry="43.766"/>
           </g>
-          <g transform="translate(86.6 81.001) rotate(150)" strokeWidth="4">
+          <g transform="translate(86.6 81.001) rotate(150)" strokeWidth="2">
             <ellipse cx="18.996" cy="46.765" rx="18.996" ry="46.765"/>
             <ellipse cx="18.996" cy="46.765" rx="15.996" ry="43.765"/>
           </g>
-          <g transform="translate(39.837 100) rotate(-150)" strokeWidth="4">
+          <g transform="translate(39.837 100) rotate(-150)" strokeWidth="2">
             <ellipse cx="18.999" cy="46.766" rx="18.999" ry="46.766"/>
             <ellipse cx="18.999" cy="46.766" rx="15.999" ry="43.766"/>
           </g>

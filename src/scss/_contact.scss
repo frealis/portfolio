@@ -6,14 +6,15 @@ $contact-link-transition: 0.25s ease-out;
   width: 75vw;
   & .contact-row {
     & #contact-button-send {
+      align-items: center;
       background-color: $secondary-color;
       border: 0.1rem solid $tertiary-color;
       border-radius: 0.3rem;
       color: $tertiary-color;
-      display: block;
-      font-size: 1rem;
+      display: flex;
+      font-size: calc(1rem + 0.25vw);
       font-weight: 600;
-      height: 2.5rem;
+      height: 3rem;
       margin: 0 auto calc(1rem + 1vw) auto;
       &:hover {
         background-color: $quinary-color;
