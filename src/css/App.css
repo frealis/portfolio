@@ -474,6 +474,9 @@ nav .nav-btn-toggle-sidepanel {
       background-color: #097471;
       border: 0.1rem solid #097471;
       color: #FCFAED; }
+    .page-contact .contact-row #contact-button-send:focus {
+      box-shadow: none;
+      outline: none; }
   .page-contact .contact-row #contact-email-input,
   .page-contact .contact-row #contact-name-input {
     height: 3rem; }

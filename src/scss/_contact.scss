@@ -21,6 +21,10 @@ $contact-link-transition: 0.25s ease-out;
         border: 0.1rem solid $quinary-color;
         color: $secondary-color;
       }
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
     }
 
     & #contact-email-input,

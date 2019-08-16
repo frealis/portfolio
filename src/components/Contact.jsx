@@ -31,8 +31,8 @@ class Contact extends Component {
                             required placeholder="message"></textarea>
                   <label htmlFor="contact-message" className="floating-placeholder">Message</label>
                 </div>
+                <button id="contact-button-send" className="btn" type="submit" value="Submit">Send Message</button>
               </form>
-              <button id="contact-button-send" className="btn">Send Message</button>
             
               <div className="contact-link-wrapper">
                 <button className="btn contact-icon-wrapper link-email">
