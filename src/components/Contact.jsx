@@ -14,7 +14,7 @@ class Contact extends Component {
           <div className="row contact-row">
 
             <div className="col-12">
-              <form action="" method="POST">
+              <form action="https://formspree.io/mhh129@gmail.com" method="POST">
                 <div className="contact-input">
                   <input name="contact_name" id="contact-name-input" className="contact-input-field" type="text" required placeholder="name" />
                   <label htmlFor="contact-name" className="floating-placeholder">Name</label>
