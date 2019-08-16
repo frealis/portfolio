@@ -46,8 +46,6 @@ export function addLinks() {
     }, 9000) 
   })
 
-  brand.classList.add('animation-chromatophore-pulse')
-
   // ========== NAVBAR LINKS ====================================================
  
   // Contact
