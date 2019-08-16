@@ -5,9 +5,9 @@ class Brand extends Component {
     return (
       <div className="brand">
         <span className="brand-initial">M</span>
-        <span className="brand-text">ustachio the </span>
-        <span className="brand-initial">P</span>
-        <span className="brand-text">istachio</span>
+        <span className="brand-text">att </span>
+        <span className="brand-initial">H</span>
+        <span className="brand-text">igginbotham</span>
         <span className="brand-sub">Web Developer</span>
       </div>
     )
