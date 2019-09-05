@@ -129,7 +129,7 @@ export function addLinks() {
         console.log('click')
       })
       link.setAttribute('rel', 'noopener noreferrer')
-      if (link.tagName != 'FIGURE') {
+      if (link.tagName !== 'FIGURE') {
         link.classList.add('animation-chromatophore-reel')
       }
     })
