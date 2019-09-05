@@ -126,9 +126,10 @@ export function addLinks() {
     project_link.nodelist.forEach(link => {
       link.addEventListener('click', () => {
         window.open(`${project_link.url}`, `${project_link.window_feature}`)
+        console.log('click')
       })
       link.setAttribute('rel', 'noopener noreferrer')
-      if (link.innerHTML !== '') {
+      if (link.tagName != 'FIGURE') {
         link.classList.add('animation-chromatophore-reel')
       }
     })

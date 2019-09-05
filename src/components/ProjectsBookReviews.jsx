@@ -9,8 +9,8 @@ class BookReviews extends Component {
       <div className="row projects-row">
 
         <div className="col-lg-5">
-          <figure>
-            <img className="projects-thumbnail ext-link-bookreviews" alt="Book Reviews" src={ ThumbnailBookReviews } />
+          <figure className="ext-link-bookreviews">
+            <img className="projects-thumbnail" alt="Book Reviews" src={ ThumbnailBookReviews } />
           </figure>
         </div>
 

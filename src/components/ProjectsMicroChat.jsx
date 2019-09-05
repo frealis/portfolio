@@ -8,8 +8,8 @@ class ProjectsMicroChat extends Component {
       <div className="row projects-row">
 
         <div className="col-lg-5">
-          <figure>
-            <img className="projects-thumbnail ext-link-microchat" alt="microChat" src={ ThumbnailMicroChat } />
+          <figure className="ext-link-microchat">
+            <img className="projects-thumbnail" alt="microChat" src={ ThumbnailMicroChat } />
           </figure>
         </div>
 

@@ -369,8 +369,7 @@ nav .nav-btn-toggle-sidepanel {
       .page-projects .projects-row figure .projects-thumbnail {
         object-fit: cover;
         height: 100%;
-        width: 100%;
-        z-index: 1; }
+        width: 100%; }
       .page-projects .projects-row figure::after {
         background-color: #0A2425;
         content: '';

@@ -8,8 +8,8 @@ class ProjectsPinocchios extends Component {
       <div className="row projects-row">
 
         <div className="col-lg-5">
-          <figure>
-            <img className="projects-thumbnail ext-link-pinocchios" alt="Pinocchio's Pizza and Subs" src={ ThumbnailPinocchios } />
+          <figure className="ext-link-pinocchios">
+            <img className="projects-thumbnail" alt="Pinocchio's Pizza and Subs" src={ ThumbnailPinocchios } />
           </figure>
         </div>
 
@@ -23,7 +23,7 @@ class ProjectsPinocchios extends Component {
               <IconExternalLink />
               View Site
             </button>
-            <button className="btn btn-source ext-link-microchat-github">
+            <button className="btn btn-source ext-link-pinocchios-github">
               <IconExternalLink />
               Source Code
             </button>

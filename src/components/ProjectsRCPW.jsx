@@ -8,8 +8,8 @@ class ProjectsRCPW extends Component {
       <div className="row projects-row">
 
         <div className="col-lg-5">
-          <figure>
-            <img className="projects-thumbnail ext-link-rcpw" alt="River City Pro Wash" src={ ThumbnailRCPW } />
+          <figure className="ext-link-rcpw">
+            <img className="projects-thumbnail" alt="River City Pro Wash" src={ ThumbnailRCPW } />
           </figure>
         </div>
 
