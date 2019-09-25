@@ -85,6 +85,15 @@ export function addLinks() {
 
   // ========== PROJECT LINKS ==================================================
 
+  // Tell Me Where To Eat
+  const tmwte = {
+    nodelist: document.querySelectorAll('.ext-link-tmwte'),
+    nodelist_github: document.querySelectorAll('.ext-link-tmwte-github'),
+    url: 'https://www.tellmewheretoeat.com',
+    url_github: 'https://github.com/matthigg/Tell-Me-Where-To-Eat',
+    window_feature: '_blank',
+  }
+
   // River City Pro Wash
   const rcpw = {
     nodelist: document.querySelectorAll('.ext-link-rcpw'),
@@ -142,6 +151,7 @@ export function addLinks() {
     })
   }
 
+  createProjectLink(tmwte)
   createProjectLink(rcpw)
   createProjectLink(pinocchios)
   createProjectLink(microchat)
@@ -269,6 +279,13 @@ export function addLinks() {
     url: 'https://www.heroku.com/',
   }
 
+  // Netlify
+  const netlify = {
+    nodelist: document.querySelectorAll('.ext-link-netlify'),
+    window_feature: '_blank',
+    url: 'https://www.netlify.com/',
+  }
+
   // PostgreSQL
   const postgresql = {
     nodelist: document.querySelectorAll('.ext-link-postgresql'),
@@ -299,6 +316,7 @@ export function addLinks() {
   createTechIconLink(flask)
   createTechIconLink(githubpages)
   createTechIconLink(heroku)
+  createTechIconLink(netlify)
   createTechIconLink(postgresql)
   createTechIconLink(react)
 }

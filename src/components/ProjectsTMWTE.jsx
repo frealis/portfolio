@@ -3,8 +3,7 @@ import ThumbnailTMWTE from '../img/thumbnail-tmwte.svg'
 
 class ProjectsTMWTE extends Component {
   render() {
-    // const { IconExternalLink, LogoBootstrap, LogoNetlify, LogoReact } = this.props;
-    const { IconExternalLink, LogoBootstrap, LogoNetlify, LogoReact } = this.props;
+    const { IconExternalLink, LogoNetlify, LogoReact } = this.props;
     return (
       <div className="row projects-row">
 
@@ -44,7 +43,6 @@ class ProjectsTMWTE extends Component {
               Source Code
             </button>
             <div className="projects-tech">
-              <button className="btn ext-link-bootstrap"><LogoBootstrap /></button>
               <button className="btn ext-link-react"><LogoReact /></button>
               <button className="btn ext-link-netlify"><LogoNetlify /></button>
             </div>

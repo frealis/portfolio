@@ -24,7 +24,7 @@ class Projects extends Component {
         <span id="anchor-projects"></span>
         <div className="page page-projects">
           <h1 className="page-header">Projects</h1>
-          <ProjectsTMWTE IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoNetlify = { LogoNetlify } LogoReact={ LogoReact } />
+          <ProjectsTMWTE IconExternalLink={ IconExternalLink } LogoNetlify = { LogoNetlify } LogoReact={ LogoReact } />
           <ProjectsRCPW IconAWS={ IconAWS } IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } LogoPostgreSQL={ LogoPostgreSQL } />
           <ProjectsPinocchios IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } LogoHeroku={ LogoHeroku } LogoPostgreSQL={ LogoPostgreSQL } />
           <ProjectsMicroChat IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoFlask={ LogoFlask } LogoHeroku={ LogoHeroku } />
