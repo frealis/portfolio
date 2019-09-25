@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0c21a074ae532a444af35f4ea1afbd4",
+    "revision": "6fbee6166ed6d94761a8ecbf0a5a0b33",
     "url": "/index.html"
   },
   {
-    "revision": "6a7c918bc29b663da475",
+    "revision": "bbdcd0268854e24713d5",
     "url": "/static/css/main.167e33f7.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.501aa112.chunk.js"
   },
   {
-    "revision": "6a7c918bc29b663da475",
-    "url": "/static/js/main.89a7d5e2.chunk.js"
+    "revision": "bbdcd0268854e24713d5",
+    "url": "/static/js/main.e30b30f1.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/resume.553a0ba1.pdf"
   },
   {
-    "revision": "070756162659ab33c93e4ec7f1cd405e",
-    "url": "/static/media/thumbnail-book-reviews.07075616.svg"
+    "revision": "e12c5e19c8f6e558866c40b32192e630",
+    "url": "/static/media/thumbnail-book-reviews.e12c5e19.svg"
   },
   {
     "revision": "553171adb991e29c34dbd5a95a0b51ec",
