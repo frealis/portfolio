@@ -1,3 +1,4 @@
+import RCPWFlyer from '../img/rcpw-flyer-01.svg'
 import Resume from '../img/resume.pdf'
 
 import { fibAsteroidBlocks } from '../js/fib-asteroid-blocks'
@@ -89,8 +90,10 @@ export function addLinks() {
   const rns = {
     nodelist: document.querySelectorAll('.ext-link-rns'),
     nodelist_github: document.querySelectorAll('.ext-link-rns-github'),
+    nodelist_flyer: document.querySelectorAll('.ext-link-rcpw-flyer'),
     url: 'https://www.rspressurewashing.com',
     url_github: 'https://github.com/matthigg/RnS',
+    url_flyer: RCPWFlyer,
     window_feature: '_blank',
   }
 
@@ -158,6 +161,15 @@ export function addLinks() {
       link.setAttribute('rel', 'noopener noreferrer')
       link.classList.add('animation-chromatophore-reel')
     })
+    if (project_link.nodelist_flyer) {
+      project_link.nodelist_flyer.forEach(link => {
+        link.addEventListener('click', () => {
+          window.open(`${project_link.url_flyer}`, `${project_link.window_feature}`)
+        })
+        link.setAttribute('rel', 'noopener noreferrer')
+        link.classList.add('animation-chromatophore-reel')
+      })
+    }
   }
 
   createProjectLink(rns)

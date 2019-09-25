@@ -38,6 +38,10 @@ class ProjectsRCPW extends Component {
               <IconExternalLink />
               Source Code
             </button>
+            <button className="btn btn-source ext-link-rcpw-flyer">
+              <IconExternalLink />
+              Promotional Flyer
+            </button>
             <div className="projects-tech">
               <button className="btn ext-link-bootstrap"><LogoBootstrap /></button>
               <button className="btn ext-link-django"><LogoDjango /></button>
