@@ -12,7 +12,7 @@ export function addLinks() {
 
   // ========== BRAND LINK ======================================================
 
-  // The "brand" has 3 different animations on it. Settin the transition property
+  // The "brand" has 3 different animations on it. Setting the transition property
   // on .brand-text and .brand-sub in _brand.scss prevents this animation from
   // affecting most of the brand's lettering (only the initials are affected).
   const brand = document.querySelector('.brand')
@@ -90,7 +90,7 @@ export function addLinks() {
     nodelist: document.querySelectorAll('.ext-link-rcpw'),
     nodelist_github: document.querySelectorAll('.ext-link-rcpw-github'),
     url: 'https://www.rivercityprowash.com',
-    url_github: 'https://github.com/matthigg/River-City-Pro-Wash',
+    url_github: 'https://github.com/matthigg/River-City-Pro-Wash-v2',
     window_feature: '_blank',
   }
 

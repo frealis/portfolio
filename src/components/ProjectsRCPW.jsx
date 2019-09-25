@@ -16,7 +16,18 @@ class ProjectsRCPW extends Component {
         <div className="col-lg-7 projects-col">
           <div className="projects-col-top">
             <h2 className="projects-thumbnail-header ext-link-rcpw">River City Pro Wash</h2>
-            <p className="projects-thumbnail-description">This is a business website for a pressure washing company hosted on Amazon Web Services that uses AWS Simple Email Service (SES) to handle contact form submissions that are backed up using Amazon RDS and PostgreSQL. It also uses the Google Maps Javascript API to display a custom map, as well as reCAPTCHA v3 to monitor contact form submissions.</p>
+            <p className="projects-thumbnail-description">
+              This is a business website for a pressure washing company hosted on 
+              Amazon Web Services that uses AWS Simple Email Service (SES) to handle 
+              contact form submissions which are backed up using Amazon RDS and 
+              PostgreSQL, and it incorporates reCAPTCHA v3 to monitor contact form 
+              submissions.
+            </p>
+            <p className="projects-thumbnail-description">
+              It also features image uploading through Django's admin panel 
+              which allows the owner to resize, rotate, and adjust the quality of uploaded 
+              images using Python's Pillow library.
+            </p>
           </div>
           <div className="projects-col-bottom">
             <button className="btn btn-view ext-link-rcpw">
