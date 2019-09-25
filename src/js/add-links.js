@@ -85,6 +85,15 @@ export function addLinks() {
 
   // ========== PROJECT LINKS ==================================================
 
+  // R & S Pressure Washing
+  const rns = {
+    nodelist: document.querySelectorAll('.ext-link-rns'),
+    nodelist_github: document.querySelectorAll('.ext-link-rns-github'),
+    url: 'https://www.rspressurewashing.com',
+    url_github: 'https://github.com/matthigg/RnS',
+    window_feature: '_blank',
+  }
+
   // Tell Me Where To Eat
   const tmwte = {
     nodelist: document.querySelectorAll('.ext-link-tmwte'),
@@ -151,6 +160,7 @@ export function addLinks() {
     })
   }
 
+  createProjectLink(rns)
   createProjectLink(tmwte)
   createProjectLink(rcpw)
   createProjectLink(pinocchios)
