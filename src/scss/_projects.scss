@@ -56,6 +56,13 @@ $projects-transition: 0.35s ease-out;
         & .logo-heroku-path { fill: #430098; }
       }
     }
+    & .ext-link-netlify {
+      & path { fill: $tech-icon-inactive; stroke: none; transition: $projects-transition; }
+      &:hover {
+        & .logo-netlify-path-text { fill: #0E1E25; }
+        & .logo-netlify-path-abstract-img { fill: url(#radial-gradient); }
+      }
+    }
     & .ext-link-postgresql {
       & path { fill: $tech-icon-inactive; transition: $projects-transition; }
       &:hover {
@@ -64,6 +71,16 @@ $projects-transition: 0.35s ease-out;
         & .logo-postgresql-fill-336791 { fill: #336791; }
         & .logo-postgresql-stroke-000 { stroke: #000; }
         & .logo-postgresql-fill-585858 { fill: #585858; }
+      }
+    }
+    & .ext-link-react {
+      & ellipse { fill: none; stroke: $tech-icon-inactive; transition: $projects-transition; }
+      & circle { fill: $tech-icon-inactive; stroke: none; transition: $projects-transition; }
+      & path { fill: $tech-icon-inactive; transition: $projects-transition; }
+      &:hover {
+        & ellipse { fill: none; stroke: #7FD7F7; }
+        & circle { fill: #7FD7F7; stroke: none; }
+        & path { fill: #000000 }
       }
     }
 
