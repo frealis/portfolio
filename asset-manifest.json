@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.38d9a466.chunk.css",
-    "main.js": "/static/js/main.258efa1b.chunk.js",
-    "main.js.map": "/static/js/main.258efa1b.chunk.js.map",
+    "main.css": "/static/css/main.167e33f7.chunk.css",
+    "main.js": "/static/js/main.1e5954e6.chunk.js",
+    "main.js.map": "/static/js/main.1e5954e6.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.a9760ab4.chunk.js": "/static/js/2.a9760ab4.chunk.js",
-    "static/js/2.a9760ab4.chunk.js.map": "/static/js/2.a9760ab4.chunk.js.map",
+    "static/js/2.4067798b.chunk.js": "/static/js/2.4067798b.chunk.js",
+    "static/js/2.4067798b.chunk.js.map": "/static/js/2.4067798b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6a64385bb55d704f5b5c3cdb863b8ab4.js": "/precache-manifest.6a64385bb55d704f5b5c3cdb863b8ab4.js",
+    "precache-manifest.f6ccb9ace2fccd0b97297ce86d509d60.js": "/precache-manifest.f6ccb9ace2fccd0b97297ce86d509d60.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.38d9a466.chunk.css.map": "/static/css/main.38d9a466.chunk.css.map",
+    "static/css/main.167e33f7.chunk.css.map": "/static/css/main.167e33f7.chunk.css.map",
     "static/media/resume.pdf": "/static/media/resume.553a0ba1.pdf",
     "static/media/thumbnail-book-reviews.svg": "/static/media/thumbnail-book-reviews.07075616.svg",
     "static/media/thumbnail-microchat.svg": "/static/media/thumbnail-microchat.553171ad.svg",
     "static/media/thumbnail-pinocchios.svg": "/static/media/thumbnail-pinocchios.d257c358.svg",
-    "static/media/thumbnail-rcpw.svg": "/static/media/thumbnail-rcpw.da07fdac.svg"
+    "static/media/thumbnail-rcpw.svg": "/static/media/thumbnail-rcpw.da07fdac.svg",
+    "static/media/thumbnail-tmwte.svg": "/static/media/thumbnail-tmwte.cc2a7408.svg"
   }
 }
