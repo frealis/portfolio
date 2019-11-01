@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import ProjectsMedCheckCare from './ProjectsMedCheckCare.jsx';
 import ProjectsRNS from './ProjectsRNS.jsx'
 import ProjectsTMWTE from './ProjectsTMWTE.jsx'
 import ProjectsRCPW from './ProjectsRCPW.jsx';
@@ -25,6 +26,7 @@ class Projects extends Component {
         <span id="anchor-projects"></span>
         <div className="page page-projects">
           <h1 className="page-header">Projects</h1>
+          <ProjectsMedCheckCare IconExternalLink={ IconExternalLink } LogoNetlify = { LogoNetlify } />          
           <ProjectsRCPW IconAWS={ IconAWS } IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } LogoPostgreSQL={ LogoPostgreSQL } />
           <ProjectsTMWTE IconExternalLink={ IconExternalLink } LogoNetlify = { LogoNetlify } LogoReact={ LogoReact } />          
           <ProjectsRNS IconAWS={ IconAWS } IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } LogoPostgreSQL={ LogoPostgreSQL } />

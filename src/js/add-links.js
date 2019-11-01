@@ -86,14 +86,22 @@ export function addLinks() {
 
   // ========== PROJECT LINKS ==================================================
 
+
+  // MedCheck.care
+  const medcheckcare = {
+    nodelist: document.querySelectorAll('.ext-link-medcheck-care'),
+    nodelist_github: document.querySelectorAll('.ext-link-medcheck-care-github'),
+    url: 'https://www.medcheck.care',
+    url_github: 'https://github.com/matthigg/MedCheck-Care',
+    window_feature: '_blank',
+  }
+
   // R & S Pressure Washing
   const rns = {
     nodelist: document.querySelectorAll('.ext-link-rns'),
     nodelist_github: document.querySelectorAll('.ext-link-rns-github'),
-    nodelist_flyer: document.querySelectorAll('.ext-link-rcpw-flyer'),
     url: 'https://www.rspressurewashing.com',
     url_github: 'https://github.com/matthigg/RnS',
-    url_flyer: RCPWFlyer,
     window_feature: '_blank',
   }
 
@@ -110,8 +118,10 @@ export function addLinks() {
   const rcpw = {
     nodelist: document.querySelectorAll('.ext-link-rcpw'),
     nodelist_github: document.querySelectorAll('.ext-link-rcpw-github'),
+    nodelist_flyer: document.querySelectorAll('.ext-link-rcpw-flyer'),
     url: 'https://www.rivercityprowash.com',
     url_github: 'https://github.com/matthigg/River-City-Pro-Wash-v2',
+    url_flyer: RCPWFlyer,
     window_feature: '_blank',
   }
 
@@ -172,6 +182,7 @@ export function addLinks() {
     }
   }
 
+  createProjectLink(medcheckcare)
   createProjectLink(rns)
   createProjectLink(tmwte)
   createProjectLink(rcpw)

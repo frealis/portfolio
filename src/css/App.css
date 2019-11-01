@@ -629,7 +629,7 @@ nav .nav-btn-toggle-sidepanel {
         fill: #ECD4B0;
         transition: 0.25s ease-in; }
     .footer .footer-icon-wrapper .logo-react {
-      height: 2rem;
+      height: 1.75rem;
       margin: 0 calc(0.25rem + 0.25vw);
       width: 5rem; }
       .footer .footer-icon-wrapper .logo-react ellipse {
