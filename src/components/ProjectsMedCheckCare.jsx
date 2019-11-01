@@ -3,7 +3,7 @@ import ThumbnailMedCheckCare from '../img/thumbnail-medcheck-care.svg'
 
 class ProjectsMedCheckCare extends Component {
   render() {
-    const { IconExternalLink, LogoNetlify } = this.props;
+    const { IconExternalLink, LogoAngular, LogoNetlify } = this.props;
     return (
       <div className="row projects-row">
 
@@ -38,6 +38,7 @@ class ProjectsMedCheckCare extends Component {
               Source Code
             </button>
             <div className="projects-tech">
+            <button className="btn ext-link-angular"><LogoAngular /></button>
             <button className="btn ext-link-netlify"><LogoNetlify /></button>
             </div>
           </div>

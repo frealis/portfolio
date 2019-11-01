@@ -11,6 +11,7 @@ import ProjectsBookReviews from './ProjectsBookReviews.jsx';
 // Import <svg> components
 import IconAWS from '../img/svg-components/icon-aws'
 import IconExternalLink from '../img/svg-components/icon-external-link'
+import LogoAngular from '../img/svg-components/logo-angular'
 import LogoBootstrap from '../img/svg-components/logo-bootstrap'
 import LogoDjango from '../img/svg-components/logo-django'
 import LogoFlask from '../img/svg-components/logo-flask-02'
@@ -26,7 +27,7 @@ class Projects extends Component {
         <span id="anchor-projects"></span>
         <div className="page page-projects">
           <h1 className="page-header">Projects</h1>
-          <ProjectsMedCheckCare IconExternalLink={ IconExternalLink } LogoNetlify = { LogoNetlify } />          
+          <ProjectsMedCheckCare IconExternalLink={ IconExternalLink } LogoAngular={ LogoAngular } LogoNetlify = { LogoNetlify } />          
           <ProjectsRCPW IconAWS={ IconAWS } IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } LogoPostgreSQL={ LogoPostgreSQL } />
           <ProjectsTMWTE IconExternalLink={ IconExternalLink } LogoNetlify = { LogoNetlify } LogoReact={ LogoReact } />          
           <ProjectsRNS IconAWS={ IconAWS } IconExternalLink={ IconExternalLink } LogoBootstrap={ LogoBootstrap } LogoDjango={ LogoDjango } LogoPostgreSQL={ LogoPostgreSQL } />

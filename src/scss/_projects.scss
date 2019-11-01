@@ -25,6 +25,15 @@ $projects-transition: 0.35s ease-out;
 
     $tech-icon-inactive: #aaa;
 
+    & .ext-link-angular {
+      & path { fill: $tech-icon-inactive; transition: $projects-transition; stroke: none; }
+      &:hover {
+        & .logo-angular-A { fill: #fff; }
+        & .logo-angular-NGULAR { fill: #b52e31; }
+        & .logo-angular-shield-left { fill: #e23237; }
+        & .logo-angular-shield-right { fill: #b52e31; }
+      }
+    }
     & .ext-link-aws {
       & path { fill: $tech-icon-inactive; transition: $projects-transition; }
       &:hover {

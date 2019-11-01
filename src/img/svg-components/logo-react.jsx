@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function LogoReact() {
   return (
-    <svg className="logo-react" xmlns="http://www.w3.org/2000/svg" width="273.885" height="100" viewBox="0 0 273.885 100">
+    <svg className="logo-react" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.885 100">
       <g transform="translate(-454.096 -1030)">
         <g transform="translate(454.096 1030)">
           <g transform="translate(93.532 30.994) rotate(90)" strokeWidth="3">
