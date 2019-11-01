@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6fbee6166ed6d94761a8ecbf0a5a0b33",
+    "revision": "b27ab6fa57f2964906cc38a9e3f60075",
     "url": "/index.html"
   },
   {
-    "revision": "bbdcd0268854e24713d5",
-    "url": "/static/css/main.167e33f7.chunk.css"
+    "revision": "1d1a99a62daa96e4ee11",
+    "url": "/static/css/main.f09e52bb.chunk.css"
   },
   {
-    "revision": "edaf6a68866ef92e0697",
-    "url": "/static/js/2.501aa112.chunk.js"
+    "revision": "60f1256d91e98d2784a3",
+    "url": "/static/js/2.8ec505f9.chunk.js"
   },
   {
-    "revision": "bbdcd0268854e24713d5",
-    "url": "/static/js/main.e30b30f1.chunk.js"
+    "revision": "1d1a99a62daa96e4ee11",
+    "url": "/static/js/main.1382dc71.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e12c5e19c8f6e558866c40b32192e630",
     "url": "/static/media/thumbnail-book-reviews.e12c5e19.svg"
+  },
+  {
+    "revision": "da14b243451a80828af05729fe52ef53",
+    "url": "/static/media/thumbnail-medcheck-care.da14b243.svg"
   },
   {
     "revision": "553171adb991e29c34dbd5a95a0b51ec",
